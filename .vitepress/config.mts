@@ -20,6 +20,10 @@ export default defineConfig({
         ],
         socialLinks: [
             { icon: 'github', link: 'https://github.com/Certseeds/vitebooks' }
-        ]
+        ],
+        search: {
+            provider: "local", //启用vitepress本身的搜索
+        },
+        
     }
 })
