@@ -8,17 +8,17 @@ hero:
   tagline: 一些markdown格式的电子书
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: brand
       text: 无所畏惧
       link: /无所畏惧/meta.html
+    - theme: brand
+      text: warhammer40k-元数据
+      link: /warhammer40k/primarchs.html      
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 完全由markdown构建
+    details: 每一个小节是单独的markdown文件
+  - title: 由git进行版本管理
+    details: 每一个变更都能被记录下来
+  - title: 一键扫描
+    details: 通过脚本实现关键字扫描
 ---
 

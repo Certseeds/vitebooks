@@ -7,14 +7,17 @@ export default defineConfig({
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
-            { text: 'Home', link: '/' },
-            { text: "无所畏惧", link: '/无所畏惧/meta.html' }
+            { text: 'Home', link: '/' }
+            , { text: "无所畏惧", link: '/无所畏惧/meta.html' }
+            , { text: "warhammer40k-元数据", link: '/warhammer40k/primarchs.html' }
+
         ],
         sidebar: [
             {
                 text: 'Books',
                 items: [
                     { text: "无所畏惧", link: '/无所畏惧/meta.html' }
+                    , { text: "warhammer40k-元数据", link: '/warhammer40k/primarchs.html' }
                 ]
             }
         ],
@@ -24,6 +27,5 @@ export default defineConfig({
         search: {
             provider: "local", //启用vitepress本身的搜索
         },
-        
     }
 })
