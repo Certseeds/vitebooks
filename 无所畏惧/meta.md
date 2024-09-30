@@ -9,7 +9,7 @@ next:
 
 # 无所畏惧-元数据
 
-+ 作者: 张拙言
++ 原整理者: 张拙言
 + 出处: <https://www.bilibili.com/read/cv2222305/>
 
 + 原译者: haldir_
