@@ -7,7 +7,6 @@ next:
   link: '/无所畏惧/chapter03/part03.html'
 ---
 
-
 # chapter03-part02
 
 **[计时: 0.01.00]**
