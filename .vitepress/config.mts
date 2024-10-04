@@ -11,6 +11,7 @@ export default defineConfig({
             { text: 'Home', link: '/' }
             , { text: "无所畏惧", link: '/无所畏惧/meta' }
             , { text: "不被铭记的帝国", link: '/不被铭记的帝国/meta' }
+            , { text: "法洛斯", link: '/法洛斯/meta' }
             , { text: "warhammer40k-元数据", link: '/warhammer40k/primarchs' }
 
         ],
@@ -20,6 +21,7 @@ export default defineConfig({
                 items: [
                     { text: "无所畏惧", link: '/无所畏惧/meta' }
                     , { text: "不被铭记的帝国", link: '/不被铭记的帝国/meta' }
+                    , { text: "法洛斯", link: '/法洛斯/meta' }
                     , { text: "warhammer40k-元数据", link: '/warhammer40k/primarchs' }
 
                 ]
