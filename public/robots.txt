@@ -3,4 +3,4 @@ Disallow: /
 
 Crawl-delay: 86400
 Request-rate: 10/86400
-Sitemap: 
+Sitemap: https://vitebooks.certseeds.com/sitemap.xml
