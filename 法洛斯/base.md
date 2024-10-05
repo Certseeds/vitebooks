@@ -13,6 +13,12 @@ next:
 
 作者: Guy Haley
 
+封面语: 白脸克洛许麾下的午夜领主袭击了第二帝国的心脏
+
+On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Imperium Secundus
+
+### 荷鲁斯叛乱
+
 这是一段传奇的岁月.
 
 银河在燃烧. 帝皇为人类构思的荣耀愿景已经支离破碎. 他挚爱的儿子, 荷鲁斯, 背弃了父亲的光辉, 转而投入混沌的怀抱.
@@ -57,7 +63,7 @@ next:
 
 格纳斯, 旗手(Vexillary)
 
-奥迪里奥, 中士(Sergeant)/军士
+奥迪里奥, 中士/军士[^2] (Sergeant)
 
 阿卡门尼德, 中士
 
@@ -91,7 +97,7 @@ next:
 
 朱莉安娜 维拉图斯, 通讯官(Vox-officer)
 
-卢克莱修斯 科尔沃,连长(Honoured captain), 第90连-新星连
+卢克莱修斯 科尔沃, 连长(Honoured captain), 第90连-新星连
 
 赫菲斯托斯, 药剂师
 
@@ -111,7 +117,9 @@ next:
 
 马瑟里斯, 舵手
 
-[^1]: 智库的第三级, 仅次于首席智库, 从低到高分别是编修员(Lexicanium/Lexicani), 典记长(Codicier), 星语官(Epistolary), 首席智库(Chief Librarian).
+[^1]: 智库的正式职级从低到高分别是编修员(Lexicanium/Lexicani), 典记长(Codicier), 星语官(Epistolary), 首席智库(Chief Librarian).
+
+[^2]: 中士, 军士的翻译两者兼有, 在本文档中统一为中士.
 
 ### 第一军团-暗黑天使
 
@@ -183,7 +191,7 @@ Kolom 博拉里昂, 中士, 索萨第一辅助军
 
 克拉维斯
 
-以及其他被遗忘的英雄(forgotten heroes)以及迷失的灵魂(lost souls), 正如法洛斯灯塔的变幻所允许的那样(the vagaries of the Pharos permit)
+以及其他被遗忘的英雄(forgotten heroes)以及失落的灵魂(lost souls), 正如法洛斯灯塔的变幻所允许的那样(the vagaries of the Pharos permit)
 
 --------
 
