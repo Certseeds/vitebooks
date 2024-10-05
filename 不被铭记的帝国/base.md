@@ -37,7 +37,7 @@ On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium a
 
 ## 出场人物
 
-### **马库拉格**
+### 马库拉格
 
 罗伯特 基里曼, 第十三军团"极限战士"基因原体, 五百世界之主, 现亦称"复仇之子"
 
@@ -77,7 +77,7 @@ On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium a
 
 克伦纳特, 中央禁卫
 
-### **索萨**
+### 索萨
 
 巴拉巴斯 丹提欧克, 钢铁战士战争铁匠
 
@@ -85,7 +85,7 @@ On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium a
 
 欧博迪, 斥候, 盾卫连
 
-### **来自风暴**
+### 来自风暴
 
 伊隆 克利弗, (服丧时期军衔暂略)第十军团"钢铁之手"
 

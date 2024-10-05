@@ -39,7 +39,7 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 
 ## 出场人物
 
-**第十三军团 极限战士**
+### 第十三军团 极限战士
 
 罗伯特 基里曼, 第十三军团基因原体
 
@@ -127,7 +127,7 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 
 奥诺瑞乌斯 卢希尔, 连长, 第二百零九连
 
-**第十七军团 怀言者**
+### 第十七军团 怀言者
 
 洛迦 奥瑞利安, 第十七军团基因原体
 
@@ -149,7 +149,7 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 
 乌尔默 诺尔
 
-**邪教**
+### 邪教
 
 乌什米塔 考尔, "短刃兄弟会"
 
@@ -163,7 +163,7 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 
 维尔 特斯, 基因之名
 
-**帝国人员**
+### 帝国人员
 
 乌尔 克哈 赫斯特, 首席伺服师, 机械神教
 
@@ -185,7 +185,7 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 
 侯米德
 
-**帝国军队**
+### 帝国军队
 
 斯帕兹, 上校, 涅莱德第十连
 
@@ -195,7 +195,7 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 
 贝尔 雷恩, 努米纳斯第六十一连
 
-**考斯居民**
+### 考斯居民
 
 阿布特, 总管
 
@@ -209,15 +209,23 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 
 耐维 雷恩
 
+--------
+
 > 在我们倦怠之时, 早已被我们克服的理念便会卷土重来.
 >
 > ——哲学家尼采, 约第二个千年
-> 亡者不会再活；
-> 阴魂不会再起；
+
+> 亡者不会再活;
+>
+> 阴魂不会再起;
+>
 > 为此你令毁灭降诸其身
+>
 > 并抹消了他们的一切痕迹.
 >
 > ——地球伪经, 年代未知
+
+--------
 
 下列按照时间排序的记录文件提取并编纂自极限战士(XIII)作战记录1136.271.v以及基因原体罗伯特基里曼亲笔.
 
