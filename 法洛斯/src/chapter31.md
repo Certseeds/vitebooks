@@ -7,7 +7,7 @@ next:
   link: '/法洛斯/src/chapter32'
 ---
 
-# chapter-3
+# chapter-31
 
 ## 余波
 
