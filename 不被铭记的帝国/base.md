@@ -165,4 +165,4 @@ On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium a
 
 > "统御全人类的欲望几乎总是伪装成拯救全人类的野心."
 >
-> ——引自泛太平洋暴君纳森杜姆, 泰拉统一年代【M30】
+> ——引自泛太平洋暴君纳森杜姆, 泰拉统一年代[M30]
