@@ -34,3 +34,6 @@
 *.tag           text
 *.tagx          text
 *.xml           text
+
+# 
+makefile eol=lf

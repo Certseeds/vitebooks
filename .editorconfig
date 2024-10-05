@@ -12,7 +12,7 @@ indent_style = space
 [*.{md,sh}]
 end_of_line = lf
 insert_final_newline = true
-trim_trailing_whitespace = false
+trim_trailing_whitespace = true
 
 [makefile]
 indent_style = tab

@@ -15,7 +15,7 @@ hero:
       link: /不被铭记的帝国/meta
     - theme: brand
       text: warhammer40k-元数据
-      link: /warhammer40k/primarchs 
+      link: /warhammer40k/primarchs
 features:
   - title: 完全由markdown构建
     details: 每一个小节是单独的markdown文件
