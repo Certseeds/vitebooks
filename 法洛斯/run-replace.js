@@ -18,6 +18,8 @@ const replacements = [
     { src: '：', dst: ': ' },
     { src: '！', dst: '! ' },
     { src: '；', dst: '; ' },
+    { src: '‘', dst: '\'' },
+    { src: '’', dst: '\'' },
     { src: '罗保特', dst: '罗伯特' },
     { src: '古里曼', dst: '基里曼' },
     { src: '荷露斯', dst: '荷鲁斯' },
@@ -29,6 +31,7 @@ const replacements = [
     { src: '曼努斯', dst: '马努斯' },
     { src: '佩特拉波', dst: '佩图拉博' },
     { src: '洛加', dst: '洛迦' },
+    { src: '阿兹卡隆', dst: '阿兹凯隆' },
     // 添加更多替换规则
 ];
 // 定义第二遍替换规则
