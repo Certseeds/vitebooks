@@ -12,7 +12,15 @@ type Config struct {
     Port      string `json:"port"`
 }
 
+var version string
+var commit string
+var date string
+var builtBy string
+
 func main() {
+    log.Printf("构建时间: %s", date)
+    log.Printf("构建commit: %s", commit)
+    log.Printf("构建version: %s", version)
     if len(os.Args) < 2 {
         log.Fatal("请提供配置文件路径作为第一个参数")
     }
