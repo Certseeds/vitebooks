@@ -17,9 +17,12 @@ function generateLink(chapter, type) {
     link: `/不被铭记的帝国/src/chapter${formatNumber(chapterNumber)}`
   };
 }
-
+const order = {
+    "begin": 1,
+    "end": 25
+}
 // 读取文件内容并生成链接
-for (let i = 1; i <= 25; i++) {
+for (let i = order["begin"]; i <= order["end"]; i++) {
   const filePath = filePattern.replace('%02d', i.toString().padStart(2, '0'));
 
   // 读取文件内容
@@ -31,11 +34,11 @@ for (let i = 1; i <= 25; i++) {
 
     // 生成链接
     let links = '---\n';
-    if (i > 1) {
+    if (i > order["begin"]) {
       const prevLink = generateLink(i - 1, 'prev');
       links += `prev:\n  text: '${prevLink.text}'\n  link: '${prevLink.link}'\n`;
     }
-    if (i < 25) {
+    if (i < order["end"]) {
       const nextLink = generateLink(i + 1, 'next');
       links += `next:\n  text: '${nextLink.text}'\n  link: '${nextLink.link}'\n`;
     }

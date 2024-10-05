@@ -2,6 +2,9 @@
 prev:
   text: 'Chapter 25'
   link: '/法洛斯/src/chapter25'
+next:
+  text: 'Chapter 27'
+  link: '/法洛斯/src/chapter27'
 ---
 
 # chapter-26
