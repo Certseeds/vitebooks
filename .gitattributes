@@ -19,6 +19,9 @@
 *.sh text eol=lf
 *.bat text eol=crlf
 
+## language
+*.go eol=lf
+*.js eol=lf
 
 # These files are text and should be normalized (Convert crlf => lf)
 *.css           text diff=css

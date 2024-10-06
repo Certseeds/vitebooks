@@ -35,7 +35,7 @@
 *.dll
 
 # Fortran module files
-# *.mod
+*.mod
 *.smod
 
 # Compiled Static libraries
@@ -425,6 +425,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/c++,docz,node,audio,linux,macos,video,vuejs,goland,windows,visualstudiocode
-
+!go.mod
 .vitepress/dist
 .vitepress/cache

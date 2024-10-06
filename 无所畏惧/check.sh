@@ -29,6 +29,7 @@ main() {
         "曼努斯"
         "佩特拉波"
         "洛加"
+        " "
     )
     for item in "${array[@]}"; do
         echo "${item}"

@@ -20,6 +20,7 @@ const replacements = [
     { src: '；', dst: '; ' },
     { src: '‘', dst: '\'' },
     { src: '’', dst: '\'' },
+    { src: ' ', dst: ' ' },
     { src: '罗保特', dst: '罗伯特' },
     { src: '古里曼', dst: '基里曼' },
     { src: '荷露斯', dst: '荷鲁斯' },

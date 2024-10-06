@@ -39,13 +39,13 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 
 ## 出场人物
 
-### 第十三军团 极限战士
+### 第十三军团 极限战士
 
-罗伯特 基里曼, 第十三军团基因原体
+罗伯特 基里曼, 第十三军团基因原体
 
 陶若 尼科迪莫斯, 奥特拉玛四英杰(萨拉曼斯), 原体的冠军
 
-艾科斯 拉米亚德, 奥特拉玛四英杰(康诺), 原体的冠军
+艾科斯 拉米亚德, 奥特拉玛四英杰(康诺), 原体的冠军
 
 扎斯塔瑞乌斯, 神圣无畏
 
@@ -67,7 +67,7 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 
 纳容 瓦提安, 侦察兵, 第四连
 
-索尔 达摩克里斯, 连长, 第六连
+索尔 达摩克里斯, 连长, 第六连
 
 多米提安, 军士, 第六连
 
@@ -85,7 +85,7 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 
 艾瑞康 盖乌斯, 连长, 第二十一连
 
-泰洛斯 卢比奥, 第二十一连
+泰洛斯 卢比奥, 第二十一连
 
 奥诺瑞亚, 连长, 第二十三连
 
@@ -127,7 +127,7 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 
 奥诺瑞乌斯 卢希尔, 连长, 第二百零九连
 
-### 第十七军团 怀言者
+### 第十七军团 怀言者
 
 洛迦 奥瑞利安, 第十七军团基因原体
 
@@ -135,7 +135,7 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 
 艾瑞巴斯, 黑暗使徒
 
-阿格尔 塔, 受祝之子
+阿格尔 塔, 受祝之子
 
 艾森博尔 佐特, 受祝之子
 
@@ -153,7 +153,7 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 
 乌什米塔 考尔, "短刃兄弟会"
 
-克里欧 弗斯特, 受信任的副官
+克里欧 弗斯特, 受信任的副官
 
 岑瓦 考尔, "轮回家门"
 
@@ -193,7 +193,7 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 
 多根特 克兰克, 努米纳斯第六十一连
 
-贝尔 雷恩, 努米纳斯第六十一连
+贝尔 雷恩, 努米纳斯第六十一连
 
 ### 考斯居民
 
