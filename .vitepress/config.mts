@@ -36,6 +36,23 @@ export default defineConfig({
         footer: {
             copyright: `2024-${new Date().getFullYear()} Certseeds`
         },
+        lastUpdated: {
+            formatOptions: {
+                era: "short",
+                year: "numeric",
+                month: "long",
+                weekday: "long",
+                day: "numeric",
+                hour: "numeric",
+                minute: "numeric",
+                second: "numeric",
+                hour12: false,
+                timeZone: "UTC",
+                timeZoneName: "longGeneric",
+                fractionalSecondDigits: 3,
+                formatMatcher: "basic",
+            },
+        },
     },
     markdown: {
         config: (md) => {

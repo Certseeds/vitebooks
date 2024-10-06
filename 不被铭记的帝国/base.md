@@ -129,9 +129,9 @@ On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium a
 
 莱恩 艾尔庄森, 第一军团"暗黑天使"基因原体
 
-侯古因, 指挥官, 死亡之翼[^3]
+侯古因, 指挥官, 死亡之翼[^2]
 
-法瑞斯 瑞德罗斯, 指挥官, 恐惧之翼[^3]
+法瑞斯 瑞德罗斯, 指挥官, 恐惧之翼[^2]
 
 斯坦涅斯, 无敌理性号舰长
 
@@ -141,7 +141,7 @@ On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium a
 
 达蒙 普瑞坦尼斯, 永生者
 
-乌什皮特卡, 无生者[^2]
+乌什皮特卡, 无生者[^3]
 
 圣吉列斯, 第九军团"圣血天使"基因原体
 
@@ -149,9 +149,9 @@ On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium a
 
 [^1]: Vigilator 守夜者, 参照本吧"《荷鲁斯之乱-第一章-背叛》军表部分翻译", 雷克斯连长
 
-[^2]: Neverborn 无生者, 参照本吧"小说翻译: 荷鲁斯之爪", dszwhz
+[^2]: 又称死翼, 恐翼, 暗黑天使军团的特殊组织架构, 其余为铁翼, 鸦翼, 飓翼和火翼.
 
-[^3]: 又称死翼, 恐翼, 暗黑天使军团的特殊组织架构, 其余为铁翼, 鸦翼, 飓翼和火翼.
+[^3]: Neverborn 无生者, 参照本吧"小说翻译: 荷鲁斯之爪", dszwhz
 
 --------
 
