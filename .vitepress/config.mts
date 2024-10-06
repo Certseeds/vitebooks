@@ -33,6 +33,9 @@ export default defineConfig({
         search: {
             provider: "local", //启用vitepress本身的搜索
         },
+        footer: {
+            copyright: `2024-${new Date().getFullYear()} Certseeds`
+        },
     },
     markdown: {
         config: (md) => {
