@@ -6,7 +6,7 @@ series.name = "Horus Heresy"
 series.order = 14
 authors = ["Dan Abnett"]
 recommended_reading = [
-    "深渊之战",
+    "深渊号之战",
     { name = "异端初现", series = { name = "Horus Heresy", order = 14 } },
     { language = "en", name = "Legion" },
 ]
