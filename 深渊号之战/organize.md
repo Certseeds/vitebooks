@@ -1,7 +1,7 @@
 ---
 next:
   text: 'meta'
-  link: '/深渊号之战/meta.html'
+  link: '/深渊号之战/meta'
 ---
 
 # 如何组织深渊号之战
