@@ -1,0 +1,12 @@
+[book]
+chinese_name = "无所畏惧"
+english_name = "Know No Fear"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 14
+authors = ["Dan Abnett"]
+recommended_reading = [
+    "深渊之战",
+    { name = "异端初现", series = { name = "Horus Heresy", order = 14 } },
+    { language = "en", name = "Legion" },
+]

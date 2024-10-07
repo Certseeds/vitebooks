@@ -1,0 +1,14 @@
+[book]
+chinese_name = "不被铭记的帝国"
+english_name = "The Unremembered Empire"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 27
+authors = ["Dan Abnett"]
+recommended_reading = [
+    "惧于踏足",
+    { name = "考斯印记"},
+    { language = "en", name = "The Crimson Fist", belongto = { name = "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
+    { language = "en", name = "The Iron Within", belongto = { language = "en", name = "Age of Darkness" } },
+    "伏尔甘永存",
+]

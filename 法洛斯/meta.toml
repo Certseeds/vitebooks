@@ -1,0 +1,12 @@
+[book]
+chinese_name = "法洛斯"
+english_name = "Pharos"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 34
+authors = ["Guy Haley"]
+recommended_reading = [
+    "法洛斯之心",
+    { name = "安全且隐秘之地", belongto = { name = "无尽的战争", series = { name = "Horus Heresy", order = 33 } } },
+    "不被铭记的帝国",
+]
