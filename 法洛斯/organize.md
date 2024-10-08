@@ -1,7 +1,7 @@
 ---
 next:
   text: 'meta'
-  link: '/法洛斯/meta.html'
+  link: '/法洛斯/meta'
 ---
 
 # 如何组织法洛斯

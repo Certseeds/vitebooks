@@ -1,7 +1,7 @@
 ---
 next:
   text: 'meta'
-  link: '/忠诚的负担/meta.html'
+  link: '/忠诚的负担/meta'
 ---
 
 # 如何组织法洛斯
