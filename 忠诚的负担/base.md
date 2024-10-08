@@ -38,3 +38,7 @@ On the Cover: Featuring stories by Dan Abnett, Aaron Dembski-Bowden, John French
 ## 出场人物
 
 参考每本书的base部分.
+
+## 章节
+
++ [法洛斯之心](/忠诚的负担/法洛斯之心/meta)
