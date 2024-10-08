@@ -1,0 +1,55 @@
+[book]
+chinese_name = "忠诚的负担"
+english_name = "The Burden of Loyalty"
+type = "短篇小说集"
+series.name = "Horus Heresy"
+series.order = 48
+authors=["Laurie Goulding"]
+
+[[book.sub]]
+chinese_name="第十三只狼"
+english_name="The Thirteenth Wolf"
+type="短篇小说"
+authors=["Gav Thorpe"]
+
+[[book.sub]]
+chinese_name="流亡"
+english_name="Into Exile"
+type="短篇小说"
+authors=["Aaron Dembski-Bowden"]
+
+[[book.sub]]
+chinese_name="憎恶智能"
+english_name="Cybernetica"
+type="中篇小说"
+authors=["Rob Sanders"]
+
+[[book.sub]]
+chinese_name="噩兆修会"
+english_name="Ordo Sinister"
+type="短篇小说"
+authors=["John French"]
+
+[[book.sub]]
+chinese_name="法洛斯之心"
+english_name="The Heart of the Paaros"
+type="短篇小说"
+authors=["L. J. Goulding"]
+
+[[book.sub]]
+chinese_name="狼王"
+english_name="Wolf King"
+type="中篇小说"
+authors=["Chris Wraight"]
+
+[[book.sub]]
+chinese_name="二元继承"
+english_name="The Binary Succession"
+type="短篇小说"
+authors=["David Annandale"]
+
+[[book.sub]]
+chinese_name="永生者"
+english_name="Perpetual"
+type="短篇小说"
+authors=["Dan Abnett"]

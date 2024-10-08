@@ -65,7 +65,7 @@ const replacements = [
 const secondReplacements = [
     { src: ', "', dst: ',"' },
     { src: '. "', dst: '."' },
-    { src: '! "', dst: '!"' }, 马尔卡多
+    { src: '! "', dst: '!"' },
     { src: '.  ', dst: '. ' },
     // 添加更多替换规则
 ];
