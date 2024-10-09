@@ -32,7 +32,6 @@ const replacements = [
     { src: '曼努斯', dst: '马努斯' },
     { src: '佩特拉波', dst: '佩图拉博' },
     { src: '洛加', dst: '洛迦' },
-    { src: '阿兹卡隆', dst: '阿兹凯隆' },
     { src: '基利曼', dst: '基里曼' },
     { src: '洛嘉', dst: '洛迦' },
     { src: '艾达卢斯', dst: '安达卢斯' },

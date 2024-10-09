@@ -45,6 +45,56 @@ const secondReplacements = [
     { src: '.  ', dst: '. ' },
     // 添加更多替换规则
 ];
+function isChineseCharacter(char) {
+    const chineseRegex = /[\u4e00-\u9fa5]/;
+    return chineseRegex.test(char);
+}
+// 定义第三道处理规则的函数
+const thirdReplacement = (text) => {
+    let result = '';
+    numbers = 0;
+    for (let i = 0; i < text.length - 1; i++) {
+        if (text[i] === '"') {
+            numbers++;
+        }
+        if (numbers % 2 === 0 && text[i] === '"' && isChineseCharacter(text[i + 1])) {
+            result += '" ';
+        } else {
+            result += text[i];
+        }
+    }
+    return result;
+};
+const fouthReplacement = (text) => {
+    let result = '';
+    numbers = 0;
+    for (let i = 0; i < text.length - 1; i++) {
+        if (text[i] === '"') {
+            numbers++;
+        }
+        if (numbers %2 === 1 && text[i] === '"' && text[i-1] === '.') {
+            result += ' "';
+        } else {
+            result += text[i];
+        }
+    }
+    return result;
+};
+const fifthReplacement = (text) => {
+    let result = '';
+    numbers = 0;
+    for (let i = 0; i < text.length - 1; i++) {
+        if (text[i] === '"') {
+            numbers++;
+        }
+        if (numbers %2 === 1 && text[i] === '"' && text[i-1] === ',') {
+            result += ' "';
+        } else {
+            result += text[i];
+        }
+    }
+    return result;
+};
 // 读取文件内容并进行替换
 fs.readFile(filePattern, 'utf8', (err, data) => {
     if (err) {
@@ -62,6 +112,9 @@ fs.readFile(filePattern, 'utf8', (err, data) => {
         const regex = new RegExp(replacement["src"], 'g');
         modifiedContent = modifiedContent.replace(regex, replacement["dst"]);
     });
+    modifiedContent = thirdReplacement(modifiedContent);
+    modifiedContent = fouthReplacement(modifiedContent);
+    modifiedContent = fifthReplacement(modifiedContent);
 
     // 写回文件
     fs.writeFile(filePattern, modifiedContent, 'utf8', (err) => {
