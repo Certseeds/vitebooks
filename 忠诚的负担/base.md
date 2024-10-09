@@ -9,13 +9,11 @@ next:
 
 # 忠诚的负担-序章
 
-## 光芒的逝去
-
-作者: Guy Haley
+编者: Laurie Goulding
 
 On the Cover: Featuring stories by Dan Abnett, Aaron Dembski-Bowden, John French, Gav Thorpe, Chris Wraight and Many more.
 
-### 荷鲁斯叛乱
+## 荷鲁斯叛乱
 
 这是一段传奇的岁月.
 
