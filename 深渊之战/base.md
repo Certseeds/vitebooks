@@ -1,13 +1,13 @@
 ---
 prev:
   text: 'meta'
-  link: '/深渊号之战/meta'
+  link: '/深渊之战/meta'
 next:
   text: 'chapter01'
-  link: '/深渊号之战/src/chapter01'
+  link: '/深渊之战/src/chapter01'
 ---
 
-# 深渊号之战-序章
+# 深渊之战-序章
 
 ## 我的兄弟, 我的敌人
 

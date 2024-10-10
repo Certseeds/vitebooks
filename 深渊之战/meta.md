@@ -1,13 +1,13 @@
 ---
 prev:
   text: 'organize'
-  link: '/深渊号之战/organize'
+  link: '/深渊之战/organize'
 next:
   text: 'base'
-  link: '/深渊号之战/base'
+  link: '/深渊之战/base'
 ---
 
-# 深渊号之战-元数据
+# 深渊之战-元数据
 
 ## 原文来源
 

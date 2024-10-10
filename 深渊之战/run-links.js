@@ -14,7 +14,7 @@ function generateLink(chapter, type) {
   const chapterNumber = chapter.toString().padStart(2, '0');
   return {
     text: `Chapter ${formatNumber(chapterNumber)}`,
-    link: `/深渊号之战/src/chapter${formatNumber(chapterNumber)}`
+    link: `/深渊之战/src/chapter${formatNumber(chapterNumber)}`
   };
 }
 const order = {

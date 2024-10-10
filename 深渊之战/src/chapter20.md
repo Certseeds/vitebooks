@@ -1,10 +1,10 @@
 ---
 prev:
   text: 'Chapter 19'
-  link: '/深渊号之战/src/chapter19'
+  link: '/深渊之战/src/chapter19'
 next:
   text: 'Chapter 21'
-  link: '/深渊号之战/src/chapter21'
+  link: '/深渊之战/src/chapter21'
 ---
 
 # chapter-20

@@ -22,7 +22,7 @@ export default defineConfig({
                     { text: "无所畏惧", link: '/无所畏惧/meta' }
                     , { text: "不被铭记的帝国", link: '/不被铭记的帝国/meta' }
                     , { text: "法洛斯", link: '/法洛斯/meta' }
-                    , { text: "深渊号之战", link: '/深渊号之战/meta' }
+                    , { text: "深渊之战", link: '/深渊之战/meta' }
                     , { text: "warhammer40k-元数据", link: '/warhammer40k/primarchs' }
 
                 ]
