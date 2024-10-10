@@ -1,7 +1,7 @@
 ---
 prev:
-text: 'base'
-link: '/忠诚的负担/噩兆修会/base'
+    text: 'base'
+    link: '/忠诚的负担/噩兆修会/base'
 ---
 
 # 忠诚的负担-噩兆修会-正文

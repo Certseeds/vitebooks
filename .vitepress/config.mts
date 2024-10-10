@@ -31,9 +31,6 @@ export default defineConfig({
         socialLinks: [
             { icon: 'github', link: 'https://github.com/Certseeds/vitebooks' }
         ],
-        search: {
-            provider: "local", //启用vitepress本身的搜索
-        },
         footer: {
             copyright: `2024-${new Date().getFullYear()} Certseeds`
         },
@@ -63,5 +60,6 @@ export default defineConfig({
     sitemap: {
         hostname: 'https://vitebooks.certseeds.com'
     },
-    lastUpdated: true
+    lastUpdated: true,
+    metaChunk: true
 })
