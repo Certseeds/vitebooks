@@ -18,8 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 1
+          submodules: true
 
       - uses: pnpm/action-setup@v4
         name: Install pnpm
