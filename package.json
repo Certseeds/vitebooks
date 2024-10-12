@@ -18,6 +18,7 @@
     "vitepress": "^1.4.0"
   },
   "dependencies": {
+    "adm-zip": "^0.5.16",
     "markdown-it-footnote": "^4.0.0"
   }
 }
