@@ -53,3 +53,6 @@ chinese_name="永生者"
 english_name="Perpetual"
 type="短篇小说"
 authors=["Dan Abnett"]
+recommended_reading = [
+    "无所畏惧"
+]

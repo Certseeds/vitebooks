@@ -42,3 +42,5 @@ On the Cover: Featuring stories by Dan Abnett, Aaron Dembski-Bowden, John French
 + [法洛斯之心](/忠诚的负担/法洛斯之心/meta)
 + [二元继承](/忠诚的负担/二元继承/meta)
 + [噩兆修会](/忠诚的负担/噩兆修会/meta)
++ [流亡](/忠诚的负担/流亡/meta)
++ [永生者](/忠诚的负担/永生者/meta)

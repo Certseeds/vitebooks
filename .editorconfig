@@ -9,13 +9,14 @@ indent_size = 4
 indent_style = space
 
 # Unix-style newlines with a newline ending every file
-[*.{md,sh}]
+[*.{md, sh}]
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.{go, js}]
+[*.{go, js, rs, toml}]
 end_of_line = lf
+
 
 [makefile]
 indent_style = tab

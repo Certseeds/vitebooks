@@ -22,6 +22,8 @@
 ## language
 *.go eol=lf
 *.js eol=lf
+*.rs eol=lf
+*.toml eol=lf
 
 # These files are text and should be normalized (Convert crlf => lf)
 *.css           text diff=css
