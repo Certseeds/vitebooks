@@ -15,7 +15,7 @@ authors = ["Dan Abnett"]
 recommended_reading = [
     "深渊之战",
     { name = "异端初现", series = { name = "Horus Heresy", order = 14 } },
-    { language = "en", name = "Legion" },
+    { enname = "Legion" },
 ]
 ```
 
