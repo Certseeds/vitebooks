@@ -5,6 +5,10 @@ import mdFootnote from "markdown-it-footnote"
 export default defineConfig({
     title: "vitebooks",
     description: "Vite Books Collection",
+    srcExclude: [
+        "README.md",
+        "LICENSE_AGPL_V3_0.md"
+    ],
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [

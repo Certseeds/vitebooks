@@ -19,8 +19,8 @@ importers:
         version: 1.0.5
     devDependencies:
       vitepress:
-        specifier: 1.4.0
-        version: 1.4.0(@algolia/client-search@4.24.0)(postcss@8.4.47)(search-insights@2.17.2)
+        specifier: 1.4.1
+        version: 1.4.1(@algolia/client-search@4.24.0)(postcss@8.4.47)(search-insights@2.17.2)
 
 packages:
 
@@ -972,8 +972,8 @@ packages:
       terser:
         optional: true
 
-  vitepress@1.4.0:
-    resolution: {integrity: sha512-JXCv4EsKTDyAFb6C/UjZr7nsGAzZ6mafVk2rx7rG5o8N+B/4QstIk+iEOe/9dKoU6V624UIC6g1pZ+K63rxhlw==}
+  vitepress@1.4.1:
+    resolution: {integrity: sha512-C2rQ7PMlDVqgsaHOa0uJtgGGWaGv74QMaGL62lxKbtFkYtosJB5HAfZ8+pEbfzzvLemYaYwaiQdFLBlexK2sFw==}
     hasBin: true
     peerDependencies:
       markdown-it-mathjax3: ^4
@@ -1974,7 +1974,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  vitepress@1.4.0(@algolia/client-search@4.24.0)(postcss@8.4.47)(search-insights@2.17.2):
+  vitepress@1.4.1(@algolia/client-search@4.24.0)(postcss@8.4.47)(search-insights@2.17.2):
     dependencies:
       '@docsearch/css': 3.6.2
       '@docsearch/js': 3.6.2(@algolia/client-search@4.24.0)(search-insights@2.17.2)
