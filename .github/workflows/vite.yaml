@@ -37,7 +37,7 @@ jobs:
         run: pnpm install
 
       - name: scan and build meta.zip
-        run: pnpm exec node ./vitepress/makezip.js
+        run: pnpm exec node ./vitepress/maketgz.js
 
       - name: build
         run: pnpm run docs:build
