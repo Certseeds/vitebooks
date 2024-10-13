@@ -227,15 +227,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "booksdep"
-version = "0.1.0"
-dependencies = [
- "wasm-bindgen",
- "wasm-bindgen-cli",
- "wasm-pack",
-]
-
-[[package]]
 name = "brotli-decompressor"
 version = "4.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -322,9 +313,9 @@ dependencies = [
 
 [[package]]
 name = "cc"
-version = "1.1.29"
+version = "1.1.30"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "58e804ac3194a48bb129643eb1d62fcc20d18c6b8c181704489353d13120bcd1"
+checksum = "b16803a61b81d9eabb7eae2588776c4c1e584b738ede45fdbb4c972cec1e9945"
 dependencies = [
  "jobserver",
  "libc",
@@ -729,8 +720,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c4567c8db10ae91089c99af84c68c38da3ec2f087c3f82960bcdbf3656b6f4d7"
 dependencies = [
  "cfg-if",
+ "js-sys",
  "libc",
  "wasi",
+ "wasm-bindgen",
 ]
 
 [[package]]
@@ -1422,6 +1415,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "rustydep"
+version = "0.1.0"
+dependencies = [
+ "getrandom",
+ "serde",
+ "tar",
+ "toml 0.8.19",
+ "wasm-bindgen",
+ "wasm-bindgen-cli",
+ "wasm-pack",
+]
+
+[[package]]
 name = "ryu"
 version = "1.0.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1739,7 +1745,7 @@ dependencies = [
  "serde",
  "serde_spanned",
  "toml_datetime",
- "winnow",
+ "winnow 0.5.40",
 ]
 
 [[package]]
@@ -1752,6 +1758,7 @@ dependencies = [
  "serde",
  "serde_spanned",
  "toml_datetime",
+ "winnow 0.6.20",
 ]
 
 [[package]]
@@ -2333,6 +2340,15 @@ name = "winnow"
 version = "0.5.40"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f593a95398737aeed53e489c785df13f3618e41dbcd6718c6addbf1395aa6876"
+dependencies = [
+ "memchr",
+]
+
+[[package]]
+name = "winnow"
+version = "0.6.20"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "36c1fec1a2bb5866f07c25f68c26e565c4c200aebb96d7e55710c19d3e8ac49b"
 dependencies = [
  "memchr",
 ]
