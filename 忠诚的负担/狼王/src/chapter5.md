@@ -2,6 +2,9 @@
 prev:
   text: 'Chapter 4'
   link: '/忠诚的负担/狼王/src/chapter4'
+next:
+  text: '忠诚的负担-base'
+  link: '/忠诚的负担/base'
 ---
 
 # chapter-5

@@ -2,6 +2,9 @@
 prev:
   text: 'base'
   link: '/忠诚的负担/法洛斯之心/base'
+next:
+  text: '忠诚的负担-base'
+  link: '/忠诚的负担/base'
 ---
 
 # 忠诚的负担-法洛斯之心-正文

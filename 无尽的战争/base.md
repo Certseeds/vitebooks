@@ -1,14 +1,16 @@
 ---
 prev:
   text: 'meta'
-  link: '/忠诚的负担/meta'
+  link: '/无尽的战争/meta'
 ---
 
-# 忠诚的负担-序章
+# 无尽的战争-序章
 
-编者: Laurie Goulding
+## 副标题: Heresy Begets retribution
 
-On the Cover: Featuring stories by Dan Abnett, Aaron Dembski-Bowden, John French, Gav Thorpe, Chris Wraight and Many more.
+编者: Laurie Goulding(猜测, Afterword是他写的)
+
+On the Cover: Featuring stories by Aaron Dembski-Bowden, John French, Graham McNeill, James Swallow, Chris Wraight and many more.
 
 ## 荷鲁斯叛乱[^1]
 
@@ -36,9 +38,4 @@ On the Cover: Featuring stories by Dan Abnett, Aaron Dembski-Bowden, John French
 
 ## 章节
 
-+ [法洛斯之心](/忠诚的负担/法洛斯之心/meta)
-+ [二元继承](/忠诚的负担/二元继承/meta)
-+ [噩兆修会](/忠诚的负担/噩兆修会/meta)
-+ [流亡](/忠诚的负担/流亡/meta)
-+ [永生者](/忠诚的负担/永生者/meta)
-+ [狼王](/忠诚的负担/狼王/meta)
++ [安全且隐秘之地](/无尽的战争/安全且隐秘之地/meta)

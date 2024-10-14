@@ -1,7 +1,10 @@
 ---
 prev:
- text: 'base'
- link: '/忠诚的负担/二元继承/base'
+  text: 'base'
+  link: '/忠诚的负担/二元继承/base'
+next:
+  text: '忠诚的负担-base'
+  link: '/忠诚的负担/base'
 ---
 
 # 忠诚的负担-二元继承-正文

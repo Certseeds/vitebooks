@@ -17,7 +17,7 @@ next:
 
 On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Imperium Secundus
 
-### 荷鲁斯叛乱
+### 荷鲁斯叛乱[^1]
 
 这是一段传奇的岁月.
 
@@ -35,7 +35,7 @@ On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Impe
 
 知识与启迪的年代已经告终. 黑暗年代拉开了帷幕.
 
-备注: 这一部分和<不被铭记的帝国>对比并无改动, 因此复制自[不被铭记的帝国序章](/不被铭记的帝国/base)
+[^1]: 这一部分和<不被铭记的帝国>对比并无改动, 因此复制自[不被铭记的帝国序章](/不被铭记的帝国/base)
 
 ## 出场人物
 
