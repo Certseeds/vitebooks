@@ -15,10 +15,10 @@ authors = ["Dan Abnett"]
 recommended_reading = [
     "深渊之战",
     { name = "异端初现", series = { name = "Horus Heresy", order = 14 } },
-    { enname = "Legion" },
+    { enname = "Legion", series = { name = "Horus Heresy", order = 7 } },
 ]
 ```
 
-书名, 或者是系列名+系列序号都能定位一本书, 可以提供任意一个, 或者组合提供, 优先使用书名.
+中文书名, 或者是英文书名+(系列名+系列序号)都能定位一本书, 优先使用中文书名.
 
 belongto字段和上层字段一样, 现在只允许嵌套一层, 等发现了双层嵌套再说.
