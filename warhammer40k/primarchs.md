@@ -11,7 +11,7 @@
 |    V     |    XV    |   Jaghatai Khan   |     察合台可汗     |
 |    VI    |    II    |    Leman Russ     |     黎曼·鲁斯      |
 |   VII    |   VII    |    Rogal Dorn     |     罗格·多恩      |
-|   VIII   |   XVI    |   Konrad Curze    |    康纳德·科兹     |
+|   VIII   |   XVI    |   Konrad Curze    |    康拉德·科兹     |
 |    IX    |    X     |    Sanguinius     |      圣吉列斯      |
 |    X     |    IV    |   Ferrus Manus    |   费鲁斯·马努斯    |
 |    XI    |   XIX    | RECORDS REDACTED  |    ~~数据删除~~    |
