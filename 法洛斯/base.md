@@ -53,7 +53,7 @@ On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Impe
 
 泰图斯 普瑞托, 百人议众(Presiding Centuria)之主, 智库
 
-塞奥吉尔, 星语官(Epistolary)[^1]
+塞奥吉尔, 星语官(Epistolary)[^2]
 
 安达卢斯, 连长(Captain), 第199盾卫连
 
@@ -63,7 +63,7 @@ On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Impe
 
 格纳斯, 旗手(Vexillary)
 
-奥迪里奥, 中士/军士[^2] (Sergeant)
+奥迪里奥, 中士/军士[^3] (Sergeant)
 
 阿卡门尼德, 中士
 
@@ -117,9 +117,9 @@ On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Impe
 
 马瑟里斯, 舵手
 
-[^1]: 智库的正式职级从低到高分别是编修员(Lexicanium/Lexicani), 典记长(Codicier), 星语官(Epistolary), 首席智库(Chief Librarian).
+[^2]: 智库的正式职级从低到高分别是编修员(Lexicanium/Lexicani), 典记长(Codicier), 星语官(Epistolary), 首席智库(Chief Librarian).
 
-[^2]: 中士, 军士的翻译两者兼有, 在本文档中统一为中士.
+[^3]: 中士, 军士的翻译两者兼有, 在本文档中统一为中士.
 
 ### 第一军团-暗黑天使
 

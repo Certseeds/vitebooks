@@ -97,7 +97,7 @@ On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium a
 
 宰托斯, 第十八军团"火蜥蜴"
 
-阿利克西斯 波拉克斯, 连长, 第四百零五连, 第七军团"帝国之拳"
+亚历克西斯 波拉克斯(Alexis Polux), 连长, 第四百零五连, 第七军团"帝国之拳"
 
 法芬纳尔 血盟, 观察小队之主, 第六军团"太空野狼"
 
