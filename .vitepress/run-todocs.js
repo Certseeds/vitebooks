@@ -42,7 +42,7 @@ for (let line of lines) {
         console.log(chapterInfo);
         contentMap[chapterInfo - 1].push(bookModule.head(chapterInfo));
     } else {
-        contentMap[chapterInfo - 1].push(line);
+        contentMap[chapterInfo - 1].push(trimmedLine);
     }
 }
 
@@ -53,6 +53,8 @@ for (let i = order["begin"]; i <= order["end"]; i++) {
     const filePath = path.resolve(input["path"], ...bookModule.generatePattern(i));
     const array = contentMap[i - 1];
     array[1] = `## ${array[1]}`;
+    array[3] = `## ${array[3]}`;
+    array[5] = `## ${array[5]}`;
     const content = array.join('\n');
     fs.writeFileSync(filePath, content, 'utf8');
 }
