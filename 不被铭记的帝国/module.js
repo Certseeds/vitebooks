@@ -18,6 +18,21 @@ const replaceDirs = [`.${path}/src`,];
 const repalceFiles = [];
 const repalceNameFiles = [`.${path}/names.txt`,];
 
+const resource = `.${path}/HH27.txt`;
+
+const IsChapterBegin = function (line) {
+    const singleDigitRegex = /^\d{1,2}$/;
+    return singleDigitRegex.test(line);
+}
+const head = function (chapter) {
+    const chapterNumber = chapter.toString().padStart(2, '0');
+    return `# chapter${chapterNumber}}`
+}
+const generatePattern = function (chapter) {
+    const chapterNumber = chapter.toString().padStart(2, '0');
+    return ["src", `chapter${chapterNumber}.md`];
+}
+
 module.exports = {
     generateLink: generateLink,
     order: order,
@@ -26,5 +41,10 @@ module.exports = {
 
     replaceDirs: replaceDirs,
     repalceFiles: repalceFiles,
-    repalceNameFiles: repalceNameFiles
+    repalceNameFiles: repalceNameFiles,
+
+    resource: resource,
+    IsChapterBegin: IsChapterBegin,
+    head: head,
+    generatePattern: generatePattern
 }
