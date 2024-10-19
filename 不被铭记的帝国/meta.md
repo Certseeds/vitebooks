@@ -11,15 +11,15 @@ next:
 
 ## 原文来源
 
-+ 译者：haldir_
-+ 原帖：<http://tieba.baidu.com/p/3646130277?see_lz=1>
-+ 出处: tieba
++ 原译者：haldir_
++ <http://tieba.baidu.com/p/3646130277?see_lz=1>
++ 来源: tieba
 
 ------
 
-+ 原整理者：凯法斯凯恩
++ 整理者：凯法斯凯恩
 + <https://www.bilibili.com/read/cv2224482/?from=readlist>
-+ 出处: bilibili
++ 来源: bilibili
 
 ------
 

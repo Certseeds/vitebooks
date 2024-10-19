@@ -14,7 +14,7 @@ next:
 + 来源: tieba
 
 + 原整理者: 张拙言
-+ 出处: <https://www.bilibili.com/read/cv2222305/>
++ <https://www.bilibili.com/read/cv2222305/>
 + 来源: bilibili
 
 ## 阅读顺序
