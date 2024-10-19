@@ -16,7 +16,7 @@ const input = readArgs(args);
 const modulePath = path.resolve(input["path"], 'module.js');
 const bookModule = require(modulePath);
 // 定义要读取的文件路径模式
-const filePattern = path.join(input["path"], 'src', 'chapter%02d.md');
+const filePattern = path.join(input["path"], ... bookModule.pattern);
 const order = bookModule.order;
 
 // 读取文件内容并生成链接

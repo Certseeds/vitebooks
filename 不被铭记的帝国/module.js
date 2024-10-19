@@ -12,6 +12,7 @@ const order = {
     end: 25,
 }
 const prelink = `${path}/base`;
+const pattern = ["src", 'chapter%02d.md'];
 
 const replaceDirs = [`.${path}/src`,];
 const repalceFiles = [];
@@ -19,8 +20,10 @@ const repalceNameFiles = [`.${path}/names.txt`,];
 
 module.exports = {
     generateLink: generateLink,
-    prelink: prelink,
     order: order,
+    prelink: prelink,
+    pattern: pattern,
+
     replaceDirs: replaceDirs,
     repalceFiles: repalceFiles,
     repalceNameFiles: repalceNameFiles
