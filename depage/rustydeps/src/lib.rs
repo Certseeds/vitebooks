@@ -1,9 +1,17 @@
-extern crate wasm_bindgen;
-
-use wasm_bindgen::prelude::*;
+pub mod structs;
+pub use crate::structs::belong_type;
+pub use crate::structs::book::Book;
+pub use crate::structs::deps::Deps;
+pub use crate::structs::meta::Meta;
+pub use crate::structs::search_type::SearchType;
+pub use crate::structs::series::Series;
+use serde_json;
+use std::collections::HashMap;
+use std::io::{Cursor, Read};
+use wasm_bindgen::prelude::wasm_bindgen;
 
 #[wasm_bindgen]
-extern {
+extern "C" {
     pub fn alert(s: &str);
 }
 
@@ -12,15 +20,8 @@ pub fn greet(name: &str) {
     alert(&format!("Hello, {}!", name));
 }
 
-use serde::Deserialize;
-use std::collections::HashMap;
-use std::fs::File;
-use std::hash::{DefaultHasher, Hash, Hasher};
-use std::io::{Cursor, Read};
-use wasm_bindgen::prelude::wasm_bindgen;
-
 #[wasm_bindgen]
-pub fn outer_function_from_cn(content: &[u8], chinese_name: String) -> Vec<String> {
+pub fn outer_function_from_cn(content: &[u8], chinese_name: String) -> String {
     let books = parse_u8_to_books(Vec::from(content));
     let result = parse_book_dependencies(
         books,
@@ -30,95 +31,11 @@ pub fn outer_function_from_cn(content: &[u8], chinese_name: String) -> Vec<Strin
             belongto: None,
         },
     );
-    let result = result.iter().map(|x| x.join(";")).collect();
-    result
+    let response = serde_json::to_string(&result);
+    response.unwrap()
 }
 
-fn read_and_print_bytes(path: &str) -> Vec<u8> {
-    let mut file = File::open(path).unwrap();
-    let mut buffer = Vec::new();
-    match file.read_to_end(&mut buffer) {
-        Ok(_) => {}
-        Err(_) => {
-            panic!()
-        }
-    }
-    // convert buffer to string
-    buffer
-}
-#[derive(Debug, Deserialize, Clone, Hash, Eq, PartialEq)]
-pub struct Series {
-    pub name: String,
-    pub order: i64,
-}
-impl Series {
-    fn gethash(self: &Series) -> u64 {
-        let mut s = DefaultHasher::new();
-        self.hash(&mut s);
-        s.finish()
-    }
-}
-struct SearchType {
-    pub name: Option<String>,
-    pub enname: Option<String>,
-    pub belongto: Option<BelongType>,
-}
-#[derive(Debug, Deserialize, Clone)]
-struct BelongType {
-    name: Option<String>,
-    #[serde(rename = "enname")]
-    english_name: Option<String>,
-    series: Option<Series>,
-}
-#[derive(Debug, Deserialize, Clone)]
-#[serde(untagged)]
-enum Deps {
-    Name(String),
-    NameMap {
-        name: Option<String>,
-        #[serde(rename = "enname")]
-        english_name: Option<String>,
-        #[serde(rename = "belongto")]
-        belong: Option<BelongType>,
-    },
-}
-impl Deps {
-    pub fn to_search_type(self) -> SearchType {
-        match self {
-            Deps::Name(name) => SearchType {
-                name: Some(name),
-                enname: None,
-                belongto: None,
-            },
-            Deps::NameMap {
-                name,
-                english_name,
-                belong,
-            } => SearchType {
-                name,
-                enname: english_name,
-                belongto: belong,
-            },
-        }
-    }
-}
-
-#[derive(Debug, Deserialize, Clone)]
-pub struct Book {
-    pub chinese_name: String,
-    pub english_name: String,
-    pub r#type: String,
-    pub series: Option<Series>,
-    pub authors: Vec<String>,
-    pub recommended_reading: Option<Vec<Deps>>,
-}
-#[derive(Debug, Deserialize)]
-pub struct Meta {
-    pub book: Book,
-    pub sub: Option<Vec<Book>>,
-}
-
-fn parse_u8_to_books(chars: Vec<u8>) -> Vec<Book> {
+pub fn parse_u8_to_books(chars: Vec<u8>) -> Vec<Book> {
     let reader = Cursor::new(chars);
     let mut tar = tar::Archive::new(reader);
     let mut books_collection: Vec<Book> = Vec::new();
@@ -209,7 +126,7 @@ fn parse_book_dependencies(books: Vec<Book>, search_type: SearchType) -> Vec<Vec
         match &book.series {
             None => {}
             Some(s) => {
-                series_map.insert(s.gethash(), book.clone());
+                series_map.insert(s.hashcode(), book.clone());
             }
         }
     }
@@ -270,10 +187,10 @@ fn parse_book_dependencies(books: Vec<Book>, search_type: SearchType) -> Vec<Vec
                             return results;
                         }
                         Some(belongto) => {
-                            if ((belongto.name.is_some()
+                            if (belongto.name.is_some()
                                 && belongto.name.unwrap() == resultBook.chinese_name)
                                 || (belongto.english_name.is_some()
-                                    && belongto.english_name.unwrap() == resultBook.english_name))
+                                    && belongto.english_name.unwrap() == resultBook.english_name)
                             {
                                 match &resultBook.series {
                                     None => {
@@ -282,7 +199,8 @@ fn parse_book_dependencies(books: Vec<Book>, search_type: SearchType) -> Vec<Vec
                                         return results;
                                     }
                                     Some(series) => {
-                                        if !(belongto.series.unwrap().gethash() == series.gethash())
+                                        if !(belongto.series.unwrap().hashcode()
+                                            == series.hashcode())
                                         {
                                             let enname_extend = enname + "-暂未收录";
                                             results.get_mut(0).unwrap().push(enname_extend);
@@ -320,6 +238,31 @@ fn parse_book_dependencies(books: Vec<Book>, search_type: SearchType) -> Vec<Vec
             }
         }
     }
-    println!("result map is {:?}", results);
     results
+}
+#[cfg(test)]
+mod tests {
+    use crate::outer_function_from_cn;
+    use std::fs::File;
+    use std::io::{self, Read};
+
+    fn read_file_to_u8(path: &str) -> io::Result<Vec<u8>> {
+        let mut file = File::open(path)?;
+        let mut buffer = Vec::new();
+        file.read_to_end(&mut buffer)?;
+        Ok(buffer)
+    }
+    #[test]
+    fn test_method() {
+        assert_eq!(1, 1);
+        match read_file_to_u8("./meta.tar") {
+            Err(E) => {
+                eprintln!("output error {}", E);
+            }
+            Ok(vec) => {
+                let result = outer_function_from_cn(vec.as_slice(), String::from("无所畏惧"));
+                println!("{:?}", result)
+            }
+        }
+    }
 }

@@ -33,7 +33,27 @@ jobs:
           node-version: 20
           cache: 'pnpm'
 
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: stable
+
+      - name: add wasm32-unknown-unknown target
+        run: rustup target add wasm32-unknown-unknown
+
+      - name: build rustydeps-wasm
+        working-directory: ./depage/rustydeps
+        run: |
+          cargo install wasm-pack
+          cargo install wasm-bindgen-cli
+          cargo build --release
+          wasm-pack build --target web --release
+          
       - name: Install dependencies
+        run: pnpm install
+      
+      - name: install dependencies depage
+        working-directory: ./depage
         run: pnpm install
 
       - name: scan and build meta.zip
@@ -41,6 +61,15 @@ jobs:
 
       - name: build
         run: pnpm run docs:build
+
+      - name: build depage
+        working-directory: ./depage
+        run: pnpm build
+
+      - name: cp depage
+        run: |
+          mkdir ./.viterpess/dist/depage
+          cp -r ./depage/dist/* ./.vitepress/dist/depage/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
