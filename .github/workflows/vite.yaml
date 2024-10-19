@@ -40,6 +40,8 @@ jobs:
 
       - name: Rust Cache
         uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: "./depage/rustydeps"
 
       - name: add wasm32-unknown-unknown target
         run: rustup target add wasm32-unknown-unknown
