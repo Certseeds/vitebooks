@@ -38,6 +38,9 @@ jobs:
         with:
           toolchain: stable
 
+      - name: Rust Cache
+        uses: Swatinem/rust-cache@v2
+
       - name: add wasm32-unknown-unknown target
         run: rustup target add wasm32-unknown-unknown
 
@@ -68,7 +71,7 @@ jobs:
 
       - name: cp depage
         run: |
-          mkdir -r ./.vitepress/dist/depage
+          mkdir -p ./.vitepress/dist/depage
           cp -r ./depage/dist/* ./.vitepress/dist/depage/
 
       - name: Upload artifact
