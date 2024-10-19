@@ -9,11 +9,13 @@ next:
 
 # 无所畏惧-元数据
 
++ 原译者: haldir_
++ <http://tieba.baidu.com/p/2960726169>
++ 来源: tieba
+
 + 原整理者: 张拙言
 + 出处: <https://www.bilibili.com/read/cv2222305/>
-
-+ 原译者: haldir_
-+ 原帖: <http://tieba.baidu.com/p/2960726169>
++ 来源: bilibili
 
 ## 阅读顺序
 
