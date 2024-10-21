@@ -132,6 +132,21 @@ const fifthReplacement = (text) => {
     return resultLines.join('\n');
 };
 
+const sixthReplacement = (text) => {
+    const result = text.replace(/\n{3,}/g, '\n\n--------\n\n');
+    return result;
+}
+const seventhReplacement = (text) => {
+    let lines = text.split('\n');
+    return lines.join('\n\n');
+}
+const eightReplacement =  (text) =>{
+    let lines = text.split('\n');
+    while (lines.length > 0 && lines[lines.length - 1].trim() === '') {
+        lines.pop();
+    }
+    return lines.join('\n');
+}
 
 todoFiles.forEach(filePath => {
     fs.readFile(filePath, 'utf8', (err, data) => {
@@ -157,6 +172,11 @@ todoFiles.forEach(filePath => {
         modifiedContent = thirdReplacement(modifiedContent);
         modifiedContent = fourthReplacement(modifiedContent);
         modifiedContent = fifthReplacement(modifiedContent);
+        modifiedContent = eightReplacement(modifiedContent);
+        modifiedContent = sixthReplacement(modifiedContent);
+        //modifiedContent = seventhReplacement(modifiedContent);
+        modifiedContent = eightReplacement(modifiedContent);
+        modifiedContent +='\n';
         {
             const regex = new RegExp(' \n', 'g');
             modifiedContent = modifiedContent.replace(regex, '\n');
