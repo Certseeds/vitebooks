@@ -52,9 +52,9 @@ for (let folder of bookModule.replaceDirs) {
 for (let i = order["begin"]; i <= order["end"]; i++) {
     const filePath = path.resolve(input["path"], ...bookModule.generatePattern(i));
     const array = contentMap[i - 1];
-    array[2] = `## ${array[2]}`;
-    array[4] = `## ${array[4]}`;
-    array[6] = `## ${array[6]}`;
+    // array[2] = `## ${array[2]}`;
+    // array[4] = `## ${array[4]}`;
+    // array[6] = `## ${array[6]}`;
     const content = array.join('\n');
     fs.writeFileSync(filePath, content, 'utf8');
 }
