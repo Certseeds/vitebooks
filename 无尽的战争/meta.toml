@@ -1,0 +1,157 @@
+[book]
+chinese_name = "无尽的战争"
+english_name = "War Without End"
+type = "短篇小说集"
+series.name = "Horus Heresy"
+series.order = 33
+authors=["Laurie Goulding"]
+
+[[sub]]
+chinese_name="凤凰大君"
+english_name="The Phoenician 1"
+type="短篇小说"
+authors=["Nick Kyme"]
+
+[[sub]]
+chinese_name="涅盘者"
+english_name="The Phoenician 2"
+type="短篇小说"
+authors=["Nick Kyme"]
+
+[[sub]]
+chinese_name="不完美"
+english_name="Imperfect"
+type="短篇小说"
+authors=["Nick Kyme"]
+
+[[sub]]
+chinese_name="劫难"
+english_name="The Harrowing"
+type="短篇小说"
+authors=["Rob Sanders"]
+
+[[sub]]
+chinese_name="外科医生"
+english_name="Chirurgeon"
+type="短篇小说"
+authors=["Nick Kyme"]
+
+[[sub]]
+chinese_name="子嗣所长"
+english_name="Virtues of the Sons"
+type="短篇小说"
+authors=["Andy Smillie"]
+
+[[sub]]
+chinese_name="安全且隐秘之地"
+english_name="A Safe and Shadowed Place"
+type="短篇小说"
+authors=["Guy Haley"]
+
+[[sub]]
+chinese_name="布道之旅"
+english_name="Sermon of Exodus"
+type="短篇小说"
+authors=["David Annandale"]
+
+[[sub]]
+chinese_name="帝皇之手"
+english_name="Hands of the Emperor"
+type="短篇小说"
+authors=["Rob Sanders"]
+
+[[sub]]
+chinese_name="忠诚"
+english_name="Allegiance"
+type="短篇小说"
+authors=["Chris Wraight"]
+
+[[sub]]
+chinese_name="恶魔学识"
+english_name="Daemonology"
+type="短篇小说"
+authors=["Chris Wraight"]
+
+[[sub]]
+chinese_name="扭曲者"
+english_name="Twisted"
+type="短篇小说"
+authors=["Guy Haley"]
+
+[[sub]]
+chinese_name="扭曲者 2"
+english_name="Twisted 2"
+type="短篇小说"
+authors=[""]
+
+[[sub]]
+chinese_name="抗争的桂冠"
+english_name="The Laurel of Defiance 1"
+type="短篇小说"
+authors=["Guy Haley"]
+
+[[sub]]
+chinese_name="抗争的桂冠-反抗"
+english_name="The Laurel of Defiance 2"
+type="短篇小说"
+authors=["Guy Haley"]
+
+[[sub]]
+chinese_name="文物"
+english_name="Artefacts"
+type="短篇小说"
+authors=["Nick Kyme"]
+
+[[sub]]
+chinese_name="炉世之吼"
+english_name="Howl of the Hearthworld"
+type="短篇小说"
+authors=["Dembski-Bowden"]
+
+[[sub]]
+chinese_name="炉火世界的嚎叫"
+english_name="Howl of the Hearthworld"
+type="短篇小说"
+authors=["Dembski-Bowden"]
+
+[[sub]]
+chinese_name="狼母"
+english_name="Wolf Mother"
+type="短篇小说"
+authors=["Graham McNeill"]
+
+[[sub]]
+chinese_name="生者存遗"
+english_name="All That Remains"
+type="短篇小说"
+authors=["James Swallow"]
+
+[[sub]]
+chinese_name="瞄准镜"
+english_name="Gunsight"
+type="短篇小说"
+authors=["James Swallow"]
+
+[[sub]]
+chinese_name="神圣崇拜者"
+english_name="The Devine Adoratrice"
+type="短篇小说"
+authors=["Graham McNeill"]
+
+[[sub]]
+chinese_name="红砂之王"
+english_name="Lord of the Red Sands"
+type="短篇小说"
+authors=["Dembski-Bowden"]
+
+[[sub]]
+chinese_name="雄狮有令"
+english_name="By the Lion's Command"
+type="短篇小说"
+authors=["Gav Thorpe"]
+
+[[sub]]
+chinese_name="黑暗之眼"
+english_name="Black Oculus"
+type="短篇小说"
+authors=["John French"]

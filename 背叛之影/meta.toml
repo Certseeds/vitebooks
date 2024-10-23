@@ -1,0 +1,59 @@
+[book]
+chinese_name = "背叛之影"
+english_name = "Shadows of Treachery"
+type = "短篇小说集"
+series.name = "Horus Heresy"
+series.order = 22
+authors = ["Christian Dunn", "Nick Kyme"]
+
+[[sub]]
+chinese_name = "绯红之拳"
+english_name = "The Crimson Fist"
+type = "中篇小说"
+authors = ["John French"]
+recommended_reading = [
+    { name = "闪电之塔", series = { name = "Horus Heresy", order = 22 } },
+    "艾森斯坦号的逃亡",
+]
+
+[[sub]]
+chinese_name = "群鸦王子"
+english_name = "Prince of Crows"
+type = "中篇小说"
+authors = ["Aaron Dembski-Bowden"]
+
+[[sub]]
+chinese_name = "卡板计划"
+english_name = "The Kaban Project"
+type = "短篇小说"
+authors = ["Graham McNeill"]
+
+
+[[sub]]
+chinese_name = "渡鸦的航行"
+english_name = "Raven's Flight"
+type = "短篇小说"
+authors = ["Gav Thorpe"]
+
+
+[[sub]]
+chinese_name = "银匠之死"
+english_name = "Death of a Silversmith"
+type = "短篇小说"
+authors = ["Graham McNeill"]
+
+
+[[sub]]
+chinese_name = "闪电之塔"
+english_name = "The Lightning Tower"
+type = "短篇小说"
+authors = ["Dan Abnett"]
+recommended_reading = [
+    { name = "黑暗之王", series = { name = "Horus Heresy", order = 22 } },
+]
+
+[[sub]]
+chinese_name = "黑暗之王"
+english_name = "The Dark King"
+type = "短篇小说"
+authors = ["Graham McNeill"]

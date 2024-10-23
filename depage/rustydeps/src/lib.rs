@@ -109,10 +109,7 @@ fn merge_vecs(vecs: Vec<Vec<Vec<String>>>) -> Vec<Vec<String>> {
 
 // 查找时可以用
 // 中文名
-// 英文名+ belong信息
-// belong信息中, 满足一下条件之一可以
-//    中文名
-//    英文名 + series信息
+// 英文名+ belong-series信息
 // 当然, 更多最好, 但是只会用必要的进行查询
 
 fn parse_book_dependencies(books: Vec<Book>, search_type: SearchType) -> Vec<Vec<String>> {
@@ -140,6 +137,7 @@ fn parse_book_dependencies(books: Vec<Book>, search_type: SearchType) -> Vec<Vec
                     println!("暂未收录 {}", chinese_name);
                     let enname_extend = chinese_name + "-暂未收录";
                     results.get_mut(0).unwrap().push(enname_extend);
+                    return results;
                 }
                 Some(resultBook) => {
                     println!("book is {:?}", resultBook);
@@ -174,46 +172,31 @@ fn parse_book_dependencies(books: Vec<Book>, search_type: SearchType) -> Vec<Vec
             match book {
                 None => {
                     println!("暂未收录 {}", enname);
-                    let enname_extend = enname + "-暂未收录";
+                    let enname_extend = enname + "-暂未收录`";
                     results.get_mut(0).unwrap().push(enname_extend);
                     return results;
                 }
                 Some(resultBook) => {
-                    println!("book is {:?}", resultBook);
+                    let cnname_extend = resultBook.clone().chinese_name + "-暂未收录";
                     match search_type.belongto {
                         None => {
-                            let enname_extend = enname + "-暂未收录";
-                            results.get_mut(0).unwrap().push(enname_extend);
+                            results.get_mut(0).unwrap().push(cnname_extend);
                             return results;
                         }
-                        Some(belongto) => {
-                            if (belongto.name.is_some()
-                                && belongto.name.unwrap() == resultBook.chinese_name)
-                                || (belongto.english_name.is_some()
-                                    && belongto.english_name.unwrap() == resultBook.english_name)
-                            {
-                                match &resultBook.series {
-                                    None => {
-                                        let enname_extend = enname + "-暂未收录";
-                                        results.get_mut(0).unwrap().push(enname_extend);
-                                        return results;
-                                    }
-                                    Some(series) => {
-                                        if !(belongto.series.unwrap().hashcode()
-                                            == series.hashcode())
-                                        {
-                                            let enname_extend = enname + "-暂未收录";
-                                            results.get_mut(0).unwrap().push(enname_extend);
-                                            return results;
-                                        }
-                                    }
-                                }
-                            } else {
-                                let enname_extend = enname + "-暂未收录";
-                                results.get_mut(0).unwrap().push(enname_extend);
+                        Some(belongto) => match &resultBook.series {
+                            None => {
+                                results.get_mut(0).unwrap().push(cnname_extend);
                                 return results;
                             }
-                        }
+                            Some(series) => {
+                                if let Some(series_in) = belongto.series {
+                                    if series_in.hashcode() != series.hashcode() {
+                                        results.get_mut(0).unwrap().push(cnname_extend);
+                                        return results;
+                                    }
+                                }
+                            }
+                        },
                     }
 
                     results

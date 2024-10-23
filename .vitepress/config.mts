@@ -29,6 +29,7 @@ export default defineConfig({
                     , { text: "无尽的战争", link: '/无尽的战争/meta' }
                     , { text: "无所畏惧", link: '/无所畏惧/meta' }
                     , { text: "忠诚的负担", link: '/忠诚的负担/meta' }
+                    , { text: "背叛之影", link: '/背叛之影/meta' }
                     , { text: "warhammer40k-元数据", link: '/warhammer40k/primarchs' }
                 ]
             }
