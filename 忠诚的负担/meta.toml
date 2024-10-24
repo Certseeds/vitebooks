@@ -54,5 +54,5 @@ english_name="Perpetual"
 type="短篇小说"
 authors=["Dan Abnett"]
 recommended_reading = [
-    "无所畏惧"
+    { name = "考斯印记"},
 ]
