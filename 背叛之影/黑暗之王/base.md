@@ -13,4 +13,4 @@ next:
 
 ## 背景
 
-特别注意, 本篇不涉及'Siege Of Terra: The End and The Death VOLUME II'中的"Dark King", 或许可以改名叫作"黑暗王者".
+特别注意, 本篇不涉及'Siege Of Terra: The End and The Death VOLUME II'中的"Dark King", 或许本书可以改名叫作"黑暗王者".
