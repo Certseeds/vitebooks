@@ -103,6 +103,9 @@ const fourthReplacement = (text) => {
                     result += line[i];
                 }
             }
+            if (doubleQuotes %2 == 0){
+                result += ' [ERROR] QUOTA NUMBER NOT MATCH';
+            }
             return result;
         });
     return resultLines.join('\n');

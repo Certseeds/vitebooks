@@ -21,6 +21,9 @@ chinese_name = "群鸦王子"
 english_name = "Prince of Crows"
 type = "中篇小说"
 authors = ["Aaron Dembski-Bowden"]
+recommended_reading = [
+    { name = "野蛮武器", series = { name = "Horus Heresy", order = 16 } },
+]
 
 [[sub]]
 chinese_name = "卡板计划"
