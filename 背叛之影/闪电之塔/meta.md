@@ -11,7 +11,7 @@ next:
 
 ## 原文来源
 
-+ 原译者: 不明确
++ 原译者: wolfhzk
 + <https://bbs.nga.cn/read.php?tid=3490737&_fp=24&rand=838>
 + 来源: NGA, 该页面无法打开
 
