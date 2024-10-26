@@ -172,7 +172,7 @@ fn parse_book_dependencies(books: Vec<Book>, search_type: SearchType) -> Vec<Vec
             match book {
                 None => {
                     println!("暂未收录 {}", enname);
-                    let enname_extend = enname + "-暂未收录`";
+                    let enname_extend = enname + "-暂未收录";
                     results.get_mut(0).unwrap().push(enname_extend);
                     return results;
                 }
