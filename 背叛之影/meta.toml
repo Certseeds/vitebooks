@@ -23,6 +23,7 @@ type = "中篇小说"
 authors = ["Aaron Dembski-Bowden"]
 recommended_reading = [
     { name = "野蛮武器", series = { name = "Horus Heresy", order = 16 } },
+    { enname = "The Lion", belongto = { enname = "The Primarchs", series = { name = "Horus Heresy", order = 20 } } },
 ]
 
 [[sub]]
@@ -37,7 +38,7 @@ chinese_name = "渡鸦的航行"
 english_name = "Raven's Flight"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
-
+recommended_reading = ["福格瑞姆"]
 
 [[sub]]
 chinese_name = "银匠之死"
