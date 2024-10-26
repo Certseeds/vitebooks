@@ -82,19 +82,25 @@ authors=["Guy Haley"]
 chinese_name="扭曲者 2"
 english_name="Twisted 2"
 type="短篇小说"
-authors=[""]
+authors=["Guy Haley"]
 
 [[sub]]
 chinese_name="抗争的桂冠"
-english_name="The Laurel of Defiance 1"
+english_name="The Laurel of Defiance"
 type="短篇小说"
 authors=["Guy Haley"]
+recommended_reading=[
+    { name = "向死者致敬", belongto = { name = "背叛的遗产", series = { name = "Horus Heresy", order = 31 } } },
+]
 
 [[sub]]
-chinese_name="抗争的桂冠-反抗"
+chinese_name="反抗的桂冠"
 english_name="The Laurel of Defiance 2"
 type="短篇小说"
 authors=["Guy Haley"]
+recommended_reading=[
+    { name = "向死者致敬", belongto = { name = "背叛的遗产", series = { name = "Horus Heresy", order = 31 } } },
+]
 
 [[sub]]
 chinese_name="文物"
@@ -110,7 +116,7 @@ authors=["Dembski-Bowden"]
 
 [[sub]]
 chinese_name="炉火世界的嚎叫"
-english_name="Howl of the Hearthworld"
+english_name="Howl of the Hearthworld 2"
 type="短篇小说"
 authors=["Dembski-Bowden"]
 

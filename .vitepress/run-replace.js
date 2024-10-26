@@ -70,6 +70,7 @@ const thirdReplacement = (text) => {
                 return result;
             }
             const doubleQuotes = (line) => line.split('').reduce((count, char) => char === '"' ? count + 1 : count, 0);
+            const singleQuotes = (line) => line.split('').reduce((count, char) => char === '\'' ? count + 1 : count, 0);
             for (let i = 0, numbers = 0; i < line.length; i++) {
                 if (line[i] === '"') {
                     numbers++;
@@ -79,6 +80,12 @@ const thirdReplacement = (text) => {
                 } else {
                     result += line[i];
                 }
+            }
+            if (doubleQuotes(line) %2 == 1) {
+                result += ' [ERROR] QUOTA NUMBER NOT MATCH';
+            }
+            if (singleQuotes(line) %2 == 1) {
+                result += ' [ERROR] QUOTA NUMBER NOT MATCH';
             }
             return result;
         });
@@ -93,7 +100,6 @@ const fourthReplacement = (text) => {
             if (line.trim().length === 0) {
                 return result;
             }
-            const doubleQuotes = (line) => line.split('').reduce((count, char) => char === '"' ? count + 1 : count, 0);
             for (let i = 0, numbers = 0; i < line.length; i++) {
                 if (line[i] === '"') {
                     numbers++;
@@ -103,9 +109,6 @@ const fourthReplacement = (text) => {
                 } else {
                     result += line[i];
                 }
-            }
-            if (doubleQuotes %2 == 0){
-                result += ' [ERROR] QUOTA NUMBER NOT MATCH';
             }
             return result;
         });
