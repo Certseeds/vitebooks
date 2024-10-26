@@ -8,7 +8,7 @@ next:
 
 ## 原文来源
 
-+ 原译者：WilliamCorax
++ 原译者: WilliamCorax
 + <https://www.bilibili.com/read/cv24903291/>
 + 来源: bilibili
 

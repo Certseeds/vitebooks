@@ -11,7 +11,7 @@ next:
 
 ## 原文来源
 
-+ 原译者：wolfhzk
++ 原译者: wolfhzk
 + <http://zhihuiguan.com/bbs/read.php?tid=51978>
 + 来源: 指挥官基地, 现已不存在.
 

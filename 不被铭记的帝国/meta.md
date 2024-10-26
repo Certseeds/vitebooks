@@ -11,13 +11,13 @@ next:
 
 ## 原文来源
 
-+ 原译者：haldir_
++ 原译者: haldir_
 + <http://tieba.baidu.com/p/3646130277?see_lz=1>
 + 来源: tieba
 
 ------
 
-+ 整理者：凯法斯凯恩
++ 整理者: 凯法斯凯恩
 + <https://www.bilibili.com/read/cv2224482/?from=readlist>
 + 来源: bilibili
 

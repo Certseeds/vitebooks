@@ -11,9 +11,9 @@ next:
 
 ## 原文来源
 
-+ 原译者：Zharost
++ 原译者: Zharost
 + <https://www.bilibili.com/read/cv15830923/>
-+ 出处：bilibili
++ 出处: bilibili
 
 ------
 

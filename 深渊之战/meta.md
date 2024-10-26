@@ -11,9 +11,9 @@ next:
 
 ## 原文来源
 
-+ 原译者：张拙言
++ 原译者: 张拙言
 + <https://www.bilibili.com/read/cv3390640/>
-+ 出处：bilibili
++ 出处: bilibili
 
 ------
 
