@@ -10,7 +10,7 @@ const findMetaFiles = async (dir, tgz) => {
     for (const file of files) {
         const fullPath = path.join(dir, file);
         const stat = await fsPromises.stat(fullPath);
-        if (stat.isDirectory() && isChinese(file)) {
+        if (stat.isDirectory() && (isChinese(file) || file === 'welldone')) {
             await findMetaFiles(fullPath, tgz);
         } else if (file === 'meta.toml') {
             console.log(dir, fullPath);
