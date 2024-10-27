@@ -45,7 +45,7 @@ chinese_name = "银匠之死"
 english_name = "Death of a Silversmith"
 type = "短篇小说"
 authors = ["Graham McNeill"]
-
+recommended_reading = ["燃烧的银河"]
 
 [[sub]]
 chinese_name = "闪电之塔"

@@ -1,0 +1,8 @@
+[book]
+chinese_name = "普罗斯佩罗之焚"
+english_name = "Prospero Burns"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 15
+authors = ["Dan Abnett"]
+recommended_reading = ["千子"]

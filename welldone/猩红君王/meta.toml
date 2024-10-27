@@ -1,0 +1,8 @@
+[book]
+chinese_name = "猩红君王"
+english_name = "The Crimson King"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 44
+authors = ["Graham McNeill"]
+recommended_reading = ["普罗斯佩罗之焚"]

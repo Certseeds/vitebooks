@@ -4,55 +4,62 @@ english_name = "The Burden of Loyalty"
 type = "短篇小说集"
 series.name = "Horus Heresy"
 series.order = 48
-authors=["Laurie Goulding"]
+authors = ["Laurie Goulding"]
 
 [[sub]]
-chinese_name="第十三只狼"
-english_name="The Thirteenth Wolf"
-type="短篇小说"
-authors=["Gav Thorpe"]
+chinese_name = "第十三只狼"
+english_name = "The Thirteenth Wolf"
+type = "短篇小说"
+authors = ["Gav Thorpe"]
+recommended_reading = ["普罗斯佩罗之焚"]
 
 [[sub]]
-chinese_name="流亡"
-english_name="Into Exile"
-type="短篇小说"
-authors=["Aaron Dembski-Bowden"]
+chinese_name = "流亡"
+english_name = "Into Exile"
+type = "短篇小说"
+authors = ["Aaron Dembski-Bowden"]
+recommended_reading = ["机械教"]
 
 [[sub]]
-chinese_name="憎恶智能"
-english_name="Cybernetica"
-type="中篇小说"
-authors=["Rob Sanders"]
+chinese_name = "憎恶智能"
+english_name = "Cybernetica"
+type = "中篇小说"
+authors = ["Rob Sanders"]
+recommended_reading = ["机械教"]
 
 [[sub]]
-chinese_name="噩兆修会"
-english_name="Ordo Sinister"
-type="短篇小说"
-authors=["John French"]
+chinese_name = "噩兆修会"
+english_name = "Ordo Sinister"
+type = "短篇小说"
+authors = ["John French"]
+recommended_reading = ["人类之主"]
 
 [[sub]]
-chinese_name="法洛斯之心"
-english_name="The Heart of the Paaros"
-type="短篇小说"
-authors=["L. J. Goulding"]
+chinese_name = "法洛斯之心"
+english_name = "The Heart of the Paaros"
+type = "短篇小说"
+authors = ["L. J. Goulding"]
 
 [[sub]]
-chinese_name="狼王"
-english_name="Wolf King"
-type="中篇小说"
-authors=["Chris Wraight"]
-
-[[sub]]
-chinese_name="二元继承"
-english_name="The Binary Succession"
-type="短篇小说"
-authors=["David Annandale"]
-
-[[sub]]
-chinese_name="永生者"
-english_name="Perpetual"
-type="短篇小说"
-authors=["Dan Abnett"]
+chinese_name = "狼王"
+english_name = "Wolf King"
+type = "中篇小说"
+authors = ["Chris Wraight"]
 recommended_reading = [
-    { name = "考斯印记"},
+    "普罗斯佩罗之焚",
+    { enname = "Scars", belongto = { enname = "Scars", series = { name = "Horus Heresy", order = 28 } } },
 ]
+
+[[sub]]
+chinese_name = "二元继承"
+english_name = "The Binary Succession"
+type = "短篇小说"
+authors = ["David Annandale"]
+recommended_reading = ["人类之主"]
+
+[[sub]]
+chinese_name = "永生者"
+english_name = "Perpetual"
+type = "短篇小说"
+authors = ["Dan Abnett"]
+recommended_reading = [{ name = "考斯印记" }]

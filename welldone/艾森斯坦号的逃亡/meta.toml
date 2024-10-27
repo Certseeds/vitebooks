@@ -1,0 +1,8 @@
+[book]
+chinese_name = "艾森斯坦号的逃亡"
+english_name = "The Flight of the Eisenstein"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 4
+authors = ["James Swallow"]
+recommended_reading = ["燃烧的银河"]

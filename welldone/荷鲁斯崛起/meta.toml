@@ -1,0 +1,9 @@
+[book]
+chinese_name = "荷鲁斯崛起"
+english_name = "Horus Rising"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 1
+authors = ["Dan Abnett"]
+recommended_reading = []
+

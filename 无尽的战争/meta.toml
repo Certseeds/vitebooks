@@ -52,6 +52,7 @@ chinese_name = "安全且隐秘之地"
 english_name = "A Safe and Shadowed Place"
 type = "短篇小说"
 authors = ["Guy Haley"]
+recommended_reading = ["群鸦王子"]
 
 [[sub]]
 chinese_name = "布道之旅"
@@ -83,6 +84,9 @@ chinese_name = "恶魔学识"
 english_name = "Daemonology"
 type = "短篇小说"
 authors = ["Chris Wraight"]
+recommended_reading = [
+    { enname = "Scars", belongto = { enname = "Scars", series = { name = "Horus Heresy", order = 28 } } },
+]
 
 [[sub]]
 chinese_name = "扭曲者"

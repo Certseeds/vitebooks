@@ -8,5 +8,6 @@ authors = ["Guy Haley"]
 recommended_reading = [
     "法洛斯之心",
     { name = "安全且隐秘之地", belongto = { name = "无尽的战争", series = { name = "Horus Heresy", order = 33 } } },
-    "不被铭记的帝国",
+    "抗争的桂冠",
+    "圣吉列斯的传令官"
 ]

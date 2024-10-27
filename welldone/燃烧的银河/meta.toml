@@ -1,0 +1,8 @@
+[book]
+chinese_name = "燃烧的银河"
+english_name = "Galaxy in Falmes"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 3
+authors = ["Ben Counter"]
+recommended_reading = ["伪神"]
