@@ -1418,6 +1418,7 @@ dependencies = [
 name = "rustydep"
 version = "0.1.0"
 dependencies = [
+ "clap",
  "getrandom",
  "serde",
  "serde_json",

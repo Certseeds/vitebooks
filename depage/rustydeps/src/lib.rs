@@ -55,8 +55,8 @@ pub fn parse_u8_to_books(chars: Vec<u8>) -> Vec<Book> {
                     println!("Content length: {:?}", content);
                 }
                 match toml::from_str::<Meta>(std::str::from_utf8(&content).unwrap()) {
-                    Err(E) => {
-                        eprintln!("error is {}", E);
+                    Err(e) => {
+                        eprintln!("error is {}", e);
                     }
                     Ok(mut book) => {
                         println!("parse book meta success");
@@ -139,13 +139,13 @@ fn parse_book_dependencies(books: Vec<Book>, search_type: SearchType) -> Vec<Vec
                     results.get_mut(0).unwrap().push(enname_extend);
                     return results;
                 }
-                Some(resultBook) => {
-                    println!("book is {:?}", resultBook);
+                Some(result_book) => {
+                    println!("book is {:?}", result_book);
                     results
                         .get_mut(0)
                         .unwrap()
-                        .push(resultBook.chinese_name.clone());
-                    match resultBook.recommended_reading.clone() {
+                        .push(result_book.chinese_name.clone());
+                    match result_book.recommended_reading.clone() {
                         None => {}
                         Some(recommendeds) => {
                             let mut recs: Vec<Vec<Vec<String>>> = Vec::new();
@@ -176,14 +176,14 @@ fn parse_book_dependencies(books: Vec<Book>, search_type: SearchType) -> Vec<Vec
                     results.get_mut(0).unwrap().push(enname_extend);
                     return results;
                 }
-                Some(resultBook) => {
-                    let cnname_extend = resultBook.clone().chinese_name + "-暂未收录";
+                Some(result_book) => {
+                    let cnname_extend = result_book.clone().chinese_name + "-暂未收录";
                     match search_type.belongto {
                         None => {
                             results.get_mut(0).unwrap().push(cnname_extend);
                             return results;
                         }
-                        Some(belongto) => match &resultBook.series {
+                        Some(belongto) => match &result_book.series {
                             None => {
                                 results.get_mut(0).unwrap().push(cnname_extend);
                                 return results;
@@ -202,8 +202,8 @@ fn parse_book_dependencies(books: Vec<Book>, search_type: SearchType) -> Vec<Vec
                     results
                         .get_mut(0)
                         .unwrap()
-                        .push(resultBook.chinese_name.clone());
-                    match resultBook.recommended_reading.clone() {
+                        .push(result_book.chinese_name.clone());
+                    match result_book.recommended_reading.clone() {
                         None => {}
                         Some(recommenders) => {
                             let mut recs: Vec<Vec<Vec<String>>> = Vec::new();

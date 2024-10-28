@@ -5,6 +5,10 @@ authors = ["Certseeds <Certseeds <51754303+Certseeds@users.noreply.github.com>"]
 edition = "2021"
 rust-version = "1.78.0"
 
+[[bin]]
+name = "toepub"
+path = "src/bin/toepub/main.rs"
+
 [lib]
 name = "rustydep"
 crate-type = ["cdylib"]
@@ -21,6 +25,7 @@ toml = "0.8.19"
 getrandom = { version = "0.2.15", features = ["js"] }
 tar = "0.4.42"
 serde_json = "1.0.131"
+clap = { version = "4.5.20", features = ["derive"] }
 
 [net]
 git-fetch-with-cli = true
