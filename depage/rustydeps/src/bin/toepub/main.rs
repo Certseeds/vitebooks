@@ -47,21 +47,26 @@ fn main() {
 pub fn toepub(meta: Meta, files: Vec<String>) {
     let mut args = Vec::new();
     args.push(String::from("--from=markdown-smart"));
+    args.push(String::from("--to=epub3"));
     if cfg!(target_os = "windows") {
         args.push(String::from("--file-scope=true"));
     } else {
         args.push(String::from("--file-scope"));
     }
-    args.push(format!("-o {}.epub", meta.book.chinese_name.clone()));
+    args.push(format!("--output={}.epub", meta.book.chinese_name.clone()));
     args.extend(files);
     args.push(format!(
         "--metadata=title:{}",
         meta.book.chinese_name.clone()
     ));
-    args.push(format!(
-        "--metadata=author:\"{}\"",
-        meta.book.authors.join(",")
-    ));
+    if cfg!(target_os = "windows") {
+        args.push(format!(
+            "--metadata=author:\"{}\"",
+            meta.book.authors.join(",")
+        ));
+    } else {
+        args.push(format!("--metadata=author:{}", meta.book.authors.join(",")));
+    }
     args.push(String::from("--metadata=language:zh-CN"));
     println!("{:?}", args);
     // Execute the `ls` command (or `dir` on Windows)

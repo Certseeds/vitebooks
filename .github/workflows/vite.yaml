@@ -38,6 +38,10 @@ jobs:
         with:
           toolchain: stable
 
+      - uses: r-lib/actions/setup-pandoc@v2
+        with:
+          pandoc-version: '3.5'
+
       - name: Rust Cache
         uses: Swatinem/rust-cache@v2
         with:
@@ -46,13 +50,14 @@ jobs:
       - name: add wasm32-unknown-unknown target
         run: rustup target add wasm32-unknown-unknown
 
-      - name: build rustydeps-wasm
+      - name: build rustydeps
         working-directory: ./depage/rustydeps
         run: |
           cargo install wasm-pack
           cargo install wasm-bindgen-cli
           cargo build --release
           wasm-pack build --target web --release
+          cp ./target/release/toepub ./../../.vitepress/toepub.exe
           
       - name: Install dependencies
         run: pnpm install
@@ -64,17 +69,22 @@ jobs:
       - name: scan and build meta.zip
         run: pnpm exec node ./.vitepress/maketgz.js
 
-      - name: build
-        run: pnpm run docs:build
-
       - name: build depage
         working-directory: ./depage
         run: pnpm build
 
       - name: cp depage
         run: |
-          mkdir -p ./.vitepress/dist/depage
-          cp -r ./depage/dist/* ./.vitepress/dist/depage/
+          mkdir -p ./public/depage
+          cp -r ./depage/dist/* ./public/depage/
+
+      - name: cp epub
+        run: |
+          mkdir -p ./public/epub
+          cp -r ./depage/epub/* ./public/epub/
+
+      - name: build
+        run: pnpm run docs:build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
