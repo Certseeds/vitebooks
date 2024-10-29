@@ -13,7 +13,7 @@ next:
 
 + 原译者: 张拙言
 + <https://www.bilibili.com/read/cv3390640/>
-+ 出处: bilibili
++ 来源: bilibili
 
 ------
 

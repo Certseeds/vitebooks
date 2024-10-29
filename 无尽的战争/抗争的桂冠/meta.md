@@ -13,8 +13,7 @@ next:
 
 + 原译者: 一杯椰汁加白兰地
 + <https://www.bilibili.com/opus/667107128045994019>
-+ bilibili
-
++ 来源: bilibili
 
 --------
 

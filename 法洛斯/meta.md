@@ -13,7 +13,7 @@ next:
 
 + 原译者: Zharost
 + <https://www.bilibili.com/read/cv15830923/>
-+ 出处: bilibili
++ 来源: bilibili
 
 ------
 
