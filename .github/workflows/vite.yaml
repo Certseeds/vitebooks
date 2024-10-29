@@ -81,7 +81,7 @@ jobs:
       - name: cp epub
         run: |
           mkdir -p ./public/epub
-          cp -r ./depage/epub/* ./public/epub/
+          cp ./*.epub ./public/epub
 
       - name: build
         run: pnpm run docs:build
