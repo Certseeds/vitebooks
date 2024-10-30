@@ -111,18 +111,35 @@ pub fn parse_long_novel(_meta: Meta, path: PathBuf) -> Vec<String> {
     results.push(String::from(path.join("organize.md").to_str().unwrap()));
     results.push(String::from(path.join("meta.md").to_str().unwrap()));
     results.push(String::from(path.join("base.md").to_str().unwrap()));
-    let src_path = path.join("src");
+    let mut src_folders = vec![];
     let mut src_files = vec![];
-    match fs::read_dir(&src_path) {
+    match fs::read_dir(path) {
         Ok(entries) => {
             for entry in entries {
                 match entry {
-                    Ok(entry) => src_files.push(String::from(entry.path().to_str().unwrap())),
                     Err(e) => eprintln!("Error reading entry: {}", e),
+                    Ok(entry) => {
+                        if entry.metadata().unwrap().is_dir() {
+                            src_folders.push(entry.path());
+                        }
+                    }
                 }
             }
         }
         Err(e) => eprintln!("Error reading directory: {}", e),
+    }
+    for src_folder in src_folders {
+        match fs::read_dir(src_folder) {
+            Ok(entries) => {
+                for entry in entries {
+                    match entry {
+                        Ok(entry) => src_files.push(String::from(entry.path().to_str().unwrap())),
+                        Err(e) => eprintln!("Error reading entry: {}", e),
+                    }
+                }
+            }
+            Err(e) => eprintln!("Error reading directory: {}", e),
+        }
     }
     src_files.sort();
     results.extend(src_files);
@@ -157,18 +174,35 @@ pub fn parse_mid_novel(book: Book, path: PathBuf) -> Vec<String> {
     }
     results.push(String::from(path.join("meta.md").to_str().unwrap()));
     results.push(String::from(path.join("base.md").to_str().unwrap()));
-    let src_path = path.join("src");
+    let mut src_folders = vec![];
     let mut src_files = vec![];
-    match fs::read_dir(&src_path) {
+    match fs::read_dir(path) {
         Ok(entries) => {
             for entry in entries {
                 match entry {
-                    Ok(entry) => src_files.push(String::from(entry.path().to_str().unwrap())),
                     Err(e) => eprintln!("Error reading entry: {}", e),
+                    Ok(entry) => {
+                        if entry.metadata().unwrap().is_dir() {
+                            src_folders.push(entry.path());
+                        }
+                    }
                 }
             }
         }
         Err(e) => eprintln!("Error reading directory: {}", e),
+    }
+    for src_folder in src_folders {
+        match fs::read_dir(src_folder) {
+            Ok(entries) => {
+                for entry in entries {
+                    match entry {
+                        Ok(entry) => src_files.push(String::from(entry.path().to_str().unwrap())),
+                        Err(e) => eprintln!("Error reading entry: {}", e),
+                    }
+                }
+            }
+            Err(e) => eprintln!("Error reading directory: {}", e),
+        }
     }
     src_files.sort();
     results.extend(src_files);

@@ -1,3 +1,9 @@
+---
+next:
+  text: 'dependencies'
+  link: '/warhammer40k/dependencies'
+---
+
 # 原体
 
 用于存放原体的名字以及其翻译.

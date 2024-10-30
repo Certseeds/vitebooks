@@ -72,6 +72,9 @@ jobs:
       - name: scan and append names.txt
         run: pnpm exec node ./.vitepress/run-listname.js
 
+      - name: scan and get epub page
+        run: pnpm exec node ./.vitepress/run-epublist.js
+
       - name: build depage
         working-directory: ./depage
         run: pnpm build
