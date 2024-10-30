@@ -1,5 +1,3 @@
-
-
 const path = "/无所畏惧";
 // 生成链接的函数
 const generateLink = function (chapter, part) {

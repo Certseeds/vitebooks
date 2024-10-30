@@ -1,5 +1,3 @@
-
-
 const path = "/忠诚的负担/狼王";
 // 生成链接的函数
 const generateLink = function (chapter) {
