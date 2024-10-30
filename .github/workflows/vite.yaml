@@ -47,6 +47,9 @@ jobs:
         with:
           workspaces: "./depage/rustydeps"
 
+      - name: scan and append names.txt
+        run: pnpm exec node ./.vitepress/run-listname.js
+      
       - name: add wasm32-unknown-unknown target
         run: rustup target add wasm32-unknown-unknown
 
@@ -68,9 +71,6 @@ jobs:
 
       - name: scan and build meta.zip
         run: pnpm exec node ./.vitepress/maketgz.js
-
-      - name: scan and append names.txt
-        run: pnpm exec node ./.vitepress/run-listname.js
 
       - name: scan and get epub page
         run: pnpm exec node ./.vitepress/run-epublist.js
