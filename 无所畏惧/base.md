@@ -51,7 +51,7 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 
 泰利梅克汝斯, 蔑视者无畏
 
-马瑞乌斯 盖奇, 战团长, 第一战团
+马里乌斯 盖奇, 战团长, 第一战团
 
 瑞玛斯 文坦努斯, 连长, 第四连
 
@@ -135,7 +135,7 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 
 艾瑞巴斯, 黑暗使徒
 
-阿格尔 塔, 受祝之子
+安格尔 泰, 受祝之子
 
 艾森博尔 佐特, 受祝之子
 
@@ -214,6 +214,8 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 > 在我们倦怠之时, 早已被我们克服的理念便会卷土重来.
 >
 > ——哲学家尼采, 约第二个千年
+
+--------
 
 > 亡者不会再活;
 >

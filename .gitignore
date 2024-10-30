@@ -458,3 +458,4 @@ $RECYCLE.BIN/
 !go.mod
 .vitepress/dist
 .vitepress/cache
+*.epub
