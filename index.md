@@ -21,7 +21,7 @@ features:
     details: 每一个小节是单独的markdown文件
   - title: 由git进行版本管理
     details: 每一个变更都能被记录下来
-  - title: 一键扫描
-    details: 通过脚本实现关键字扫描
+  - title: 自动化
+    details: 通过脚本实现拆分src, 替换词汇, 添加脚注, 添加链接等功能
 ---
 
