@@ -14,7 +14,7 @@
 |   VIII   |   XVI    |   Konrad Curze    |    康拉德·科兹     |
 |    IX    |    X     |    Sanguinius     |      圣吉列斯      |
 |    X     |    IV    |   Ferrus Manus    |   费鲁斯·马努斯    |
-|    XI    |   XIX    | RECORDS REDACTED  |    ~~数据删除~~    |
+|    XI    |   XIX    | RECORDS REDACTED  |      数据删除      |
 |   XII    |   XVII   |      Angron       |       安格隆       |
 |   XIII   |   VIII   | Roboute Guilliman |   罗伯特·基里曼    |
 |   XIV    |   XIII   |     Mortarion     |      莫塔里安      |
@@ -28,8 +28,8 @@
 <details>
 <summary></summary>
 
-| 军团编号 | 寻回序号 |   原体的英文名   | 原体的中文名 |
-|:--------:|:--------:|:----------------:|:--------:|
-|    II    |   III    | <details><summary></summary>RECORDS REDACTED</details> | <details><summary></summary>~~数据删除~~</details> |
+| 军团编号 | 寻回序号 |                        原体的英文名                        |                    原体的中文名                    |
+|:--------:|:--------:|:----------------------------------------------------------:|:----------------------------------------------:|
+|    II    |   III    | <details><summary></summary>~~RECORDS REDACTED~~</details> | <details><summary></summary>~~数据删除~~</details> |
 
 </details>
