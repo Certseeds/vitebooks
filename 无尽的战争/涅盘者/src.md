@@ -7,7 +7,7 @@ next:
   link: '/无尽的战争/meta'
 ---
 
-# 涅盘者
+# 无尽的战争-涅盘者-正文
 
 ## The Phoenician
 

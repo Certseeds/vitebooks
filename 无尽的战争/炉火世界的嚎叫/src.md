@@ -7,7 +7,7 @@ next:
   link: '/无尽的战争/meta'
 ---
 
-# 炉火世界的嚎叫
+# 无尽的战争-炉火世界的嚎叫-正文
 
 ## HOWL OF THE HEARTHWORLD
 

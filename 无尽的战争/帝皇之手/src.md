@@ -7,7 +7,7 @@ next:
   link: '/无尽的战争/meta'
 ---
 
-# 帝皇之手
+# 无尽的战争-帝皇之手-正文
 
 ## HANDS OF THE EMPEROR
 

@@ -15,7 +15,7 @@ next:
 + <https://www.bilibili.com/read/cv15830923/>
 + 来源: bilibili
 
-------
+--------
 
 本文为荷鲁斯叛乱系列的第34篇小说, 第27篇长篇.
 

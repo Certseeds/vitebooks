@@ -7,7 +7,7 @@ next:
   link: '/无尽的战争/meta'
 ---
 
-# 布道之旅
+# 无尽的战争-布道之旅-正文
 
 ## Sermon of Exodus
 

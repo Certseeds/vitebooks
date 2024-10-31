@@ -7,7 +7,7 @@ next:
  link: '/无尽的战争/meta'
 ---
 
-# 子嗣所长
+# 无尽的战争-子嗣所长-正文
 
 ## Virtues of the sons
 

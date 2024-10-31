@@ -15,7 +15,7 @@ next:
 + <https://www.bilibili.com/read/cv3390640/>
 + 来源: bilibili
 
-------
+--------
 
 本文为荷鲁斯叛乱系列的第8篇小说, 第8篇长篇.
 

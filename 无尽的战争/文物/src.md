@@ -7,7 +7,7 @@ next:
   link: '/无尽的战争/meta'
 ---
 
-# 文物
+# 无尽的战争-文物-正文
 
 ## Artefacts
 

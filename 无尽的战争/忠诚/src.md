@@ -7,7 +7,7 @@ next:
   link: '/无尽的战争/meta'
 ---
 
-# 忠诚
+# 无尽的战争-忠诚-正文
 
 ## Allegiance
 
