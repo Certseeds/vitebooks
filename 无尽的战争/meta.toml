@@ -182,7 +182,7 @@ english_name = "By the Lion's Command"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
 recommended_reading = [
-    { enname = "The Lion", belongto = { enname = "The Primarchs", series = { name = "Horus Heresy", order = 20 } } },
+    { name = "狮王", belongto = { enname = "The Primarchs", series = { name = "Horus Heresy", order = 20 } } },
 ]
 
 [[sub]]

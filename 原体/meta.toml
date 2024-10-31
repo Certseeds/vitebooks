@@ -23,6 +23,9 @@ chinese_name = "雄狮"
 english_name = "The Lion"
 type = "中篇小说"
 authors = ["Gav Thorpe"]
+recommended_reading = [
+    { name = "野蛮武器", belongto = { enname = "Age of Darkness", series = { name = "Horus Heresy", order = 16 } } },
+]
 
 [[sub]]
 chinese_name = "狮王"

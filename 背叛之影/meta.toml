@@ -22,8 +22,7 @@ english_name = "Prince of Crows"
 type = "中篇小说"
 authors = ["Aaron Dembski-Bowden"]
 recommended_reading = [
-    { name = "野蛮武器", series = { name = "Horus Heresy", order = 16 } },
-    { enname = "The Lion", belongto = { enname = "The Primarchs", series = { name = "Horus Heresy", order = 20 } } },
+    { enname = "狮王", belongto = { enname = "The Primarchs", series = { name = "Horus Heresy", order = 20 } } },
 ]
 
 [[sub]]
