@@ -21,7 +21,7 @@ const order = bookModule.order;
 const data = fs.readFileSync(path.resolve(bookModule.resource), 'utf8');
 
 // 将文件内容按行分隔存入数组
-const lines = data.split('\r\n');
+const lines = data.split('\n');
 
 const chapterFunction = bookModule.IsChapterBegin;
 
