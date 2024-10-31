@@ -79,7 +79,7 @@ On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium a
 
 ### 索萨
 
-巴拉巴斯 丹提欧克, 钢铁战士战争铁匠
+巴拉巴斯 丹提欧克, 钢铁勇士战争铁匠
 
 阿库斯, 军士, 极限战士第一百九十九盾卫连
 

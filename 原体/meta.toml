@@ -1,0 +1,37 @@
+[book]
+chinese_name = "原体"
+english_name = "The Primarchs"
+type = "中篇小说集"
+series.name = "Horus Heresy"
+series.order = 20
+authors = ["Christian Dunn"]
+
+[[sub]]
+chinese_name = "破碎倒影"
+english_name = "The Reflection Crack'd"
+type = "中篇小说"
+authors = ["Graham McNeill"]
+
+[[sub]]
+chinese_name = "钢铁之躯"
+english_name = "Feat of Iron"
+type = "中篇小说"
+authors = ["Nick Kyme"]
+
+[[sub]]
+chinese_name = "雄狮"
+english_name = "The Lion"
+type = "中篇小说"
+authors = ["Gav Thorpe"]
+
+[[sub]]
+chinese_name = "狮王"
+english_name = "The Lion 2"
+type = "中篇小说"
+authors = ["Gav Thorpe"]
+
+[[sub]]
+chinese_name = "毒蛇之潜"
+english_name = "The Serpent Beneath"
+type = "中篇小说"
+authors = ["Rob Sanders"]
