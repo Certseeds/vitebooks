@@ -303,7 +303,7 @@ next:
 
 [^无尽的战争-炉世之吼-1]: ThirteenStars Falling
 
-[^无尽的战争-炉世之吼-2]: Einherjar-指太空野狼的星际战士
+[^无尽的战争-炉世之吼-2]: Einherjar, 参考[忠诚的负担-狼王](/忠诚的负担/狼王/base)
 
 [^无尽的战争-炉世之吼-3]: Howlof the Hearthworld
 

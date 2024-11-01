@@ -32,7 +32,7 @@ const replacementSymbol = Object.entries(symbolMap).map(([key, value]) => ({
 console.log(replacementSymbol)
 const replacementNames = bookModule.repalceNameFiles
     .concat("./warhammer40k/names.txt")
-    .concat("./warhammer40k/location.txt")
+    .concat("./warhammer40k/legion.txt")
     .reduce((acc, filePath) => {
         const fileContent = fs.readFileSync(filePath, 'utf8');
         const lines = fileContent.split('\n')

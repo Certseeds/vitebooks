@@ -133,7 +133,7 @@ On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium a
 
 法瑞斯 瑞德罗斯, 指挥官, 恐惧之翼[^不被铭记的帝国-序章-2]
 
-斯坦涅斯, 无敌理性号舰长
+斯坦涅斯, 不屈真理号[^不被铭记的帝国-序章-3]舰长
 
 赛拉琳 菲安娜女士, 导航者, 尼伊奥辛家族
 
@@ -141,7 +141,7 @@ On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium a
 
 达蒙 普瑞坦尼斯, 永生者
 
-乌什皮特卡, 无生者[^不被铭记的帝国-序章-3]
+乌什皮特卡, 无生者[^不被铭记的帝国-序章-4]
 
 圣吉列斯, 第九军团"圣血天使"基因原体
 
@@ -151,7 +151,9 @@ On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium a
 
 [^不被铭记的帝国-序章-2]: 又称死翼, 恐翼, 暗黑天使军团的特殊组织架构, 其余为铁翼, 鸦翼, 飓翼和火翼.
 
-[^不被铭记的帝国-序章-3]: Neverborn 无生者, 参照本吧"小说翻译: 荷鲁斯之爪", dszwhz
+[^不被铭记的帝国-序章-3]: Invincible Reason
+
+[^不被铭记的帝国-序章-4]: Neverborn 无生者, 参照本吧"小说翻译: 荷鲁斯之爪", dszwhz
 
 --------
 
@@ -159,9 +161,13 @@ On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium a
 >
 > ——康诺, 领事记录
 
+--------
+
 > "推演理论可能的能力值得钦佩, 而直面实战可能的能力则是无价的."
 >
 > ——罗伯特基里曼, 私人随笔
+
+--------
 
 > "统御全人类的欲望几乎总是伪装成拯救全人类的野心."
 >
