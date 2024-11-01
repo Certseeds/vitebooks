@@ -9,7 +9,7 @@ next:
 
 # 忠诚的负担-法洛斯之心-序章
 
-作者: L. J. Goulding
+作者: Laurie Goulding
 
 > 狮王到底要求欧泊戴伊隐瞒了什么?
 
