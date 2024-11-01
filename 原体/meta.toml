@@ -19,7 +19,7 @@ type = "中篇小说"
 authors = ["Nick Kyme"]
 
 [[sub]]
-chinese_name = "雄狮"
+chinese_name = "狮王"
 english_name = "The Lion"
 type = "中篇小说"
 authors = ["Gav Thorpe"]
@@ -28,7 +28,7 @@ recommended_reading = [
 ]
 
 [[sub]]
-chinese_name = "狮王"
+chinese_name = "雄狮"
 english_name = "The Lion 2"
 type = "中篇小说"
 authors = ["Gav Thorpe"]
