@@ -27,7 +27,7 @@ const findMetaFiles = async (dir, tgz) => {
 };
 const toepub = async (dir) => {
     const files = await fsPromises.readdir(dir);
-    const firstArg = args[0]; // 获取第一个命令行参数
+    const firstArg = args[0];
     for (const file of files) {
         const fullPath = path.join(dir, file);
         const stat = await fsPromises.stat(fullPath);

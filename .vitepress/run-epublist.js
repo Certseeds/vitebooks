@@ -39,11 +39,12 @@ prev:
 ---`;
     const lines =
         head.split("\n")
+            .filter(x => x.length > 0)
             .concat(["", "# epub列表"])
             .concat([""])
             .concat(names.map(x => {
                 const [name, run_number, build_day] = x.split('-'); // 解构字符串
-                `+ [${name}](/epub/${x}.epub)`
+                return `+ [${name}](/epub/${x})`;
             }))
             .concat([""]);
     return lines.join('\n');
@@ -55,5 +56,5 @@ const bookNames = processDirectory(targetDir);
 console.log(bookNames);
 const epubPage = path.join(targetDir, 'warhammer40k', 'epub.md');
 const epubContent = processContent(bookNames);
+console.log(epubContent);
 fs.appendFileSync(epubPage, epubContent, 'utf-8');
-
