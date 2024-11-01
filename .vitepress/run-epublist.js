@@ -20,8 +20,9 @@ const processDirectory = function (dir) {
     let results = [];
     for (const entry of entries) {
         console.log(entry.name);
-        if (entry.isDirectory() && isChinese(entry.name)) {
-            const namesPath = path.join(dir, entry.name, 'meta.toml');
+        if (entry.isFile && entry.name.endsWith('epub')) {
+            const [book_name, run_number, build_day] = entry.name.split('-'); // 解构字符串
+            const namesPath = path.join(dir, book_name, 'meta.toml');
             if (fs.existsSync(namesPath)) {
                 results.push(entry.name);
             }
@@ -38,10 +39,12 @@ prev:
 ---`;
     const lines =
         head.split("\n")
-            .filter(x => x.length > 0)
             .concat(["", "# epub列表"])
             .concat([""])
-            .concat(names.map(x => `+ [${x}](/epub/${x}.epub)`))
+            .concat(names.map(x => {
+                const [name, run_number, build_day] = x.split('-'); // 解构字符串
+                `+ [${name}](/epub/${x}.epub)`
+            }))
             .concat([""]);
     return lines.join('\n');
 }

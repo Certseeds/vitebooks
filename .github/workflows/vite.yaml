@@ -42,6 +42,9 @@ jobs:
         with:
           pandoc-version: '3.5'
 
+      - name: Use github.run_number
+        run: |
+
       - name: Rust Cache
         uses: Swatinem/rust-cache@v2
         with:
@@ -69,8 +72,12 @@ jobs:
         working-directory: ./depage
         run: pnpm install
 
-      - name: scan and build meta.zip
-        run: pnpm exec node ./.vitepress/maketgz.js
+      - name: scan and build meta.tgz, epubs
+        env:
+          RUN_NUMBER: ${{ github.run_number }}
+        run: |
+          echo 'Run number: $RUN_NUMBER'
+          pnpm exec node ./.vitepress/maketgz.js $RUN_NUMBER
 
       - name: scan and get epub page
         run: pnpm exec node ./.vitepress/run-epublist.js

@@ -1,7 +1,8 @@
 pub mod structs;
-pub use crate::structs::meta::Meta;
 
 use crate::structs::book::Book;
+use crate::structs::meta::Meta;
+use chrono::NaiveDate;
 use clap::Parser;
 use std::fs;
 use std::fs::File;
@@ -19,6 +20,9 @@ struct Cli {
     /// use which method
     #[arg(short, long)]
     path: Option<String>,
+
+    #[arg(short, long)]
+    run_number: Option<i32>,
 }
 const LONG_NOVEL: &str = "长篇小说";
 const NOVEL_LIST: &str = "小说集";
@@ -28,6 +32,7 @@ const SHORT_NOVEL: &str = "短篇小说";
 fn main() {
     let cli = Cli::parse();
     let path = cli.path.unwrap_or_else(|| String::from("."));
+    let run_number = cli.run_number;
     let exist_path = match check_path(path) {
         Some(meta) => meta,
         None => {
@@ -42,9 +47,9 @@ fn main() {
         }
     };
     let files = meta_to_deal(meta.clone(), exist_path);
-    toepub(meta.clone(), files);
+    toepub(meta.clone(), files, run_number);
 }
-pub fn toepub(meta: Meta, files: Vec<String>) {
+pub fn toepub(meta: Meta, files: Vec<String>, run_number: Option<i32>) {
     let mut args = Vec::new();
     args.push(String::from("--from=markdown-smart"));
     args.push(String::from("--to=epub3"));
@@ -53,7 +58,17 @@ pub fn toepub(meta: Meta, files: Vec<String>) {
     } else {
         args.push(String::from("--file-scope"));
     }
-    args.push(format!("--output={}.epub", meta.book.chinese_name.clone()));
+    let today = chrono::Local::now().format("%Y%m%d").to_string();
+    let run_number = match run_number {
+        Some(num) => format!("{:04}", num),
+        None => "0000".to_string(),
+    };
+    args.push(format!(
+        "--output={}-{}-{}.epub",
+        meta.book.chinese_name.clone(),
+        run_number,
+        today
+    ));
     args.extend(files);
     args.push(format!(
         "--metadata=title:{}",

@@ -6,6 +6,9 @@ const { exec } = require('child_process');
 
 const isChinese = (str) => /[\u4e00-\u9fa5]/.test(str);
 
+const args = process.argv.slice(2);
+console.log(args);
+
 const findMetaFiles = async (dir, tgz) => {
     const files = await fsPromises.readdir(dir);
     for (const file of files) {
@@ -24,13 +27,14 @@ const findMetaFiles = async (dir, tgz) => {
 };
 const toepub = async (dir) => {
     const files = await fsPromises.readdir(dir);
+    const firstArg = args[0]; // 获取第一个命令行参数
     for (const file of files) {
         const fullPath = path.join(dir, file);
         const stat = await fsPromises.stat(fullPath);
         if (stat.isDirectory() && isChinese(file)) {
             console.log(`this is fullPath ${fullPath}`);
             const exePath = path.resolve(__dirname, 'toepub.exe');
-            exec(`${exePath} --path=./${fullPath}`, (error, stdout, stderr) => {
+            exec(`${exePath} --path=./${fullPath} --run-number=${firstArg}`, (error, stdout, stderr) => {
                 if (error) {
                     console.error(`Error executing toepub.exe: ${error.message}`);
                     return;
