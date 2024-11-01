@@ -1,4 +1,5 @@
 pub mod structs;
+
 pub use crate::structs::belong_type;
 pub use crate::structs::book::Book;
 pub use crate::structs::deps::Deps;
@@ -33,6 +34,29 @@ pub fn outer_function_from_cn(content: &[u8], chinese_name: String) -> String {
     );
     let response = serde_json::to_string(&result);
     response.unwrap()
+}
+
+#[wasm_bindgen]
+pub fn get_authors(content: &[u8]) -> String {
+    let books = parse_u8_to_books(Vec::from(content));
+    let result = author::authors(books);
+    let response = serde_json::to_string(&result);
+    response.unwrap()
+}
+
+mod author {
+    use crate::Book;
+    use std::collections::HashSet;
+
+    pub fn authors(books: Vec<Book>) -> Vec<String> {
+        let mut authors: HashSet<String> = HashSet::new();
+        for book in books {
+            for author in book.authors {
+                authors.insert(author);
+            }
+        }
+        authors.into_iter().collect()
+    }
 }
 
 pub fn parse_u8_to_books(chars: Vec<u8>) -> Vec<Book> {
