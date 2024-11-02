@@ -1,0 +1,67 @@
+[book]
+chinese_name = "黑暗时代"
+english_name = "Age of Darkness"
+type = "短篇小说集"
+series.name = "Horus Heresy"
+series.order = 16
+authors = ["Christian Dunn"]
+
+[[sub]]
+chinese_name = "交战规则"
+english_name = "Rules of Engagement"
+type = "短篇小说"
+authors = ["Graham McNeill"]
+recommended_reading = ["无所畏惧"]
+
+[[sub]]
+chinese_name = "骗子的下场"
+english_name = "Liar's Due"
+type = "短篇小说"
+authors = ["James Swallow"]
+recommended_reading = ["无所畏惧", "惧于踏足"]
+
+[[sub]]
+chinese_name = "被遗忘的子嗣"
+english_name = "Forgotten Sons "
+type = "短篇小说"
+authors = ["Nick Kyme"]
+recommended_reading = ["福格瑞姆"]
+
+[[sub]]
+chinese_name = "最后的记述者"
+english_name = "The Last Remembrancer"
+type = "短篇小说"
+authors = ["John French"]
+recommended_reading = ["艾森斯坦号的逃亡"]
+
+[[sub]]
+chinese_name = "重生"
+english_name = "Rebirth"
+type = "短篇小说"
+authors = ["Chris Wraight"]
+recommended_reading = ["普罗斯佩罗之焚"]
+
+[[sub]]
+chinese_name = "背叛之貌"
+english_name = "The Face of Treachery "
+type = "短篇小说"
+authors = ["Gav Thorpe"]
+
+[[sub]]
+chinese_name = "小荷鲁斯"
+english_name = "Little Horus"
+type = "短篇小说"
+authors = ["Dan Abnett"]
+
+[[sub]]
+chinese_name = "钢铁本质"
+english_name = "Iron Within"
+type = "短篇小说"
+authors = ["Rob Sanders"]
+
+[[sub]]
+chinese_name = "野蛮武器"
+english_name = "Savage Weapons"
+type = "中篇小说"
+authors = ["Aaron Dembski-Bowden"]
+recommended_reading = ["堕天使"]

@@ -17,6 +17,8 @@ next:
 
 On The Cover: The latest instalment in the best-seling Horus Heresy Series
 
+## 荷鲁斯叛乱
+
 这是一段传奇的岁月.
 
 群雄并起逐鹿银河, 只为攫取君临天下的权柄. 地球之主麾下的螭虎之师在大远征中席卷星海——无数外星种族被帝皇的精锐战士击溃, 从历史烟云中彻底抹去.
