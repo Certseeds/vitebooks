@@ -9,6 +9,6 @@ recommended_reading = [
     "惧于踏足",
     { name = "考斯印记"},
     { enname = "The Crimson Fist", belongto = { name = "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
-    { enname = "The Iron Within", belongto = { enname = "Age of Darkness", series = { name = "Horus Heresy", order = 16 } } },
+    { enname = "Iron Within", belongto = { enname = "Age of Darkness", series = { name = "Horus Heresy", order = 16 } } },
     "伏尔甘永存",
 ]
