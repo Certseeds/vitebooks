@@ -2,7 +2,6 @@ pub mod structs;
 
 use crate::structs::book::Book;
 use crate::structs::meta::Meta;
-use chrono::NaiveDate;
 use clap::Parser;
 use std::fs;
 use std::fs::File;
