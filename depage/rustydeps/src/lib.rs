@@ -1,5 +1,6 @@
+pub mod metas;
 pub mod structs;
-
+pub use crate::metas::meta;
 pub use crate::structs::belong_type;
 pub use crate::structs::book::Book;
 pub use crate::structs::deps::Deps;
@@ -17,8 +18,8 @@ extern "C" {
 }
 
 #[wasm_bindgen]
-pub fn greet(name: &str) {
-    alert(&format!("Hello, {}!", name));
+pub fn greet() {
+    alert(&format!("Hello, {}!", meta::output_string()));
 }
 
 #[wasm_bindgen]
@@ -249,10 +250,10 @@ fn parse_book_dependencies(books: Vec<Book>, search_type: SearchType) -> Vec<Vec
 }
 #[cfg(test)]
 mod tests {
+    pub use crate::metas::meta;
     use crate::outer_function_from_cn;
     use std::fs::File;
     use std::io::{self, Read};
-
     fn read_file_to_u8(path: &str) -> io::Result<Vec<u8>> {
         let mut file = File::open(path)?;
         let mut buffer = Vec::new();
@@ -261,6 +262,7 @@ mod tests {
     }
     #[test]
     fn test_method() {
+        println!("{}", meta::output_string());
         assert_eq!(1, 1);
         match read_file_to_u8("./meta.tar") {
             Err(E) => {

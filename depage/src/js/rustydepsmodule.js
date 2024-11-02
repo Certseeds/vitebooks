@@ -8,7 +8,7 @@ export const initRustDep = async () => {
         const bytes = await response.arrayBuffer();
         const initOutput = rustydep.initSync({ module: bytes });
         console.log(initOutput);
-        rustydep.greet("hello-world 2");
+        rustydep.greet();
         return 'Rust Wasm Dep Initialized Successfully';
     } catch (error) {
         console.error('Error initializing RustDep:', error);
