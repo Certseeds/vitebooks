@@ -691,7 +691,7 @@ next:
 
 [^无尽的战争-帝皇之手-9]: Abhorsiax
 
-[^无尽的战争-帝皇之手-10]:  Old Aethiopia
+[^无尽的战争-帝皇之手-10]: Old Aethiopia
 
 [^无尽的战争-帝皇之手-11]: the Danakil mineral conglomerates
 
@@ -717,7 +717,7 @@ next:
 
 [^无尽的战争-帝皇之手-22]: Caesarion
 
-[^无尽的战争-帝皇之手-23]:  Gesh
+[^无尽的战争-帝皇之手-23]: Gesh
 
 [^无尽的战争-帝皇之手-24]: 但他们都在尝试进入东部外堡上的 Cantica-Consentrica内时进行身份比对时失败了.
 
@@ -745,7 +745,7 @@ next:
 
 [^无尽的战争-帝皇之手-36]: Lady Krole
 
-[^无尽的战争-帝皇之手-37]:  Confidente-Tranquil
+[^无尽的战争-帝皇之手-37]: Confidente-Tranquil
 
 [^无尽的战争-帝皇之手-38]: the Raptor Guard
 

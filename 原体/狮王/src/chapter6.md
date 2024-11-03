@@ -233,7 +233,7 @@ next:
 
 [^3]: Thramas
 
-[^4]:  frigate Intervention
+[^4]: frigate Intervention
 
 [^5]: Masurbael
 
@@ -277,7 +277,7 @@ next:
 
 [^25]: Sarrin
 
-[^26]:  Terminus--Est
+[^26]: Terminus--Est
 
 [^27]: Father
 

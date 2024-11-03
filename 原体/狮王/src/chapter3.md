@@ -177,7 +177,7 @@ next:
 
 [^7]: Eclipse-class light cruiser
 
-[^8]:  Avenging Shadow
+[^8]: Avenging Shadow
 
 [^9]: 哇普
 
