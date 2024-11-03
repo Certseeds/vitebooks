@@ -11,7 +11,13 @@ next:
 
 ## 原文来源
 
-+ 原译者: `fatman-_-`
++ 原译者: 胖子
++ <https://tieba.baidu.com/p/6039589676>
++ 来源: tieba
+
+--------
+
++ 整理者: `fatman-_-`
 + <https://www.bilibili.com/read/cv2155270/>, <https://www.bilibili.com/read/cv2155286>
 + 来源：bilibili
 
