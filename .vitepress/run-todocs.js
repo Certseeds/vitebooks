@@ -35,7 +35,7 @@ const createIterator = function* (order) {
 let iterator1 = createIterator(order); // pay attention, clear the empty line before the first chapter
 let chapterInfo;
 for (let line of lines) {
-    let trimmedLine = line.trim();
+    const trimmedLine = line.trim();
     if (chapterFunction(trimmedLine)) {
         chapterInfo = iterator1.next().value;
         console.log(trimmedLine);

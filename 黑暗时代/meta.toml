@@ -9,7 +9,7 @@ authors = ["Christian Dunn"]
 [[sub]]
 chinese_name = "交战规则"
 english_name = "Rules of Engagement"
-type = "短篇小说"
+type = "中篇小说"
 authors = ["Graham McNeill"]
 recommended_reading = ["无所畏惧"]
 
