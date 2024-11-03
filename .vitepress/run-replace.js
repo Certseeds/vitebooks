@@ -81,10 +81,10 @@ const thirdReplacement = (text) => {
                     result += line[i];
                 }
             }
-            if (doubleQuotes(line) %2 == 1) {
+            if (doubleQuotes(line) % 2 == 1) {
                 result += ' [ERROR] QUOTA NUMBER NOT MATCH';
             }
-            if (singleQuotes(line) %2 == 1) {
+            if (singleQuotes(line) % 2 == 1) {
                 result += ' [ERROR] QUOTA NUMBER NOT MATCH';
             }
             return result;
@@ -123,7 +123,6 @@ const fifthReplacement = (text) => {
             if (line.trim().length === 0) {
                 return result;
             }
-            const doubleQuotes = (line) => line.split('').reduce((count, char) => char === '"' ? count + 1 : count, 0);
             for (let i = 0, numbers = 0; i < line.length; i++) {
                 if (line[i] === '"') {
                     numbers++;
@@ -147,14 +146,34 @@ const seventhReplacement = (text) => {
     let lines = text.split('\n');
     return lines.join('\n\n');
 }
-const eightReplacement =  (text) =>{
+const eightReplacement = (text) => {
     let lines = text.split('\n');
     while (lines.length > 0 && lines[lines.length - 1].trim() === '') {
         lines.pop();
     }
     return lines.join('\n');
 }
-
+const ninthReplacement = (text) => {
+    let lines = text.split('\n');
+    let resultLines = lines
+        //.map(line => line.trim())
+        .map(line => {
+            if (line.trim().length === 0) {
+                return '';
+            }
+            let result = line[0];
+            for (let i = 1; i < line.length; i++) {
+                if (line[i - 1] === ':' && line[i] !== ' ') {
+                    result += (' ' + line[i]);
+                } else {
+                    result += line[i];
+                }
+            }
+            const result2 = result.replace(/\: {2,}/g, ': ');
+            return result2;
+        });
+    return resultLines.join('\n');
+};
 todoFiles.forEach(filePath => {
     fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) {
@@ -183,7 +202,8 @@ todoFiles.forEach(filePath => {
         modifiedContent = sixthReplacement(modifiedContent);
         //modifiedContent = seventhReplacement(modifiedContent);
         modifiedContent = eightReplacement(modifiedContent);
-        modifiedContent +='\n';
+        modifiedContent = ninthReplacement(modifiedContent);
+        modifiedContent += '\n';
         {
             const regex = new RegExp(' \n', 'g');
             modifiedContent = modifiedContent.replace(regex, '\n');
