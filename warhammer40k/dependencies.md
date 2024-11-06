@@ -19,7 +19,7 @@ chinese_name = "无所畏惧"
 english_name = "Know No Fear"
 type = "长篇小说"
 series.name = "Horus Heresy"
-series.order = 14
+series.order = 19
 authors = ["Dan Abnett"]
 recommended_reading = [
     "深渊之战",
