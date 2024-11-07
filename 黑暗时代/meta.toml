@@ -46,6 +46,9 @@ chinese_name = "背叛之貌"
 english_name = "The Face of Treachery "
 type = "短篇小说"
 authors = ["Gav Thorpe"]
+recommended_reading = [
+    { name = "渡鸦的航行", belongto = { name = "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
+]
 
 [[sub]]
 chinese_name = "小荷鲁斯"
