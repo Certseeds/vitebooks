@@ -12,17 +12,23 @@ english_name = "The Crimson Fist"
 type = "中篇小说"
 authors = ["John French"]
 recommended_reading = [
-    { name = "闪电之塔", belongto = { name= "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
+    { name = "闪电之塔", belongto = { name = "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
     "艾森斯坦号的逃亡",
 ]
 
 [[sub]]
-chinese_name = "群鸦王子"
-english_name = "Prince of Crows"
-type = "中篇小说"
-authors = ["Aaron Dembski-Bowden"]
+chinese_name = "黑暗之王"
+english_name = "The Dark King"
+type = "短篇小说"
+authors = ["Graham McNeill"]
+
+[[sub]]
+chinese_name = "闪电之塔"
+english_name = "The Lightning Tower"
+type = "短篇小说"
+authors = ["Dan Abnett"]
 recommended_reading = [
-    { name = "狮王", belongto = { enname = "The Primarchs", series = { name = "Horus Heresy", order = 20 } } },
+    { name = "黑暗之王", belongto = { name = "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
 ]
 
 [[sub]]
@@ -30,7 +36,6 @@ chinese_name = "卡板计划"
 english_name = "The Kaban Project"
 type = "短篇小说"
 authors = ["Graham McNeill"]
-
 
 [[sub]]
 chinese_name = "渡鸦的航行"
@@ -47,16 +52,10 @@ authors = ["Graham McNeill"]
 recommended_reading = ["燃烧的银河"]
 
 [[sub]]
-chinese_name = "闪电之塔"
-english_name = "The Lightning Tower"
-type = "短篇小说"
-authors = ["Dan Abnett"]
+chinese_name = "群鸦王子"
+english_name = "Prince of Crows"
+type = "中篇小说"
+authors = ["Aaron Dembski-Bowden"]
 recommended_reading = [
-    { name = "黑暗之王", belongto = { name= "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
+    { name = "狮王", belongto = { enname = "The Primarchs", series = { name = "Horus Heresy", order = 20 } } },
 ]
-
-[[sub]]
-chinese_name = "黑暗之王"
-english_name = "The Dark King"
-type = "短篇小说"
-authors = ["Graham McNeill"]
