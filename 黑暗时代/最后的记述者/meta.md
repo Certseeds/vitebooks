@@ -13,7 +13,7 @@ next:
 
 + 原译者: 雪漫江澜
 + <https://www.bilibili.com/read/cv16136974/>
-+ 来源：bilibili
++ 来源: bilibili
 
 --------
 

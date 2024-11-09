@@ -13,7 +13,7 @@ next:
 
 + 原译者: 机兵苍熊式
 + <https://www.bilibili.com/read/cv18370643>
-+ 来源：bilibili
++ 来源: bilibili
 
 --------
 
