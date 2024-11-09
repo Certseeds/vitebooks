@@ -30,7 +30,7 @@ pub fn outer_function_from_cn(content: &[u8], chinese_name: String) -> String {
         SearchType {
             name: Some(chinese_name),
             enname: None,
-            belongto: None,
+            series: None,
         },
     );
     let response = serde_json::to_string(&result);
@@ -203,22 +203,20 @@ fn parse_book_dependencies(books: Vec<Book>, search_type: SearchType) -> Vec<Vec
                 }
                 Some(result_book) => {
                     let cnname_extend = result_book.clone().chinese_name + "-暂未收录";
-                    match search_type.belongto {
+                    match search_type.series {
                         None => {
                             results.get_mut(0).unwrap().push(cnname_extend);
                             return results;
                         }
-                        Some(belongto) => match &result_book.series {
+                        Some(series_out) => match &result_book.series {
                             None => {
                                 results.get_mut(0).unwrap().push(cnname_extend);
                                 return results;
                             }
                             Some(series) => {
-                                if let Some(series_in) = belongto.series {
-                                    if series_in.hashcode() != series.hashcode() {
-                                        results.get_mut(0).unwrap().push(cnname_extend);
-                                        return results;
-                                    }
+                                if series_out.hashcode() != series.hashcode() {
+                                    results.get_mut(0).unwrap().push(cnname_extend);
+                                    return results;
                                 }
                             }
                         },
@@ -265,11 +263,11 @@ mod tests {
         println!("{}", meta::output_string());
         assert_eq!(1, 1);
         match read_file_to_u8("./meta.tar") {
-            Err(E) => {
-                eprintln!("output error {}", E);
+            Err(e) => {
+                eprintln!("output error {}", e);
             }
             Ok(vec) => {
-                let result = outer_function_from_cn(vec.as_slice(), String::from("无所畏惧"));
+                let result = outer_function_from_cn(vec.as_slice(), String::from("法洛斯"));
                 println!("{:?}", result)
             }
         }

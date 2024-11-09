@@ -60,7 +60,7 @@ english_name = "Sermon of Exodus"
 type = "短篇小说"
 authors = ["David Annandale"]
 recommended_reading = [
-    { name = "毕索斯的诅咒", belongto = { enname = "The Damnation of Pythos", series = { name = "Horus Heresy", order = 30 } } },
+    { name = "毕索斯的诅咒", enname = "The Damnation of Pythos", series = { name = "Horus Heresy", order = 30 } },
 ]
 
 
@@ -76,7 +76,7 @@ english_name = "Allegiance"
 type = "短篇小说"
 authors = ["Chris Wraight"]
 recommended_reading = [
-    { enname = "Scars", belongto = { enname = "Scars", series = { name = "Horus Heresy", order = 28 } } },
+    { enname = "Scars", series = { name = "Horus Heresy", order = 28 } },
 ]
 
 [[sub]]
@@ -85,7 +85,7 @@ english_name = "Daemonology"
 type = "短篇小说"
 authors = ["Chris Wraight"]
 recommended_reading = [
-    { enname = "Scars", belongto = { enname = "Scars", series = { name = "Horus Heresy", order = 28 } } },
+    { enname = "Scars", series = { name = "Horus Heresy", order = 28 } },
 ]
 
 [[sub]]

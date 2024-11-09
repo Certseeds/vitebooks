@@ -12,7 +12,7 @@ english_name = "The Crimson Fist"
 type = "中篇小说"
 authors = ["John French"]
 recommended_reading = [
-    { name = "闪电之塔", series = { name = "Horus Heresy", order = 22 } },
+    { name = "闪电之塔", belongto = { name= "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
     "艾森斯坦号的逃亡",
 ]
 
@@ -52,7 +52,7 @@ english_name = "The Lightning Tower"
 type = "短篇小说"
 authors = ["Dan Abnett"]
 recommended_reading = [
-    { name = "黑暗之王", series = { name = "Horus Heresy", order = 22 } },
+    { name = "黑暗之王", belongto = { name= "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
 ]
 
 [[sub]]

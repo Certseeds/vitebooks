@@ -47,7 +47,7 @@ type = "中篇小说"
 authors = ["Chris Wraight"]
 recommended_reading = [
     "普罗斯佩罗之焚",
-    { enname = "Scars", belongto = { enname = "Scars", series = { name = "Horus Heresy", order = 28 } } },
+    { enname = "Scars", series = { name = "Horus Heresy", order = 28 } },
 ]
 
 [[sub]]

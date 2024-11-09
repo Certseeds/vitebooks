@@ -1,7 +1,7 @@
-use crate::structs::belong_type::BelongType;
+use crate::Series;
 
 pub struct SearchType {
     pub name: Option<String>,
     pub enname: Option<String>,
-    pub belongto: Option<BelongType>,
+    pub series: Option<Series>,
 }
