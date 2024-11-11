@@ -36,11 +36,13 @@ let iterator1 = createIterator(order); // pay attention, clear the empty line be
 let chapterInfo;
 for (let line of lines) {
     const trimmedLine = line.trim();
+    console.log(trimmedLine)
     if (chapterFunction(trimmedLine)) {
         chapterInfo = iterator1.next().value;
         console.log(trimmedLine);
         console.log(chapterInfo);
         contentMap[chapterInfo - 1].push(bookModule.head(chapterInfo));
+        contentMap[chapterInfo - 1].push("\n" + "## " + trimmedLine);
     } else {
         contentMap[chapterInfo - 1].push(trimmedLine);
     }
