@@ -42,7 +42,7 @@ On the Cover:
 
 + [TODO-破碎倒影]
 + [TODO-钢铁之躯]
-+ [狮王](/原体/狮王/meta) & [TODO-雄狮]
++ [狮王](/原体/狮王/meta) & [雄狮](/原体/雄狮/meta)
 + [TODO-毒蛇之潜]
 
 [^1]: 经过<https://wh40k.lexicanum.com/wiki/The_Primarchs_(Anthology)>确认.
