@@ -1,5 +1,5 @@
 {
-  "name": "vproj",
+  "name": "depage",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -16,5 +16,6 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.4",
     "vite": "^5.4.10"
-  }
+  },
+  "license": "AGPL-3.0-or-later"
 }
