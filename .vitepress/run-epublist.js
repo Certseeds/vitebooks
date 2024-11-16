@@ -13,7 +13,6 @@ const findDirWithCNAME = function (startDir) {
     }
     return null;
 }
-const isChinese = (str) => /[\u4e00-\u9fa5]/.test(str);
 const processDirectory = function (dir) {
     console.log(dir);
     const entries = fs.readdirSync(dir, { withFileTypes: true });
