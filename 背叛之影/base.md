@@ -48,10 +48,10 @@ On the Cover: The New York Times bestselling series. Featuring stories by Dan Ab
 
 按原文顺序排列.
 
-+ [绯红之拳](/背叛之影/绯红之拳/meta)
++ [中篇-绯红之拳](/背叛之影/绯红之拳/meta)
 + [黑暗之王](/背叛之影/黑暗之王/meta)
 + [闪电之塔](/背叛之影/闪电之塔/meta)
 + [卡板计划](/背叛之影/卡板计划/meta)
 + [渡鸦的航行](/背叛之影/渡鸦的航行/meta)
 + [银匠之死](/背叛之影/银匠之死/meta)
-+ [群鸦王子](/背叛之影/群鸦王子/meta)
++ [中篇-群鸦王子](/背叛之影/群鸦王子/meta)

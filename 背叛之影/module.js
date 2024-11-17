@@ -8,8 +8,7 @@ const repalceFiles = [
     `.${path}/银匠之死/src.md`,
     `.${path}/黑暗之王/src.md`,
     `.${path}/闪电之塔/src.md`,
-
-    // `.${path}/卡板计划/src.md`,
+    `.${path}/卡板计划/src.md`,
 ];
 const repalceNameFiles = [`.${path}/names.txt`,];
 
