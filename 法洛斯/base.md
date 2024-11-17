@@ -49,7 +49,7 @@ On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Impe
 
 罗伯特 基里曼, 奥特拉玛之主, 复仇之子, 第十三军团的基因原体.
 
-瓦伦图斯 多尔洛, 奥特拉玛四英杰(奥克鲁达), 原体的冠军(Champion).
+瓦伦图斯 多洛尔, 奥特拉玛四英杰(奥克鲁达), 原体的冠军(Champion).
 
 泰图斯 普瑞托, 百人议众(Presiding Centuria)之主, 智库
 
@@ -117,6 +117,8 @@ On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Impe
 
 马瑟里斯, 舵手
 
+维鲁斯·卡斯宾, 战团长, 第一战团
+
 [^法洛斯-序章-2]: 智库的正式职级从低到高分别是编修员(Lexicanium/Lexicani), 典记长(Codicier), 星语官(Epistolary), 首席智库(Chief Librarian).
 
 [^法洛斯-序章-3]: 中士, 军士的翻译两者兼有, 在本文档中统一为中士.
@@ -135,7 +137,7 @@ On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Impe
 
 加瓦尔, 战斗兄弟
 
-凯伦德瓦, 刽子手
+凯伦德瓦, 凯伦基尔的弟弟, 刽子手
 
 桑达梅尔, (至尊恐惧大师)
 
@@ -148,6 +150,8 @@ On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Impe
 古战士卡拉康, 尊贵的蔑视者无畏
 
 本森 格什, 利爪统领, 第17连
+
+凯伦基尔, 凯伦德瓦的哥哥, 战斗兄弟
 
 ### 灯塔守护者
 
@@ -190,6 +194,8 @@ Kolom 博拉里昂, 中士, 索萨第一辅助军
 德米松
 
 克拉维斯
+
+克瑞特, 战地医生
 
 以及其他被遗忘的英雄(forgotten heroes)以及失落的灵魂(lost souls), 正如法洛斯灯塔的变幻所允许的那样(the vagaries of the Pharos permit)
 
