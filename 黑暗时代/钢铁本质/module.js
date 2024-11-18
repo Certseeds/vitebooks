@@ -6,11 +6,6 @@ const repalceNameFiles = [`.${path}/names.txt`,];
 
 
 module.exports = {
-    generateLink: generateLink,
-    order: order,
-    prelink: prelink,
-    pattern: pattern,
-
     replaceDirs: replaceDirs,
     repalceFiles: repalceFiles,
     repalceNameFiles: repalceNameFiles

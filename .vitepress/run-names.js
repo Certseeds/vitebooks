@@ -25,7 +25,7 @@ console.log(todoFiles)
 
 // 定义要读取的文件路径模式
 
-const names = [];
+const names = new Map();
 
 const level1 = async (todoFiles) => {
     for (let todoFile of todoFiles) {
@@ -64,34 +64,41 @@ const level2 = async (line) => {
         const data = await response.json();
         const llm_names = data['response']
             ?.replace(/的/g, '\n')
+            ?.replace(/·/g, '\n')
+            ?.replace(/-/g, '\n')
             ?.split('\n')
             ?.map(x => x.trim())
             ?.filter(x => x.length > 0)
             ?.filter(x => line.includes(x))
             ?.filter(x => !blackLists.includes(x))
             ?.filter(x => !x.includes('WU-REN-MING')) ?? [];
-        names.push(...llm_names);
         console.log(llm_names);
         if (llm_names.length == 0) {
             console.log(line);
         }
+        llm_names.forEach(llm_name => {
+            const count = names.has(llm_name) ? names.get(llm_name).count + 1 : 1;
+            names.set(llm_name, { name: llm_name, count: count });
+        });
     } catch (error) {
         console.error('Error during fetch:', error);
     }
 }
 
 const level0 = async (names) => {
-    // 所有 fetch 操作完成后执行的操作
     await level1(todoFiles);
     const output = path.resolve(input["path"], 'allnames.txt');
-    names.sort();
+    const sortedNames = Array.from(names.values()).sort((a, b) => {
+        return a.name.localeCompare(b.name);
+    });
+    const uniqueNames = sortedNames.map(item => {
+        return `${item.name} ${item.count}`;
+    });
     // unique names
-    const uniqueNames = [...new Set(names)];
     console.log(output)
     fs.writeFileSync(output, uniqueNames.join('\n'));
 }
 
 (async () => {
     await level0(names);
-    // 其余代码...
 })();

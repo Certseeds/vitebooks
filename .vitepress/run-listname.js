@@ -62,4 +62,8 @@ const commonNamesContent = fs.readFileSync(commonNames, 'utf-8');
 const commonNamesProcessed = processTxtContent(commonNamesContent, `## 军团常见词汇替换列表`);
 fs.appendFileSync(path.join(targetDir, 'warhammer40k', 'primarchs.md'), commonNamesProcessed, 'utf-8');
 
+const MechanicumNames = path.join(targetDir, 'warhammer40k', 'mechanicum.txt');
+const MechanicumNamesContent = fs.readFileSync(MechanicumNames, 'utf-8');
+const MechanicumNamesProcessed = processTxtContent(MechanicumNamesContent, `## 机械神教常见词汇替换列表`);
+fs.appendFileSync(path.join(targetDir, 'warhammer40k', 'primarchs.md'), MechanicumNamesProcessed, 'utf-8');
 

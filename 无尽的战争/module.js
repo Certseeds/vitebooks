@@ -4,7 +4,6 @@ const path = "/无尽的战争";
 const replaceDirs = [
 ];
 const repalceFiles = [
-    // `.${path}/安全且隐秘之地/src.md`,
     `.${path}/不完美/src.md`,
     `.${path}/凤凰大君/src.md`,
     `.${path}/劫难/src.md`,

@@ -1,5 +1,4 @@
 const path = "/忠诚的负担";
-// 生成链接的函数
 
 const replaceDirs = [
     `.${path}/狼王/src`,
