@@ -54,7 +54,7 @@ if (targetDir) {
 
 const primarchNames = path.join(targetDir, 'warhammer40k', 'names.txt');
 const primarchNamesContent = fs.readFileSync(primarchNames, 'utf-8');
-const primarchNamesProcessed = processTxtContent(primarchNamesContent, `## 原体姓名替换列表`);
+const primarchNamesProcessed = processTxtContent(primarchNamesContent, `## 重要人物姓名替换列表`);
 fs.appendFileSync(path.join(targetDir, 'warhammer40k', 'primarchs.md'), primarchNamesProcessed, 'utf-8');
 
 const commonNames = path.join(targetDir, 'warhammer40k', 'legion.txt');

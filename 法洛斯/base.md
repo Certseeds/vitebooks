@@ -151,7 +151,7 @@ On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Impe
 
 本森 格什, 利爪统领, 第17连
 
-凯伦基尔, 凯伦德瓦的哥哥, 战斗兄弟
+凯伦基尔, 凯伦德瓦的哥哥, 第四连的旗手
 
 ### 灯塔守护者
 

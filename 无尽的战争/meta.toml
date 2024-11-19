@@ -101,6 +101,7 @@ type = "短篇小说"
 authors = ["Chris Wraight"]
 recommended_reading = [
     { enname = "Scars", series = { name = "Horus Heresy", order = 28 } },
+    { name = "重生", belongto = { name = "黑暗时代", series = { name = "Horus Heresy", order = 16 } } },
 ]
 
 [[sub]]
