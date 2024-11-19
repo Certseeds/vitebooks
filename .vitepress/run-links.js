@@ -16,13 +16,11 @@ const input = readArgs(args);
 
 const modulePath = path.resolve(input["path"], 'module.js');
 const bookModule = require(modulePath);
-// 定义要读取的文件路径模式
-const filePattern = path.join(input["path"], ... bookModule.pattern);
+
 const order = bookModule.order;
 
-// 读取文件内容并生成链接
 for (let i = order["begin"]; i <= order["end"]; i++) {
-    const filePath = filePattern.replace('%02d', i.toString().padStart(2, '0'));
+    const filePath = path.resolve(input["path"], ...bookModule.generatePattern(i));
 
     // 读取文件内容
     fs.readFile(filePath, 'utf8', (err, data) => {

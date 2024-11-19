@@ -1,29 +1,33 @@
 const path = "/背叛之影/绯红之拳";
 
-// 生成链接的函数
-const generateLink = function (chapter) {
-    const chapterNumber = chapter;
+const order = {
+    begin: 1,
+    end: 7,
+}
+const numToStr = (num) => {
+    if (order.end >= 10) {
+        return num.toString().padStart(2, '0');
+    } else if (order.end < 10) {
+        return chapter.toString();
+    }
+}
+const generateLink = (chapter) => {
+    const chapterNumber = numToStr(chapter);
     return {
         text: `Chapter ${chapterNumber}`,
         link: `${path}/src/chapter${chapterNumber}`
     };
 }
-const order = {
-    begin: 1,
-    end: 7,
-}
 const prelink = `${path}/base`;
-const pattern = ["src", 'chapter%02d.md'];
 
 const replaceDirs = [`.${path}/src`,];
 const repalceFiles = [];
 const repalceNameFiles = [`.${path}/names.txt`,];
 
 module.exports = {
-    generateLink: generateLink,
     order: order,
+    generateLink: generateLink,
     prelink: prelink,
-    pattern: pattern,
 
     replaceDirs: replaceDirs,
     repalceFiles: repalceFiles,

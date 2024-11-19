@@ -1,18 +1,24 @@
 const path = "/深渊之战";
-// 生成链接的函数
-const generateLink = function (chapter) {
-    const chapterNumber = chapter.toString().padStart(2, '0');
+
+const order = {
+    begin: 1,
+    end: 21,
+}
+const numToStr = (num) => {
+    if (order.end >= 10) {
+        return num.toString().padStart(2, '0');
+    } else if (order.end < 10) {
+        return chapter.toString();
+    }
+}
+const generateLink = (chapter) => {
+    const chapterNumber = numToStr(chapter);
     return {
         text: `Chapter ${chapterNumber}`,
         link: `${path}/src/chapter${chapterNumber}`
     };
 }
-const order = {
-    begin: 1,
-    end: 21,
-}
 const prelink = `${path}/base`;
-const pattern = ["src", 'chapter%02d.md'];
 
 const replaceDirs = [`.${path}/src`,];
 const repalceFiles = [];
@@ -33,20 +39,19 @@ const IsChapterBegin = function (line) {
     return true;
 }
 
-const head = function (chapter) {
-    const chapterNumber = chapter.toString().padStart(2, '0');
+const head = (chapter) => {
+    const chapterNumber = numToStr(chapter);
     return `# chapter-${chapterNumber}`
 }
-const generatePattern = function (chapter) {
-    const chapterNumber = chapter.toString().padStart(2, '0');
+const generatePattern = (chapter) => {
+    const chapterNumber = numToStr(chapter);
     return ["src", `chapter${chapterNumber}.md`];
 }
 
 module.exports = {
-    generateLink: generateLink,
     order: order,
+    generateLink: generateLink,
     prelink: prelink,
-    pattern: pattern,
 
     replaceDirs: replaceDirs,
     repalceFiles: repalceFiles,
