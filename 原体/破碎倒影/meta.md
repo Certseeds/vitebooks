@@ -13,6 +13,12 @@ next:
 
 + 原译者: nutellaisgood
 + <>
++ 来源: 不明
+
+--------
+
++ 整理者: 門田英俊
++ <https://www.bilibili.com/opus/683361973147009064>
 + 来源: bilibili
 
 --------

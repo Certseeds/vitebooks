@@ -11,6 +11,8 @@ next:
 
 作者: Graham McNeill
 
+On the Cover: The Emperor's Children seek to cleanse their Legion of all taint
+
 ## 译者备注
 
 帝皇之子已经与荷鲁斯同流合污, 但是他们自己却落入了混沌之神色孽的魔爪. 军团的战士们彻底堕落, 福格瑞姆身旁的亲近之人发现他们的原体和从前不一样了. 他们筹划着让紫庭凤凰摆脱那妨碍他理性思考的恶魔的桎梏.

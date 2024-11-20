@@ -10,7 +10,7 @@ const numToStr = (num) => {
     if (order.end >= 10) {
         return num.toString().padStart(2, '0');
     } else if (order.end < 10) {
-        return chapter.toString();
+        return num.toString();
     }
 }
 const generateLink = (chapter) => {

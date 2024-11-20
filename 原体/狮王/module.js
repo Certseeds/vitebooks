@@ -8,11 +8,11 @@ const numToStr = (num) => {
     if (order.end >= 10) {
         return num.toString().padStart(2, '0');
     } else if (order.end < 10) {
-        return chapter.toString();
+        return num.toString();
     }
 }
 const generateLink = (chapter) => {
-    const chapterNumber = chapter;
+    const chapterNumber = numToStr(chapter);
     return {
         text: `Chapter ${chapterNumber}`,
         link: `${path}/src/chapter${chapterNumber}`
@@ -31,11 +31,11 @@ const IsChapterBegin = function (line) {
     return singleDigitRegex.test(line);
 }
 const head = (chapter) => {
-    const chapterNumber = chapter;
+    const chapterNumber = numToStr(chapter);
     return `# 原体-狮王-正文-chapter${chapterNumber}`
 }
 const generatePattern = (chapter) => {
-    const chapterNumber = chapter;
+    const chapterNumber = numToStr(chapter);
     return ["src", `chapter${chapterNumber}.md`];
 }
 
