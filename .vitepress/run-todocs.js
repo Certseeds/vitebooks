@@ -57,5 +57,9 @@ for (let i = order["begin"]; i <= order["end"]; i++) {
     // array[4] = `## ${array[4]}`;
     // array[6] = `## ${array[6]}`;
     const content = array.join('\n');
-    fs.writeFileSync(filePath, content, 'utf8');
+    if (!fs.accessSync(filePath)) {
+        fs.appendFileSync(filePath, content, 'utf8');
+    } else {
+        fs.writeFileSync(filePath, content, 'utf8');
+    }
 }

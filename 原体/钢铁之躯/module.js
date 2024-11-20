@@ -1,9 +1,8 @@
-const path = "/原体/破碎倒影";
-// 生成链接的函数
+const path = "/原体/钢铁之躯";
 
 const order = {
     begin: 1,
-    end: 14,
+    end: 3,
 }
 const numToStr = (num) => {
     if (order.end >= 10) {
@@ -24,22 +23,10 @@ const prelink = `${path}/base`;
 const replaceDirs = [`.${path}/src`,];
 const repalceFiles = [];
 const repalceNameFiles = [`.${path}/names.txt`,];
-
-const resource = `.${path}/HH20破碎倒影.txt`;
-
-const IsChapterBegin = (line) => {
-    const singleDigitRegex = /^\d{1,2}$/;
-    return singleDigitRegex.test(line);
-}
-const head = (chapter) => {
-    const chapterNumber = numToStr(chapter);
-    return `# 原体-破碎倒影-正文-chapter${chapterNumber}`
-}
 const generatePattern = (chapter) => {
     const chapterNumber = numToStr(chapter);
     return ["src", `chapter${chapterNumber}.md`];
 }
-
 module.exports = {
     order: order,
     generateLink: generateLink,
@@ -49,8 +36,5 @@ module.exports = {
     repalceFiles: repalceFiles,
     repalceNameFiles: repalceNameFiles,
 
-    resource: resource,
-    IsChapterBegin: IsChapterBegin,
-    head: head,
     generatePattern: generatePattern
 }
