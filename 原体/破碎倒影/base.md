@@ -19,7 +19,7 @@ On the Cover: The Emperor's Children seek to cleanse their Legion of all taint
 
 ## 出场人物
 
-## 第三军团 "帝皇之子"
+### 第三军团 "帝皇之子"
 
 福格瑞姆，原体
 
