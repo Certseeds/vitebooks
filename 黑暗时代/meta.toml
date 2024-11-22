@@ -25,7 +25,10 @@ chinese_name = "被遗忘的子嗣"
 english_name = "Forgotten Sons "
 type = "中篇小说"
 authors = ["Nick Kyme"]
-recommended_reading = ["福格瑞姆"]
+recommended_reading = [
+    "福格瑞姆",
+    { name = "普罗米修斯之阳", belongto = { name = "生于烈焰", series = { name = "Horus Heresy", order = 50 } } },
+]
 
 [[sub]]
 chinese_name = "最后的记述者"

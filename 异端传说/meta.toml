@@ -29,12 +29,14 @@ chinese_name = "声音"
 english_name = "The Voice"
 type = "短篇小说"
 authors = ["James Swallow"]
+recommended_reading = ["普罗斯佩罗之焚", "艾森斯坦号的逃亡"]
 
 [[sub]]
 chinese_name = "狮子的召唤"
 english_name = "Call of the Lion"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
+recommended_reading = ["天使降临"]
 
 [[sub]]
 chinese_name = "最后的教堂"
