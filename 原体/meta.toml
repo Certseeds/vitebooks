@@ -11,12 +11,16 @@ chinese_name = "破碎倒影"
 english_name = "The Reflection Crack'd"
 type = "中篇小说"
 authors = ["Graham McNeill"]
+recommended_reading = ["福格瑞姆"]
 
 [[sub]]
 chinese_name = "钢铁之躯"
 english_name = "Feat of Iron"
 type = "中篇小说"
 authors = ["Nick Kyme"]
+recommended_reading = [
+    { name = "普罗米修斯之阳", belongto = { name = "生于烈焰"  ,series = { name = "Horus Heresy", order = 50 } }},
+]
 
 [[sub]]
 chinese_name = "雄狮"
@@ -38,3 +42,6 @@ chinese_name = "毒蛇之潜"
 english_name = "The Serpent Beneath"
 type = "中篇小说"
 authors = ["Rob Sanders"]
+recommended_reading = [
+    { enname = "Legion", series = { name = "Horus Heresy", order = 7 } },
+]

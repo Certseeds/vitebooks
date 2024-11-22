@@ -50,12 +50,14 @@ chinese_name = "涅盘者"
 english_name = "The Phoenician 2"
 type = "短篇小说"
 authors = ["Nick Kyme"]
+recommended_reading = ["福格瑞姆"]
 
 [[sub]]
 chinese_name = "凤凰大君"
 english_name = "The Phoenician 1"
 type = "短篇小说"
 authors = ["Nick Kyme"]
+recommended_reading = ["福格瑞姆"]
 
 [[sub]]
 chinese_name = "布道之旅"
@@ -80,6 +82,7 @@ chinese_name = "劫难"
 english_name = "The Harrowing"
 type = "短篇小说"
 authors = ["Rob Sanders"]
+recommended_reading = ["福格瑞姆"]
 
 [[sub]]
 chinese_name = "生者存遗"
