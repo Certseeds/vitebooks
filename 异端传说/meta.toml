@@ -1,0 +1,49 @@
+[book]
+chinese_name = "异端传说"
+english_name = "Tales of Heresy"
+type = "短篇小说集"
+series.name = "Horus Heresy"
+series.order = 10
+authors = ["Nick Kyme", "Lindsey Priestley"]
+
+[[sub]]
+chinese_name = "鲜血游戏"
+english_name = "Blood Games"
+type = "短篇小说"
+authors = ["Dan Abnett"]
+
+[[sub]]
+chinese_name = "狼临门下"
+english_name = "Wolf at the Door"
+type = "短篇小说"
+authors = ["Mike Lee"]
+
+[[sub]]
+chinese_name = "风暴之嗣"
+english_name = "Scions of the Storm"
+type = "短篇小说"
+authors = ["Anthony Reynolds"]
+
+[[sub]]
+chinese_name = "声音"
+english_name = "The Voice"
+type = "短篇小说"
+authors = ["James Swallow"]
+
+[[sub]]
+chinese_name = "狮子的召唤"
+english_name = "Call of the Lion"
+type = "短篇小说"
+authors = ["Gav Thorpe"]
+
+[[sub]]
+chinese_name = "最后的教堂"
+english_name = "The Last Church"
+type = "短篇小说"
+authors = ["Graham McNeill"]
+
+[[sub]]
+chinese_name = "德什亚之后"
+english_name = "After Desh'ea"
+type = "短篇小说"
+authors = ["Matthew Farrer"]
