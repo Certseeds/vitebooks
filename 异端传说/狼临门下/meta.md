@@ -11,8 +11,15 @@ next:
 
 ## 原文来源
 
-+ 原译者:
++ 原译者: 不明
 + <>
++ 来源: NGA
+
+--------
+
++ 原译者: mousealpha
++ 整理者: mousealpha
++ <https://www.bilibili.com/opus/674984660675067942>
 + 来源: bilibili
 
 --------

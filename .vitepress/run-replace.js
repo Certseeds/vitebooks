@@ -26,10 +26,12 @@ const todoFiles = bookModule.replaceDirs.reduce((acc, dir) => {
 
 // 遍历 JSON 对象的键值对
 const symbolMap = JSON.parse(fs.readFileSync("./warhammer40k/symbol.json", 'utf8'));
-const replacementSymbol = Object.entries(symbolMap).map(([key, value]) => ({
-    src: `${key}`,
-    dst: `${value}`
-}));
+const replacementSymbol = Object
+    .entries(symbolMap)
+    .map(([key, value]) => ({
+        src: `${key}`,
+        dst: `${value}`
+    }));
 console.log(replacementSymbol)
 const replacementNames = bookModule.repalceNameFiles
     .concat("./warhammer40k/names.txt")
@@ -150,13 +152,6 @@ const seventhReplacement = (text) => {
 }
 const eightReplacement = (text) => {
     let lines = text.split('\n');
-    while (lines.length > 0 && lines[lines.length - 1].trim() === '') {
-        lines.pop();
-    }
-    return lines.join('\n');
-}
-const ninthReplacement = (text) => {
-    let lines = text.split('\n');
     let resultLines = lines
         //.map(line => line.trim())
         .map(line => {
@@ -176,6 +171,13 @@ const ninthReplacement = (text) => {
         });
     return resultLines.join('\n');
 };
+const ninthReplacement = (text) => {
+    let lines = text.split('\n');
+    while (lines.length > 0 && lines[lines.length - 1].trim() === '') {
+        lines.pop();
+    }
+    return lines.join('\n');
+}
 todoFiles.forEach(filePath => {
     fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) {

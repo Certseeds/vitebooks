@@ -23,5 +23,7 @@ features:
     details: 每一个变更都能被记录下来
   - title: 自动化
     details: 通过脚本实现拆分src, 替换词汇, 添加脚注, 添加链接等功能
+  - title: LLM驱动的人名检测
+    details: 一键检索所有译名, 替换简单轻松, 提升观感.
 ---
 
