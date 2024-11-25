@@ -33,7 +33,8 @@ export default defineConfig({
                     , { text: "法洛斯", link: '/法洛斯/meta' }
                     , { text: "忠诚的负担", link: '/忠诚的负担/meta' }
                     , { text: "warhammer40k-元数据", link: '/warhammer40k/primarchs' }
-                    , { text: "epub-page", link: '/warhammer40k/epub' }
+                    , { text: "epub总集", link: '/warhammer40k/epub' }
+                    , { text: "well-done", link: '/welldone/README' }
                 ]
             }
         ],

@@ -963,6 +963,6 @@ next:
 
 [^29]: Lars
 
-[^30]: Morkai's teeth [ERROR] QUOTA NUMBER NOT MATCH
+[^30]: Morkai's teeth
 
 [^31]: Stormblade

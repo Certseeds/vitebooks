@@ -39,7 +39,7 @@ On the Cover: Featuring brand new stories from Dan Abnett, Graham McNeill, Gav T
 + [TODO-风暴之嗣]
 + [TODO-声音]
 + [TODO-狮子的召唤]
-+ [TODO-最后的教堂]
++ [最后的教堂](/异端传说/最后的教堂/meta)
 + [TODO-德什亚之后]
 
 [^1]: 这一部分和<深渊之战>对比并无改动, 但是翻译于某大模型, 附加部分官翻补正.
