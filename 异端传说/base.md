@@ -36,7 +36,7 @@ On the Cover: Featuring brand new stories from Dan Abnett, Graham McNeill, Gav T
 
 + [鲜血游戏](/异端传说/鲜血游戏/meta)
 + [狼临门下](/异端传说/狼临门下/meta)
-+ [TODO-风暴之嗣]
++ [风暴之嗣](/异端传说/风暴之嗣/meta)
 + [TODO-声音]
 + [TODO-狮子的召唤]
 + [最后的教堂](/异端传说/最后的教堂/meta)
