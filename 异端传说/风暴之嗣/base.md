@@ -11,6 +11,10 @@ next:
 
 作者: Anthony Reynolds
 
+On the Cover: The Word Bearers seek to cursh the false idols of a wayward human culture
+
+配音: Gareth Armstrong
+
 ## 卷首语[^1]
 
 身负真理的使者，隐匿于风暴下的真相

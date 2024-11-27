@@ -13,7 +13,7 @@ next:
 
 On The Cover: Space Wolves of the 13th Company fight to free a world from eldar raiders
 
-旁白: Jonathan Keeble
+配音: Jonathan Keeble
 
 ## 校注
 
