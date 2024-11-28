@@ -45,6 +45,14 @@ pub fn get_authors(content: &[u8]) -> String {
     response.unwrap()
 }
 
+#[wasm_bindgen]
+pub fn get_author_books(content: &[u8], author_name: String) -> String {
+    let books = parse_u8_to_books(Vec::from(content));
+    let result = author::author_books(books, author_name);
+    let response = serde_json::to_string(&result);
+    response.unwrap()
+}
+
 mod author {
     use crate::Book;
     use std::collections::HashSet;
@@ -57,6 +65,17 @@ mod author {
             }
         }
         authors.into_iter().collect()
+    }
+    pub fn author_books(books: Vec<Book>, author_name: String) -> Vec<String> {
+        let mut author_books: Vec<String> = Vec::new();
+        for book in books {
+            for author in book.clone().authors {
+                if author == author_name {
+                    author_books.push(book.clone().chinese_name);
+                }
+            }
+        }
+        author_books
     }
 }
 
@@ -248,6 +267,8 @@ fn parse_book_dependencies(books: Vec<Book>, search_type: SearchType) -> Vec<Vec
 }
 #[cfg(test)]
 mod tests {
+    use crate::get_author_books;
+    use crate::get_authors;
     pub use crate::metas::meta;
     use crate::outer_function_from_cn;
     use std::fs::File;
@@ -269,6 +290,22 @@ mod tests {
             Ok(vec) => {
                 let result = outer_function_from_cn(vec.as_slice(), String::from("法洛斯"));
                 println!("{:?}", result)
+            }
+        }
+    }
+    #[test]
+    fn test_authors() {
+        println!("{}", meta::output_string());
+        assert_eq!(1, 1);
+        match read_file_to_u8("./meta.tar") {
+            Err(e) => {
+                eprintln!("output error {}", e);
+            }
+            Ok(vec) => {
+                let result = get_authors(vec.as_slice());
+                let book_names = get_author_books(vec.as_slice(), String::from("Nick Kyme"));
+                println!("{:?}", result);
+                println!("{:?}", book_names);
             }
         }
     }

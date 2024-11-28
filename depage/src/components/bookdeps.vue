@@ -1,8 +1,7 @@
 <script setup>
-import { ref, onMounted } from 'vue';
-import { initRustDep, getdeps } from '@/js/rustydepsmodule.js';
+import { ref } from 'vue';
+import { getdeps } from '@/js/rustydepsmodule.js';
 
-const message = ref('Initializing...');
 
 const inputText = ref('');
 const result = ref('');
@@ -17,17 +16,11 @@ const handleButtonClick = async () => {
     }
 };
 
-onMounted(() => {
-    initRustDep()
-        .then((response) => {
-            message.value = response;
-        });
-});
 </script>
 
 <template>
     <div>
-        <p>{{ message }}</p>
+        <div>请输入书名以获取推荐阅读列表: 推荐自下而上阅读</div>
         <input v-model="inputText" placeholder="Enter text" />
         <button @click="handleButtonClick">Submit</button>
         <div v-if="Array.isArray(result)">
