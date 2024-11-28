@@ -38,8 +38,8 @@ On the Cover: Featuring brand new stories from Dan Abnett, Graham McNeill, Gav T
 + [狼临门下](/异端传说/狼临门下/meta)
 + [风暴之嗣](/异端传说/风暴之嗣/meta)
 + [声音](/异端传说/声音/meta)
-+ [TODO-狮子的召唤]
++ [狮子的召唤](/异端传说/狮子的召唤/meta)
 + [最后的教堂](/异端传说/最后的教堂/meta)
-+ [TODO-德什亚之后]
++ [德什亚之后](/异端传说/德什亚之后/meta)
 
 [^1]: 这一部分和<深渊之战>对比并无改动, 但是翻译于某大模型, 附加部分官翻补正.

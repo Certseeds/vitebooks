@@ -11,8 +11,6 @@ next:
 
 作者: James Swallow
 
-On the Cover:
-
 ## 译者备注
 
 HH系列短篇的背景连续性比较强, 我读的少, 可能有些地方就翻译不对了.
