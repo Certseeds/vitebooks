@@ -1,0 +1,154 @@
+[book]
+chinese_name = "泰拉之眼"
+english_name = "Eye of Terra"
+type = "短篇小说集"
+series.name = "Horus Heresy"
+series.order = 35
+authors = ["NOBODY"]
+
+[[sub]]
+chinese_name = "焚尘之狼"
+english_name = "The Wolf of Ash and Fire"
+type = "短篇小说"
+authors = ["Graham McNeill"]
+
+[[sub]]
+chinese_name = "奥瑞利安"
+english_name = "Aurelian"
+type = "中篇小说"
+authors = ["Aaron Dembski-Bowden"]
+
+[[sub]]
+chinese_name = "大屠杀"
+english_name = "Massacre"
+type = "短篇小说"
+authors = ["Aaron Dembski-Bowden"]
+recommended_reading = ["福格瑞姆"]
+
+[[sub]]
+chinese_name = "月之兄弟会"
+english_name = "Brotherhood of the Moon"
+type = "短篇小说"
+authors = ["Chris Wraight"]
+recommended_reading = [
+    { enname = "Scars", series = { name = "Horus Heresy", order = 28 } },
+]
+
+[[sub]]
+chinese_name = "继承者"
+english_name = "Inheritor"
+type = "短篇小说"
+authors = ["Gav Thorpe"]
+recommended_reading = [
+    { name = "背叛者", series = { name = "Horus Heresy", order = 24 } },
+]
+
+[[sub]]
+chinese_name = "沃拉克斯"
+english_name = "Vorax"
+type = "短篇小说"
+authors = ["Matthew Farrer"]
+recommended_reading = ["机械教", "福格瑞姆"]
+
+
+[[sub]]
+chinese_name = "炎铁"
+english_name = "Ironfire"
+type = "短篇小说"
+authors = ["Rob Sanders"]
+recommended_reading = [
+    { name = "钢铁本质", belongto = { name = "黑暗时代", series = { name = "Horus Heresy", order = 16 } } },
+]
+
+[[sub]]
+chinese_name = "钢铁之火"
+english_name = "Ironfire 2"
+type = "短篇小说"
+authors = ["Rob Sanders"]
+recommended_reading = [
+    { name = "钢铁本质", belongto = { name = "黑暗时代", series = { name = "Horus Heresy", order = 16 } } },
+]
+
+[[sub]]
+chinese_name = "红印"
+english_name = "Red-Marked"
+type = "短篇小说"
+authors = ["Nick Kyme"]
+recommended_reading = [
+    { name = "谴责", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 31 } } },
+]
+
+[[sub]]
+chinese_name = "第一战团长"
+english_name = "Master of the First"
+type = "短篇小说"
+authors = ["Gav Thorpe"]
+
+[[sub]]
+chinese_name = "首席导师"
+english_name = "Master of the First v2"
+type = "短篇小说"
+authors = ["Gav Thorpe"]
+
+
+[[sub]]
+chinese_name = "策略"
+english_name = "Stratagem"
+type = "短篇小说"
+authors = ["Nick Kyme"]
+recommended_reading = [
+    { name = "红印", belongto = { name = "泰拉之眼", series = { name = "Horus Heresy", order = 35 } } },
+]
+
+
+[[sub]]
+chinese_name = "长夜"
+english_name = "The Long Night"
+type = "短篇小说"
+authors = ["Aaron Dembski-Bowden"]
+
+[[sub]]
+chinese_name = "父之罪孽"
+english_name = "Sins of the Father"
+type = "短篇小说"
+authors = ["Andy Smillie"]
+recommended_reading = [
+    { name = "子嗣所长", belongto = { name = "无尽的战争", series = { name = "Horus Heresy", order = 33 } } },
+]
+
+[[sub]]
+chinese_name = "鹰之爪"
+english_name = "The Eagle's Talon"
+type = "短篇小说"
+authors = ["John French"]
+
+
+[[sub]]
+chinese_name = "钢铁尸体"
+english_name = "Iron Corpses"
+type = "短篇小说"
+authors = ["David Annandale"]
+
+[[sub]]
+chinese_name = "63-14世界的最终归顺"
+english_name = "The Final Compliance of 63-14"
+type = "短篇小说"
+authors = ["Guy Haley"]
+
+[[sub]]
+chinese_name = "圣吉列斯先躯"
+english_name = "Herald of Sanguinius"
+type = "短篇小说"
+authors = ["Andy Smillie"]
+recommended_reading = [
+    { name = "父之罪孽", belongto = { name = "泰拉之眼", series = { name = "Horus Heresy", order = 35 } } },
+]
+
+[[sub]]
+chinese_name = "圣吉列斯的传令官"
+english_name = "Herald of Sanguinius v2"
+type = "短篇小说"
+authors = ["Andy Smillie"]
+recommended_reading = [
+    { name = "父之罪孽", belongto = { name = "泰拉之眼", series = { name = "Horus Heresy", order = 35 } } },
+]

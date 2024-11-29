@@ -58,6 +58,7 @@ chinese_name = "小荷鲁斯"
 english_name = "Little Horus"
 type = "短篇小说"
 authors = ["Dan Abnett"]
+recommended_reading = ["福格瑞姆"]
 
 [[sub]]
 chinese_name = "钢铁本质"

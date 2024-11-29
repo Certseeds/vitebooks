@@ -15,7 +15,7 @@ fs.readdir(directoryPath, (err, files) => {
 
   files.forEach((file) => {
     // 匹配文件名格式
-    const regex = /^HH\s+\d+\s+(短篇|中篇|长篇)\s+(.+?)\s+(.+?)\.txt$/;
+    const regex = /^HH\s+\d+\s+(短篇|中篇|长篇|广播剧)\s+(.+?)\s+(.+?)\.txt$/;
     const match = file.match(regex);
 
     if (match) {
@@ -23,6 +23,7 @@ fs.readdir(directoryPath, (err, files) => {
         '短篇': '短篇小说',
         '中篇': '中篇小说',
         '长篇': '长篇小说',
+        '广播剧': '短篇小说',
       };
 
       const typeKey = match[1];
