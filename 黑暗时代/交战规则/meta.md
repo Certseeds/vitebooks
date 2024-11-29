@@ -17,7 +17,7 @@ next:
 
 --------
 
-+ 整理者: `fatman-_-`
++ 整理者: fatman-_-
 + <https://www.bilibili.com/read/cv2155270/>, <https://www.bilibili.com/read/cv2155286>
 + 来源: bilibili
 
