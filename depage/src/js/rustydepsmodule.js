@@ -40,10 +40,14 @@ export const get_authors = async () => {
         const tarBytes = await tarResponse.arrayBuffer();
         const tarBuffer = pako.inflate(tarBytes);
         const results = rustydep.get_authors(tarBuffer);
-        const authors = JSON.parse(results);
-        const authors_order = authors.sort();
-        console.log(authors_order);
-
+        const authors = JSON.parse(results); // { str:int, ... }
+        const sortArray = Array
+            .from(Object.entries(authors))
+            .sort((a, b) => {
+                return b[1] - a[1];
+            });
+        const map = new Map(sortArray);
+        const authors_order = Array.from(map.keys());
         return authors_order;
     } catch (error) {
         console.error('Error Parse Package:', error);

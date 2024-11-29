@@ -55,16 +55,20 @@ pub fn get_author_books(content: &[u8], author_name: String) -> String {
 
 mod author {
     use crate::Book;
-    use std::collections::HashSet;
+    use std::collections::HashMap;
 
-    pub fn authors(books: Vec<Book>) -> Vec<String> {
-        let mut authors: HashSet<String> = HashSet::new();
+    pub fn authors(books: Vec<Book>) -> HashMap<String, i32> {
+        let mut authors: HashMap<String, i32> = HashMap::new();
         for book in books {
             for author in book.authors {
-                authors.insert(author);
+                if let Some(count) = authors.get_mut(&author) {
+                    *count += 1;
+                } else {
+                    authors.insert(author, 1);
+                }
             }
         }
-        authors.into_iter().collect()
+        authors
     }
     pub fn author_books(books: Vec<Book>, author_name: String) -> Vec<String> {
         let mut author_books: Vec<String> = Vec::new();

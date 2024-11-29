@@ -49,8 +49,9 @@ onMounted(() => {
             <table>
                 <thead>
                     <tr>
-                        <th>编号(可选中)</th>
-                        <th v-if="!state">作者英文名</th>
+                        <th v-if="!state">按作品量从高到低排名</th>
+                        <th v-else>序号</th>
+                        <th v-if="!state">作者</th>
                         <th v-else>书名</th>
                     </tr>
                 </thead>
