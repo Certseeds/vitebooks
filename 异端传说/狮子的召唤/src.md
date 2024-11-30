@@ -1,7 +1,7 @@
 ---
 prev:
   text: '异端传说-狮子的召唤-base'
-  link: '/异端传说/狮子的召唤/nase'
+  link: '/异端传说/狮子的召唤/base'
 next:
   text: '异端传说-meta'
   link: '/异端传说/meta'

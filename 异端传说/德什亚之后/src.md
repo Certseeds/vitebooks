@@ -1,7 +1,7 @@
 ---
 prev:
   text: '异端传说-德什亚之后-base'
-  link: '/异端传说/德什亚之后/nase'
+  link: '/异端传说/德什亚之后/base'
 next:
   text: '异端传说-meta'
   link: '/异端传说/meta'

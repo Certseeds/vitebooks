@@ -1,7 +1,7 @@
 ---
 prev:
   text: '泰拉之眼-焚尘之狼-base'
-  link: '/泰拉之眼/焚尘之狼/nase'
+  link: '/泰拉之眼/焚尘之狼/base'
 next:
   text: '泰拉之眼-meta'
   link: '/泰拉之眼/meta'

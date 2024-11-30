@@ -11,6 +11,7 @@ chinese_name = "焚尘之狼"
 english_name = "The Wolf of Ash and Fire"
 type = "短篇小说"
 authors = ["Graham McNeill"]
+recommended_reading = ["荷鲁斯崛起"]
 
 [[sub]]
 chinese_name = "奥瑞利安"

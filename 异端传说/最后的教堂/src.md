@@ -1,7 +1,7 @@
 ---
 prev:
   text: '异端传说-最后的教堂-base'
-  link: '/异端传说/最后的教堂/nase'
+  link: '/异端传说/最后的教堂/base'
 next:
   text: '异端传说-meta'
   link: '/异端传说/meta'

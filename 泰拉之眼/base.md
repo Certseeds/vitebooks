@@ -49,7 +49,7 @@ On the Cover: Featuring stories by Aaron Dembski-Bowden, Chris Wraight, Nick Kym
 + [TODO-第一战团长] &[TODO-首席导师]
 + [TODO-策略]
 + [TODO-长夜]
-+ [TODO-父之罪孽]
++ [父之罪孽](/泰拉之眼/父之罪孽/meta)
 + [TODO-鹰之爪]
 + [TODO-钢铁尸体]
 + [TODO-63-14世界的最终归顺]

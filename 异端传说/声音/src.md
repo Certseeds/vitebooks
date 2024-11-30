@@ -1,7 +1,7 @@
 ---
 prev:
   text: '异端传说-声音-base'
-  link: '/异端传说/声音/nase'
+  link: '/异端传说/声音/base'
 next:
   text: '异端传说-meta'
   link: '/异端传说/meta'
