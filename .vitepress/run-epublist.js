@@ -69,4 +69,4 @@ console.log(bookNames);
 const epubPage = path.join(targetDir, 'warhammer40k', 'epub.md');
 const epubContent = processContent(bookNames);
 console.log(epubContent);
-//fs.appendFileSync(epubPage, epubContent, 'utf-8');
+fs.appendFileSync(epubPage, epubContent, 'utf-8');
