@@ -15,6 +15,7 @@ recommended_reading = [
     "普罗斯佩罗之焚",
     { name = "狼临门下", belongto = { name = "异端传说", series = { name = "Horus Heresy", order = 10 } } },
 ]
+faction_keywords = ["太空野狼"]
 
 [[sub]]
 chinese_name = "流亡"
@@ -22,6 +23,7 @@ english_name = "Into Exile"
 type = "短篇小说"
 authors = ["Aaron Dembski-Bowden"]
 recommended_reading = ["机械教"]
+faction_keywords = ["机械教", "帝国之拳"]
 
 [[sub]]
 chinese_name = "憎恶智能"
@@ -29,6 +31,7 @@ english_name = "Cybernetica"
 type = "中篇小说"
 authors = ["Rob Sanders"]
 recommended_reading = ["机械教"]
+faction_keywords = ["机械教", "游侠骑士"]
 
 [[sub]]
 chinese_name = "噩兆修会"
@@ -36,12 +39,14 @@ english_name = "Ordo Sinister"
 type = "短篇小说"
 authors = ["John French"]
 recommended_reading = ["人类之主"]
+faction_keywords = ["泰坦军团", "禁军"]
 
 [[sub]]
 chinese_name = "法洛斯之心"
 english_name = "The Heart of the Paaros"
 type = "短篇小说"
 authors = ["Laurie Goulding"]
+faction_keywords = ["极限战士"]
 
 [[sub]]
 chinese_name = "狼王"
@@ -52,6 +57,7 @@ recommended_reading = [
     "普罗斯佩罗之焚",
     { enname = "Scars", series = { name = "Horus Heresy", order = 28 } },
 ]
+faction_keywords = ["太空野狼", "阿尔法军团", "暗黑天使"]
 
 [[sub]]
 chinese_name = "二元继承"
@@ -59,6 +65,7 @@ english_name = "The Binary Succession"
 type = "短篇小说"
 authors = ["David Annandale"]
 recommended_reading = ["人类之主"]
+faction_keywords = ["机械教", "泰坦军团"]
 
 [[sub]]
 chinese_name = "永生者"
@@ -66,3 +73,4 @@ english_name = "Perpetual"
 type = "短篇小说"
 authors = ["Dan Abnett"]
 recommended_reading = [{ name = "考斯印记" }]
+faction_keywords = ["永生者", "阿尔法军团"]

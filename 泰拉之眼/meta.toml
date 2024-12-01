@@ -12,6 +12,7 @@ english_name = "The Wolf of Ash and Fire"
 type = "短篇小说"
 authors = ["Graham McNeill"]
 recommended_reading = ["荷鲁斯崛起"]
+faction_keywords = ["影月苍狼", "禁军"]
 
 [[sub]]
 chinese_name = "奥瑞利安"
@@ -108,7 +109,7 @@ type = "短篇小说"
 authors = ["Nick Kyme"]
 recommended_reading = [
     { name = "红印", belongto = { name = "泰拉之眼", series = { name = "Horus Heresy", order = 35 } } },
-    "不被铭记的帝国"
+    "不被铭记的帝国",
 ]
 
 
@@ -129,6 +130,7 @@ authors = ["Andy Smillie"]
 recommended_reading = [
     { name = "子嗣所长", belongto = { name = "无尽的战争", series = { name = "Horus Heresy", order = 33 } } },
 ]
+faction_keywords = ["圣血天使"]
 
 [[sub]]
 chinese_name = "鹰之爪"
@@ -157,6 +159,7 @@ authors = ["Andy Smillie"]
 recommended_reading = [
     { name = "父之罪孽", belongto = { name = "泰拉之眼", series = { name = "Horus Heresy", order = 35 } } },
 ]
+faction_keywords = ["圣血天使"]
 
 [[sub]]
 chinese_name = "圣吉列斯先躯"
@@ -166,3 +169,5 @@ authors = ["Andy Smillie"]
 recommended_reading = [
     { name = "父之罪孽", belongto = { name = "泰拉之眼", series = { name = "Horus Heresy", order = 35 } } },
 ]
+faction_keywords = ["圣血天使"]
+

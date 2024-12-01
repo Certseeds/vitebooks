@@ -6,3 +6,4 @@ series.name = "Horus Heresy"
 series.order = 4
 authors = ["James Swallow"]
 recommended_reading = ["燃烧的银河"]
+faction_keywords = ["死亡守卫", "帝国之拳"]

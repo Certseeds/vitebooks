@@ -26,6 +26,7 @@ recommended_reading = [
     { name = "异端初现", series = { name = "Horus Heresy", order = 14 } },
     { enname = "Legion", series = { name = "Horus Heresy", order = 7 } },
 ]
+faction_keywords=["极限战士", "怀言者", "永生者"]
 ```
 
 中文书名, 或者是英文书名+(系列名+系列序号)都能定位一本书, 优先使用中文书名.

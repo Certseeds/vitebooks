@@ -39,7 +39,7 @@ On the Cover: Featuring stories by Aaron Dembski-Bowden, Chris Wraight, Nick Kym
 ## 章节
 
 + [焚尘之狼](/泰拉之眼/焚尘之狼/meta)
-+ [TODO-奥瑞利安]
++ [TODO-中篇-奥瑞利安]
 + [TODO-大屠杀]
 + [TODO-月之兄弟会]
 + [TODO-继承者]

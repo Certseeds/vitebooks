@@ -7,8 +7,9 @@ series.order = 27
 authors = ["Dan Abnett"]
 recommended_reading = [
     "惧于踏足",
-    { name = "考斯印记"},
+    { name = "考斯印记" },
     { enname = "The Crimson Fist", belongto = { name = "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
     { enname = "The Iron Within", belongto = { enname = "Age of Darkness", series = { name = "Horus Heresy", order = 16 } } },
     "伏尔甘永存",
 ]
+faction_keywords = ["极限战士", "暗黑天使", "午夜领主", "火蜥蜴", "永生者"]

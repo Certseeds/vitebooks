@@ -12,18 +12,21 @@ english_name = "The Devine Adoratrice"
 type = "短篇小说"
 authors = ["Graham McNeill"]
 recommended_reading = ["复仇之魂"]
+faction_keywords = ["骑士家族"]
 
 [[sub]]
 chinese_name = "炉世之吼"
 english_name = "Howl of the Hearthworld"
 type = "短篇小说"
 authors = ["Dembski-Bowden"]
+faction_keywords = ["太空野狼"]
 
 [[sub]]
 chinese_name = "炉火世界的嚎叫"
 english_name = "Howl of the Hearthworld 2"
 type = "短篇小说"
 authors = ["Dembski-Bowden"]
+faction_keywords = ["太空野狼"]
 
 [[sub]]
 chinese_name = "红砂之王"
@@ -31,6 +34,7 @@ english_name = "Lord of the Red Sands"
 type = "短篇小说"
 authors = ["Dembski-Bowden"]
 recommended_reading = ["燃烧的银河"]
+faction_keywords = ["吞世者"]
 
 [[sub]]
 chinese_name = "文物"
@@ -38,12 +42,14 @@ english_name = "Artefacts"
 type = "短篇小说"
 authors = ["Nick Kyme"]
 recommended_reading = ["福格瑞姆"]
+faction_keywords = ["火蜥蜴"]
 
 [[sub]]
 chinese_name = "帝皇之手"
 english_name = "Hands of the Emperor"
 type = "短篇小说"
 authors = ["Rob Sanders"]
+faction_keywords = ["禁军", "寂静修女会"]
 
 [[sub]]
 chinese_name = "涅盘者"
@@ -51,6 +57,7 @@ english_name = "The Phoenician 2"
 type = "短篇小说"
 authors = ["Nick Kyme"]
 recommended_reading = ["福格瑞姆"]
+faction_keywords = ["钢铁之手", "帝皇之子"]
 
 [[sub]]
 chinese_name = "凤凰大君"
@@ -58,6 +65,7 @@ english_name = "The Phoenician 1"
 type = "短篇小说"
 authors = ["Nick Kyme"]
 recommended_reading = ["福格瑞姆"]
+faction_keywords = ["钢铁之手", "帝皇之子"]
 
 [[sub]]
 chinese_name = "布道之旅"
@@ -67,6 +75,7 @@ authors = ["David Annandale"]
 recommended_reading = [
     { name = "毕索斯的诅咒", enname = "The Damnation of Pythos", series = { name = "Horus Heresy", order = 30 } },
 ]
+faction_keywords = ["混沌教派"]
 
 [[sub]]
 chinese_name = "雄狮有令"
@@ -76,6 +85,7 @@ authors = ["Gav Thorpe"]
 recommended_reading = [
     { name = "雄狮", belongto = { enname = "The Primarchs", series = { name = "Horus Heresy", order = 20 } } },
 ]
+faction_keywords = ["暗黑天使", "死亡守卫"]
 
 [[sub]]
 chinese_name = "劫难"
@@ -83,12 +93,14 @@ english_name = "The Harrowing"
 type = "短篇小说"
 authors = ["Rob Sanders"]
 recommended_reading = ["福格瑞姆"]
+faction_keywords = ["阿尔法军团", "泰坦军团", "机械教"]
 
 [[sub]]
 chinese_name = "生者存遗"
 english_name = "All That Remains"
 type = "短篇小说"
 authors = ["James Swallow"]
+faction_keywords = ["游侠骑士"]
 
 [[sub]]
 chinese_name = "瞄准镜"
@@ -96,6 +108,7 @@ english_name = "Gunsight"
 type = "短篇小说"
 authors = ["James Swallow"]
 recommended_reading = ["宿敌"]
+faction_keywords = ["刺客庭", "荷鲁斯之子"]
 
 [[sub]]
 chinese_name = "忠诚"
@@ -106,6 +119,7 @@ recommended_reading = [
     { enname = "Scars", series = { name = "Horus Heresy", order = 28 } },
     { name = "重生", belongto = { name = "黑暗时代", series = { name = "Horus Heresy", order = 16 } } },
 ]
+faction_keywords = ["千子", "白色伤疤"]
 
 [[sub]]
 chinese_name = "恶魔学识"
@@ -115,6 +129,7 @@ authors = ["Chris Wraight"]
 recommended_reading = [
     { enname = "Scars", series = { name = "Horus Heresy", order = 28 } },
 ]
+faction_keywords = ["死亡守卫"]
 
 [[sub]]
 chinese_name = "黑暗之眼"
@@ -122,6 +137,7 @@ english_name = "Black Oculus"
 type = "短篇小说"
 authors = ["John French"]
 recommended_reading = ["灭绝天使"]
+faction_keywords = ["钢铁勇士"]
 
 [[sub]]
 chinese_name = "子嗣所长"
@@ -129,6 +145,7 @@ english_name = "Virtues of the Sons"
 type = "短篇小说"
 authors = ["Andy Smillie"]
 recommended_reading = ["不被铭记的帝国"]
+faction_keywords = ["圣血天使"]
 
 [[sub]]
 chinese_name = "反抗的桂冠"
@@ -139,6 +156,7 @@ recommended_reading = [
     "不被铭记的帝国",
     { name = "向死者致敬", belongto = { name = "背叛的遗产", series = { name = "Horus Heresy", order = 31 } } },
 ]
+faction_keywords = ["极限战士"]
 
 [[sub]]
 chinese_name = "抗争的桂冠"
@@ -149,6 +167,7 @@ recommended_reading = [
     "不被铭记的帝国",
     { name = "向死者致敬", belongto = { name = "背叛的遗产", series = { name = "Horus Heresy", order = 31 } } },
 ]
+faction_keywords = ["极限战士"]
 
 [[sub]]
 chinese_name = "安全且隐秘之地"
@@ -156,6 +175,7 @@ english_name = "A Safe and Shadowed Place"
 type = "短篇小说"
 authors = ["Guy Haley"]
 recommended_reading = ["群鸦王子"]
+faction_keywords = ["午夜领主"]
 
 [[sub]]
 chinese_name = "不完美"
@@ -163,6 +183,7 @@ english_name = "Imperfect"
 type = "短篇小说"
 authors = ["Nick Kyme"]
 recommended_reading = ["灭绝天使"]
+faction_keywords = ["钢铁之手", "帝皇之子"]
 
 [[sub]]
 chinese_name = "外科医生"
@@ -172,6 +193,7 @@ authors = ["Nick Kyme"]
 recommended_reading = [
     { name = "不完美", belongto = { enname = "War Without End", series = { name = "Horus Heresy", order = 33 } } },
 ]
+faction_keywords = ["帝皇之子"]
 
 [[sub]]
 chinese_name = "扭曲者"
@@ -179,6 +201,7 @@ english_name = "Twisted"
 type = "短篇小说"
 authors = ["Guy Haley"]
 recommended_reading = ["复仇之魂"]
+faction_keywords = ["荷鲁斯之子", "混沌教派"]
 
 [[sub]]
 chinese_name = "扭曲者 2"
@@ -186,6 +209,7 @@ english_name = "Twisted 2"
 type = "短篇小说"
 authors = ["Guy Haley"]
 recommended_reading = ["复仇之魂"]
+faction_keywords = ["荷鲁斯之子", "混沌教派"]
 
 [[sub]]
 chinese_name = "狼母"
@@ -193,3 +217,4 @@ english_name = "Wolf Mother"
 type = "短篇小说"
 authors = ["Graham McNeill"]
 recommended_reading = ["复仇之魂"]
+faction_keywords = ["游侠骑士", "混沌教派", "永生者"]

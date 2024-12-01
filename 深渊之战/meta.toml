@@ -6,3 +6,4 @@ series.name = "Horus Heresy"
 series.order = 8
 authors = ["Ben Counter"]
 recommended_reading = []
+faction_keywords = ["极限战士", "太空野狼", "吞世者", "怀言者"]

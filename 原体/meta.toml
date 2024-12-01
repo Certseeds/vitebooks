@@ -12,6 +12,7 @@ english_name = "The Reflection Crack'd"
 type = "中篇小说"
 authors = ["Graham McNeill"]
 recommended_reading = ["福格瑞姆"]
+faction_keywords = ["帝皇之子"]
 
 [[sub]]
 chinese_name = "钢铁之躯"
@@ -21,6 +22,7 @@ authors = ["Nick Kyme"]
 recommended_reading = [
     { name = "普罗米修斯之阳", belongto = { name = "生于烈焰"  ,series = { name = "Horus Heresy", order = 50 } }},
 ]
+faction_keywords = ["钢铁之手", "方舟灵族"]
 
 [[sub]]
 chinese_name = "雄狮"
@@ -30,12 +32,17 @@ authors = ["Gav Thorpe"]
 recommended_reading = [
     { name = "野蛮武器", belongto = { enname = "Age of Darkness", series = { name = "Horus Heresy", order = 16 } } },
 ]
+faction_keywords = ["暗黑天使", "死亡守卫", "钢铁之手", "机械教"]
 
 [[sub]]
 chinese_name = "狮王"
 english_name = "The Lion 2"
 type = "中篇小说"
 authors = ["Gav Thorpe"]
+recommended_reading = [
+    { name = "野蛮武器", belongto = { enname = "Age of Darkness", series = { name = "Horus Heresy", order = 16 } } },
+]
+faction_keywords = ["暗黑天使", "死亡守卫", "钢铁之手", "机械教"]
 
 [[sub]]
 chinese_name = "毒蛇之潜"
@@ -45,3 +52,4 @@ authors = ["Rob Sanders"]
 recommended_reading = [
     { enname = "Legion", series = { name = "Horus Heresy", order = 7 } },
 ]
+faction_keywords = ["阿尔法军团"]

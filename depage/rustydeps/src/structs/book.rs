@@ -10,4 +10,5 @@ pub struct Book {
     pub series: Option<Series>,
     pub authors: Vec<String>,
     pub recommended_reading: Option<Vec<Deps>>,
+    pub faction_keywords: Option<Vec<String>>,
 }

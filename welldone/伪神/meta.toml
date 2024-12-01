@@ -6,3 +6,4 @@ series.name = "Horus Heresy"
 series.order = 2
 authors = ["Graham McNeill"]
 recommended_reading = ["荷鲁斯崛起"]
+faction_keywords = ["荷鲁斯之子", "吞世者", "帝皇之子", "泰坦军团", "混沌教派"]

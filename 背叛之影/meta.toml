@@ -15,12 +15,14 @@ recommended_reading = [
     { name = "闪电之塔", belongto = { name = "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
     "艾森斯坦号的逃亡",
 ]
+faction_keywords = ["帝国之拳", "钢铁勇士"]
 
 [[sub]]
 chinese_name = "黑暗之王"
 english_name = "The Dark King"
 type = "短篇小说"
 authors = ["Graham McNeill"]
+faction_keywords = ["帝国之拳", "午夜领主"]
 
 [[sub]]
 chinese_name = "闪电之塔"
@@ -30,12 +32,14 @@ authors = ["Dan Abnett"]
 recommended_reading = [
     { name = "黑暗之王", belongto = { name = "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
 ]
+faction_keywords = ["帝国之拳"]
 
 [[sub]]
 chinese_name = "卡板计划"
 english_name = "The Kaban Project"
 type = "短篇小说"
 authors = ["Graham McNeill"]
+faction_keywords = ["机械教"]
 
 [[sub]]
 chinese_name = "渡鸦的航行"
@@ -43,6 +47,7 @@ english_name = "Raven's Flight"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
 recommended_reading = ["福格瑞姆"]
+faction_keywords = ["暗鸦守卫"]
 
 [[sub]]
 chinese_name = "银匠之死"
@@ -50,6 +55,7 @@ english_name = "Death of a Silversmith"
 type = "短篇小说"
 authors = ["Graham McNeill"]
 recommended_reading = ["燃烧的银河"]
+faction_keywords = ["荷鲁斯之子"]
 
 [[sub]]
 chinese_name = "群鸦王子"
@@ -59,3 +65,4 @@ authors = ["Aaron Dembski-Bowden"]
 recommended_reading = [
     { name = "雄狮", belongto = { enname = "The Primarchs", series = { name = "Horus Heresy", order = 20 } } },
 ]
+faction_keywords = ["午夜领主", "暗黑天使"]

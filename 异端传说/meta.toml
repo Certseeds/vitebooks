@@ -11,18 +11,21 @@ chinese_name = "鲜血游戏"
 english_name = "Blood Games"
 type = "短篇小说"
 authors = ["Dan Abnett"]
+faction_keywords = ["禁军", "帝国之拳"]
 
 [[sub]]
 chinese_name = "狼临门下"
 english_name = "Wolf at the Door"
 type = "短篇小说"
 authors = ["Mike Lee"]
+faction_keywords = ["太空野狼", "暗黑灵族"]
 
 [[sub]]
 chinese_name = "风暴之嗣"
 english_name = "Scions of the Storm"
 type = "短篇小说"
 authors = ["Anthony Reynolds"]
+faction_keywords = ["怀言者"]
 
 [[sub]]
 chinese_name = "声音"
@@ -30,6 +33,7 @@ english_name = "The Voice"
 type = "短篇小说"
 authors = ["James Swallow"]
 recommended_reading = ["普罗斯佩罗之焚", "艾森斯坦号的逃亡"]
+faction_keywords = ["寂静修女会"]
 
 [[sub]]
 chinese_name = "狮子的召唤"
@@ -37,15 +41,18 @@ english_name = "Call of the Lion"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
 recommended_reading = ["天使降临"]
+faction_keywords = ["暗黑天使"]
 
 [[sub]]
 chinese_name = "最后的教堂"
 english_name = "The Last Church"
 type = "短篇小说"
 authors = ["Graham McNeill"]
+faction_keywords = ["无"]
 
 [[sub]]
 chinese_name = "德什亚之后"
 english_name = "After Desh'ea"
 type = "短篇小说"
 authors = ["Matthew Farrer"]
+faction_keywords = ["吞世者"]

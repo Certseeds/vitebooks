@@ -12,6 +12,7 @@ english_name = "Rules of Engagement"
 type = "中篇小说"
 authors = ["Graham McNeill"]
 recommended_reading = ["无所畏惧"]
+faction_keywords = ["极限战士"]
 
 [[sub]]
 chinese_name = "骗子的下场"
@@ -19,6 +20,7 @@ english_name = "Liar's Due"
 type = "中篇小说"
 authors = ["James Swallow"]
 recommended_reading = ["无所畏惧", "惧于踏足"]
+faction_keywords = ["阿尔法军团"]
 
 [[sub]]
 chinese_name = "被遗忘的子嗣"
@@ -29,6 +31,7 @@ recommended_reading = [
     "福格瑞姆",
     { name = "普罗米修斯之阳", belongto = { name = "生于烈焰", series = { name = "Horus Heresy", order = 50 } } },
 ]
+faction_keywords = ["极限战士", "火蜥蜴", "钢铁勇士"]
 
 [[sub]]
 chinese_name = "最后的记述者"
@@ -36,6 +39,7 @@ english_name = "The Last Remembrancer"
 type = "短篇小说"
 authors = ["John French"]
 recommended_reading = ["艾森斯坦号的逃亡"]
+faction_keywords = ["帝国之拳", "游侠骑士"]
 
 [[sub]]
 chinese_name = "重生"
@@ -43,6 +47,7 @@ english_name = "Rebirth"
 type = "短篇小说"
 authors = ["Chris Wraight"]
 recommended_reading = ["普罗斯佩罗之焚"]
+faction_keywords = ["千子", "吞世者"]
 
 [[sub]]
 chinese_name = "背叛之貌"
@@ -52,6 +57,7 @@ authors = ["Gav Thorpe"]
 recommended_reading = [
     { name = "渡鸦的航行", belongto = { name = "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
 ]
+faction_keywords = ["暗鸦守卫", "吞世者", "阿尔法军团"]
 
 [[sub]]
 chinese_name = "小荷鲁斯"
@@ -59,12 +65,14 @@ english_name = "Little Horus"
 type = "短篇小说"
 authors = ["Dan Abnett"]
 recommended_reading = ["福格瑞姆"]
+faction_keywords = ["荷鲁斯之子", "白色伤疤", "钢铁之手"]
 
 [[sub]]
 chinese_name = "钢铁本质"
 english_name = "The Iron Within"
 type = "短篇小说"
 authors = ["Rob Sanders"]
+faction_keywords = ["钢铁勇士", "荷鲁斯之子", "极限战士"]
 
 [[sub]]
 chinese_name = "野蛮武器"
@@ -72,3 +80,4 @@ english_name = "Savage Weapons"
 type = "中篇小说"
 authors = ["Aaron Dembski-Bowden"]
 recommended_reading = ["堕天使"]
+faction_keywords = ["暗黑天使", "午夜领主"]
