@@ -18,6 +18,9 @@ chinese_name = "奥瑞利安"
 english_name = "Aurelian"
 type = "中篇小说"
 authors = ["Aaron Dembski-Bowden"]
+recommended_reading = [
+    { name = "异端初现", series = { name = "Horus Heresy", order = 14 } },
+]
 
 [[sub]]
 chinese_name = "大屠杀"
@@ -84,12 +87,18 @@ chinese_name = "第一战团长"
 english_name = "Master of the First"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
+recommended_reading = [
+    { name = "群鸦王子", belongto = { name = "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
+]
 
 [[sub]]
 chinese_name = "首席导师"
 english_name = "Master of the First v2"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
+recommended_reading = [
+    { name = "群鸦王子", belongto = { name = "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
+]
 
 
 [[sub]]
@@ -99,6 +108,7 @@ type = "短篇小说"
 authors = ["Nick Kyme"]
 recommended_reading = [
     { name = "红印", belongto = { name = "泰拉之眼", series = { name = "Horus Heresy", order = 35 } } },
+    "不被铭记的帝国"
 ]
 
 
@@ -107,6 +117,9 @@ chinese_name = "长夜"
 english_name = "The Long Night"
 type = "短篇小说"
 authors = ["Aaron Dembski-Bowden"]
+recommended_reading = [
+    { name = "群鸦王子", belongto = { name = "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
+]
 
 [[sub]]
 chinese_name = "父之罪孽"
@@ -137,7 +150,7 @@ type = "短篇小说"
 authors = ["Guy Haley"]
 
 [[sub]]
-chinese_name = "圣吉列斯先躯"
+chinese_name = "圣吉列斯的传令官"
 english_name = "Herald of Sanguinius"
 type = "短篇小说"
 authors = ["Andy Smillie"]
@@ -146,7 +159,7 @@ recommended_reading = [
 ]
 
 [[sub]]
-chinese_name = "圣吉列斯的传令官"
+chinese_name = "圣吉列斯先躯"
 english_name = "Herald of Sanguinius v2"
 type = "短篇小说"
 authors = ["Andy Smillie"]
