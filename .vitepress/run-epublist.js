@@ -21,17 +21,22 @@ const processSideBarElements = (config, dir) => {
     const sidear = config.themeConfig.sidebar;
     const HHs = sidear.filter(x => x.text === '荷鲁斯之乱')[0];
     const entries = fs.readdirSync(dir, { withFileTypes: true });
-    const entriesSet = new Set(
-        entries.map(x => x.name)
-    )
-    console.log(entriesSet)
+    const entriesSet = new Set(entries.map(x => x.name))
+    const bookNameMap__ = entries
+        .map(x => x.name)
+        .filter(x => x.endsWith('.epub'))
+        .map(x => {
+            return [x.split('-')[0], x];
+        });
+    const bookNameMap = new Map(bookNameMap__);
     const names = HHs.items
         .map(x => x.text)
         .filter(x => {
             return entriesSet.has(x) &&
-            fs.existsSync(path.join(dir, x, 'meta.toml'))
-        });
-    ;
+                bookNameMap.has(x) &&
+                fs.existsSync(path.join(dir, x, 'meta.toml'))
+        })
+        .map(x => bookNameMap.get(x));
     return names;
 }
 
@@ -59,9 +64,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const startDir = path.resolve(__dirname);
 const targetDir = findDirWithCNAME(startDir);
-const bookNames2 = processSideBarElements(config, targetDir);
-console.log(bookNames2);
+const bookNames = processSideBarElements(config, targetDir);
+console.log(bookNames);
 const epubPage = path.join(targetDir, 'warhammer40k', 'epub.md');
-const epubContent = processContent(bookNames2);
+const epubContent = processContent(bookNames);
 console.log(epubContent);
-fs.appendFileSync(epubPage, epubContent, 'utf-8');
+//fs.appendFileSync(epubPage, epubContent, 'utf-8');
