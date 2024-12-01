@@ -27,14 +27,14 @@ const generatePattern = (chapter) => {
     const chapterNumber = numToStr(chapter);
     return ["src", `chapter${chapterNumber}.md`];
 }
-module.exports = {
-    order: order,
-    generateLink: generateLink,
-    prelink: prelink,
+export {
+    order,
+    generateLink,
+    prelink,
 
-    replaceDirs: replaceDirs,
-    repalceFiles: repalceFiles,
-    repalceNameFiles: repalceNameFiles,
+    replaceDirs,
+    repalceFiles,
+    repalceNameFiles,
 
-    generatePattern: generatePattern
+    generatePattern
 }

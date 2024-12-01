@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-const fs = require('node:fs');
-const path = require('node:path');
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import config from './config.mjs';
 
 
 const findDirWithCNAME = function (startDir) {
@@ -14,22 +16,25 @@ const findDirWithCNAME = function (startDir) {
     }
     return null;
 }
-const processDirectory = function (dir) {
-    console.log(dir);
+
+const processSideBarElements = (config, dir) => {
+    const sidear = config.themeConfig.sidebar;
+    const HHs = sidear.filter(x => x.text === '荷鲁斯之乱')[0];
     const entries = fs.readdirSync(dir, { withFileTypes: true });
-    let results = [];
-    for (const entry of entries) {
-        console.log(entry.name);
-        if (entry.isFile && entry.name.endsWith('epub')) {
-            const [book_name, run_number, build_day] = entry.name.split('-'); // 解构字符串
-            const namesPath = path.join(dir, book_name, 'meta.toml');
-            if (fs.existsSync(namesPath)) {
-                results.push(entry.name);
-            }
-        }
-    }
-    return results;
+    const entriesSet = new Set(
+        entries.map(x => x.name)
+    )
+    console.log(entriesSet)
+    const names = HHs.items
+        .map(x => x.text)
+        .filter(x => {
+            return entriesSet.has(x) &&
+            fs.existsSync(path.join(dir, x, 'meta.toml'))
+        });
+    ;
+    return names;
 }
+
 const processContent = function (names) {
     const head = `
 ---
@@ -50,11 +55,13 @@ prev:
     return lines.join('\n');
 }
 
-const startDir = (path.resolve(__dirname));
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const startDir = path.resolve(__dirname);
 const targetDir = findDirWithCNAME(startDir);
-const bookNames = processDirectory(targetDir);
-console.log(bookNames);
+const bookNames2 = processSideBarElements(config, targetDir);
+console.log(bookNames2);
 const epubPage = path.join(targetDir, 'warhammer40k', 'epub.md');
-const epubContent = processContent(bookNames);
+const epubContent = processContent(bookNames2);
 console.log(epubContent);
 fs.appendFileSync(epubPage, epubContent, 'utf-8');

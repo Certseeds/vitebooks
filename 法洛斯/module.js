@@ -27,7 +27,7 @@ const repalceNameFiles = [`.${path}/names.txt`,];
 const resource = `.${path}/HH34.txt`;
 
 const IsChapterBegin = function (line) {
-    if (line.startsWith("第") && line.endsWith("章")){
+    if (line.startsWith("第") && line.endsWith("章")) {
         return true;
     }
     return false;
@@ -41,17 +41,17 @@ const generatePattern = (chapter) => {
     return ["src", `chapter${chapterNumber}.md`];
 }
 
-module.exports = {
-    order: order,
-    generateLink: generateLink,
-    prelink: prelink,
+export {
+    order,
+    generateLink,
+    prelink,
 
-    replaceDirs: replaceDirs,
-    repalceFiles: repalceFiles,
-    repalceNameFiles: repalceNameFiles,
+    replaceDirs,
+    repalceFiles,
+    repalceNameFiles,
 
-    resource: resource,
-    IsChapterBegin: IsChapterBegin,
-    head: head,
-    generatePattern: generatePattern
+    resource,
+    IsChapterBegin,
+    head,
+    generatePattern
 }

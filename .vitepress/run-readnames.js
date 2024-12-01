@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-const fs = require('fs');
-const path = require('path');
+import fs from 'node:fs';
 
 // 指定要读取的目录路径
 const directoryPath = '' // 请替换为你的目录路径

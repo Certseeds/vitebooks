@@ -1,17 +1,21 @@
 #!/usr/bin/env node
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-const fs = require('fs');
-const fsPromises = require('fs').promises;
-const path = require('path');
-const archiver = require('archiver');
-const { exec } = require('child_process');
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import archiver from 'archiver';
+import { exec } from 'child_process';
+
+const fsPromises = fs.promises;
 
 const isChinese = (str) => /[\u4e00-\u9fa5]/.test(str);
 
 const args = process.argv.slice(2);
 console.log(args);
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const findMetaFiles = async (dir, tgz) => {
     const files = await fsPromises.readdir(dir);
     for (const file of files) {

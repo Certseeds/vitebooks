@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-const fs = require('fs');
-const path = require('path');
+import fs from 'node:fs';
+import path from 'node:path';
 
 const args = process.argv;
 
@@ -15,7 +15,8 @@ const readArgs = function (args) {
 const input = readArgs(args);
 
 const modulePath = path.resolve(input["path"], 'module.js');
-const bookModule = require(modulePath);
+const configPath = pathToFileURL(modulePath).href;
+const bookModule = await import(configPath);
 // 定义要读取的文件路径模式
 const order = bookModule.order;
 

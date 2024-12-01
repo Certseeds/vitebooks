@@ -40,17 +40,17 @@ const generatePattern = (chapter) => {
     return ["src", `chapter${chapterNumber}.md`];
 }
 
-module.exports = {
-    order: order,
-    generateLink: generateLink,
-    prelink: prelink,
+export {
+    order,
+    generateLink,
+    prelink,
 
-    replaceDirs: replaceDirs,
-    repalceFiles: repalceFiles,
-    repalceNameFiles: repalceNameFiles,
+    replaceDirs,
+    repalceFiles,
+    repalceNameFiles,
 
-    resource: resource,
-    IsChapterBegin: IsChapterBegin,
-    head: head,
-    generatePattern: generatePattern
+    resource,
+    IsChapterBegin,
+    head,
+    generatePattern
 }

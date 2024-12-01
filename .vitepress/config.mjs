@@ -20,7 +20,7 @@ export default defineConfig({
         ],
         sidebar: [
             {
-                text: 'Books',
+                text: '荷鲁斯之乱',
                 items: [
                     { text: "深渊之战", link: '/深渊之战/meta' }
                     , { text: "异端传说", link: '/异端传说/meta' }
@@ -33,9 +33,14 @@ export default defineConfig({
                     , { text: "法洛斯", link: '/法洛斯/meta' }
                     , { text: "泰拉之眼", link: '/泰拉之眼/meta' }
                     , { text: "忠诚的负担", link: '/忠诚的负担/meta' }
-                    , { text: "warhammer40k-元数据", link: '/warhammer40k/primarchs' }
                     , { text: "epub总集", link: '/warhammer40k/epub' }
                     , { text: "well-done", link: '/welldone/README' }
+                ]
+            },
+            {
+                text: '元数据',
+                items: [
+                    , { text: "warhammer40k-元数据", link: '/warhammer40k/primarchs' }
                 ]
             }
         ],

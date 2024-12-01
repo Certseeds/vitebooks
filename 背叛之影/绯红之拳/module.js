@@ -24,12 +24,12 @@ const replaceDirs = [`.${path}/src`,];
 const repalceFiles = [];
 const repalceNameFiles = [`.${path}/names.txt`,];
 
-module.exports = {
-    order: order,
-    generateLink: generateLink,
-    prelink: prelink,
+export {
+    order,
+    generateLink,
+    prelink,
 
-    replaceDirs: replaceDirs,
-    repalceFiles: repalceFiles,
-    repalceNameFiles: repalceNameFiles,
+    replaceDirs,
+    repalceFiles,
+    repalceNameFiles,
 }

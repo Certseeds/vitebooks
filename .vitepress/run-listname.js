@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-const fs = require('node:fs');
-const path = require('node:path');
-
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const findDirWithCNAME = function (startDir) {
     for (let dir = startDir; dir !== path.parse(dir).root;) {
@@ -46,7 +46,9 @@ const processTxtContent = function (content, head) {
     return results;
 }
 
-const startDir = (path.resolve(__dirname));
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const startDir = path.resolve(__dirname);
 const targetDir = findDirWithCNAME(startDir);
 if (targetDir) {
     processDirectory(targetDir);

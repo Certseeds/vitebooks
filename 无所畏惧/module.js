@@ -39,17 +39,17 @@ const head = function (chapter, part) {
 }
 const resource = `.${path}/HH19.txt`;
 
-module.exports = {
-    generateLink: generateLink,
-    order: order,
-    prelink: prelink,
+export {
+    generateLink,
+    order,
+    prelink,
     pattern: pattern,
 
-    replaceDirs: replaceDirs,
-    repalceFiles: repalceFiles,
-    repalceNameFiles: repalceNameFiles,
+    replaceDirs,
+    repalceFiles,
+    repalceNameFiles,
 
-    IsChapterBegin: IsChapterBegin,
-    head: head,
-    resource: resource,
+    IsChapterBegin,
+    head,
+    resource,
 }
