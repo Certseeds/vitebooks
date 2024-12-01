@@ -1,4 +1,4 @@
-const path = "/泰拉之眼/圣吉列斯先驱";
+const path = "/泰拉之眼/圣吉列斯先躯";
 // 生成链接的函数
 
 const replaceDirs = [];

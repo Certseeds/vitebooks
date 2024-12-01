@@ -53,6 +53,6 @@ On the Cover: Featuring stories by Aaron Dembski-Bowden, Chris Wraight, Nick Kym
 + [TODO-鹰之爪]
 + [TODO-钢铁尸体]
 + [TODO-63-14世界的最终归顺]
-+ [圣吉列斯的传令官](/泰拉之眼/圣吉列斯的传令官/meta) & [圣吉列斯先躯](/泰拉之眼/圣吉列斯先驱/meta)
++ [圣吉列斯的传令官](/泰拉之眼/圣吉列斯的传令官/meta) & [圣吉列斯先躯](/泰拉之眼/圣吉列斯先躯/meta)
 
 [^1]: 这一部分和<不被铭记的帝国>对比并无改动, 因此复制自[不被铭记的帝国序章](/不被铭记的帝国/base)
