@@ -147,14 +147,6 @@ On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium a
 
 此外另有其他随故事展开而出场的领主, 官员和指挥官
 
-[^1]: Vigilator 守夜者, 参照本吧"《荷鲁斯之乱-第一章-背叛》军表部分翻译", 雷克斯连长
-
-[^2]: 又称死翼, 恐翼, 暗黑天使军团的特殊组织架构, 其余为铁翼, 鸦翼, 飓翼和火翼.
-
-[^3]: Invincible Reason
-
-[^4]: Neverborn 无生者, 参照本吧"小说翻译: 荷鲁斯之爪", dszwhz
-
 --------
 
 > "留有子嗣之人便永不会被遗忘."
@@ -172,3 +164,11 @@ On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium a
 > "统御全人类的欲望几乎总是伪装成拯救全人类的野心."
 >
 > ——引自泛太平洋暴君纳森杜姆, 泰拉统一年代[M30]
+
+[^1]: Vigilator 守夜者, 参照本吧"《荷鲁斯之乱-第一章-背叛》军表部分翻译", 雷克斯连长
+
+[^2]: 又称死翼, 恐翼, 暗黑天使军团的特殊组织架构, 其余为铁翼, 鸦翼, 飓翼和火翼.
+
+[^3]: Invincible Reason
+
+[^4]: Neverborn 无生者, 参照本吧"小说翻译: 荷鲁斯之爪", dszwhz

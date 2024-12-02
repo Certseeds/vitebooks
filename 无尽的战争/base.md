@@ -10,8 +10,6 @@ prev:
 
 编者: Laurie Goulding[^1]
 
-[^1]: 经过<https://warhammer40k.fandom.com/wiki/War_Without_End_(Anthology)>确认.
-
 On the Cover: Featuring stories by Aaron Dembski-Bowden, John French, Graham McNeill, James Swallow, Chris Wraight and many more.
 
 ## 荷鲁斯叛乱[^2]
@@ -31,8 +29,6 @@ On the Cover: Featuring stories by Aaron Dembski-Bowden, John French, Graham McN
 无辜者的尖叫与正义之人的悲呼都和黑暗诸神的残忍笑声交织回荡. 倘若帝皇在战争中落败, 痛苦与灾难便等待着所有人.
 
 知识与启迪的年代已经告终. 黑暗年代拉开了帷幕.
-
-[^2]: 这一部分和<不被铭记的帝国>对比并无改动, 因此复制自[不被铭记的帝国序章](/不被铭记的帝国/base)
 
 ## 出场人物
 
@@ -63,3 +59,7 @@ On the Cover: Featuring stories by Aaron Dembski-Bowden, John French, Graham McN
 + [外科医生](/无尽的战争/外科医生/meta)
 + [扭曲者](/无尽的战争/扭曲者/meta) & [扭曲者2](/无尽的战争/扭曲者2/meta)
 + [狼母](/无尽的战争/狼母/meta)
+
+[^1]: 经过<https://warhammer40k.fandom.com/wiki/War_Without_End_(Anthology)>确认.
+
+[^2]: 这一部分和<不被铭记的帝国>对比并无改动, 因此复制自[不被铭记的帝国序章](/不被铭记的帝国/base)

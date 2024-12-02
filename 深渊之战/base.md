@@ -47,12 +47,6 @@ On The Cover: The latest instalment in the best-seling Horus Heresy Series
 
 拉特若斯, 荣誉护卫, 药剂师
 
-[^1]: 直译是 拳套
-
-[^2]: 直译是 抗原
-
-[^3]: 又译作 荣誉卫队
-
 ### 怀言者军团
 
 扎德基尔, 深渊狂怒号[^4]舰长
@@ -67,15 +61,11 @@ On The Cover: The latest instalment in the best-seling Horus Heresy Series
 
 欧提斯, 战斗兄弟
 
-[^4]: Furious Abyss, 原文有多种翻译, 包括暴怒深渊号, 愤怒深渊号, 狂暴深渊号
-
 ### 火星机械修会
 
 卡尔博 哈尔[^5] (KELBOR-HAL), 铸造将军
 
 古雷奥[^5] (GUREOD), 贤者, 深渊狂怒号船员
-
-[^5]: 本次整理时新添加的, 原始译文中没有
 
 ### 太空野狼军团
 
@@ -98,5 +88,15 @@ On The Cover: The latest instalment in the best-seling Horus Heresy Series
 温克米亚(VENKMYER), 女船长, 愤怒号船员
 
 奥斯卡(ORCADUS), 海军导航员, 愤怒号船员
+
+[^1]: 直译是 拳套
+
+[^2]: 直译是 抗原
+
+[^3]: 又译作 荣誉卫队
+
+[^4]: Furious Abyss, 原文有多种翻译, 包括暴怒深渊号, 愤怒深渊号, 狂暴深渊号
+
+[^5]: 本次整理时新添加的, 原始译文中没有
 
 [^6]: 原文为 The Saturnine Fleet

@@ -17,8 +17,6 @@ next:
 
 On the Cover: Dan Abnett is probably the best writer of dark military in the world. The Guardian
 
-[^1]: 显然The Guardian在这里不指灵族中的民兵级单位-守护者, 而可能指英国的一家出版商, 网站<https://guardianbookshop.com/>
-
 ### 荷鲁斯叛乱
 
 这是一段传奇的岁月.
@@ -238,3 +236,5 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 > "目标获取阶段, 或称备战状态, 是任何成功行动的关键步骤. 虽然一位战士必须准备好在毫无提示和预警的情况下作出战斗反应, 但是只有当他为作战进行计划与准备, 并将敌方的特殊情况考虑在计划之内的时候, 他才是最为成功的...就像我之前所说, 这样的战争才是一种技艺或科学. 战斗的胜利往往决定于第一枪被发出之前, 甚至是在发出第一枪的命令被下达之前."
 >
 > ——基里曼, 军事法典草稿, 7.3.ii
+
+[^1]: 显然The Guardian在这里不指灵族中的民兵级单位-守护者, 而可能指英国的一家出版商, 网站<https://guardianbookshop.com/>

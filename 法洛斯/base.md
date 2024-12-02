@@ -35,8 +35,6 @@ On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Impe
 
 知识与启迪的年代已经告终. 黑暗年代拉开了帷幕.
 
-[^1]: 这一部分和<不被铭记的帝国>对比并无改动, 因此复制自[不被铭记的帝国序章](/不被铭记的帝国/base)
-
 ## 出场人物
 
 ### 第九军团-圣血天使
@@ -119,10 +117,6 @@ On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Impe
 
 维鲁斯·卡斯宾, 战团长, 第一战团
 
-[^2]: 智库的正式职级从低到高分别是编修员(Lexicanium/Lexicani), 典记长(Codicier), 星语官(Epistolary), 首席智库(Chief Librarian).
-
-[^3]: 中士, 军士的翻译两者兼有, 在本文档中统一为中士.
-
 ### 第一军团-暗黑天使
 
 阿尔奎斯, 连长, 守望者号(the Watcher)的指挥官(legionary commander)
@@ -202,3 +196,9 @@ Kolom 博拉里昂, 中士, 索萨第一辅助军
 --------
 
 这一部分直接来自原文, 通过与[不被铭记的帝国序章](/不被铭记的帝国/base)以及正文比对, 得到合适的翻译.
+
+[^1]: 这一部分和<不被铭记的帝国>对比并无改动, 因此复制自[不被铭记的帝国序章](/不被铭记的帝国/base)
+
+[^2]: 智库的正式职级从低到高分别是编修员(Lexicanium/Lexicani), 典记长(Codicier), 星语官(Epistolary), 首席智库(Chief Librarian).
+
+[^3]: 中士, 军士的翻译两者兼有, 在本文档中统一为中士.

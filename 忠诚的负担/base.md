@@ -28,8 +28,6 @@ On the Cover: Featuring stories by Dan Abnett, Aaron Dembski-Bowden, John French
 
 知识与启迪的年代已经告终. 黑暗年代拉开了帷幕.
 
-[^1]: 这一部分和<不被铭记的帝国>对比并无改动, 因此复制自[不被铭记的帝国序章](/不被铭记的帝国/base)
-
 ## 出场人物
 
 参考每本书的base部分.
@@ -46,3 +44,5 @@ On the Cover: Featuring stories by Dan Abnett, Aaron Dembski-Bowden, John French
 + [狼王](/忠诚的负担/狼王/meta)
 + [二元继承](/忠诚的负担/二元继承/meta)
 + [永生者](/忠诚的负担/永生者/meta)
+
+[^1]: 这一部分和<不被铭记的帝国>对比并无改动, 因此复制自[不被铭记的帝国序章](/不被铭记的帝国/base)
