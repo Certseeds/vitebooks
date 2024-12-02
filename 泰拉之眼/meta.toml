@@ -82,6 +82,7 @@ authors = ["Nick Kyme"]
 recommended_reading = [
     { name = "谴责", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 31 } } },
 ]
+faction_keywords = ["极限战士", "怀言者", "吞世者"]
 
 [[sub]]
 chinese_name = "第一战团长"

@@ -45,7 +45,7 @@ On the Cover: Featuring stories by Aaron Dembski-Bowden, Chris Wraight, Nick Kym
 + [TODO-继承者]
 + [TODO-沃拉克斯]
 + [TODO-炎铁] & [TODO-钢铁之火]
-+ [TODO-红印]
++ [红印](/泰拉之眼/红印/meta)
 + [TODO-第一战团长] &[TODO-首席导师]
 + [TODO-策略]
 + [TODO-长夜]
