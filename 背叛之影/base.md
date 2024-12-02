@@ -8,13 +8,13 @@ prev:
 
 ## 副标题: Heresy Begets retribution
 
-编者: Christian Dunn and Nick Kyme[^背叛之影-序章-1]
+编者: Christian Dunn and Nick Kyme[^1]
 
-[^背叛之影-序章-1]: 参考<https://wh40k.lexicanum.com/wiki/Shadows_of_Treachery_(Anthology)>
+[^1]: 参考<https://wh40k.lexicanum.com/wiki/Shadows_of_Treachery_(Anthology)>
 
 On the Cover: The New York Times bestselling series. Featuring stories by Dan Abnett, Aaron Dembski-Bowden and Graham Mcneill.
 
-## 荷鲁斯之乱[^背叛之影-序章-2]
+## 荷鲁斯之乱[^2]
 
 这是一个传奇的时代
 
@@ -38,7 +38,7 @@ On the Cover: The New York Times bestselling series. Featuring stories by Dan Ab
 
 属于黑暗的时代刚刚开始
 
-[^背叛之影-序章-2]: 这一部分和<不被铭记的帝国>对比并无改动, 翻译与[不被铭记的帝国序章](/不被铭记的帝国/base)不同是因为译者文风不同.
+[^2]: 这一部分和<不被铭记的帝国>对比并无改动, 翻译与[不被铭记的帝国序章](/不被铭记的帝国/base)不同是因为译者文风不同.
 
 ## 出场人物
 

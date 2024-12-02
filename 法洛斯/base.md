@@ -17,7 +17,7 @@ next:
 
 On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Imperium Secundus
 
-### 荷鲁斯叛乱[^法洛斯-序章-1]
+### 荷鲁斯叛乱[^1]
 
 这是一段传奇的岁月.
 
@@ -35,7 +35,7 @@ On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Impe
 
 知识与启迪的年代已经告终. 黑暗年代拉开了帷幕.
 
-[^法洛斯-序章-1]: 这一部分和<不被铭记的帝国>对比并无改动, 因此复制自[不被铭记的帝国序章](/不被铭记的帝国/base)
+[^1]: 这一部分和<不被铭记的帝国>对比并无改动, 因此复制自[不被铭记的帝国序章](/不被铭记的帝国/base)
 
 ## 出场人物
 
@@ -53,7 +53,7 @@ On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Impe
 
 泰图斯 普瑞托, 百人议众(Presiding Centuria)之主, 智库
 
-塞奥吉尔, 星语官(Epistolary)[^法洛斯-序章-2]
+塞奥吉尔, 星语官(Epistolary)[^2]
 
 安达卢斯, 连长(Captain), 第199盾卫连
 
@@ -63,7 +63,7 @@ On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Impe
 
 格纳斯, 旗手(Vexillary)
 
-奥迪里奥, 中士/军士[^法洛斯-序章-3] (Sergeant)
+奥迪里奥, 中士/军士[^3] (Sergeant)
 
 阿卡门尼德, 中士
 
@@ -119,9 +119,9 @@ On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Impe
 
 维鲁斯·卡斯宾, 战团长, 第一战团
 
-[^法洛斯-序章-2]: 智库的正式职级从低到高分别是编修员(Lexicanium/Lexicani), 典记长(Codicier), 星语官(Epistolary), 首席智库(Chief Librarian).
+[^2]: 智库的正式职级从低到高分别是编修员(Lexicanium/Lexicani), 典记长(Codicier), 星语官(Epistolary), 首席智库(Chief Librarian).
 
-[^法洛斯-序章-3]: 中士, 军士的翻译两者兼有, 在本文档中统一为中士.
+[^3]: 中士, 军士的翻译两者兼有, 在本文档中统一为中士.
 
 ### 第一军团-暗黑天使
 

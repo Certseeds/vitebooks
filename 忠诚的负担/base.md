@@ -10,7 +10,7 @@ prev:
 
 On the Cover: Featuring stories by Dan Abnett, Aaron Dembski-Bowden, John French, Gav Thorpe, Chris Wraight and Many more.
 
-## 荷鲁斯叛乱[^忠诚的负担-1]
+## 荷鲁斯叛乱[^1]
 
 这是一段传奇的岁月.
 
@@ -28,7 +28,7 @@ On the Cover: Featuring stories by Dan Abnett, Aaron Dembski-Bowden, John French
 
 知识与启迪的年代已经告终. 黑暗年代拉开了帷幕.
 
-[^忠诚的负担-1]: 这一部分和<不被铭记的帝国>对比并无改动, 因此复制自[不被铭记的帝国序章](/不被铭记的帝国/base)
+[^1]: 这一部分和<不被铭记的帝国>对比并无改动, 因此复制自[不被铭记的帝国序章](/不被铭记的帝国/base)
 
 ## 出场人物
 

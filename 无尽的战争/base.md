@@ -8,13 +8,13 @@ prev:
 
 ## 副标题: Heresy Begets retribution
 
-编者: Laurie Goulding[^无尽的战争-序章-1]
+编者: Laurie Goulding[^1]
 
-[^无尽的战争-序章-1]: 经过<https://warhammer40k.fandom.com/wiki/War_Without_End_(Anthology)>确认.
+[^1]: 经过<https://warhammer40k.fandom.com/wiki/War_Without_End_(Anthology)>确认.
 
 On the Cover: Featuring stories by Aaron Dembski-Bowden, John French, Graham McNeill, James Swallow, Chris Wraight and many more.
 
-## 荷鲁斯叛乱[^无尽的战争-序章-2]
+## 荷鲁斯叛乱[^2]
 
 这是一段传奇的岁月.
 
@@ -32,7 +32,7 @@ On the Cover: Featuring stories by Aaron Dembski-Bowden, John French, Graham McN
 
 知识与启迪的年代已经告终. 黑暗年代拉开了帷幕.
 
-[^无尽的战争-序章-2]: 这一部分和<不被铭记的帝国>对比并无改动, 因此复制自[不被铭记的帝国序章](/不被铭记的帝国/base)
+[^2]: 这一部分和<不被铭记的帝国>对比并无改动, 因此复制自[不被铭记的帝国序章](/不被铭记的帝国/base)
 
 ## 出场人物
 

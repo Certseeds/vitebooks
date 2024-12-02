@@ -39,23 +39,23 @@ On The Cover: The latest instalment in the best-seling Horus Heresy Series
 
 ### 极限战士军团
 
-瑟斯图斯[^深渊之战-序章-1], 战斗连长兼舰队指挥官, 第七连连长
+瑟斯图斯[^1], 战斗连长兼舰队指挥官, 第七连连长
 
-安提珍[^深渊之战-序章-2], 荣誉护卫[^深渊之战-序章-3], 战斗兄弟
+安提珍[^2], 荣誉护卫[^3], 战斗兄弟
 
 萨伏拉克斯, 荣誉护卫, 旗手
 
 拉特若斯, 荣誉护卫, 药剂师
 
-[^深渊之战-序章-1]: 直译是 拳套
+[^1]: 直译是 拳套
 
-[^深渊之战-序章-2]: 直译是 抗原
+[^2]: 直译是 抗原
 
-[^深渊之战-序章-3]: 又译作 荣誉卫队
+[^3]: 又译作 荣誉卫队
 
 ### 怀言者军团
 
-扎德基尔, 深渊狂怒号[^深渊之战-序章-4]舰长
+扎德基尔, 深渊狂怒号[^4]舰长
 
 贝拉诺斯(BAELANOS), 战斗连长, 深渊狂怒号船员
 
@@ -67,15 +67,15 @@ On The Cover: The latest instalment in the best-seling Horus Heresy Series
 
 欧提斯, 战斗兄弟
 
-[^深渊之战-序章-4]: Furious Abyss, 原文有多种翻译, 包括暴怒深渊号, 愤怒深渊号, 狂暴深渊号
+[^4]: Furious Abyss, 原文有多种翻译, 包括暴怒深渊号, 愤怒深渊号, 狂暴深渊号
 
 ### 火星机械修会
 
-卡尔博 哈尔[^深渊之战-序章-5] (KELBOR-HAL), 铸造将军
+卡尔博 哈尔[^5] (KELBOR-HAL), 铸造将军
 
-古雷奥[^深渊之战-序章-5] (GUREOD), 贤者, 深渊狂怒号船员
+古雷奥[^5] (GUREOD), 贤者, 深渊狂怒号船员
 
-[^深渊之战-序章-5]: 本次整理时新添加的, 原始译文中没有
+[^5]: 本次整理时新添加的, 原始译文中没有
 
 ### 太空野狼军团
 
@@ -91,7 +91,7 @@ On The Cover: The latest instalment in the best-seling Horus Heresy Series
 
 斯卡若, 战斗兄弟
 
-### 土星舰队[^深渊之战-序章-6]
+### 土星舰队[^6]
 
 卡敏斯卡, 海军少将, 愤怒号船员
 
@@ -99,4 +99,4 @@ On The Cover: The latest instalment in the best-seling Horus Heresy Series
 
 奥斯卡(ORCADUS), 海军导航员, 愤怒号船员
 
-[^深渊之战-序章-6]: 原文为 The Saturnine Fleet
+[^6]: 原文为 The Saturnine Fleet
