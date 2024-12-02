@@ -44,6 +44,9 @@ export const get_authors = async () => {
         const sortArray = Array
             .from(Object.entries(authors))
             .sort((a, b) => {
+                return a[0].localeCompare(b[0])
+            })
+            .sort((a, b) => {
                 return b[1] - a[1];
             });
         const map = new Map(sortArray);
