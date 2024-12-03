@@ -2,10 +2,11 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 import fs from 'node:fs';
+import fsp from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const findDirWithCNAME = function (startDir) {
+const findDirWithCNAME = (startDir) => {
     for (let dir = startDir; dir !== path.parse(dir).root;) {
         if (fs.existsSync(path.join(dir, 'CNAME'))) {
             return dir;
@@ -15,22 +16,22 @@ const findDirWithCNAME = function (startDir) {
     return null;
 }
 const isChinese = (str) => /[\u4e00-\u9fa5]/.test(str);
-const processDirectory = function (dir) {
+const processDirectory = async (dir) => {
     console.log(dir);
     const namesPath = path.join(dir, 'names.txt');
     if (fs.existsSync(namesPath)) {
-        const namesContent = fs.readFileSync(namesPath, 'utf-8');
+        const namesContent = await fsp.readFile(namesPath, 'utf-8');
         const processed = processTxtContent(namesContent, '### 替换列表');
-        fs.appendFileSync(path.join(dir, 'meta.md'), processed, 'utf-8');
+        await fsp.appendFile(path.join(dir, 'meta.md'), processed, 'utf-8');
     }
-    const entries = fs.readdirSync(dir, { withFileTypes: true });
+    const entries = await fsp.readdir(dir, { withFileTypes: true });
     for (const entry of entries) {
         if (entry.isDirectory() && isChinese(entry.name)) {
-            processDirectory(path.join(dir, entry.name));
+            await processDirectory(path.join(dir, entry.name));
         }
     }
 }
-const processTxtContent = function (content, head) {
+const processTxtContent = (content: string, head: string) => {
     const lines = content.split('\n');
     const writeLines = lines
         .map(x => x.trim())
@@ -51,21 +52,21 @@ const __dirname = path.dirname(__filename);
 const startDir = path.resolve(__dirname);
 const targetDir = findDirWithCNAME(startDir);
 if (targetDir) {
-    processDirectory(targetDir);
+    await processDirectory(targetDir);
 }
 
 const primarchNames = path.join(targetDir, 'warhammer40k', 'names.txt');
-const primarchNamesContent = fs.readFileSync(primarchNames, 'utf-8');
+const primarchNamesContent = await fsp.readFile(primarchNames, 'utf-8');
 const primarchNamesProcessed = processTxtContent(primarchNamesContent, `## 重要人物姓名替换列表`);
-fs.appendFileSync(path.join(targetDir, 'warhammer40k', 'primarchs.md'), primarchNamesProcessed, 'utf-8');
+await fsp.appendFile(path.join(targetDir, 'warhammer40k', 'primarchs.md'), primarchNamesProcessed, 'utf-8');
 
 const commonNames = path.join(targetDir, 'warhammer40k', 'legion.txt');
-const commonNamesContent = fs.readFileSync(commonNames, 'utf-8');
+const commonNamesContent = await fsp.readFile(commonNames, 'utf-8');
 const commonNamesProcessed = processTxtContent(commonNamesContent, `## 军团常见词汇替换列表`);
-fs.appendFileSync(path.join(targetDir, 'warhammer40k', 'primarchs.md'), commonNamesProcessed, 'utf-8');
+await fsp.appendFile(path.join(targetDir, 'warhammer40k', 'primarchs.md'), commonNamesProcessed, 'utf-8');
 
 const MechanicumNames = path.join(targetDir, 'warhammer40k', 'mechanicum.txt');
-const MechanicumNamesContent = fs.readFileSync(MechanicumNames, 'utf-8');
+const MechanicumNamesContent = await fsp.readFile(MechanicumNames, 'utf-8');
 const MechanicumNamesProcessed = processTxtContent(MechanicumNamesContent, `## 机械神教常见词汇替换列表`);
-fs.appendFileSync(path.join(targetDir, 'warhammer40k', 'primarchs.md'), MechanicumNamesProcessed, 'utf-8');
+await fsp.appendFile(path.join(targetDir, 'warhammer40k', 'primarchs.md'), MechanicumNamesProcessed, 'utf-8');
 

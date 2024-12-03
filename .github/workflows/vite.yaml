@@ -48,7 +48,12 @@ jobs:
           workspaces: "./depage/rustydeps"
 
       - name: scan and append names.txt
-        run: pnpm exec node ./.vitepress/run-listname.js
+        run: |
+          pnpm \
+            exec node \
+            --experimental-strip-types \
+            --experimental-transform-types \
+             ./.vitepress/run-listname.ts
 
       - name: add wasm32-unknown-unknown target
         run: rustup target add wasm32-unknown-unknown

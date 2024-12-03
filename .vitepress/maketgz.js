@@ -2,12 +2,11 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 import fs from 'node:fs';
+import fsp from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import archiver from 'archiver';
 import { exec } from 'child_process';
-
-const fsPromises = fs.promises;
 
 const isChinese = (str) => /[\u4e00-\u9fa5]/.test(str);
 
@@ -17,15 +16,15 @@ console.log(args);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const findMetaFiles = async (dir, tgz) => {
-    const files = await fsPromises.readdir(dir);
+    const files = await fsp.readdir(dir);
     for (const file of files) {
         const fullPath = path.join(dir, file);
-        const stat = await fsPromises.stat(fullPath);
+        const stat = await fsp.stat(fullPath);
         if (stat.isDirectory() && (isChinese(file) || file === 'welldone')) {
             await findMetaFiles(fullPath, tgz);
         } else if (file === 'meta.toml') {
             console.log(dir, fullPath);
-            const content = await fsPromises.readFile(fullPath);
+            const content = await fsp.readFile(fullPath);
             // console.log(content.toString());
             tgz.append(Buffer.from(content, "utf8"), { name: fullPath });
             break;
@@ -33,11 +32,11 @@ const findMetaFiles = async (dir, tgz) => {
     }
 };
 const toepub = async (dir) => {
-    const files = await fsPromises.readdir(dir);
+    const files = await fsp.readdir(dir);
     const firstArg = args[0];
     for (const file of files) {
         const fullPath = path.join(dir, file);
-        const stat = await fsPromises.stat(fullPath);
+        const stat = await fsp.stat(fullPath);
         if (stat.isDirectory() && isChinese(file)) {
             console.log(`this is fullPath ${fullPath}`);
             const exePath = path.resolve(__dirname, 'toepub.exe');
