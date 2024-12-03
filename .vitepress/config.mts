@@ -40,7 +40,8 @@ export default defineConfig({
             {
                 text: '元数据',
                 items: [
-                    , { text: "warhammer40k-元数据", link: '/warhammer40k/primarchs' }
+                    { text: "warhammer40k-元数据", link: '/warhammer40k/primarchs' }
+                    ,
                 ]
             }
         ],
@@ -68,6 +69,21 @@ export default defineConfig({
             },
         },
     },
+    head: [
+        ['meta', { property: 'og:type', content: 'website' }],
+        ['meta', { property: 'og:locale', content: 'zh-CN' }],
+        ['meta', { property: 'og:title', content: 'ViteBooks | VitePress Powered Static Book Site' }],
+        ['meta', { property: 'og:site_name', content: 'ViteBooks' }],
+        ['meta', { property: 'og:image', content: 'https://vitebooks.certseeds.com/favicon.ico' }],
+        ['meta', { property: 'og:url', content: 'https://vitebooks.certseeds.com' }],
+        ['meta', { property: 'twitter:card', content: 'summary_large_image' }],
+        ['meta', { property: 'twitter:title', content: 'ViteBooks | VitePress Powered Static Book Site' }],
+        ['meta', { property: 'twitter:image', content: 'https://vitebooks.certseeds.com/favicon.ico' }],
+        ['meta', { property: 'twitter:description', content: 'warhammer cn translation collect and reformat' }],
+        ['meta', { property: 'keywords', content: 'vitepress, warhammer, nodejs, llm' }],
+        ['meta', { property: 'robots', content: 'index, follow' }],
+        ['meta', { property: 'author', content: 'Certseeds' }],
+    ],
     markdown: {
         config: (md) => {
             md.use(mdFootnote)

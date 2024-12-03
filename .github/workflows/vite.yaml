@@ -30,7 +30,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'pnpm'
 
       - name: Install Rust
@@ -77,7 +77,11 @@ jobs:
           pnpm exec node ./.vitepress/maketgz.js $RUN_NUMBER
 
       - name: scan and get epub page
-        run: pnpm exec node ./.vitepress/run-epublist.js
+        run: pnpm \
+                exec node \
+                --experimental-strip-types \
+                --experimental-transform-types \
+                ./.vitepress/run-epublist.ts
 
       - name: build depage
         working-directory: ./depage
