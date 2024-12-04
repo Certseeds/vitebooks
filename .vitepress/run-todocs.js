@@ -59,7 +59,7 @@ for (let i = order["begin"]; i <= order["end"]; i++) {
     // array[4] = `## ${array[4]}`;
     // array[6] = `## ${array[6]}`;
     const content = array.join('\n');
-    if (!fs.accessSync(filePath)) {
+    if (!fs.existsSync(filePath)) {
         fs.appendFileSync(filePath, content, 'utf8');
     } else {
         fs.writeFileSync(filePath, content, 'utf8');

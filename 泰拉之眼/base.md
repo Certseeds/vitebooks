@@ -39,14 +39,14 @@ On the Cover: Featuring stories by Aaron Dembski-Bowden, Chris Wraight, Nick Kym
 ## 章节
 
 + [焚尘之狼](/泰拉之眼/焚尘之狼/meta)
-+ [TODO-中篇-奥瑞利安]
++ [中篇-奥瑞利安](/泰拉之眼/奥瑞利安/meta)
 + [TODO-大屠杀]
 + [TODO-月之兄弟会]
 + [TODO-继承者]
 + [TODO-沃拉克斯]
 + [TODO-炎铁] & [TODO-钢铁之火]
 + [红印](/泰拉之眼/红印/meta)
-+ [TODO-第一战团长] &[TODO-首席导师]
++ [第一战团长](/泰拉之眼/第一战团长/meta) &[首席导师](/泰拉之眼/首席导师/meta)
 + [TODO-策略]
 + [TODO-长夜]
 + [父之罪孽](/泰拉之眼/父之罪孽/meta)

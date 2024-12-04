@@ -150,7 +150,7 @@ const sixthReplacement = (text) => {
     return result;
 }
 const seventhReplacement = (text) => {
-    let lines = text.split('\n');
+    const lines = text.split('\n');
     return lines.join('\n\n');
 }
 const eightReplacement = (text) => {
