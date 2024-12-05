@@ -38,7 +38,8 @@ const processTxtContent = (content: string, head: string) => {
         .filter(x => x.length > 0)
         .map(line => {
             const names = line.split(' ');
-            return `|${names[0]}|${names[1]}|`;
+            const origin = names[0].replace(/\|/g, '\\' + '\|');
+            return `|${origin}|${names[1]}|`;
         })
     const results = ["", `${head}`, "", "|原词|替换词|", "|:-:|:-:|"]
         .concat(writeLines)
