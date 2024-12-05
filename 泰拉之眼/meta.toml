@@ -22,6 +22,7 @@ authors = ["Aaron Dembski-Bowden"]
 recommended_reading = [
     { name = "异端初现", series = { name = "Horus Heresy", order = 14 } },
 ]
+faction_keywords = ["怀言者", "千子"]
 
 [[sub]]
 chinese_name = "大屠杀"
@@ -29,6 +30,7 @@ english_name = "Massacre"
 type = "短篇小说"
 authors = ["Aaron Dembski-Bowden"]
 recommended_reading = ["福格瑞姆"]
+faction_keywords = ["午夜领主"]
 
 [[sub]]
 chinese_name = "月之兄弟会"
@@ -38,6 +40,7 @@ authors = ["Chris Wraight"]
 recommended_reading = [
     { enname = "Scars", series = { name = "Horus Heresy", order = 28 } },
 ]
+faction_keywords = ["白色伤疤", "荷鲁斯之子"]
 
 [[sub]]
 chinese_name = "继承者"
@@ -47,6 +50,7 @@ authors = ["Gav Thorpe"]
 recommended_reading = [
     { name = "背叛者", series = { name = "Horus Heresy", order = 24 } },
 ]
+faction_keywords = ["怀言者", "吞世者", "极限战士"]
 
 [[sub]]
 chinese_name = "沃拉克斯"
@@ -54,7 +58,7 @@ english_name = "Vorax"
 type = "短篇小说"
 authors = ["Matthew Farrer"]
 recommended_reading = ["机械教", "福格瑞姆"]
-
+faction_keywords = ["机械教"]
 
 [[sub]]
 chinese_name = "炎铁"
@@ -64,6 +68,7 @@ authors = ["Rob Sanders"]
 recommended_reading = [
     { name = "钢铁本质", belongto = { name = "黑暗时代", series = { name = "Horus Heresy", order = 16 } } },
 ]
+faction_keywords = ["钢铁勇士", "帝皇之子"]
 
 [[sub]]
 chinese_name = "钢铁之火"
@@ -73,6 +78,7 @@ authors = ["Rob Sanders"]
 recommended_reading = [
     { name = "钢铁本质", belongto = { name = "黑暗时代", series = { name = "Horus Heresy", order = 16 } } },
 ]
+faction_keywords = ["钢铁勇士", "帝皇之子"]
 
 [[sub]]
 chinese_name = "红印"
@@ -92,6 +98,7 @@ authors = ["Gav Thorpe"]
 recommended_reading = [
     { name = "群鸦王子", belongto = { name = "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
 ]
+faction_keywords = ["暗黑天使"]
 
 [[sub]]
 chinese_name = "首席导师"
@@ -101,7 +108,7 @@ authors = ["Gav Thorpe"]
 recommended_reading = [
     { name = "群鸦王子", belongto = { name = "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
 ]
-
+faction_keywords = ["暗黑天使"]
 
 [[sub]]
 chinese_name = "策略"
@@ -112,7 +119,7 @@ recommended_reading = [
     { name = "红印", belongto = { name = "泰拉之眼", series = { name = "Horus Heresy", order = 35 } } },
     "不被铭记的帝国",
 ]
-
+faction_keywords = ["极限战士"]
 
 [[sub]]
 chinese_name = "长夜"
@@ -122,6 +129,7 @@ authors = ["Aaron Dembski-Bowden"]
 recommended_reading = [
     { name = "群鸦王子", belongto = { name = "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
 ]
+faction_keywords = ["午夜领主", "暗黑天使"]
 
 [[sub]]
 chinese_name = "父之罪孽"
@@ -138,19 +146,21 @@ chinese_name = "鹰之爪"
 english_name = "The Eagle's Talon"
 type = "短篇小说"
 authors = ["John French"]
-
+faction_keywords = ["帝国之拳", "钢铁勇士"]
 
 [[sub]]
 chinese_name = "钢铁尸体"
 english_name = "Iron Corpses"
 type = "短篇小说"
 authors = ["David Annandale"]
+faction_keywords = ["钢铁勇士", "泰坦军团"]
 
 [[sub]]
 chinese_name = "63-14世界的最终归顺"
 english_name = "The Final Compliance of 63-14"
 type = "短篇小说"
 authors = ["Guy Haley"]
+faction_keywords = ["荷鲁斯之子"]
 
 [[sub]]
 chinese_name = "圣吉列斯的传令官"
