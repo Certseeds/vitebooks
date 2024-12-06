@@ -98,11 +98,6 @@ jobs:
           mkdir -p ./public/depage
           cp -r ./depage/dist/* ./public/depage/
 
-      - name: cp epub
-        run: |
-          mkdir -p ./public/epub
-          cp ./*.epub ./public/epub
-
       - name: build
         run: pnpm run docs:build
 
