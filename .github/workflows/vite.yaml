@@ -111,6 +111,25 @@ jobs:
         with:
           path: ./.vitepress/dist
 
+      - name: cp epub to cf-public
+        run: |
+          sudo apt-get update
+          sudo apt-get install rename
+          mkdir -p ./cf-public/epub
+          mkdir -p ./cf-public/stable/epub
+          cp ./*.epub ./cf-public/epub
+          cp ./*.epub ./cf-public/stable/epub
+          rename \
+            's/(.*)-[0-9]{4}-[0-9]{8}\.epub$/$1.epub/' \
+            ./cf-public/stable/epub/*.epub
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy ./cf-public  --branch="main" --project-name=${{ secrets.CLOUDFLARE_PROJECT_NAME }} --commit-dirty=true
+
   # Deployment job
   deploy:
     # Add a dependency to the build job
