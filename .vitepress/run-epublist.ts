@@ -42,14 +42,7 @@ const processSideBarElements = async (config: any, dir: string) => {
 }
 
 const processContent = (names: string[]) => {
-    const head = `
----
-prev:
-  text: 'dependencies'
-  link: '/warhammer40k/dependencies'
----`;
-    const lines =
-        head.split("\n")
+    const lines = "".split("\n")
             .filter(x => x.length > 0)
             .concat(["", "# epub列表"])
             .concat([""])
