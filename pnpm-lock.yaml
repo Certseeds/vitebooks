@@ -8,25 +8,25 @@ importers:
 
   .:
     dependencies:
+      vue:
+        specifier: ^3.5.13
+        version: 3.5.13
+    devDependencies:
+      '@types/node':
+        specifier: ^22.10.1
+        version: 22.10.1
       archiver:
         specifier: ^7.0.1
         version: 7.0.1
       markdown-it-footnote:
         specifier: ^4.0.0
         version: 4.0.0
-      vue:
-        specifier: ^3.5.13
-        version: 3.5.13
-      zlib:
-        specifier: ^1.0.5
-        version: 1.0.5
-    devDependencies:
-      '@types/node':
-        specifier: ^22.10.1
-        version: 22.10.1
       vitepress:
         specifier: 1.5.0
         version: 1.5.0(@algolia/client-search@5.15.0)(@types/node@22.10.1)(postcss@8.4.49)(search-insights@2.17.2)
+      zlib:
+        specifier: ^1.0.5
+        version: 1.0.5
 
 packages:
 
