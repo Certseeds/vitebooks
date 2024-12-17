@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@nanoseeds/wh40k-icon':
+        specifier: ^0.2.0
+        version: 0.2.0
       vue:
         specifier: ^3.5.13
         version: 3.5.13
@@ -292,6 +295,9 @@ packages:
 
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
+
+  '@nanoseeds/wh40k-icon@0.2.0':
+    resolution: {integrity: sha512-y7hHNFeZM4ibIlVwBvAi901Ga7kjoPlgBvX8W73epDPyuia0Uql8Ubkx9ucj9W8yiUxKO4YUSCp4rw7lGbm5/Q==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -1297,6 +1303,12 @@ snapshots:
       wrap-ansi-cjs: wrap-ansi@7.0.0
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
+
+  '@nanoseeds/wh40k-icon@0.2.0':
+    dependencies:
+      vue: 3.5.13
+    transitivePeerDependencies:
+      - typescript
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
