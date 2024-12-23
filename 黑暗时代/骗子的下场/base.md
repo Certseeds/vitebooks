@@ -9,7 +9,7 @@ next:
 
 # 黑暗时代-骗子的下场-序章
 
-作者: Liar's Due
+作者: James Swallow
 
 ## 校者备注
 

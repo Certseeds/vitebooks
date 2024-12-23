@@ -88,10 +88,10 @@ const thirdReplacement = (text) => {
                     result += line[i];
                 }
             }
-            if (doubleQuotes(line) % 2 == 1) {
+            if (doubleQuotes(line) % 2 === 1) {
                 result += ' [ERROR] QUOTA NUMBER NOT MATCH';
             }
-            if (singleQuotes(line) % 2 == 1) {
+            if (singleQuotes(line) % 2 === 1) {
                 result += ' [ERROR] QUOTA NUMBER NOT MATCH';
             }
             return result;

@@ -49,6 +49,7 @@ const level1 = async (todoFiles) => {
         }
     }
 }
+
 const blackLists = ["你", "我", "他", "她", "它", "您", "大人", "指挥官", "队长", "大师", "总管", "兄弟", "姐妹", "父亲", "表亲", "原体", "连长", "团长", "军士", "中士", "智库", "军官", '贤者', "将军", "帝皇",];
 const level2 = async (line) => {
     const postObject = {
@@ -57,7 +58,7 @@ const level2 = async (line) => {
         "stream": false
     };
     try {
-        const response = await fetch('http://localhost:11434/api/generate', {
+        const response = await fetch('http://127.0.0.1:11434/api/generate', {
             method: "POST",
             body: JSON.stringify(postObject),
             headers: {
@@ -76,7 +77,7 @@ const level2 = async (line) => {
             ?.filter(x => !blackLists.includes(x))
             ?.filter(x => !x.includes('WU-REN-MING')) ?? [];
         console.log(llm_names);
-        if (llm_names.length == 0) {
+        if (llm_names.length === 0) {
             console.log(line);
         }
         llm_names.forEach(llm_name => {

@@ -34,7 +34,7 @@ for (let i = order["begin"]; i <= order["end"]; i++) {
         // 生成链接
         let links = '---\n';
 
-        if (i == order["begin"]) {
+        if (i === order["begin"]) {
             links += `prev:\n  text: 'base'\n  link: '${bookModule.prelink}'\n`
         } else if (i > order["begin"]) {
             const prevLink = bookModule.generateLink(i - 1, 'prev');

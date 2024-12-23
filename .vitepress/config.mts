@@ -27,6 +27,7 @@ export default defineConfig({
                     , { text: "黑暗时代", link: '/黑暗时代/meta' }
                     , { text: "无所畏惧", link: '/无所畏惧/meta' }
                     , { text: "原体", link: '/原体/meta' }
+                    , { text: "惧于踏足", link: '/惧于踏足/meta' }
                     , { text: "背叛之影", link: '/背叛之影/meta' }
                     , { text: "不被铭记的帝国", link: '/不被铭记的帝国/meta' }
                     , { text: "无尽的战争", link: '/无尽的战争/meta' }

@@ -1,0 +1,11 @@
+[book]
+chinese_name = "惧于踏足"
+english_name = "Fear To Tread"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 21
+authors = ["James Swallow"]
+recommended_reading = [
+    { name = "异端初现", series = { name = "Horus Heresy", order = 14 } }
+]
+faction_keywords = ["圣血天使", "怀言者", "混沌恶魔"]
