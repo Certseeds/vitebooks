@@ -477,17 +477,17 @@ next:
 
 [^1-3]: You feed on the emanations of life: 此处"以辐射的生命之力为食" 译得应该不是十分准确, 不过一时想不到更好的说法了
 
-[^1-4]: a point-blank barrage from a Vindicator: 此处感谢恶堕机械球大佬的指点~
+[^1-4]: a point-blank barrage from a Vindicator: 此处感谢`@恶堕机械球`大佬的指点~
 
-[^1-5]: With each hit, the warheads of the mass-reactive bloodshard rounds exploded into hundreds of magno-charged monofilaments：既不确定前者是什么也不确定炸开的后者是什么……此处感谢群友的帮忙，最后是硬翻的，应该有不少错误，要是有大佬清楚请指正~
+[^1-5]: With each hit, the warheads of the mass-reactive bloodshard rounds exploded into hundreds of magno-charged monofilaments: 既不确定前者是什么也不确定炸开的后者是什么……此处感谢群友的帮忙, 最后是硬翻的, 应该有不少错误, 要是有大佬清楚请指正~
 
-[^1-6]: I am not Russ who would judge you, or Dorn who would not listen：此处因涉及老荷对其他原体的评论，所以把原文放上来，多恩这里可以直接引申为“固执己见”之类的意思，不过想了想还是选择平铺直叙的说了
+[^1-6]: I am not Russ who would judge you, or Dorn who would not listen: 此处因涉及老荷对其他原体的评论, 所以把原文放上来, 多恩这里可以直接引申为"固执己见"之类的意思, 不过想了想还是选择平铺直叙的说了
 
-[^1-7]: Alpharius, Lorgar… They would not be generous.此处也涉及天使对其他原体的看法，所以也放一下原文，以免产生误解
+[^1-7]: Alpharius, Lorgar… They would not be generous. 此处也涉及天使对其他原体的看法, 所以也放一下原文, 以免产生误解
 
-[^1-8]: Your warriors are ineffective, 感谢@终端的地平线 大佬的优化建议~
+[^1-8]: Your warriors are ineffective, 感谢`@终端的地平线`大佬的优化建议~
 
-[^1-9]: You are in the company of death.此处应该是双关了，同时也是“你在死亡连”的意思
+[^1-9]: You are in the company of death.此处应该是双关了, 同时也是"你在死亡连"的意思
 
 [^1]: hovering skimmer
 
