@@ -285,3 +285,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/node,audio,linux,macos,vuejs,windows,compressed,visualstudiocode,rust
+LICENSE_AGPL_V3_0.md

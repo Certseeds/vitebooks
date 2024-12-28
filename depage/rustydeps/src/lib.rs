@@ -8,7 +8,7 @@ pub use crate::structs::meta::Meta;
 pub use crate::structs::search_type::SearchType;
 pub use crate::structs::series::Series;
 use serde_json;
-use std::collections::HashMap;
+use std::collections::{BTreeMap, HashMap, HashSet};
 use std::io::{Cursor, Read};
 use wasm_bindgen::prelude::wasm_bindgen;
 
@@ -155,6 +155,39 @@ fn merge_vecs(vecs: Vec<Vec<Vec<String>>>) -> Vec<Vec<String>> {
     merged_vecs
 }
 
+fn remove_repeat_from_start_to_end(vecs: Vec<Vec<String>>) -> Vec<Vec<String>> {
+    let mut pre_books: HashMap<String, bool> = HashMap::new();
+    let mut book_index = BTreeMap::new();
+    for (i, vec) in vecs.iter().enumerate() {
+        book_index.insert(i, vec.clone());
+    }
+    for (i, vec) in vecs.iter().enumerate() {
+        for book in vec {
+            pre_books.insert(book.clone(), true);
+        }
+        for (j, vec) in vecs.iter().enumerate().skip(i + 1) {
+            let new_vec: Vec<String> = vec
+                .iter()
+                .filter(|book| !pre_books.contains_key(*book))
+                .cloned()
+                .collect();
+            book_index.insert(j, new_vec);
+        }
+    }
+
+    let return_values = book_index
+        .into_iter()
+        .map(|(_, y)| y)
+        .filter(|x| !x.is_empty())
+        .map(|x| {
+            let set: HashSet<_> = x.into_iter().collect();
+            set.into_iter().collect()
+        })
+        .collect();
+
+    return_values
+}
+
 // 查找时可以用
 // 中文名
 // 英文名+ belong-series信息
@@ -204,7 +237,8 @@ fn parse_book_dependencies(books: Vec<Book>, search_type: SearchType) -> Vec<Vec
                                 recs.push(rec);
                             }
                             let rec_results = merge_vecs(recs);
-                            results.extend(rec_results);
+                            let filter_results = remove_repeat_from_start_to_end(rec_results);
+                            results.extend(filter_results);
                         }
                     }
                 }
@@ -260,7 +294,8 @@ fn parse_book_dependencies(books: Vec<Book>, search_type: SearchType) -> Vec<Vec
                                 recs.push(rec);
                             }
                             let rec_results = merge_vecs(recs);
-                            results.extend(rec_results);
+                            let filter_results = remove_repeat_from_start_to_end(rec_results);
+                            results.extend(filter_results);
                         }
                     }
                 }
