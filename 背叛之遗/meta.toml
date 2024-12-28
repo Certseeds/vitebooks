@@ -52,7 +52,7 @@ recommended_reading = ["福格瑞姆"]
 chinese_name = "抗争并陨落"
 english_name = "Strike and Fade"
 type = "短篇小说"
-authors = ["Guy Halay"]
+authors = ["Guy Haley"]
 recommended_reading = ["福格瑞姆"]
 
 [[sub]]
@@ -118,8 +118,7 @@ authors = ["Graham McNeill"]
 chinese_name = "圣言"
 english_name = "The Divine Word"
 type = "短篇小说"
-authors = ["Gav Thrope"]
-
+authors = ["Gav Thorpe"]
 
 [[sub]]
 chinese_name = "卢修斯 永恒之刃"

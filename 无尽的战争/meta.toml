@@ -18,21 +18,21 @@ faction_keywords = ["骑士家族"]
 chinese_name = "炉世之吼"
 english_name = "Howl of the Hearthworld"
 type = "短篇小说"
-authors = ["Dembski-Bowden"]
+authors = ["Aaron Dembski-Bowden"]
 faction_keywords = ["太空野狼"]
 
 [[sub]]
 chinese_name = "炉火世界的嚎叫"
 english_name = "Howl of the Hearthworld 2"
 type = "短篇小说"
-authors = ["Dembski-Bowden"]
+authors = ["Aaron Dembski-Bowden"]
 faction_keywords = ["太空野狼"]
 
 [[sub]]
 chinese_name = "红砂之王"
 english_name = "Lord of the Red Sands"
 type = "短篇小说"
-authors = ["Dembski-Bowden"]
+authors = ["Aaron Dembski-Bowden"]
 recommended_reading = ["燃烧的银河"]
 faction_keywords = ["吞世者"]
 
