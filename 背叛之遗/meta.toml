@@ -39,12 +39,14 @@ chinese_name = "钢铁真言"
 english_name = "Veritas Ferrum"
 type = "短篇小说"
 authors = ["David Annandale"]
+recommended_reading = ["福格瑞姆"]
 
 [[sub]]
 chinese_name = "分崩离析"
 english_name = "Riven"
 type = "短篇小说"
 authors = ["John French"]
+recommended_reading = ["福格瑞姆"]
 
 [[sub]]
 chinese_name = "抗争并陨落"
@@ -87,12 +89,14 @@ chinese_name = "克里普托斯"
 english_name = "Kryptos"
 type = "短篇小说"
 authors = ["Graham McNeill"]
+recommended_reading = ["福格瑞姆"]
 
 [[sub]]
 chinese_name = "克里普托斯混沌之声"
 english_name = "Kryptos2"
 type = "短篇小说"
 authors = ["Graham McNeill"]
+recommended_reading = ["福格瑞姆"]
 
 [[sub]]
 chinese_name = "狼爪"

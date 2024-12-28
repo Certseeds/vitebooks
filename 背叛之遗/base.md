@@ -38,25 +38,25 @@ On the Cover: Featuring stories by Aaron Dembski-Bowden, Nick Kyme, Graham McNei
 
 按原文顺序排列.
 
-+ [中篇-风暴兄弟会-TODO]()
-+ [蛇-TODO]()
-+ [猎人的月亮-TODO]()
-+ [钢铁真言-TODO]()
-+ [分崩离析-TODO]()
-+ [抗争并陨落-TODO]()
++ [中篇-风暴兄弟会-TODO]
++ [蛇-TODO]
++ [猎人的月亮-TODO]
++ [钢铁真言-TODO]
++ [分崩离析-TODO]
++ [抗争并陨落-TODO]
 + [荣归逝者](/背叛之遗/荣归逝者/base) and [广播剧本-向死者致敬](/背叛之遗/向死者致敬/base)
-+ [屠夫钉-TODO]()
-+ [战帅-TODO]()
-+ [克里普托斯-TODO]() and [克里普托斯混沌之声-TODO]()
-+ [狼爪-TODO]()
-+ [启示之贼-TODO]()
-+ [圣言-TODO]()
-+ [卢修斯, 永恒之刃-TODO]()
-+ [八之正道-TODO]()
-+ [骑士团守护者-TODO]()
-+ [征服者之心-TODO]()
-+ [谴责-TODO]()
-+ [孤狼-TODO]()
-+ [-TODO]()
++ [屠夫钉-TODO]
++ [战帅-TODO]
++ [克里普托斯-TODO] and [克里普托斯混沌之声-TODO]
++ [狼爪-TODO]
++ [启示之贼-TODO]
++ [圣言-TODO]
++ [卢修斯永恒之刃-TODO]
++ [八之正道-TODO]
++ [骑士团守护者-TODO]
++ [征服者之心-TODO]
++ [谴责-TODO]
++ [孤狼-TODO]
++ [-TODO]
 
 [^1]: 这一部分和<不被铭记的帝国>对比并无改动, 因此复制自[不被铭记的帝国序章](/不被铭记的帝国/base)
