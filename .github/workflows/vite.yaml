@@ -61,8 +61,7 @@ jobs:
       - name: build rustydeps
         working-directory: ./depage/rustydeps
         run: |
-          cargo install wasm-pack
-          cargo install wasm-bindgen-cli
+          cargo install --path . --locked --profile dev
           cargo build --release
           wasm-pack build --target web --release
           cp ./target/release/toepub ./../../.vitepress/toepub.exe
