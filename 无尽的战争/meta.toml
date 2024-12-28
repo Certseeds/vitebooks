@@ -101,6 +101,9 @@ english_name = "All That Remains"
 type = "短篇小说"
 authors = ["James Swallow"]
 faction_keywords = ["游侠骑士"]
+recommended_reading = [
+    { name = "伽罗连长", series = { name = "Horus Heresy", order = 42 } },
+]
 
 [[sub]]
 chinese_name = "瞄准镜"

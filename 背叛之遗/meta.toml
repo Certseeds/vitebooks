@@ -1,0 +1,168 @@
+[book]
+chinese_name = "背叛之遗"
+english_name = "Legacies of Betrayal"
+type = "短篇小说集"
+series.name = "Horus Heresy"
+series.order = 31
+authors = [
+    "Aaron Dembski-Bowden",
+    "Nick Kyme",
+    "Graham McNeill",
+    "Chris Wraight",
+    "John French",
+    "Guy Haley",
+    "David Annandale",
+    "Gav Thorpe",
+    "Anthony Reynolds",
+]
+
+[[sub]]
+chinese_name = "风暴兄弟会"
+english_name = "Brotherhood of the Storm"
+type = "中篇小说"
+authors = ["Chris Wraight"]
+
+[[sub]]
+chinese_name = "蛇"
+english_name = "Serpent"
+type = "短篇小说"
+authors = ["John French"]
+
+[[sub]]
+chinese_name = "猎人的月亮"
+english_name = "Hunter's Moon"
+type = "短篇小说"
+authors = ["Guy Haley"]
+
+[[sub]]
+chinese_name = "钢铁真言"
+english_name = "Veritas Ferrum"
+type = "短篇小说"
+authors = ["David Annandale"]
+
+[[sub]]
+chinese_name = "分崩离析"
+english_name = "Riven"
+type = "短篇小说"
+authors = ["John French"]
+
+[[sub]]
+chinese_name = "抗争并陨落"
+english_name = "Strike and Fade"
+type = "短篇小说"
+authors = ["Guy Halay"]
+recommended_reading = ["福格瑞姆"]
+
+[[sub]]
+chinese_name = "荣归逝者"
+english_name = "Honour to the Dead"
+type = "短篇小说"
+authors = ["Gav Thorpe"]
+recommended_reading = ["无所畏惧"]
+faction_keywords = ["极限战士", "泰坦修会", "叛变泰坦修会"]
+
+[[sub]]
+chinese_name = "向死者致敬"
+english_name = "Honour to the Dead 2"
+type = "短篇小说"
+authors = ["Gav Thorpe"]
+recommended_reading = ["无所畏惧"]
+faction_keywords = ["极限战士", "泰坦修会", "叛变泰坦修会"]
+
+[[sub]]
+chinese_name = "屠夫钉"
+english_name = "Butches's Nails"
+type = "短篇小说"
+authors = ["Aaron Dembski-Bowden"]
+recommended_reading = ["福格瑞姆"]
+
+[[sub]]
+chinese_name = "战帅"
+english_name = "Warmaster"
+type = "短篇小说"
+authors = ["John French"]
+
+[[sub]]
+chinese_name = "克里普托斯"
+english_name = "Kryptos"
+type = "短篇小说"
+authors = ["Graham McNeill"]
+
+[[sub]]
+chinese_name = "克里普托斯混沌之声"
+english_name = "Kryptos2"
+type = "短篇小说"
+authors = ["Graham McNeill"]
+
+[[sub]]
+chinese_name = "狼爪"
+english_name = "Wolf's Claw"
+type = "短篇小说"
+authors = ["Chris Wraight"]
+recommended_reading = [
+    { name = "孤狼", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 31 } } },
+]
+faction_keywords = ["太空野狼"]
+
+[[sub]]
+chinese_name = "启示之贼"
+english_name = "Thief of Revelations"
+type = "短篇小说"
+authors = ["Graham McNeill"]
+
+[[sub]]
+chinese_name = "圣言"
+english_name = "The Divine Word"
+type = "短篇小说"
+authors = ["Gav Thrope"]
+
+
+[[sub]]
+chinese_name = "卢修斯 永恒之刃"
+english_name = "Lucius, The Eternal Blade"
+type = "短篇小说"
+authors = ["Graham McNeill"]
+recommended_reading = ["灭绝天使"]
+keywords = ["帝皇之子"]
+
+[[sub]]
+chinese_name = "八之正道"
+english_name = "The Eightfold Path"
+type = "短篇小说"
+authors = ["Anthony Reynolds"]
+recommended_reading = [
+    { name = "背叛者", series = { name = "Horus Heresy", order = 24 } },
+]
+
+[[sub]]
+chinese_name = "骑士团守护者"
+english_name = "Guardian of Order"
+type = "短篇小说"
+authors = ["Gav Thorpe"]
+faction_keywords = ["暗黑天使"]
+recommended_reading = [{ name = "堕天使" }]
+
+[[sub]]
+chinese_name = "征服者之心"
+english_name = "Heart of the Conqueror"
+type = "短篇小说"
+authors = ["Aaron Dembski-Bowden"]
+recommended_reading = [
+    { name = "背叛者", series = { name = "Horus Heresy", order = 24 } },
+]
+
+[[sub]]
+chinese_name = "谴责"
+english_name = "Censure"
+type = "短篇小说"
+authors = ["Nick Kyme"]
+
+[[sub]]
+chinese_name = "孤狼"
+english_name = "Lone Wolf"
+type = "短篇小说"
+authors = ["Chris Wraight"]
+recommended_reading = [
+    { name = "狼王", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 48 } } },
+]
+faction_keywords = ["太空野狼"]

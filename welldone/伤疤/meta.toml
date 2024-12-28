@@ -1,0 +1,12 @@
+[book]
+chinese_name = "伤疤"
+english_name = "Scars"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 28
+authors = ["Chris Wraight"]
+recommended_reading = [
+    "福格瑞姆",
+    { name = "风暴兄弟会", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 31 } } },
+]
+faction_keywords = ["白色伤疤", "阿尔法军团", "太空野狼", "破碎军团"]
