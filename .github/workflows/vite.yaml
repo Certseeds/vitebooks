@@ -58,10 +58,14 @@ jobs:
       - name: add wasm32-unknown-unknown target
         run: rustup target add wasm32-unknown-unknown
 
+      - name: Install wasm-pack
+        run: |
+          version=$(sed -n 's/wasm-pack = "\(.*\)"/\1/p' Cargo.toml) && \
+          cargo install wasm-pack --version "${version}"
+
       - name: build rustydeps
         working-directory: ./depage/rustydeps
         run: |
-          cargo install --path . --locked --profile dev
           cargo build --release
           wasm-pack build --target web --release
           cp ./target/release/toepub ./../../.vitepress/toepub.exe
