@@ -59,9 +59,10 @@ jobs:
         run: rustup target add wasm32-unknown-unknown
 
       - name: Install wasm-pack
+        working-directory: ./depage/rustydeps
         run: |
           version=$(sed -n 's/wasm-pack = "\(.*\)"/\1/p' Cargo.toml) && \
-          cargo install wasm-pack --version "${version}"
+          cargo install wasm-pack --version "${version}" --locked
 
       - name: build rustydeps
         working-directory: ./depage/rustydeps
