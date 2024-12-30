@@ -47,7 +47,7 @@ On the Cover: Featuring stories by Aaron Dembski-Bowden, Nick Kyme, Graham McNei
 + [荣归逝者](/背叛之遗/荣归逝者/base) and [广播剧本-向死者致敬](/背叛之遗/向死者致敬/base)
 + [屠夫钉-TODO]
 + [战帅-TODO]
-+ [克里普托斯-TODO] and [克里普托斯混沌之声-TODO]
++ [克里普托斯](/背叛之遗/克里普托斯/base) and [克里普托斯混沌之声-TODO]
 + [狼爪-TODO]
 + [启示之贼-TODO]
 + [圣言-TODO]

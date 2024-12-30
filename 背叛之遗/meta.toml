@@ -90,6 +90,7 @@ english_name = "Kryptos"
 type = "短篇小说"
 authors = ["Graham McNeill"]
 recommended_reading = ["福格瑞姆"]
+faction_keywords = ["暗鸦守卫", "钢铁之手", "破碎军团"]
 
 [[sub]]
 chinese_name = "克里普托斯混沌之声"
@@ -97,6 +98,7 @@ english_name = "Kryptos2"
 type = "短篇小说"
 authors = ["Graham McNeill"]
 recommended_reading = ["福格瑞姆"]
+faction_keywords = ["暗鸦守卫", "钢铁之手", "破碎军团"]
 
 [[sub]]
 chinese_name = "狼爪"
