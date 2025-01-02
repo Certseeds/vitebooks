@@ -107,6 +107,7 @@ type = "短篇小说"
 authors = ["Chris Wraight"]
 recommended_reading = [
     { name = "孤狼", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 31 } } },
+    { name = "狼王", belongto = { name = "忠诚的负担", series = { name = "Horus Heresy", order = 48 } } },
 ]
 faction_keywords = ["太空野狼"]
 
@@ -167,7 +168,4 @@ chinese_name = "孤狼"
 english_name = "Lone Wolf"
 type = "短篇小说"
 authors = ["Chris Wraight"]
-recommended_reading = [
-    { name = "狼王", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 48 } } },
-]
 faction_keywords = ["太空野狼"]
