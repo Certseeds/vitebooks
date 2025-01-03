@@ -11,8 +11,10 @@ next:
 
 ## 原文来源
 
-+ 原译者:
-+ <>
++ 原译者: 海峡的风lee
++ <https://www.bilibili.com/opus/881612028328804389>
++ <https://www.bilibili.com/opus/891717467902050329>
++ <https://www.bilibili.com/opus/895234079754027009>
 + 来源: bilibili
 
 --------
