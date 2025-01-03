@@ -55,7 +55,7 @@ On the Cover: Featuring stories by Aaron Dembski-Bowden, Nick Kyme, Graham McNei
 + [八之正道-TODO]
 + [骑士团守护者](/背叛之遗/骑士团守护者/base)
 + [征服者之心-TODO]
-+ [谴责-TODO]
++ [谴责](/背叛之遗/谴责/base)
 + [孤狼-TODO]
 + [-TODO]
 

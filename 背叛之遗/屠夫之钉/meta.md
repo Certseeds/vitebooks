@@ -14,7 +14,7 @@ next:
 + 原译者: 雪漫江澜
 + 校对: `@枫月下`
 + <https://www.bilibili.com/opus/562867941022172336>
-+ 来源: tieba
++ 来源: bilibili
 
 --------
 

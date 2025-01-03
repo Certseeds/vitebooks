@@ -72,11 +72,12 @@ recommended_reading = ["无所畏惧"]
 faction_keywords = ["极限战士", "泰坦修会", "叛变泰坦修会"]
 
 [[sub]]
-chinese_name = "屠夫钉"
+chinese_name = "屠夫之钉"
 english_name = "Butches's Nails"
 type = "短篇小说"
 authors = ["Aaron Dembski-Bowden"]
 recommended_reading = ["福格瑞姆"]
+faction_keywords = ["怀言者", "吞世者", "灵族"]
 
 [[sub]]
 chinese_name = "战帅"
@@ -162,6 +163,10 @@ chinese_name = "谴责"
 english_name = "Censure"
 type = "短篇小说"
 authors = ["Nick Kyme"]
+recommended_reading = [
+    { name = "考斯印记", series = { name = "Horus Heresy", order = 25 } },
+]
+faction_keywords = ["极限战士", "怀言者"]
 
 [[sub]]
 chinese_name = "孤狼"
