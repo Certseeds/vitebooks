@@ -70,3 +70,50 @@ export const get_author_books = async (author) => {
         return ['failed to load'];
     }
 }
+
+export const get_faction_keywords = async () => {
+    try {
+        const tarResponse = await fetch(metaUrl);
+        const tarBytes = await tarResponse.arrayBuffer();
+        const tarBuffer = pako.inflate(tarBytes);
+        const results = rustydep.get_faction_keywords(tarBuffer);
+        const authors = JSON.parse(results); // { str:int, ... }
+        const sortArray = Array
+            .from(Object.entries(authors))
+            .sort((a, b) => {
+                return a[0].localeCompare(b[0])
+            })
+            .sort((a, b) => {
+                return b[1] - a[1];
+            });
+        const map = new Map(sortArray);
+        const faction_keywords = Array.from(map.keys());
+        return faction_keywords;
+    } catch (error) {
+        console.error('Error Parse Package:', error);
+        return ['failed to load'];
+    }
+}
+
+export const get_faction_keywords_map = async () => {
+    try {
+        const tarResponse = await fetch(metaUrl);
+        const tarBytes = await tarResponse.arrayBuffer();
+        const tarBuffer = pako.inflate(tarBytes);
+        const results = rustydep.get_faction_keywords_map(tarBuffer);
+        const elements = JSON.parse(results);
+        const mapArray = Array.from([]);
+        for (const element_key in elements) {
+            const array = elements[element_key];
+            const newSet = new Set();
+            for (const element of array) {
+                newSet.add((element?.chinese_name || element?.english_name));
+            }
+            mapArray.push([element_key, newSet]);
+        }
+        return new Map(mapArray);
+    } catch (error) {
+        console.error('Error Parse Package:', error);
+        return ['failed to load'];
+    }
+}

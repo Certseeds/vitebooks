@@ -2,9 +2,9 @@ use crate::structs::belong_type;
 use crate::structs::search_type::SearchType;
 
 use crate::Series;
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 
-#[derive(Debug, Deserialize, Clone)]
+#[derive(Debug, Deserialize, Clone, Serialize)]
 #[serde(untagged)]
 pub enum Deps {
     Name(String),

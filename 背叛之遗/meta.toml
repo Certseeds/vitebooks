@@ -61,7 +61,7 @@ english_name = "Honour to the Dead"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
 recommended_reading = ["无所畏惧"]
-faction_keywords = ["极限战士", "泰坦修会", "叛变泰坦修会"]
+faction_keywords = ["极限战士", "泰坦军团", "叛变泰坦军团"]
 
 [[sub]]
 chinese_name = "向死者致敬"
@@ -69,7 +69,7 @@ english_name = "Honour to the Dead 2"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
 recommended_reading = ["无所畏惧"]
-faction_keywords = ["极限战士", "泰坦修会", "叛变泰坦修会"]
+faction_keywords = ["极限战士", "泰坦军团", "叛变泰坦军团"]
 
 [[sub]]
 chinese_name = "屠夫之钉"

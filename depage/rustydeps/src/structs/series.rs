@@ -1,7 +1,7 @@
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 use std::hash::{DefaultHasher, Hash, Hasher};
 
-#[derive(Debug, Deserialize, Clone, Hash, Eq, PartialEq)]
+#[derive(Debug, Deserialize, Clone, Hash, Eq, PartialEq, Serialize)]
 pub struct Series {
     pub name: String,
     pub order: i64,

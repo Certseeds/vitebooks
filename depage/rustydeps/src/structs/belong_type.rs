@@ -1,7 +1,7 @@
 use crate::structs::series;
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 
-#[derive(Debug, Deserialize, Clone)]
+#[derive(Debug, Deserialize, Clone, Serialize)]
 pub struct BelongType {
     pub name: Option<String>,
     #[serde(rename = "enname")]

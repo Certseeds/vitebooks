@@ -53,6 +53,22 @@ pub fn get_author_books(content: &[u8], author_name: String) -> String {
     response.unwrap()
 }
 
+#[wasm_bindgen]
+pub fn get_faction_keywords(content: &[u8]) -> String {
+    let books = parse_u8_to_books(Vec::from(content));
+    let result = faction_keywords::keywords(books);
+    let response = serde_json::to_string(&result);
+    response.unwrap()
+}
+
+#[wasm_bindgen]
+pub fn get_faction_keywords_map(content: &[u8]) -> String {
+    let books = parse_u8_to_books(Vec::from(content));
+    let result = faction_keywords::keywords_books(books);
+    let response = serde_json::to_string(&result);
+    response.unwrap()
+}
+
 mod author {
     use crate::Book;
     use std::collections::HashMap;
@@ -80,6 +96,44 @@ mod author {
             }
         }
         author_books
+    }
+}
+
+mod faction_keywords {
+    use crate::Book;
+    use std::collections::HashMap;
+    pub fn keywords(books: Vec<Book>) -> HashMap<String, i32> {
+        let mut keywords_map: HashMap<String, i32> = HashMap::new();
+        for book in books {
+            if let Some(keywords) = book.faction_keywords {
+                for keyword in keywords {
+                    if let Some(count) = keywords_map.get_mut(&keyword) {
+                        *count += 1;
+                    } else {
+                        keywords_map.insert(keyword, 1);
+                    }
+                }
+            }
+        }
+        keywords_map
+    }
+
+    // 但是这个我想用一个不同的方式, 输入是一个Vec<Book>, 输出一个Map<KeyWord,Vec<Book>>
+    // 返回上层后, 按不同的keyword对应Vec<Book>的交集进行输出.
+    pub fn keywords_books(books: Vec<Book>) -> HashMap<String, Vec<Book>> {
+        let mut keyword_to_contained_books: HashMap<String, Vec<Book>> = HashMap::new();
+        for book in books {
+            if let Some(keywords) = book.clone().faction_keywords {
+                for keyword in keywords {
+                    if let Some(books) = keyword_to_contained_books.get_mut(&keyword) {
+                        books.push(book.clone());
+                    } else {
+                        keyword_to_contained_books.insert(keyword, vec![book.clone()]);
+                    }
+                }
+            }
+        }
+        keyword_to_contained_books
     }
 }
 
@@ -306,8 +360,6 @@ fn parse_book_dependencies(books: Vec<Book>, search_type: SearchType) -> Vec<Vec
 }
 #[cfg(test)]
 mod tests {
-    use crate::get_author_books;
-    use crate::get_authors;
     pub use crate::metas::meta;
     use crate::outer_function_from_cn;
     use std::fs::File;
@@ -334,6 +386,7 @@ mod tests {
     }
     #[test]
     fn test_authors() {
+        use crate::{get_author_books, get_authors};
         println!("{}", meta::output_string());
         assert_eq!(1, 1);
         match read_file_to_u8("./meta.tar") {
@@ -343,6 +396,23 @@ mod tests {
             Ok(vec) => {
                 let result = get_authors(vec.as_slice());
                 let book_names = get_author_books(vec.as_slice(), String::from("Nick Kyme"));
+                println!("{:?}", result);
+                println!("{:?}", book_names);
+            }
+        }
+    }
+    #[test]
+    fn test_keywords() {
+        use crate::{get_faction_keywords, get_faction_keywords_map};
+        println!("{}", meta::output_string());
+        assert_eq!(1, 1);
+        match read_file_to_u8("./meta.tar") {
+            Err(e) => {
+                eprintln!("output error {}", e);
+            }
+            Ok(vec) => {
+                let result = get_faction_keywords(vec.as_slice());
+                let book_names = get_faction_keywords_map(vec.as_slice());
                 println!("{:?}", result);
                 println!("{:?}", book_names);
             }

@@ -1,8 +1,8 @@
 use crate::structs::deps::Deps;
 use crate::structs::series::Series;
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 
-#[derive(Debug, Deserialize, Clone)]
+#[derive(Debug, Deserialize, Clone, Serialize)]
 pub struct Book {
     pub chinese_name: String,
     pub english_name: String,

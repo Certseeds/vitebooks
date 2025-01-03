@@ -4,6 +4,7 @@ import { ref, computed, onMounted } from 'vue';
 import { initRustDep, greet } from '@/js/rustydepsmodule.js';
 import Rustydepsmodule from '@/components/bookdeps.vue';
 import Authors from '@/components/authors.vue';
+import faction_keywords from '@/components/faction_keywords.vue';
 
 const selectedComponent = ref('rustydepsmodule');
 const message = ref('Initializing...');
@@ -11,6 +12,7 @@ const message = ref('Initializing...');
 const components = {
     rustydepsmodule: Rustydepsmodule,
     authors: Authors,
+    faction_keywords: faction_keywords,
 };
 
 const currentComponent = computed(() => components[selectedComponent.value]);
@@ -33,13 +35,15 @@ onMounted(() => {
         <p>当前界面</p>
         <button @click="selectedComponent = 'rustydepsmodule'">书籍依赖界面</button>
         <button @click="selectedComponent = 'authors'">作者信息界面</button>
+        <button @click="selectedComponent = 'faction_keywords'">阵营关键字界面</button>
     </div>
 
     <!-- 动态加载组件 -->
-    <component :is="currentComponent"></component>
+    <component :is="currentComponent" ></component>
 </template>
 
 <style scoped>
+
 .logo {
     height: 6em;
     padding: 1.5em;
@@ -58,8 +62,9 @@ onMounted(() => {
 .button-container {
     display: flex;
     align-items: center;
+    justify-content: center; /* 添加这行实现水平居中 */
     gap: 10px;
-    /* 控制按钮之间的间距 */
+    width: 100%; /* 确保容器占满父元素宽度 */
 }
 
 .button-container p {

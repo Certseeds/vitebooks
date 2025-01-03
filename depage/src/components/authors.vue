@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue';
-import { initRustDep, get_authors, get_author_books } from '@/js/rustydepsmodule.js';
+import { get_authors, get_author_books } from '@/js/rustydepsmodule.js';
 
 const state = ref(false);
 
