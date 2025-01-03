@@ -81,3 +81,22 @@ const epubContent = processContent(bookNames);
 console.log(epubContent);
 
 await fsp.appendFile(epubPage, epubContent, 'utf-8');
+const writeIndex = async (config: any) => {
+    const sidear = config.themeConfig.sidebar;
+    const HHs = sidear.filter(x => x.text === '荷鲁斯之乱')[0];
+    const line1 = "|书名|链接|";
+    const line2 = "|---|---|";
+    const isChinese = (str) => /[\u4e00-\u9fa5]/.test(str);
+    const lines = HHs.items
+        .filter(x => x.link.endsWith('/meta'))
+        .map(x => {
+            const name = x.text;
+            const link = x.link;
+            return `|${name}|[${name}-meta](${link})|`;
+        })
+    const strs = ["", line1, line2].concat(lines).join('\n');
+    console.log(strs);
+    return strs;
+}
+const indexPage = path.join(targetDir, 'index.md');
+await fsp.appendFile(indexPage, await writeIndex(config), 'utf-8');
