@@ -40,6 +40,7 @@ english_name = "Veritas Ferrum"
 type = "短篇小说"
 authors = ["David Annandale"]
 recommended_reading = ["福格瑞姆"]
+faction_keywords=["钢铁之手"]
 
 [[sub]]
 chinese_name = "分崩离析"
@@ -47,6 +48,7 @@ english_name = "Riven"
 type = "短篇小说"
 authors = ["John French"]
 recommended_reading = ["福格瑞姆"]
+faction_keywords = ["钢铁之手", "破碎军团", "帝国之拳"]
 
 [[sub]]
 chinese_name = "抗争并陨落"
@@ -54,6 +56,7 @@ english_name = "Strike and Fade"
 type = "短篇小说"
 authors = ["Guy Haley"]
 recommended_reading = ["福格瑞姆"]
+faction_keywords=["火蜥蜴"]
 
 [[sub]]
 chinese_name = "荣归逝者"
@@ -77,7 +80,7 @@ english_name = "Butches's Nails"
 type = "短篇小说"
 authors = ["Aaron Dembski-Bowden"]
 recommended_reading = ["福格瑞姆"]
-faction_keywords = ["怀言者", "吞世者", "灵族"]
+faction_keywords = ["怀言者", "吞世者", "方舟灵族"]
 
 [[sub]]
 chinese_name = "战帅"
