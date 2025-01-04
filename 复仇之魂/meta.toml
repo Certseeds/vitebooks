@@ -1,0 +1,30 @@
+[book]
+chinese_name = "复仇之魂"
+english_name = "Vengeful Spirit"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 29
+authors = ["Graham McNeill"]
+recommended_reading = [
+    "惧于踏足",
+    { name = "小荷鲁斯", belongto = { name = "黑暗年代", series = { name = "Horus Heresy", order = 16 } } },
+    { name = "恶魔学识", belongto = { name = "无尽的战争", series = { name = "Horus Heresy", order = 33 } } },
+    { name = "神圣崇拜者", belongto = { name = "无尽的战争", series = { name = "Horus Heresy", order = 33 } } },
+    { name = "狼猎", belongto = { name = "无声战争", series = { name = "Horus Heresy", order = 37 } } },
+    { name = "失落之子", belongto = { name = "无声战争", series = { name = "Horus Heresy", order = 37 } } },
+    { name = "影月虚影", belongto = { name = "无声战争", series = { name = "Horus Heresy", order = 37 } } },
+]
+faction_keywords = [
+    "荷鲁斯之子",
+    "死亡守卫",
+    "极限战士",
+    "圣血天使",
+    "混沌恶魔",
+    "泰坦军团",
+    "叛变泰坦军团",
+    "骑士家族",
+    "叛变骑士家族",
+    "帝国海军",
+    "永生者",
+    "游侠骑士"
+]

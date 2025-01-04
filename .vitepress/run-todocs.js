@@ -55,6 +55,11 @@ for (let folder of bookModule.replaceDirs) {
 for (let i = order["begin"]; i <= order["end"]; i++) {
     const filePath = path.resolve(input["path"], ...bookModule.generatePattern(i));
     const array = contentMap[i - 1];
+    
+    const subtitles = array[2].split("；");
+    array[2] = '';
+    array.splice(2, 0, ...subtitles.map(subtitle => `## ${subtitle}\n`));
+
     // array[2] = `## ${array[2]}`;
     // array[4] = `## ${array[4]}`;
     // array[6] = `## ${array[6]}`;
