@@ -11,7 +11,6 @@ chinese_name = "神圣崇拜者"
 english_name = "The Devine Adoratrice"
 type = "短篇小说"
 authors = ["Graham McNeill"]
-recommended_reading = ["复仇之魂"]
 faction_keywords = ["骑士家族"]
 
 [[sub]]
