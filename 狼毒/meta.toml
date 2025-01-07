@@ -7,6 +7,7 @@ series.order = 49
 authors = ["Guy Haley"]
 recommended_reading = [
     "复仇之魂",
+    { name = "狼爪", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 31 } } },
     { name = "扭曲者", belongto = { name = "无尽的战争", series = { name = "Horus Heresy", order = 33 } } },
     { name = "毁灭风暴", series = { name = "Horus Heresy", order = 46 } },
 ]
