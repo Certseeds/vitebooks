@@ -1,0 +1,18 @@
+[book]
+chinese_name = "狼毒"
+english_name = "Wolfsbane"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 49
+authors = ["Guy Haley"]
+recommended_reading = [
+    "复仇之魂",
+    { name = "扭曲者", belongto = { name = "无尽的战争", series = { name = "Horus Heresy", order = 33 } } },
+    { name = "毁灭风暴", series = { name = "Horus Heresy", order = 46 } },
+]
+faction_keywords = [
+    "荷鲁斯之子",
+    "太空野狼",
+    "机械教",
+    "游侠骑士"
+]

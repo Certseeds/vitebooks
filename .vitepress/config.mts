@@ -36,6 +36,7 @@ export default defineConfig({
                     , { text: "法洛斯", link: '/法洛斯/meta' }
                     , { text: "泰拉之眼", link: '/泰拉之眼/meta' }
                     , { text: "忠诚的负担", link: '/忠诚的负担/meta' }
+                    , { text: "狼毒", link: '/狼毒/meta' }
                     , { text: "epub总集", link: '/warhammer40k/epub' }
                     , { text: "well-done", link: '/welldone/README' }
                 ]
