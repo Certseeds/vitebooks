@@ -121,6 +121,6 @@ On The Cover: From the New York Times bestselling novel series
 
 索塔-努, '真正'机械教的特使
 
-凯尔博-哈, 铸造将军, 火星支派
+卡尔博-哈尔, 铸造将军, 火星支派
 
 迪奥特, 护教军

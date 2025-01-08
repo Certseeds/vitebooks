@@ -43,7 +43,7 @@ On the Cover: Featuring stories by Aaron Dembski-Bowden, Nick Kyme, Graham McNei
 + [猎人的月亮-TODO]
 + [钢铁真言-TODO]
 + [分崩离析](/背叛之遗/分崩离析/base)
-+ [抗争并陨落-TODO]
++ [抗争并陨落](/背叛之遗/抗争并陨落/base)
 + [荣归逝者](/背叛之遗/荣归逝者/base) and [广播剧本-向死者致敬](/背叛之遗/向死者致敬/base)
 + [屠夫之钉](/背叛之遗/屠夫之钉/base)
 + [战帅-TODO]

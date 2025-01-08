@@ -56,7 +56,7 @@ english_name = "Strike and Fade"
 type = "短篇小说"
 authors = ["Guy Haley"]
 recommended_reading = ["福格瑞姆"]
-faction_keywords=["火蜥蜴"]
+faction_keywords=["火蜥蜴", "午夜领主", "暗鸦守卫"]
 
 [[sub]]
 chinese_name = "荣归逝者"
