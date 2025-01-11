@@ -17,7 +17,7 @@ next:
 
 On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Imperium Secundus
 
-### 荷鲁斯叛乱[^1]
+### 荷鲁斯之乱[^1]
 
 这是一段传奇的岁月.
 

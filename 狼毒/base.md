@@ -13,7 +13,7 @@ next:
 
 On The Cover: From the New York Times bestselling novel series
 
-## 荷鲁斯叛乱
+## 荷鲁斯之乱
 
 这是一段传奇的岁月.
 

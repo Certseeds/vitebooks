@@ -128,7 +128,7 @@ type = "短篇小说"
 authors = ["Gav Thorpe"]
 
 [[sub]]
-chinese_name = "卢修斯 永恒之刃"
+chinese_name = "卢修斯-永恒之刃"
 english_name = "Lucius, The Eternal Blade"
 type = "短篇小说"
 authors = ["Graham McNeill"]

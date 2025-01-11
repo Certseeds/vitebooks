@@ -17,7 +17,7 @@ next:
 
 On The Cover: The latest instalment in the best-seling Horus Heresy Series
 
-## 荷鲁斯叛乱
+## 荷鲁斯之乱
 
 这是一段传奇的岁月.
 

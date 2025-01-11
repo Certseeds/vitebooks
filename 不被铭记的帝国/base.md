@@ -17,7 +17,7 @@ next:
 
 On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium are laid
 
-### 荷鲁斯叛乱
+### 荷鲁斯之乱
 
 这是一段传奇的岁月.
 

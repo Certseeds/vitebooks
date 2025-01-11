@@ -10,7 +10,7 @@ prev:
 
 On the Cover: Featuring brand new stories from Dan Abnett, Graham McNeill, Gav Thrope and more...
 
-## 荷鲁斯叛乱[^1]
+## 荷鲁斯之乱[^1]
 
 这是一段传奇的岁月.
 

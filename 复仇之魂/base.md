@@ -13,7 +13,7 @@ next:
 
 On The Cover: The Sons of Horus reclaim their place at the lorefront of the galactic civil war.
 
-## 荷鲁斯叛乱[^1]
+## 荷鲁斯之乱[^1]
 
 这是一段传奇的岁月.
 
@@ -63,7 +63,7 @@ On The Cover: The Sons of Horus reclaim their place at the lorefront of the gala
 
 格列尔 诺克图阿, '魔'术士[^2], 中士, 第二十五连, 影月议会新成员, 新月.
 
-马赫洛斯特, 又称"扭曲者", 战帅侍从
+马洛赫斯特, 又称"扭曲者", 战帅侍从
 
 盖尔 格拉冬, 狼族
 

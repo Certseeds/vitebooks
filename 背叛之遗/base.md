@@ -12,7 +12,7 @@ prev:
 
 On the Cover: Featuring stories by Aaron Dembski-Bowden, Nick Kyme, Graham McNeill, Chris Wraight and many more...
 
-## 荷鲁斯叛乱[^1]
+## 荷鲁斯之乱[^1]
 
 这是一段传奇的岁月.
 

@@ -17,7 +17,7 @@ next:
 
 On the Cover: Dan Abnett is probably the best writer of dark military in the world. The Guardian
 
-### 荷鲁斯叛乱
+### 荷鲁斯之乱
 
 这是一段传奇的岁月.
 

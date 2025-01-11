@@ -10,7 +10,7 @@ prev:
 
 On the Cover: Featuring stories by Dan Abnett, Aaron Dembski-Bowden, John French, Gav Thorpe, Chris Wraight and Many more.
 
-## 荷鲁斯叛乱[^1]
+## 荷鲁斯之乱[^1]
 
 这是一段传奇的岁月.
 

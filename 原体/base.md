@@ -14,7 +14,7 @@ On the Cover:
 >
 > Featuring new stories from Graham Mcneill, Nick Kyme, Gav Thorpe and Rob Sanders
 
-## 荷鲁斯叛乱[^2]
+## 荷鲁斯之乱[^2]
 
 这是一段传奇的岁月.
 

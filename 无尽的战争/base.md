@@ -12,7 +12,7 @@ prev:
 
 On the Cover: Featuring stories by Aaron Dembski-Bowden, John French, Graham McNeill, James Swallow, Chris Wraight and many more.
 
-## 荷鲁斯叛乱[^2]
+## 荷鲁斯之乱[^2]
 
 这是一段传奇的岁月.
 
