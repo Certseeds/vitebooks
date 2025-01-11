@@ -9,7 +9,7 @@ next:
 
 # 复仇之魂-序章
 
-## The Battle of Molech
+## 摩洛之战 The Battle of Molech
 
 On The Cover: The Sons of Horus reclaim their place at the lorefront of the galactic civil war.
 
