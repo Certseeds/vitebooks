@@ -97,7 +97,7 @@ recommended_reading = ["福格瑞姆"]
 faction_keywords = ["暗鸦守卫", "钢铁之手", "破碎军团"]
 
 [[sub]]
-chinese_name = "克里普托斯混沌之声"
+chinese_name = "克里普托斯-混沌之声"
 english_name = "Kryptos2"
 type = "短篇小说"
 authors = ["Graham McNeill"]
@@ -133,7 +133,7 @@ english_name = "Lucius, The Eternal Blade"
 type = "短篇小说"
 authors = ["Graham McNeill"]
 recommended_reading = ["灭绝天使"]
-keywords = ["帝皇之子"]
+keywords = ["帝皇之子", "千子"]
 
 [[sub]]
 chinese_name = "八之正道"

@@ -47,11 +47,11 @@ On the Cover: Featuring stories by Aaron Dembski-Bowden, Nick Kyme, Graham McNei
 + [荣归逝者](/背叛之遗/荣归逝者/base) and [广播剧本-向死者致敬](/背叛之遗/向死者致敬/base)
 + [屠夫之钉](/背叛之遗/屠夫之钉/base)
 + [战帅-TODO]
-+ [克里普托斯](/背叛之遗/克里普托斯/base) and [克里普托斯混沌之声](/背叛之遗/克里普托斯混沌之声/base)
++ [克里普托斯](/背叛之遗/克里普托斯/base) and [克里普托斯-混沌之声](/背叛之遗/克里普托斯-混沌之声/base)
 + [狼爪-TODO]
 + [启示之贼-TODO]
 + [圣言-TODO]
-+ [卢修斯永恒之刃-TODO]
++ [卢修斯-永恒之刃](/背叛之遗/卢修斯-永恒之刃/base)
 + [八之正道-TODO]
 + [骑士团守护者](/背叛之遗/骑士团守护者/base)
 + [征服者之心-TODO]
