@@ -1,13 +1,13 @@
 ---
 prev:
-  text: '背叛之遗-克里普托斯混沌之声-base'
-  link: '/背叛之遗/克里普托斯混沌之声/base'
+  text: '背叛之遗-克里普托斯-混沌之声-base'
+  link: '/背叛之遗/克里普托斯-混沌之声/base'
 next:
   text: '背叛之遗-meta'
   link: '/背叛之遗/meta'
 ---
 
-# 背叛之遗-克里普托斯混沌之声
+# 背叛之遗-克里普托斯-混沌之声
 
 ## The Voice of Chaos
 

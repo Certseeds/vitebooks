@@ -4,7 +4,7 @@ prev:
   link: '/背叛之遗/meta'
 next:
   text: 'base'
-  link: '/背叛之遗/克里普托斯混沌之声/base'
+  link: '/背叛之遗/克里普托斯-混沌之声/base'
 ---
 
 # 背叛之遗-克里普托斯混沌之声-元数据

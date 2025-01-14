@@ -11,8 +11,8 @@ next:
 
 ## 原文来源
 
-+ 原译者: 
-+ <>
++ 原译者: 机兵苍熊式
++ <https://www.bilibili.com/read/cv17263867/>
 + 来源: bilibili
 
 --------

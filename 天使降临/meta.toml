@@ -1,0 +1,8 @@
+[book]
+chinese_name = "天使降临"
+english_name = "Descent of Angels"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 6
+authors = ["Mitchel Scanlon"]
+faction_keywords = ["暗黑天使", "混沌恶魔"]

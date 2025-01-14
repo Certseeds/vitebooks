@@ -57,6 +57,5 @@ On the Cover: Featuring stories by Aaron Dembski-Bowden, Nick Kyme, Graham McNei
 + [征服者之心-TODO]
 + [谴责](/背叛之遗/谴责/base)
 + [孤狼-TODO]
-+ [-TODO]
 
 [^1]: 这一部分和<不被铭记的帝国>对比并无改动, 因此复制自[不被铭记的帝国序章](/不被铭记的帝国/base)
