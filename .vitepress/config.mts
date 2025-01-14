@@ -23,6 +23,7 @@ export default defineConfig({
                 text: '荷鲁斯之乱',
                 items: [
                     { text: "福格瑞姆", link: '/福格瑞姆/meta' }
+                    , { text: "天使降临", link: '/天使降临/meta' }
                     , { text: "深渊之战", link: '/深渊之战/meta' }
                     , { text: "异端传说", link: '/异端传说/meta' }
                     , { text: "黑暗时代", link: '/黑暗时代/meta' }
