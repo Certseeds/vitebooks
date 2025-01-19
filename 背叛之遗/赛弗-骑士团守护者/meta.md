@@ -4,7 +4,7 @@ prev:
   link: '/背叛之遗/meta'
 next:
   text: 'base'
-  link: '/背叛之遗/骑士团守护者/base'
+  link: '/背叛之遗/赛弗-骑士团守护者/base'
 ---
 
 # 背叛之遗-骑士团守护者-元数据

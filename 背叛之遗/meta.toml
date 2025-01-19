@@ -136,8 +136,8 @@ recommended_reading = ["灭绝天使"]
 keywords = ["帝皇之子", "千子"]
 
 [[sub]]
-chinese_name = "八之正道"
-english_name = "The Eightfold Path"
+chinese_name = "卡恩-八之正道"
+english_name = "Kharn: The Eightfold Path"
 type = "短篇小说"
 authors = ["Anthony Reynolds"]
 recommended_reading = [
@@ -145,8 +145,8 @@ recommended_reading = [
 ]
 
 [[sub]]
-chinese_name = "骑士团守护者"
-english_name = "Guardian of Order"
+chinese_name = "赛弗-骑士团守护者"
+english_name = "Cipher: Guardian of Order"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
 faction_keywords = ["暗黑天使"]

@@ -53,7 +53,7 @@ On the Cover: Featuring stories by Aaron Dembski-Bowden, Nick Kyme, Graham McNei
 + [圣言-TODO]
 + [卢修斯-永恒之刃](/背叛之遗/卢修斯-永恒之刃/base)
 + [八之正道-TODO]
-+ [骑士团守护者](/背叛之遗/骑士团守护者/base)
++ [赛弗-骑士团守护者](/背叛之遗/赛弗-骑士团守护者/base)
 + [征服者之心-TODO]
 + [谴责](/背叛之遗/谴责/base)
 + [孤狼-TODO]

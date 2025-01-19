@@ -1,13 +1,13 @@
 ---
 prev:
   text: 'meta'
-  link: '/背叛之遗/骑士团守护者/meta'
+  link: '/背叛之遗/赛弗-骑士团守护者/meta'
 next:
   text: 'src'
-  link: '/背叛之遗/骑士团守护者/src'
+  link: '/背叛之遗/赛弗-骑士团守护者/src'
 ---
 
-# 背叛之遗-骑士团守护者-序章
+# 背叛之遗-赛弗-骑士团守护者-序章
 
 作者: Gav Thorpe
 
