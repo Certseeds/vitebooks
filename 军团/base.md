@@ -109,7 +109,7 @@ On the Cover: The latest instalment in the best-selling Horus Heresy series
 
 斯劳 达[^29]
 
-格'拉托[^30]
+格拉托[^30]
 
 ## 关于作者
 
