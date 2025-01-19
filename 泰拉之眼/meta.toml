@@ -4,7 +4,19 @@ english_name = "Eye of Terra"
 type = "短篇小说集"
 series.name = "Horus Heresy"
 series.order = 35
-authors = ["NOBODY"]
+authors = [
+    "Aaron Dembski-Bowden",
+    "Andy Smillie",
+    "Chris Wraight",
+    "David Annandale",
+    "Gav Thorpe",
+    "Graham McNeill",
+    "Guy Haley",
+    "John French",
+    "Matthew Farrer",
+    "Nick Kyme",
+    "Rob Sanders",
+]
 
 [[sub]]
 chinese_name = "焚尘之狼"

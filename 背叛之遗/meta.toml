@@ -150,7 +150,10 @@ english_name = "Cipher: Guardian of Order"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
 faction_keywords = ["暗黑天使"]
-recommended_reading = [{ name = "堕天使" }]
+recommended_reading = [
+    { name = "堕天使" },
+    { name = "第一战团长", belongto = { name = "泰拉之眼", series = { name = "Horus Heresy", order = 35 } } },
+]
 
 [[sub]]
 chinese_name = "征服者之心"
