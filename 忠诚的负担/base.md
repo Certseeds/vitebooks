@@ -38,7 +38,7 @@ On the Cover: Featuring stories by Dan Abnett, Aaron Dembski-Bowden, John French
 
 + [TODO-第十三只狼]
 + [流亡](/忠诚的负担/流亡/meta)
-+ [TODO-憎恶智能]
++ [憎恶智能](/忠诚的负担/憎恶智能/meta)
 + [噩兆修会](/忠诚的负担/噩兆修会/meta)
 + [法洛斯之心](/忠诚的负担/法洛斯之心/meta)
 + [狼王](/忠诚的负担/狼王/meta)

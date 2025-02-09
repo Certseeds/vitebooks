@@ -31,7 +31,7 @@ english_name = "Cybernetica"
 type = "中篇小说"
 authors = ["Rob Sanders"]
 recommended_reading = ["机械教"]
-faction_keywords = ["机械教", "游侠骑士"]
+faction_keywords = ["机械教", "游侠骑士", "钢铁勇士", "暗鸦守卫", "黑暗机械教"]
 
 [[sub]]
 chinese_name = "噩兆修会"
