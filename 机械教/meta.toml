@@ -1,0 +1,11 @@
+[book]
+chinese_name = "机械教"
+english_name = "Mechanicum"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 9
+authors = ["Graham McNeill"]
+faction_keywords = ["机械教", "黑暗机械教", "泰坦军团", "叛变泰坦军团", "骑士家族", "帝国之拳"]
+recommended_reading = [
+    { name = "卡板计划", belongto = { name = "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
+]

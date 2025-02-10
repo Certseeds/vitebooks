@@ -26,6 +26,7 @@ export default defineConfig({
                     , { text: "天使降临", link: '/天使降临/meta' }
                     , { text: "军团", link: '/军团/meta' }
                     , { text: "深渊之战", link: '/深渊之战/meta' }
+                    , { text: "机械教", link: '/机械教/meta' }
                     , { text: "异端传说", link: '/异端传说/meta' }
                     , { text: "黑暗时代", link: '/黑暗时代/meta' }
                     , { text: "无所畏惧", link: '/无所畏惧/meta' }

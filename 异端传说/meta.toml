@@ -49,6 +49,9 @@ english_name = "The Last Church"
 type = "短篇小说"
 authors = ["Graham McNeill"]
 faction_keywords = ["无"]
+recommended_reading = [
+   "机械教"
+]
 
 [[sub]]
 chinese_name = "德什亚之后"
