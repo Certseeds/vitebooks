@@ -28,6 +28,7 @@ export default defineConfig({
                     , { text: "深渊之战", link: '/深渊之战/meta' }
                     , { text: "机械教", link: '/机械教/meta' }
                     , { text: "异端传说", link: '/异端传说/meta' }
+                    , { text: "堕天使", link: '/堕天使/meta' }
                     , { text: "黑暗时代", link: '/黑暗时代/meta' }
                     , { text: "无所畏惧", link: '/无所畏惧/meta' }
                     , { text: "原体", link: '/原体/meta' }
