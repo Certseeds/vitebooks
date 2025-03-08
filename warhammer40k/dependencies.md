@@ -23,7 +23,7 @@ series.order = 19
 authors = ["Dan Abnett"]
 recommended_reading = [
     "深渊之战",
-    { name = "异端初现", series = { name = "Horus Heresy", order = 14 } },
+    { name = "异端之首", series = { name = "Horus Heresy", order = 14 } },
     { enname = "Legion", series = { name = "Horus Heresy", order = 7 } },
 ]
 faction_keywords=["极限战士", "怀言者", "永生者"]

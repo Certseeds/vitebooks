@@ -1,0 +1,9 @@
+[book]
+chinese_name = "异端之首"
+english_name = "The First Heretic"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 14
+authors = ["Aaron Dembski-Bowden"]
+recommended_reading = ["福格瑞姆"]
+faction_keywords = ["荷鲁斯之子", "怀言者", "混沌恶魔"]

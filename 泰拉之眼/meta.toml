@@ -32,7 +32,7 @@ english_name = "Aurelian"
 type = "中篇小说"
 authors = ["Aaron Dembski-Bowden"]
 recommended_reading = [
-    { name = "异端初现", series = { name = "Horus Heresy", order = 14 } },
+    { name = "异端之首", series = { name = "Horus Heresy", order = 14 } },
 ]
 faction_keywords = ["怀言者", "千子"]
 

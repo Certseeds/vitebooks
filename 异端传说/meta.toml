@@ -11,6 +11,7 @@ chinese_name = "鲜血游戏"
 english_name = "Blood Games"
 type = "短篇小说"
 authors = ["Dan Abnett"]
+recommended_reading = ["福格瑞姆", "普罗斯佩罗之焚"]
 faction_keywords = ["禁军", "帝国之拳"]
 
 [[sub]]

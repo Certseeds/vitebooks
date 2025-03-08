@@ -30,6 +30,7 @@ export default defineConfig({
                     , { text: "异端传说", link: '/异端传说/meta' }
                     , { text: "堕天使", link: '/堕天使/meta' }
                     , { text: "千子", link: '/千子/meta' }
+                    , { text: "宿敌", link: '/宿敌/meta' }
                     , { text: "黑暗时代", link: '/黑暗时代/meta' }
                     , { text: "无所畏惧", link: '/无所畏惧/meta' }
                     , { text: "原体", link: '/原体/meta' }

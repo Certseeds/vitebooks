@@ -58,10 +58,10 @@ for (let i = order["begin"]; i <= order["end"]; i++) {
     
     const subtitles = array[1];
     array[1] = `## ${subtitles}`;
+    array[2] = `## ${array[2]}`;
+    array[3] = `## ${array[3]}`;
+    
 
-    // array[2] = `## ${array[2]}`;
-    // array[4] = `## ${array[4]}`;
-    // array[6] = `## ${array[6]}`;
     const content = array.join('\n');
     if (!fs.existsSync(filePath)) {
         fs.appendFileSync(filePath, content, 'utf8');

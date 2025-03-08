@@ -6,6 +6,6 @@ series.name = "Horus Heresy"
 series.order = 21
 authors = ["James Swallow"]
 recommended_reading = [
-    { name = "异端初现", series = { name = "Horus Heresy", order = 14 } }
+    { name = "异端之首", series = { name = "Horus Heresy", order = 14 } }
 ]
 faction_keywords = ["圣血天使", "怀言者", "混沌恶魔"]

@@ -22,7 +22,7 @@ chinese_name = "流亡"
 english_name = "Into Exile"
 type = "短篇小说"
 authors = ["Aaron Dembski-Bowden"]
-recommended_reading = ["机械教"]
+recommended_reading = ["机械教", "福格瑞姆"]
 faction_keywords = ["机械教", "帝国之拳"]
 
 [[sub]]
@@ -30,7 +30,7 @@ chinese_name = "憎恶智能"
 english_name = "Cybernetica"
 type = "中篇小说"
 authors = ["Rob Sanders"]
-recommended_reading = ["机械教"]
+recommended_reading = ["机械教", "福格瑞姆"]
 faction_keywords = ["机械教", "游侠骑士", "钢铁勇士", "暗鸦守卫", "黑暗机械教"]
 
 [[sub]]
