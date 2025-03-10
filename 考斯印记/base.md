@@ -36,7 +36,7 @@ On the Cover: The war between the Ultramarines and the Word Bearers continues
 
 按原文顺序排列.
 
-+ [TODO-幽界碎片]
++ [幽界碎片](/考斯印记/幽界碎片/meta)
 + [TODO-考斯往日]
 + [TODO-黑暗之心]
 + [TODO-旅行者]

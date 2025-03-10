@@ -11,6 +11,10 @@ chinese_name = "幽界碎片"
 english_name = "The Shards of Erebus"
 type = "短篇小说"
 authors = ["Guy Haley"]
+faction_keywords = ["怀言者", "混沌教派"]
+recommended_reading = [
+    "异端之首"
+]
 
 [[sub]]
 chinese_name = "考斯往日"
