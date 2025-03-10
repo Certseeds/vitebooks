@@ -11,6 +11,8 @@ next:
 
 ## 阴影中的战争 War within the shadows
 
+作者: James Swallow
+
 ## 荷鲁斯之乱[^0]
 
 这是传奇的世代.

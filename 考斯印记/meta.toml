@@ -1,0 +1,59 @@
+[book]
+chinese_name = "考斯印记"
+english_name = "Mark of Calth"
+type = "短篇小说集"
+series.name = "Horus Heresy"
+series.order = 25
+authors = ["Laurie Coulding"]
+
+[[sub]]
+chinese_name = "幽界碎片"
+english_name = "The Shards of Erebus"
+type = "短篇小说"
+authors = ["Guy Haley"]
+
+[[sub]]
+chinese_name = "考斯往日"
+english_name = "Calth That Was"
+type = "短篇小说"
+authors = ["Graham McNeill"]
+
+[[sub]]
+chinese_name = "黑暗之心"
+english_name = "Dark heart"
+type = "短篇小说"
+authors = ["Anthony Reynolds"]
+
+[[sub]]
+chinese_name = "旅行者"
+english_name = "the Traveller"
+type = "短篇小说"
+authors = ["David Annandale"]
+
+[[sub]]
+chinese_name = "深入骨髓的黑暗"
+english_name = "A Deeper Darknes"
+type = "短篇小说"
+authors = ["Rob Sanders"]
+
+[[sub]]
+chinese_name = "地下战争"
+english_name = "The Underworld War"
+type = "短篇小说"
+authors = ["Araon Dembski-Bowden"]
+
+[[sub]]
+chinese_name = "仪式匕首"
+english_name = "Athame"
+type = "短篇小说"
+authors = ["John French"]
+
+[[sub]]
+chinese_name = "无迹之旅"
+english_name = "Unmarked"
+type = "短篇小说"
+authors = ["Dan Abnett"]
+faction_keywords = ["永生者", "混沌恶魔"]
+recommended_reading = [
+    "无所畏惧"
+]

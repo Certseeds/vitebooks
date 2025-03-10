@@ -36,6 +36,7 @@ export default defineConfig({
                     , { text: "原体", link: '/原体/meta' }
                     , { text: "惧于踏足", link: '/惧于踏足/meta' }
                     , { text: "背叛之影", link: '/背叛之影/meta' }
+                    , { text: "考斯印记", link: '/考斯印记/meta' }
                     , { text: "不被铭记的帝国", link: '/不被铭记的帝国/meta' }
                     , { text: "复仇之魂", link: '/复仇之魂/meta' }
                     , { text: "背叛之遗", link: '/背叛之遗/meta' }

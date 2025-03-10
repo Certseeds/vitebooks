@@ -72,5 +72,7 @@ chinese_name = "永生者"
 english_name = "Perpetual"
 type = "短篇小说"
 authors = ["Dan Abnett"]
-recommended_reading = [{ name = "考斯印记" }]
+recommended_reading = [
+    { name = "无迹之旅", belongto = { name = "考斯印记", series = { name = "Horus Heresy", order = 25 } } },
+]
 faction_keywords = ["永生者", "阿尔法军团"]
