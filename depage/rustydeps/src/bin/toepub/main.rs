@@ -73,6 +73,9 @@ pub fn toepub(meta: Meta, files: Vec<String>, run_number: Option<i32>) {
         "--metadata=title:{}",
         meta.book.chinese_name.clone()
     ));
+    args.push(format!(
+        "--metadata=rights:使用CC-BY-NC-SA-4.0协议发布",
+    ));
     if cfg!(target_os = "windows") {
         args.push(format!(
             "--metadata=author:\"{}\"",
