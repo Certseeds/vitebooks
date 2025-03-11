@@ -41,8 +41,8 @@ On the Cover: The war between the Ultramarines and the Word Bearers continues
 + [TODO-黑暗之心]
 + [TODO-旅行者]
 + [TODO-深入骨髓的黑暗]
-+ [TODO-地下战争]
-+ [TODO-仪式匕首]
++ [地下战争](/考斯印记/地下战争/meta)
++ [仪式匕首](/考斯印记/仪式匕首/meta)
 + [无迹之旅](/考斯印记/无迹之旅/meta)
 
 [^0]: 来自[不被铭记的帝国序章](/不被铭记的帝国/base)

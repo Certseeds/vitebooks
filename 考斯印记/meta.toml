@@ -12,14 +12,12 @@ english_name = "The Shards of Erebus"
 type = "短篇小说"
 authors = ["Guy Haley"]
 faction_keywords = ["怀言者", "混沌教派"]
-recommended_reading = [
-    "异端之首"
-]
+recommended_reading = ["异端之首"]
 
 [[sub]]
 chinese_name = "考斯往日"
 english_name = "Calth That Was"
-type = "短篇小说"
+type = "中篇小说"
 authors = ["Graham McNeill"]
 
 [[sub]]
@@ -44,13 +42,17 @@ authors = ["Rob Sanders"]
 chinese_name = "地下战争"
 english_name = "The Underworld War"
 type = "短篇小说"
-authors = ["Araon Dembski-Bowden"]
+authors = ["Aaron Dembski-Bowden"]
+faction_keywords = ["混沌恶魔", "怀言者"]
+recommended_reading = ["异端之首"]
 
 [[sub]]
 chinese_name = "仪式匕首"
 english_name = "Athame"
 type = "短篇小说"
 authors = ["John French"]
+faction_keywords = ["永生者", "混沌教派", "怀言者"]
+recommended_reading = ["无所畏惧"]
 
 [[sub]]
 chinese_name = "无迹之旅"
@@ -58,6 +60,4 @@ english_name = "Unmarked"
 type = "短篇小说"
 authors = ["Dan Abnett"]
 faction_keywords = ["永生者", "混沌恶魔"]
-recommended_reading = [
-    "无所畏惧"
-]
+recommended_reading = ["无所畏惧"]
