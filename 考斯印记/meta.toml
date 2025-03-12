@@ -31,6 +31,8 @@ chinese_name = "旅行者"
 english_name = "the Traveller"
 type = "短篇小说"
 authors = ["David Annandale"]
+faction_keywords = ["混沌恶魔"]
+recommended_reading = ["无所畏惧"]
 
 [[sub]]
 chinese_name = "深入骨髓的黑暗"
