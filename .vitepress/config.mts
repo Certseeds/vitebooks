@@ -61,7 +61,7 @@ export default defineConfig({
             { icon: 'github', link: 'https://github.com/Certseeds/vitebooks' }
         ],
         footer: {
-            copyright: `2024-${new Date().getFullYear()} Certseeds based on CC BY-NC-SA 4.0`
+            copyright: `2024-${new Date().getFullYear()} Certseeds; this page is licensed under CC BY-NC-SA 4.0`
         },
         lastUpdated: {
             formatOptions: {
@@ -95,6 +95,9 @@ export default defineConfig({
         ['meta', { property: 'keywords', content: 'vitepress, warhammer, nodejs, llm' }],
         ['meta', { property: 'robots', content: 'index, follow' }],
         ['meta', { property: 'author', content: 'Certseeds' }],
+        ['meta', { property: 'copyleft', content: 'CC BY-NC-SA 4.0' }],
+        ['link', { property: 'license', href: "http://creativecommons.org/licenses/by-nc-sa/4.0/"}],
+
     ],
     markdown: {
         config: (md) => {
