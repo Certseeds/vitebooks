@@ -36,9 +36,11 @@ recommended_reading = ["无所畏惧"]
 
 [[sub]]
 chinese_name = "深入骨髓的黑暗"
-english_name = "A Deeper Darknes"
+english_name = "A Deeper Darkness"
 type = "短篇小说"
 authors = ["Rob Sanders"]
+faction_keywords = ["极限战士", "怀言者", "混沌恶魔"]
+recommended_reading = ["无所畏惧"]
 
 [[sub]]
 chinese_name = "地下战争"

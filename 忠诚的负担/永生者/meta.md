@@ -1,6 +1,9 @@
 ---
+prev:
+  text: '忠诚的负担-meta'
+  link: '/忠诚的负担/meta'
 next:
-  text: 'base'
+  text: '忠诚的负担-永生者-base'
   link: '/忠诚的负担/永生者/base'
 ---
 

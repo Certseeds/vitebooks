@@ -1,4 +1,7 @@
 ---
+prev:
+  text: '无尽的战争-meta'
+  link: '/无尽的战争/meta'
 next:
   text: 'base'
   link: '/无尽的战争/安全且隐秘之地/base'

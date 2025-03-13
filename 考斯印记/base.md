@@ -40,7 +40,7 @@ On the Cover: The war between the Ultramarines and the Word Bearers continues
 + [TODO-考斯往日]
 + [TODO-黑暗之心]
 + [旅行者](/考斯印记/旅行者/meta)
-+ [TODO-深入骨髓的黑暗]
++ [深入骨髓的黑暗](/考斯印记/深入骨髓的黑暗/meta)
 + [地下战争](/考斯印记/地下战争/meta)
 + [仪式匕首](/考斯印记/仪式匕首/meta)
 + [无迹之旅](/考斯印记/无迹之旅/meta)
