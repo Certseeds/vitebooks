@@ -87,6 +87,8 @@ chinese_name = "战帅"
 english_name = "Warmaster"
 type = "短篇小说"
 authors = ["John French"]
+recommended_reading = ["考斯印记", "惧于踏足"]
+faction_keywords = ["荷鲁斯之子"]
 
 [[sub]]
 chinese_name = "克里普托斯"
