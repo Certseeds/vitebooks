@@ -61,7 +61,7 @@ export default defineConfig({
             { icon: 'github', link: 'https://github.com/Certseeds/vitebooks' }
         ],
         footer: {
-            copyright: `2024-${new Date().getFullYear()} Certseeds`
+            copyright: `2024-${new Date().getFullYear()} Certseeds based on CC BY-NC-SA 4.0`
         },
         lastUpdated: {
             formatOptions: {
