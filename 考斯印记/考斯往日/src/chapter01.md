@@ -7,7 +7,7 @@ next:
   link: '/考斯印记/考斯往日/src/chapter02'
 ---
 
-# chapter-01
+# 考斯印记-考斯往日-chapter-01
 
 ## 谁将是最后一个死的?
 

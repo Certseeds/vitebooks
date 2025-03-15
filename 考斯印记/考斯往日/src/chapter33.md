@@ -7,7 +7,7 @@ next:
   link: '/考斯印记/考斯往日/src/chapter34'
 ---
 
-# chapter-33
+# 考斯印记-考斯往日-chapter-33
 
 马洛克·卡索蹲在水边. 等待着.
 

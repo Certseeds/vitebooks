@@ -7,7 +7,7 @@ next:
   link: '/考斯印记/考斯往日/src/chapter13'
 ---
 
-# chapter-12
+# 考斯印记-考斯往日-chapter-12
 
 理论可能: 否认怀言者有重聚的可能.
 

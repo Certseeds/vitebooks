@@ -7,7 +7,7 @@ next:
   link: '/考斯印记/考斯往日/src/chapter24'
 ---
 
-# chapter-23
+# 考斯印记-考斯往日-chapter-23
 
 有那么美丽的一刻, 考斯的夜晚结束了.
 

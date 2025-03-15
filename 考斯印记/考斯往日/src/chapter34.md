@@ -7,7 +7,7 @@ next:
   link: '/考斯印记/考斯往日/src/chapter35'
 ---
 
-# chapter-34
+# 考斯印记-考斯往日-chapter-34
 
 苏比亚科无法逃脱噩梦的魔爪.
 

@@ -41,7 +41,7 @@ const IsChapterBegin = (line) => {
 
 const head = (chapter) => {
     const chapterNumber = numToStr(chapter);
-    return `# chapter-${chapterNumber}`
+    return `# 考斯印记-考斯往日-chapter-${chapterNumber}`
 }
 const generatePattern = (chapter) => {
     const chapterNumber = numToStr(chapter);

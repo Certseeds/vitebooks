@@ -7,7 +7,7 @@ next:
   link: '/考斯印记/考斯往日/src/chapter38'
 ---
 
-# chapter-37
+# 考斯印记-考斯往日-chapter-37
 
 他在变化.
 

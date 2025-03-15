@@ -7,7 +7,7 @@ next:
   link: '/考斯印记/考斯往日/src/chapter03'
 ---
 
-# chapter-02
+# 考斯印记-考斯往日-chapter-02
 
 ## 兰席尔
 
