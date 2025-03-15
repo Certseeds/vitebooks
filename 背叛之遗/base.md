@@ -48,7 +48,7 @@ On the Cover: Featuring stories by Aaron Dembski-Bowden, Nick Kyme, Graham McNei
 + [屠夫之钉](/背叛之遗/屠夫之钉/base)
 + [战帅](/背叛之遗/战帅/base)
 + [克里普托斯](/背叛之遗/克里普托斯/base) and [克里普托斯-混沌之声](/背叛之遗/克里普托斯-混沌之声/base)
-+ [狼爪-TODO]
++ [狼爪](/背叛之遗/狼爪/base)
 + [启示之贼-TODO]
 + [圣言-TODO]
 + [卢修斯-永恒之刃](/背叛之遗/卢修斯-永恒之刃/base)
