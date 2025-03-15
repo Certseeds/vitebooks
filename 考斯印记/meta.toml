@@ -19,12 +19,16 @@ chinese_name = "考斯往日"
 english_name = "Calth That Was"
 type = "中篇小说"
 authors = ["Graham McNeill"]
+faction_keywords = ["怀言者", "极限战士", "混沌恶魔"]
+recommended_reading = ["无所畏惧"]
 
 [[sub]]
 chinese_name = "黑暗之心"
 english_name = "Dark heart"
 type = "短篇小说"
 authors = ["Anthony Reynolds"]
+faction_keywords = ["怀言者", "极限战士", "混沌恶魔"]
+recommended_reading = ["无所畏惧"]
 
 [[sub]]
 chinese_name = "旅行者"

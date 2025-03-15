@@ -55,12 +55,6 @@ for (let folder of bookModule.replaceDirs) {
 for (let i = order["begin"]; i <= order["end"]; i++) {
     const filePath = path.resolve(input["path"], ...bookModule.generatePattern(i));
     const array = contentMap[i - 1];
-    
-    const subtitles = array[1];
-    array[1] = `## ${subtitles}`;
-    array[2] = `## ${array[2]}`;
-    array[3] = `## ${array[3]}`;
-    
 
     const content = array.join('\n');
     if (!fs.existsSync(filePath)) {
