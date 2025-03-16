@@ -142,6 +142,7 @@ chinese_name = "卡恩-八之正道"
 english_name = "Kharn: The Eightfold Path"
 type = "短篇小说"
 authors = ["Anthony Reynolds"]
+faction_keywords = ["吞世者"]
 recommended_reading = [
     { name = "背叛者", series = { name = "Horus Heresy", order = 24 } },
 ]
@@ -162,6 +163,7 @@ chinese_name = "征服者之心"
 english_name = "Heart of the Conqueror"
 type = "短篇小说"
 authors = ["Aaron Dembski-Bowden"]
+faction_keywords = ["吞世者"]
 recommended_reading = [
     { name = "背叛者", series = { name = "Horus Heresy", order = 24 } },
 ]

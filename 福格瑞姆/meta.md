@@ -17,7 +17,7 @@ next:
 
 --------
 
-+ 原译者: 张拙言
++ 整理者: 张拙言
 + <https://www.bilibili.com/read/cv2525531>
 + 来源: bilibili
 
