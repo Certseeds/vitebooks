@@ -20,6 +20,14 @@ export default defineConfig({
         ],
         sidebar: [
             {
+                text: '元数据',
+                items: [
+                    { text: "warhammer40k-元数据", link: '/warhammer40k/primarchs' }
+                    , { text: "本站非官方, 不盈利, 纯免费, 严禁商用", link: "warhammer40k/shield" }
+                    ,
+                ]
+            },
+            {
                 text: '荷鲁斯之乱',
                 items: [
                     { text: "福格瑞姆", link: '/福格瑞姆/meta' }
@@ -47,14 +55,6 @@ export default defineConfig({
                     , { text: "狼毒", link: '/狼毒/meta' }
                     , { text: "epub总集", link: '/warhammer40k/epub' }
                     , { text: "well-done", link: '/welldone/README' }
-                    , { text: "本站非官方, 不盈利, 纯免费, 严禁商用", link: "warhammer40k/shield"}
-                ]
-            },
-            {
-                text: '元数据',
-                items: [
-                    { text: "warhammer40k-元数据", link: '/warhammer40k/primarchs' }
-                    ,
                 ]
             }
         ],
@@ -62,7 +62,7 @@ export default defineConfig({
             { icon: 'github', link: 'https://github.com/Certseeds/vitebooks' }
         ],
         footer: {
-            copyright: `2024-${new Date().getFullYear()} Certseeds; this page is licensed under CC BY-NC-SA 4.0`
+            copyright: `2024-${new Date().getFullYear()} Certseeds; this page is licensed under CC BY-NC-SA 4.0; 本站非官方, 不盈利, 纯免费, 严禁商用`
         },
         lastUpdated: {
             formatOptions: {
@@ -97,7 +97,7 @@ export default defineConfig({
         ['meta', { property: 'robots', content: 'index, follow' }],
         ['meta', { property: 'author', content: 'Certseeds' }],
         ['meta', { property: 'copyleft', content: 'CC BY-NC-SA 4.0' }],
-        ['link', { property: 'license', href: "http://creativecommons.org/licenses/by-nc-sa/4.0/"}],
+        ['link', { property: 'license', href: "http://creativecommons.org/licenses/by-nc-sa/4.0/" }],
 
     ],
     markdown: {
