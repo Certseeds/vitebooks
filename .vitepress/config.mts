@@ -47,6 +47,7 @@ export default defineConfig({
                     , { text: "狼毒", link: '/狼毒/meta' }
                     , { text: "epub总集", link: '/warhammer40k/epub' }
                     , { text: "well-done", link: '/welldone/README' }
+                    , { text: "本站非官方, 不盈利, 纯免费, 严禁商用", link: "warhammer40k/shield"}
                 ]
             },
             {
