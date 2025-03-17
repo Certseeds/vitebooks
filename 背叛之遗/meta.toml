@@ -124,7 +124,10 @@ type = "短篇小说"
 authors = ["Graham McNeill"]
 recommended_reading = [
     "千子",
-    "普罗斯佩罗之焚"
+    "普罗斯佩罗之焚",
+    "惧于踏足",
+    "无所畏惧",
+    { name = "群鸦王子", belongto = { name = "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
 ]
 keywords = ["千子"]
 

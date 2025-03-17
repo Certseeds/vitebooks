@@ -1,2 +1,4 @@
 *.txt
 !names.txt
+src.en.md
+src.cn.md
