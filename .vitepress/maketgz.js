@@ -7,6 +7,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import archiver from 'archiver';
 import { exec } from 'child_process';
+import { domainName } from './domain.js';
 
 const isChinese = (str) => /[\u4e00-\u9fa5]/.test(str);
 
@@ -31,6 +32,7 @@ const findMetaFiles = async (dir, tgz) => {
         }
     }
 };
+
 const toepub = async (dir) => {
     const files = await fsp.readdir(dir);
     const firstArg = args[0];
@@ -40,7 +42,10 @@ const toepub = async (dir) => {
         if (stat.isDirectory() && isChinese(file)) {
             console.log(`this is fullPath ${fullPath}`);
             const exePath = path.resolve(__dirname, 'toepub.exe');
-            exec(`${exePath} --path=./${fullPath} --run-number=${firstArg}`, (error, stdout, stderr) => {
+            exec(`${exePath} --path=./${fullPath} \
+                --publish=${domainName()} \
+                --ppath=./warhammer40k \
+                --run-number=${firstArg}`, (error, stdout, stderr) => {
                 if (error) {
                     console.error(`Error executing toepub.exe: ${error.message}`);
                     return;

@@ -2,6 +2,7 @@ pub mod structs;
 
 use crate::structs::book::Book;
 use crate::structs::meta::Meta;
+use crate::structs::pmeta::PMeta;
 use clap::Parser;
 use std::fs;
 use std::fs::File;
@@ -20,6 +21,12 @@ struct Cli {
     #[arg(short, long)]
     path: Option<String>,
 
+    #[arg(long)]
+    publish: Option<String>,
+
+    #[arg(long)]
+    ppath: Option<String>,
+
     #[arg(short, long)]
     run_number: Option<i32>,
 }
@@ -31,6 +38,8 @@ const SHORT_NOVEL: &str = "短篇小说";
 fn main() {
     let cli = Cli::parse();
     let path = cli.path.unwrap_or_else(|| String::from("."));
+    let publish_address = cli.publish.unwrap_or_else(|| String::from("empty"));
+    let primarch_path = cli.ppath.unwrap_or_else(|| String::from("empty"));
     let run_number = cli.run_number;
     let exist_path = match check_path(path) {
         Some(meta) => meta,
@@ -45,10 +54,31 @@ fn main() {
             return;
         }
     };
-    let files = meta_to_deal(meta.clone(), exist_path);
-    toepub(meta.clone(), files, run_number);
+    let mut files = meta_to_deal(meta.clone(), exist_path);
+
+    match primarch_path.as_str() {
+        "empty" => {}
+        _ => {
+            let ppath = match check_path(primarch_path) {
+                Some(meta) => meta,
+                None => {
+                    return;
+                }
+            };
+            let pmeta = match parse_pmeta_to_object(ppath) {
+                Some(meta) => meta,
+                None => {
+                    return;
+                }
+            };
+            files.splice(0..0, pmeta.pre.unwrap_or_else(|| vec![]));
+            files.extend(pmeta.post.unwrap_or_else(|| vec![]));
+        }
+    }
+
+    toepub(publish_address.clone(), meta.clone(), files, run_number);
 }
-pub fn toepub(meta: Meta, files: Vec<String>, run_number: Option<i32>) {
+pub fn toepub(publish_address: String, meta: Meta, files: Vec<String>, run_number: Option<i32>) {
     let mut args = Vec::new();
     args.push(String::from("--from=markdown-smart"));
     args.push(String::from("--to=epub3"));
@@ -62,22 +92,29 @@ pub fn toepub(meta: Meta, files: Vec<String>, run_number: Option<i32>) {
         Some(num) => format!("{:04}", num),
         None => "0000".to_string(),
     };
-    args.push(format!(
-        "--output={}-{}-{}.epub",
+    let epubname = format!(
+        "{}-{}-{}.epub",
         meta.book.chinese_name.clone(),
         run_number,
         today
-    ));
+    );
+    args.push(format!("--output={}", epubname));
     args.extend(files);
     args.push(format!(
         "--metadata=title:{}",
         meta.book.chinese_name.clone()
     ));
+    args.push(
+        "--metadata=rights:非官方民间译本,使用CC-BY-NC-SA-4.0协议发布,不盈利,纯免费,严禁商用"
+            .to_string(),
+    );
     args.push(format!(
-        "--metadata=rights:使用CC-BY-NC-SA-4.0协议发布,不盈利,纯免费,严禁商用",
+        "--metadata=publisher:免费发布于{}/epub/{}",
+        publish_address, epubname
     ));
     args.push(format!(
-        "--metadata=publisher:非官方民间译本"
+        "--metadata=date:{}",
+        chrono::Local::now().format("%Y-%m-%d").to_string()
     ));
     if cfg!(target_os = "windows") {
         args.push(format!(
@@ -263,6 +300,32 @@ pub fn parse_toml_to_object(dir: PathBuf) -> Option<Meta> {
         return None;
     }
     let meta = match toml::from_str::<Meta>(buffer.as_str()) {
+        Ok(meta) => meta,
+        Err(e) => {
+            eprintln!("error is {}", e);
+            return None;
+        }
+    };
+    println!("{:?}", meta);
+    Some(meta)
+}
+
+pub fn parse_pmeta_to_object(dir: PathBuf) -> Option<PMeta> {
+    let toml_path = dir.join("pmeta.toml");
+    println!("toml_path is {:?}", toml_path);
+    let file = File::open(toml_path);
+    if let Err(e) = file {
+        eprintln!("error is {}", e);
+        return None;
+    }
+    let mut file = file.unwrap();
+
+    let mut buffer = String::new();
+    if let Err(e) = file.read_to_string(&mut buffer) {
+        eprintln!("error is {}", e);
+        return None;
+    }
+    let meta = match toml::from_str::<PMeta>(buffer.as_str()) {
         Ok(meta) => meta,
         Err(e) => {
             eprintln!("error is {}", e);
