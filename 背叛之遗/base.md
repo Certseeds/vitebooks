@@ -40,8 +40,8 @@ On the Cover: Featuring stories by Aaron Dembski-Bowden, Nick Kyme, Graham McNei
 
 + [中篇-风暴兄弟会-TODO]
 + [蛇-TODO]
-+ [猎人的月亮-TODO]
-+ [钢铁真言-TODO]
++ [猎人的月亮](/背叛之遗/猎人的月亮/base)
++ [钢铁真言](/背叛之遗/钢铁真言/base)
 + [分崩离析](/背叛之遗/分崩离析/base)
 + [抗争并陨落](/背叛之遗/抗争并陨落/base)
 + [荣归逝者](/背叛之遗/荣归逝者/base) and [广播剧本-向死者致敬](/背叛之遗/向死者致敬/base)

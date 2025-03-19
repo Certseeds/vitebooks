@@ -33,6 +33,8 @@ chinese_name = "猎人的月亮"
 english_name = "Hunter's Moon"
 type = "短篇小说"
 authors = ["Guy Haley"]
+recommended_reading = ["军团"]
+faction_keywords = ["阿尔法军团", "太空野狼"]
 
 [[sub]]
 chinese_name = "钢铁真言"
@@ -40,7 +42,7 @@ english_name = "Veritas Ferrum"
 type = "短篇小说"
 authors = ["David Annandale"]
 recommended_reading = ["福格瑞姆"]
-faction_keywords=["钢铁之手"]
+faction_keywords = ["钢铁之手"]
 
 [[sub]]
 chinese_name = "分崩离析"
@@ -56,7 +58,7 @@ english_name = "Strike and Fade"
 type = "短篇小说"
 authors = ["Guy Haley"]
 recommended_reading = ["福格瑞姆"]
-faction_keywords=["火蜥蜴", "午夜领主", "暗鸦守卫"]
+faction_keywords = ["火蜥蜴", "午夜领主", "暗鸦守卫"]
 
 [[sub]]
 chinese_name = "荣归逝者"
