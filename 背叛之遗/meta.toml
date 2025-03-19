@@ -27,6 +27,7 @@ chinese_name = "蛇"
 english_name = "Serpent"
 type = "短篇小说"
 authors = ["John French"]
+recommended_reading = ["毕索斯的诅咒"]
 
 [[sub]]
 chinese_name = "猎人的月亮"
@@ -125,7 +126,6 @@ english_name = "Thief of Revelations"
 type = "短篇小说"
 authors = ["Graham McNeill"]
 recommended_reading = [
-    "千子",
     "普罗斯佩罗之焚",
     "惧于踏足",
     "无所畏惧",
