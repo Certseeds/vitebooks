@@ -21,6 +21,8 @@ chinese_name = "风暴兄弟会"
 english_name = "Brotherhood of the Storm"
 type = "中篇小说"
 authors = ["Chris Wraight"]
+recommended_reading = []
+faction_keywords = ["白色伤疤", "欧克兽人"]
 
 [[sub]]
 chinese_name = "蛇"
@@ -28,6 +30,7 @@ english_name = "Serpent"
 type = "短篇小说"
 authors = ["John French"]
 recommended_reading = ["毕索斯的诅咒"]
+faction_keywords = ["混沌教派"]
 
 [[sub]]
 chinese_name = "猎人的月亮"
