@@ -1,0 +1,12 @@
+[book]
+chinese_name = "失落救赎"
+english_name = "Deliverance Lost"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 18
+authors = ["Gav Thorpe"]
+recommended_reading = [
+    { name = "圣言", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 31 } } },
+    { name = "背叛之貌", belongto = { name = "黑暗时代", series = { name = "Horus Heresy", order = 16 } } },
+]
+faction_keywords = ["暗鸦守卫", "阿尔法军团"]

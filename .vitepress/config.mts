@@ -40,6 +40,7 @@ export default defineConfig({
                     , { text: "千子", link: '/千子/meta' }
                     , { text: "宿敌", link: '/宿敌/meta' }
                     , { text: "黑暗时代", link: '/黑暗时代/meta' }
+                    , { text: "失落救赎", link: '/失落救赎/meta' }
                     , { text: "无所畏惧", link: '/无所畏惧/meta' }
                     , { text: "原体", link: '/原体/meta' }
                     , { text: "惧于踏足", link: '/惧于踏足/meta' }
