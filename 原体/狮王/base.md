@@ -55,14 +55,14 @@ Tuchulcha, 图查丘
 
 ## 序言
 
-> 行使权力只有一个原因: 推进自己的议程. 无论是自私还是无私, 如果权力要发挥其作用, 只有议程才应该是你的唯一关注点, 就不应该有分心. 只需看看帝皇的大远征的例子, 就能证明这个永恒的真理: 当分心来临时, 一切都会毁灭.
+> > 行使权力只有一个原因: 推进自己的议程. 无论是自私还是无私, 如果权力要发挥其作用, 只有议程才应该是你的唯一关注点, 就不应该有分心. 只需看看帝皇的大远征的例子, 就能证明这个永恒的真理: 当分心来临时, 一切都会毁灭.
 >
-> Lyaedes, Intermissions, [M31]
+> > Lyaedes, Intermissions, [M31]
 
 --------
 
-> ‘There is but one reason and one reason alone in the exercise of power: to further one’s agenda. Be it selfish or altruistic, such agenda should be the whole of one’s concern without distraction if power is to be expended to its benefit. One need only look to the example of the Emperor’s Great Crusade for proof of this eternal truth; when distraction came it was to the ruin of all.’
+> > ‘There is but one reason and one reason alone in the exercise of power: to further one’s agenda. Be it selfish or altruistic, such agenda should be the whole of one’s concern without distraction if power is to be expended to its benefit. One need only look to the example of the Emperor’s Great Crusade for proof of this eternal truth; when distraction came it was to the ruin of all.’
 >
->– Lyaedes, Intermissions, M31
+> > – Lyaedes, Intermissions, M31
 
 [^1]: 校者译

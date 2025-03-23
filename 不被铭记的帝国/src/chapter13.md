@@ -13,15 +13,15 @@ next:
 
 --------
 
-> "敌人的力量同样是他的弱点."
+> > "敌人的力量同样是他的弱点."
 >
-> ——军事战略, 第123条法则
+> > ——军事战略, 第123条法则
 
 --------
 
-> The strength of your enemy is also his weakness.
+> > The strength of your enemy is also his weakness.
 >
-> Martial Stratagems, 123rd Mxim
+> > Martial Stratagems, 123rd Mxim
 
 --------
 

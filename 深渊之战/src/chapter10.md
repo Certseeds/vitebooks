@@ -147,7 +147,7 @@ next:
 
 斯卡若注意到房间天花板上刻着什么东西.
 
-> BUILD THE WORD OF LORGAR FROM THIS STEEL LIVE AS IT IS WRITTEN
+> > BUILD THE WORD OF LORGAR FROM THIS STEEL LIVE AS IT IS WRITTEN
 
 "行动!行动!他们在向我们追来!" 安提珍吼道, 使他注意力集中起来.
 

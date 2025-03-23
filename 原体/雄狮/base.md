@@ -63,14 +63,14 @@ Tuchulcha, 图查丘
 
 ## 序言
 
-> 行使权力中有且只有一个理念: 推动自己的目标。要把权力发挥于自己的优势之上——无论是利己还是利他，任谁都应该全神贯注于这个目的，而不能心猿意马。我们只需要看看帝皇大远征的例子，就可以证明这一永恒的真理: 当精力外移时，毁灭接踵而至。
+> > 行使权力中有且只有一个理念: 推动自己的目标。要把权力发挥于自己的优势之上——无论是利己还是利他，任谁都应该全神贯注于这个目的，而不能心猿意马。我们只需要看看帝皇大远征的例子，就可以证明这一永恒的真理: 当精力外移时，毁灭接踵而至。
 >
-> 莱伊德  M31中叶
+> > 莱伊德  M31中叶
 
 --------
 
-> ‘There is but one reason and one reason alone in the exercise of power: to further one’s agenda. Be it selfish or altruistic, such agenda should be the whole of one’s concern without distraction if power is to be expended to its benefit. One need only look to the example of the Emperor’s Great Crusade for proof of this eternal truth; when distraction came it was to the ruin of all.’
+> > ‘There is but one reason and one reason alone in the exercise of power: to further one’s agenda. Be it selfish or altruistic, such agenda should be the whole of one’s concern without distraction if power is to be expended to its benefit. One need only look to the example of the Emperor’s Great Crusade for proof of this eternal truth; when distraction came it was to the ruin of all.’
 >
->– Lyaedes, Intermissions, M31
+> > – Lyaedes, Intermissions, M31
 
 [^1]: 校者译

@@ -6,7 +6,7 @@ prev:
 
 # 泰拉之眼-序章
 
-> I am the Emperor's vigilance
+## 我是帝皇的守护者 I am the Emperor's vigilance
 
 编者: Nobody
 

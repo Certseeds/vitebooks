@@ -167,33 +167,33 @@ next:
 
 有一点令人欣慰. 他知道, 他没有对这些耳语产生幻觉.
 
-> He was incapable, at any level, of imagining
+> > He was incapable, at any level, of imagining
 >
-> 他无法想象, 在任何层面,
+> > 他无法想象, 在任何层面,
 >
-> taste the worship of their little god-king,
+> > taste the worship of their little god-king,
 >
-> 那对他们的小小神王的崇拜,
+> > 那对他们的小小神王的崇拜,
 >
-> it grows and spreads and feeds us
+> > it grows and spreads and feeds us
 >
-> 它生长、蔓延、滋养我们,
+> > 它生长、蔓延、滋养我们,
 >
-> yes yes let him be a god
+> > yes yes let him be a god
 >
-> 是的, 让它成为一位神明吧,
+> > 是的, 让它成为一位神明吧,
 >
-> smash the rational
+> > smash the rational
 >
-> 打破理性,
+> > 打破理性,
 >
-> plunge them into the dark
+> > plunge them into the dark
 >
-> 将他们抛入黑暗——
+> > 将他们抛入黑暗——
 >
-> such blasphemies.
+> > such blasphemies.
 >
-> 如此的亵渎[^2]
+> > 如此的亵渎[^2]
 
 情况很清楚. 克拉吉与那些反对帝皇的敌人站在了一起. 他正在努力给地下设施的幸存者们带去死亡与混乱, 就像怀言者对考斯做的一样.
 
@@ -413,37 +413,37 @@ next:
 
 [删减片段开始, 校者翻译]
 
-> the slash, drawing blood
+> > the slash, drawing blood
 >
-> 如同被利器划伤, 流出血来,
+> > 如同被利器划伤, 流出血来,
 >
-> of a mind inhuman and vast, serpent coil
+> > of a mind inhuman and vast, serpent coil
 >
-> 无形的非人的心灵力量像蛇一样缠绕,
+> > 无形的非人的心灵力量像蛇一样缠绕,
 >
-> constrictor of light and hope
+> > constrictor of light and hope
 >
-> 压抑着光与希望
+> > 压抑着光与希望
 >
-> by the stabbing vistas
+> > by the stabbing vistas
 >
-> 在刺眼的视野中
+> > 在刺眼的视野中
 >
-> prey taken over an endless plain
+> > prey taken over an endless plain
 >
-> 野兽在无尽的平原上狩猎,
+> > 野兽在无尽的平原上狩猎,
 >
-> the forever-land of bones and savage dying
+> > the forever-land of bones and savage dying
 >
-> 在骨头与野蛮死亡构筑的土地上,
+> > 在骨头与野蛮死亡构筑的土地上,
 >
-> madness given flesh and given force
+> > madness given flesh and given force
 >
-> 疯狂有了肉体与力量,
+> > 疯狂有了肉体与力量,
 >
-> devouring life, crunching its succulent skull
+> > devouring life, crunching its succulent skull
 >
-> 吞噬生命, 咀嚼其多汁的头颅.
+> > 吞噬生命, 咀嚼其多汁的头颅.
 
 [删减片段结束]
 
@@ -457,55 +457,55 @@ next:
 
 [删减片段开始, 校者翻译]
 
-> hunger 饥饿/
+> > hunger 饥饿/
 >
-> a piercing virulence wracked his head
+> > a piercing virulence wracked his head
 >
-> 如同一种剧烈的毒性, 令他的头部备受折磨.
+> > 如同一种剧烈的毒性, 令他的头部备受折磨.
 >
-> The blow was vision and shout, need and words
+> > The blow was vision and shout, need and words
 >
-> 这种冲击是视觉与呐喊、需求与语言交织在一起,
+> > 这种冲击是视觉与呐喊、需求与语言交织在一起,
 >
-> It was a prophecy / humanity a corpse
+> > It was a prophecy / humanity a corpse
 >
-> 是一种预言/人性沦为一具尸体,
+> > 是一种预言/人性沦为一具尸体,
 >
-> dangling, shredded, ribs exposed and broken by the crushing teeth of laughter
+> > dangling, shredded, ribs exposed and broken by the crushing teeth of laughter
 >
-> 被撕裂, 胸骨暴露, 并被残酷的笑声碾碎
+> > 被撕裂, 胸骨暴露, 并被残酷的笑声碾碎
 >
-> the corpse never released to peace
+> > the corpse never released to peace
 >
-> 这尸体永远无法得到安宁
+> > 这尸体永远无法得到安宁
 >
-> forever dancing to the wail of the cosmos
+> > forever dancing to the wail of the cosmos
 >
-> 只能随着宇宙的哀嚎不断舞动
+> > 只能随着宇宙的哀嚎不断舞动
 >
-> dead but agonised no pain ever enough, no butchery ever enough
+> > dead but agonised no pain ever enough, no butchery ever enough
 >
-> 虽已死去却充满痛苦, 没有止境的痛苦和屠杀
+> > 虽已死去却充满痛苦, 没有止境的痛苦和屠杀
 >
-> to quench the thirst of the grinning rage
+> > to quench the thirst of the grinning rage
 >
-> 都无法满足那冷笑的愤怒之渴
+> > 都无法满足那冷笑的愤怒之渴
 >
-> and it was a command. It was an assault
+> > and it was a command. It was an assault
 >
-> 这是命令, 也是攻击
+> > 这是命令, 也是攻击
 >
-> No, he thought, fighting back as best he could, but he barely knew what he was denying
+> > No, he thought, fighting back as best he could, but he barely knew what he was denying
 >
-> "不," 他想, 尽力抵抗着, 但他几乎不知道自己在抗拒什么.
+> > "不," 他想, 尽力抵抗着, 但他几乎不知道自己在抗拒什么.
 >
-> As the intensity rose, the whispers became indistinguishable from visions
+> > As the intensity rose, the whispers became indistinguishable from visions
 >
-> 随着强度的提升, 低语声变得与幻象难以分辨.
+> > 随着强度的提升, 低语声变得与幻象难以分辨.
 >
-> When the words were spoken in the language of the dark, it was all he could do not to scream.
+> > When the words were spoken in the language of the dark, it was all he could do not to scream.
 >
-> 当这些话语用黑暗的语言说出时, 他几乎无法抑制住尖叫的冲动.
+> > 当这些话语用黑暗的语言说出时, 他几乎无法抑制住尖叫的冲动.
 
 [删减片段结束]
 
@@ -517,15 +517,15 @@ next:
 
 [删减片段开始, 校者翻译]
 
-> 这些声音充斥着他的头脑: "为什么要有希望?为什么要追求那悲伤而无生命的谎言, 当有更伟大的谎言存在, 那些庄严的谎言, 绝对否定的伟大, 如此宏伟的谎言, 以至于它用其真理的力量践踏真实?" 毒药般的低语.
+> > 这些声音充斥着他的头脑: "为什么要有希望?为什么要追求那悲伤而无生命的谎言, 当有更伟大的谎言存在, 那些庄严的谎言, 绝对否定的伟大, 如此宏伟的谎言, 以至于它用其真理的力量践踏真实?" 毒药般的低语.
 >
-> 这些低语是一场无尽的仇恨与混乱.承诺、狂言和血的诱惑, 背离自我否定的神明, 摧毁他, 将他击碎, 品尝背叛的快感, 他们互相争抢.
+> > 这些低语是一场无尽的仇恨与混乱.承诺、狂言和血的诱惑, 背离自我否定的神明, 摧毁他, 将他击碎, 品尝背叛的快感, 他们互相争抢.
 >
-> 句子破碎了: "给我你的思想、意志、自我、灵魂, 给我盛宴, 给我烈士的牺牲, 那永远不会到来的黎明的狂舞, 那永远咆哮的黑夜之刃." 他们互相吞噬.
+> > 句子破碎了: "给我你的思想、意志、自我、灵魂, 给我盛宴, 给我烈士的牺牲, 那永远不会到来的黎明的狂舞, 那永远咆哮的黑夜之刃." 他们互相吞噬.
 >
-> 短语失去了意义: "蜘蛛般的抓握, 撕裂的肉在爆裂的眼睛中, ssssssliiiiiiiicccccccce用结束之齿撕碎无辜者." 除了威胁之外别无他意. 但还有: "黑眼、黑颚、黑爪、黑暗的低语、黑思想、黑歌声、黑神、黑神、黑神、大黑暗神!" 这些反复出现.
+> > 短语失去了意义: "蜘蛛般的抓握, 撕裂的肉在爆裂的眼睛中, ssssssliiiiiiiicccccccce用结束之齿撕碎无辜者." 除了威胁之外别无他意. 但还有: "黑眼、黑颚、黑爪、黑暗的低语、黑思想、黑歌声、黑神、黑神、黑神、大黑暗神!" 这些反复出现.
 >
-> 这些低语: "很快, 很快, 哦, 血之扭结, 那迫近的笑声." 它们是刀割裂脊椎、杀戮的笑容. 为什么在经历了整天的好工作后, 这些低语声仍未平息? 也许这是绝望的邪恶在死亡前挣扎的声音
+> > 这些低语: "很快, 很快, 哦, 血之扭结, 那迫近的笑声." 它们是刀割裂脊椎、杀戮的笑容. 为什么在经历了整天的好工作后, 这些低语声仍未平息? 也许这是绝望的邪恶在死亡前挣扎的声音
 
 [删减片段结束]
 
@@ -573,19 +573,19 @@ next:
 
 幸福的安静. 他的心里涌起了希望. "我想......" 他感受到那胡言乱语还没结束. 那低语再次向他扑来
 
-> 劈碎盲目信仰的虚妄脸孔 / 静默终结
+> > 劈碎盲目信仰的虚妄脸孔 / 静默终结
 >
-> 低语如同猛禽向猎物的飞奔
+> > 低语如同猛禽向猎物的飞奔
 >
-> 邪祟一直在等待着, 等待他以为自己摆脱了它们的控制
+> > 邪祟一直在等待着, 等待他以为自己摆脱了它们的控制
 >
-> 这样他们就可以把爪子插得更深了.
+> > 这样他们就可以把爪子插得更深了.
 >
-> 淫秽/生命是混沌崇高上的徒劳赘生物, 弄瞎你的小神, 打倒他
+> > 淫秽/生命是混沌崇高上的徒劳赘生物, 弄瞎你的小神, 打倒他
 >
-> 他为了自己的目的玩弄你的存在
+> > 他为了自己的目的玩弄你的存在
 >
-> 你什么都不是, 他什么都不是, 一切都不是
+> > 你什么都不是, 他什么都不是, 一切都不是
 
 用巨大的翅膀拍打他, 他被击打的灵魂把他的身体拖下去.
 
@@ -619,11 +619,11 @@ next:
 
 杰斯皮尔的灵魂为未完成的职责而绝望地呐喊. 本能地, 他完全屈服于使他走到今天的力量之源. 克拉吉花了很长时间才将石头举高, 世界上所有的时间都在让杰斯皮尔的内心发生变化. 它像一条鳗鱼一样蠕动着, 灵魂中的邪祟接管了这剧躯体.
 
-> 然后啊,
+> > 然后啊,
 >
-> 你好, 再见,
+> > 你好, 再见,
 >
-> 轻语微笑着
+> > 轻语微笑着
 
 杰斯皮尔大喊
 
@@ -705,11 +705,11 @@ next:
 
 ## 引文 五
 
-> 希望之死. 这就是第十七军团想要实现的目标, 他们已经接近了--非常接近. 这场痛苦漫长战争, 考斯的公民是无辜的旁观者, 但他们却遭受了最严重的痛苦.
+> > 希望之死. 这就是第十七军团想要实现的目标, 他们已经接近了--非常接近. 这场痛苦漫长战争, 考斯的公民是无辜的旁观者, 但他们却遭受了最严重的痛苦.
 >
-> 但希望并未消失. 在被蹂躏的地表下的阴影洞穴中, 我们这些剩下的人重新集结, 继续战斗. 我们都知道, 只要我们坚持下去, 怀言者永远无法实现他们的目标. 但事实上, 远非如此.
+> > 但希望并未消失. 在被蹂躏的地表下的阴影洞穴中, 我们这些剩下的人重新集结, 继续战斗. 我们都知道, 只要我们坚持下去, 怀言者永远无法实现他们的目标. 但事实上, 远非如此.
 >
-> 希望像灯塔一样附着在洞穴中的生命之上, 而灯塔总是在最黑暗的深夜中燃烧得最亮. 鉴于即将发生的事情, 这个比喻似乎很是恰当.
+> > 希望像灯塔一样附着在洞穴中的生命之上, 而灯塔总是在最黑暗的深夜中燃烧得最亮. 鉴于即将发生的事情, 这个比喻似乎很是恰当.
 
 [^1]: 校注: 本块最后三段经过微调
 
