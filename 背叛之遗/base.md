@@ -6,7 +6,7 @@ prev:
 
 # 背叛之遗
 
-## 副标题: Let the galaxy burn
+## 让银河燃烧 Let the galaxy burn
 
 编者: 无
 

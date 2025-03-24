@@ -6,7 +6,7 @@ prev:
 
 # 无尽的战争-序章
 
-## 副标题: Heresy Begets retribution
+## 叛乱招致报复 Heresy begets retribution
 
 编者: Laurie Goulding[^1]
 

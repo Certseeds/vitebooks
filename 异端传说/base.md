@@ -6,7 +6,7 @@ prev:
 
 # 异端传说-序章
 
-编者: Nick Kyme & Lindsey Priestley
+编者: Nick Kyme, Lindsey Priestley
 
 On the Cover: Featuring brand new stories from Dan Abnett, Graham McNeill, Gav Thrope and more...
 

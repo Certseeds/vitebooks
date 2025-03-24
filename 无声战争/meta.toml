@@ -1,0 +1,94 @@
+[book]
+chinese_name = "无声战争"
+english_name = "The Silent War"
+type = "短篇小说集"
+series.name = "Horus Heresy"
+series.order = 37
+authors = [
+]
+
+
+[[sub]]
+chinese_name = "肃清"
+english_name = "The Purge"
+type = "中篇小说"
+authors = ["Anthony Reynolds"]
+factory_keywords = ["极限战士", "怀言者", "混沌恶魔"]
+
+[[sub]]
+chinese_name = "掌印者"
+english_name = "The Sigillite"
+type = "短篇小说"
+authors = ["Chris Wraight"]
+
+[[sub]]
+chinese_name = "狼猎"
+english_name = "Wolf Hunt"
+type = "短篇小说"
+authors = ["Graham McNeill"]
+
+[[sub]]
+chinese_name = "一人成军"
+english_name = "Army of One"
+type = "短篇小说"
+authors = ["Rob Sanders"]
+
+[[sub]]
+chinese_name = "泰拉之门"
+english_name = "The Gates of Terra"
+type = "短篇小说"
+authors = ["Nick Kyme"]
+
+[[sub]]
+chinese_name = "幽魂不语"
+english_name = "Ghosts Speak Not"
+type = "短篇小说"
+authors = ["James Swallow"]
+
+[[sub]]
+chinese_name = "圣殿骑士"
+english_name = "Templar"
+type = "短篇小说"
+authors = ["John French"]
+
+[[sub]]
+chinese_name = "长夜回响"
+english_name = "Distant Echoes of Old Night"
+type = "短篇小说"
+authors = ["Rob Sanders"]
+
+[[sub]]
+chinese_name = "灰天使"
+english_name = "Grey Angel"
+type = "短篇小说"
+authors = ["John French"]
+
+[[sub]]
+chinese_name = "失落之子"
+english_name = "Lost Sons"
+type = "短篇小说"
+authors = ["James Swallow"]
+
+[[sub]]
+chinese_name = "夜之子"
+english_name = "Child of Night"
+type = "短篇小说"
+authors = ["John French"]
+
+[[sub]]
+chinese_name = "影月虚影"
+english_name = "Luna Mendax"
+type = "短篇小说"
+authors = ["Graham McNeill"]
+
+[[sub]]
+chinese_name = "耐心"
+english_name = "PATIENCE"
+type = "短篇小说"
+authors = ["James Swallow"]
+
+[[sub]]
+chinese_name = "守望者"
+english_name = "The Watcher"
+type = "短篇小说"
+authors = ["C Z Dunn"]

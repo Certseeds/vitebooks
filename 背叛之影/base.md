@@ -6,9 +6,7 @@ prev:
 
 # 背叛之影-序章
 
-## 副标题: Heresy Begets retribution
-
-编者: Christian Dunn and Nick Kyme[^1]
+编者: Christian Dunn, Nick Kyme[^1]
 
 On the Cover: The New York Times bestselling series. Featuring stories by Dan Abnett, Aaron Dembski-Bowden and Graham Mcneill.
 
