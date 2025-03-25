@@ -4,7 +4,7 @@ prev:
   link: '/无尽的战争/meta'
 ---
 
-# 无尽的战争-序章
+# 无尽的战争-总序
 
 ## 叛乱招致报复 Heresy begets retribution
 

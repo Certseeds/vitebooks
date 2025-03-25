@@ -33,6 +33,8 @@ On the Cover: The latest instalment in the best-selling Horus Heresy
 
 随着战火在帝国中蔓延, 人类的勇士们都将受到终极考验.
 
+## 引言
+
 > > 帝皇, 护佑帝国之人; 机神, 主宰机械之神
 >
 > > 机械之灵, 技术之密, 皆胜肉体凡躯;
@@ -117,7 +119,7 @@ On the Cover: The latest instalment in the best-selling Horus Heresy
 
 乔纳斯·米卢斯[^52], 神使[^53]
 
-## 总序
+## 引言
 
 > > 看, 至高机械主宰降临了! 他随天堂降下的雨滴来到我等身边.
 >

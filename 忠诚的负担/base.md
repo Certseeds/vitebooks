@@ -4,7 +4,7 @@ prev:
   link: '/忠诚的负担/meta'
 ---
 
-# 忠诚的负担-序章
+# 忠诚的负担-总序
 
 编者: Laurie Goulding
 

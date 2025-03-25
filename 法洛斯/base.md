@@ -7,9 +7,9 @@ next:
   link: '/法洛斯/src/chapter01'
 ---
 
-# 法洛斯-序章
+# 法洛斯-总序
 
-## 光芒的逝去
+## 光芒的逝去 The dying of the light
 
 作者: Guy Haley
 
@@ -17,7 +17,7 @@ next:
 
 On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Imperium Secundus
 
-### 荷鲁斯之乱[^1]
+## 荷鲁斯之乱[^1]
 
 这是一段传奇的岁月.
 

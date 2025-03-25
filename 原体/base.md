@@ -4,7 +4,7 @@ prev:
   link: '/原体/meta'
 ---
 
-# 原体-序章
+# 原体-总序
 
 编者: Christian Dunn[^1]
 

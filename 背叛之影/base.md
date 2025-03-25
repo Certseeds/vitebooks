@@ -4,7 +4,7 @@ prev:
   link: '/背叛之影/meta'
 ---
 
-# 背叛之影-序章
+# 背叛之影-总序
 
 编者: Christian Dunn, Nick Kyme[^1]
 

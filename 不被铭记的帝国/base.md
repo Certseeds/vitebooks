@@ -7,9 +7,9 @@ next:
   link: '/不被铭记的帝国/src/chapter01'
 ---
 
-# 不被铭记的帝国-序章
+# 不被铭记的帝国-总序
 
-## 黑暗中的光明
+## 黑暗中的光明 A light in the darkness
 
 作者: Dan Abnett
 
@@ -17,7 +17,7 @@ next:
 
 On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium are laid
 
-### 荷鲁斯之乱
+## 荷鲁斯之乱
 
 这是一段传奇的岁月.
 
@@ -149,7 +149,7 @@ On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium a
 
 此外另有其他随故事展开而出场的领主, 官员和指挥官
 
---------
+## 引言
 
 > > "留有子嗣之人便永不会被遗忘."
 >

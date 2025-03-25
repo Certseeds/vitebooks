@@ -7,7 +7,7 @@ next:
   link: '/福格瑞姆/src/chapter01'
 ---
 
-# 福格瑞姆-序章
+# 福格瑞姆-总序
 
 ## 背叛的幻象 Visions of Treachery
 

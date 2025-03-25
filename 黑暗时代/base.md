@@ -4,7 +4,7 @@ prev:
   link: '/黑暗时代/meta'
 ---
 
-# 黑暗时代-序章
+# 黑暗时代-总序
 
 编者: Christian Dunn
 

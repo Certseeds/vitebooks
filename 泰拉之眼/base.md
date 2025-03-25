@@ -4,7 +4,7 @@ prev:
   link: '/泰拉之眼/meta'
 ---
 
-# 泰拉之眼-序章
+# 泰拉之眼-总序
 
 ## 我是帝皇的守护者 I am the Emperor's vigilance
 

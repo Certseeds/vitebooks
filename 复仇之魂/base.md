@@ -7,7 +7,7 @@ next:
   link: '/复仇之魂/src/chapter01'
 ---
 
-# 复仇之魂-序章
+# 复仇之魂-总序
 
 ## 摩洛之战 The Battle of Molech
 

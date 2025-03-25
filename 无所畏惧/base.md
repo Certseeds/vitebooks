@@ -7,9 +7,9 @@ next:
   link: '/无所畏惧/chapter01/part01.html'
 ---
 
-# 无所畏惧-序章
+# 无所畏惧-总序
 
-## 考斯之战
+## 考斯之战 The Battle of Calth
 
 作者: Dan Abnett
 
@@ -17,7 +17,7 @@ next:
 
 On the Cover: Dan Abnett is probably the best writer of dark military in the world. The Guardian
 
-### 荷鲁斯之乱
+## 荷鲁斯之乱
 
 这是一段传奇的岁月.
 
@@ -167,7 +167,7 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 
 耐维 雷恩
 
---------
+## 引言
 
 > > 在我们倦怠之时, 早已被我们克服的理念便会卷土重来.
 >

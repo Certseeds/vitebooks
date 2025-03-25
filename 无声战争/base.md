@@ -4,7 +4,7 @@ prev:
   link: '/无声战争/meta'
 ---
 
-# 无声战争-序章
+# 无声战争-总序
 
 ## 掌印者的选择 Chosen of the Sigillite
 
@@ -43,7 +43,7 @@ On the Cover: Featuring stories by James Swallow, Chris Wriaight, John French, G
 + [中篇-肃清](/无声战争/肃清/meta)
 + [掌印者-TODO]
 + [狼猎-TODO]
-+ [一人成军-TODO]
++ [一人成军](/无声战争/一人成军/meta)
 + [泰拉之门-TODO]
 + [幽魂不语-TODO]
 + [圣殿骑士-TODO]
@@ -57,7 +57,7 @@ On the Cover: Featuring stories by James Swallow, Chris Wriaight, John French, G
 
 [^0]: 这一部分和<不被铭记的帝国>对比并无改动, 因此复制自[不被铭记的帝国序章](/不被铭记的帝国/base)
 
-## 总序
+## 引言
 
 > > "如今你们应知过去有两张面孔——一张光明而血腥, 为所有人所熟知;
 >

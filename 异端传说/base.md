@@ -4,7 +4,7 @@ prev:
   link: '/异端传说/meta'
 ---
 
-# 异端传说-序章
+# 异端传说-总序
 
 编者: Nick Kyme, Lindsey Priestley
 
