@@ -26,7 +26,9 @@ On the Cover: The war between the Ultramarines and the Word Bearers continues
 
 无辜者的尖叫与正义之人的悲呼都和黑暗诸神的残忍笑声交织回荡. 倘若帝皇在战争中落败, 痛苦与灾难便等待着所有人.
 
-知识与启迪的年代已经告终. 黑暗年代拉开了帷幕.
+知识与启迪的年代已经告终.
+
+黑暗年代拉开了帷幕.
 
 ## 出场人物
 

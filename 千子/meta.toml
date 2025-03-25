@@ -4,6 +4,6 @@ english_name = "A Thousand Sons"
 type = "长篇小说"
 series.name = "Horus Heresy"
 series.order = 12
-authors = ["Grtaham McNeill"]
+authors = ["Graham McNeill"]
 recommended_reading = []
 faction_keywords = ["千子", "太空野狼", "混沌恶魔", "寂静修女会", "禁军"]

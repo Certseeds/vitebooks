@@ -5,6 +5,14 @@ type = "短篇小说集"
 series.name = "Horus Heresy"
 series.order = 37
 authors = [
+    "Anthony Reynolds",
+    "C Z Dunn",
+    "Chris Wraight",
+    "Graham McNeill",
+    "James Swallow",
+    "John French",
+    "Nick Kyme",
+    "Rob Sanders",
 ]
 
 
@@ -14,6 +22,10 @@ english_name = "The Purge"
 type = "中篇小说"
 authors = ["Anthony Reynolds"]
 factory_keywords = ["极限战士", "怀言者", "混沌恶魔"]
+recommended_reading = [
+    "无所畏惧",
+    { name = "风暴之嗣", belongto = { name = "异端传说", series = { name = "Horus Heresy", order = 10 } } },
+]
 
 [[sub]]
 chinese_name = "掌印者"
@@ -32,6 +44,8 @@ chinese_name = "一人成军"
 english_name = "Army of One"
 type = "短篇小说"
 authors = ["Rob Sanders"]
+factory_keywords = ["刺客庭"]
+recommended_reading = ["福格瑞姆"]
 
 [[sub]]
 chinese_name = "泰拉之门"
