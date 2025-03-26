@@ -58,6 +58,10 @@ chinese_name = "幽魂不语"
 english_name = "Ghosts Speak Not"
 type = "短篇小说"
 authors = ["James Swallow"]
+recommended_reading = [
+    { name = "声音", belongto = { name = "异端传说", series = { name = "Horus Heresy", order = 10 } } },
+    { name = "最后的记述者", belongto = { name = "黑暗时代", series = { name = "Horus Heresy", order = 16 } } },
+]
 
 [[sub]]
 chinese_name = "圣殿骑士"
@@ -88,6 +92,7 @@ chinese_name = "夜之子"
 english_name = "Child of Night"
 type = "短篇小说"
 authors = ["John French"]
+recommended_reading = ["福格瑞姆"]
 
 [[sub]]
 chinese_name = "影月虚影"
@@ -100,9 +105,15 @@ chinese_name = "耐心"
 english_name = "PATIENCE"
 type = "短篇小说"
 authors = ["James Swallow"]
+factory_keywords = ["游侠骑士", "混沌恶魔"]
+recommended_reading = [
+    { name = "幽魂不语", belongto = { name = "无声战争", series = { name = "Horus Heresy", order = 37 } } },
+]
 
 [[sub]]
 chinese_name = "守望者"
 english_name = "The Watcher"
 type = "短篇小说"
 authors = ["Christian Dunn"]
+factory_keywords = ["游侠骑士", "太空野狼", "午夜领主"]
+recommended_reading = []
