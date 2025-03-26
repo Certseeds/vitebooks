@@ -42,4 +42,4 @@ On the Cover: Featuring brand new stories from Dan Abnett, Graham McNeill, Gav T
 + [最后的教堂](/异端传说/最后的教堂/meta)
 + [德什亚之后](/异端传说/德什亚之后/meta)
 
-[^1]: 这一部分和<深渊之战>对比并无改动, 但是翻译于某大模型, 附加部分官翻补正.
+[^1]: 这一部分和《深渊之战》对比并无改动, 但是翻译于某大模型, 附加部分官翻补正.

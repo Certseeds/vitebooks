@@ -47,4 +47,4 @@ On the Cover: Featuring stories by Dan Abnett, Aaron Dembski-Bowden, John French
 + [二元继承](/忠诚的负担/二元继承/meta)
 + [永生者](/忠诚的负担/永生者/meta)
 
-[^1]: 这一部分和<不被铭记的帝国>对比并无改动, 因此复制自[不被铭记的帝国序章](/不被铭记的帝国/base)
+[^1]: 这一部分和《不被铭记的帝国》对比并无改动, 因此复制自[不被铭记的帝国-总序](/不被铭记的帝国/base)

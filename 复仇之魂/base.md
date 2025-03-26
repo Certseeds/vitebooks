@@ -188,7 +188,7 @@ On The Cover: The Sons of Horus reclaim their place at the lorefront of the gala
 
 红天使
 
-[^1]: 这一部分和<不被铭记的帝国>对比并无改动, 因此复制自[不被铭记的帝国序章](/不被铭记的帝国/base)
+[^1]: 这一部分和《不被铭记的帝国》对比并无改动, 因此复制自[不被铭记的帝国-总序](/不被铭记的帝国/base)
 
 [^2]: The Warlocker
 

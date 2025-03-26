@@ -64,4 +64,4 @@ On the Cover: Featuring stories by Aaron Dembski-Bowden, John French, Graham McN
 
 [^1]: 经过<https://warhammer40k.fandom.com/wiki/War_Without_End_(Anthology)>确认.
 
-[^2]: 这一部分和<不被铭记的帝国>对比并无改动, 因此复制自[不被铭记的帝国序章](/不被铭记的帝国/base)
+[^2]: 这一部分和《不被铭记的帝国》对比并无改动, 因此复制自[不被铭记的帝国-总序](/不被铭记的帝国/base)

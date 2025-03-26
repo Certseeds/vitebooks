@@ -6,7 +6,7 @@ series.name = "Horus Heresy"
 series.order = 37
 authors = [
     "Anthony Reynolds",
-    "C Z Dunn",
+    "Christian Dunn",
     "Chris Wraight",
     "Graham McNeill",
     "James Swallow",
@@ -105,4 +105,4 @@ authors = ["James Swallow"]
 chinese_name = "守望者"
 english_name = "The Watcher"
 type = "短篇小说"
-authors = ["C Z Dunn"]
+authors = ["Christian Dunn"]

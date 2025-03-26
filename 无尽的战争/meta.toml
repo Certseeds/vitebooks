@@ -4,7 +4,20 @@ english_name = "War Without End"
 type = "短篇小说集"
 series.name = "Horus Heresy"
 series.order = 33
-authors = ["Laurie Goulding"]
+authors = [
+    "Aaron Dembski-Bowden",
+    "Andy Smillie",
+    "Chris Wraight",
+    "David Annandale",
+    "Gav Thorpe",
+    "Graham McNeill",
+    "Guy Haley",
+    "James Swallow",
+    "John French",
+    "Nick Kyme",
+    "Rob Sanders",
+]
+
 
 [[sub]]
 chinese_name = "神圣崇拜者"

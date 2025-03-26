@@ -47,7 +47,7 @@ On the Cover: The war between the Ultramarines and the Word Bearers continues
 + [仪式匕首](/考斯印记/仪式匕首/meta)
 + [无迹之旅](/考斯印记/无迹之旅/meta)
 
-[^0]: 来自[不被铭记的帝国序章](/不被铭记的帝国/base)
+[^0]: 来自[不被铭记的帝国-总序](/不被铭记的帝国/base)
 
 ## 引文 一
 

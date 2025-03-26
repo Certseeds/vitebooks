@@ -52,4 +52,4 @@ On the Cover: The New York Times bestselling series. Featuring stories by Dan Ab
 
 [^1]: 参考<https://wh40k.lexicanum.com/wiki/Shadows_of_Treachery_(Anthology)>
 
-[^2]: 这一部分和<不被铭记的帝国>对比并无改动, 翻译与[不被铭记的帝国序章](/不被铭记的帝国/base)不同是因为译者文风不同.
+[^2]: 这一部分和《不被铭记的帝国》对比并无改动, 翻译与[不被铭记的帝国-总序](/不被铭记的帝国/base)不同是因为译者文风不同.
