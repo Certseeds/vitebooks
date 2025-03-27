@@ -38,7 +38,7 @@ On the Cover: Featuring stories by Dan Abnett, Aaron Dembski-Bowden, John French
 
 按原文顺序排列.
 
-+ [TODO-第十三只狼]
++ [第十三只狼-TODO]
 + [流亡](/忠诚的负担/流亡/meta)
 + [憎恶智能](/忠诚的负担/憎恶智能/meta)
 + [噩兆修会](/忠诚的负担/噩兆修会/meta)

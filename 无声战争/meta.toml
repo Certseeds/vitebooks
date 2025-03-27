@@ -93,12 +93,17 @@ english_name = "Child of Night"
 type = "短篇小说"
 authors = ["John French"]
 recommended_reading = ["福格瑞姆"]
+faction_keywords = ["午夜领主", "游侠骑士"]
 
 [[sub]]
 chinese_name = "影月虚影"
 english_name = "Luna Mendax"
 type = "短篇小说"
 authors = ["Graham McNeill"]
+recommended_reading = [
+    { name = "灰天使", belongto = { name = "无声战争", series = { name = "Horus Heresy", order = 37 } } }
+]
+faction_keywords = ["荷鲁斯之子", "游侠骑士"]
 
 [[sub]]
 chinese_name = "耐心"
