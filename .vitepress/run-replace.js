@@ -84,6 +84,9 @@ const thirdReplacement = (text) => {
                 }
                 if (numbers % 2 === 0 && line[i] === '"' && i + 1 < line.length && isChineseCharacter(line[i + 1])) {
                     result += '" ';
+                }
+                else if (numbers % 2 === 1 && line[i] === '"' && isChineseCharacter(line[i - 1])) {
+                    result += ' "';
                 } else {
                     result += line[i];
                 }

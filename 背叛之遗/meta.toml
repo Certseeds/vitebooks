@@ -82,7 +82,7 @@ faction_keywords = ["极限战士", "泰坦军团", "叛变泰坦军团"]
 
 [[sub]]
 chinese_name = "屠夫之钉"
-english_name = "Butches's Nails"
+english_name = "Butcher's Nails"
 type = "短篇小说"
 authors = ["Aaron Dembski-Bowden"]
 recommended_reading = ["福格瑞姆"]

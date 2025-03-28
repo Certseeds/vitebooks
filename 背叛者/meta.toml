@@ -1,0 +1,13 @@
+[book]
+chinese_name = "背叛者"
+english_name = "Betrayer"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 24
+authors = ["Aaron Dembski-Bowden"]
+recommended_reading = [
+    "无所畏惧",
+    { enname = "Butcher's Nails", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 31 } } },
+    { enname = "After Desh'ea", belongto = { name = "异端传说", series = { name = "Horus Heresy", order = 10 } } },
+]
+faction_keywords = ["吞世者", "怀言者", "极限战士", "泰坦军团", "叛变泰坦军团", "永生者", "混沌恶魔"]
