@@ -86,6 +86,10 @@ chinese_name = "失落之子"
 english_name = "Lost Sons"
 type = "短篇小说"
 authors = ["James Swallow"]
+recommended_reading = [
+    "惧于踏足"
+]
+faction_keywords = ["圣血天使", "游侠骑士"]
 
 [[sub]]
 chinese_name = "夜之子"

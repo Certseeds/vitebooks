@@ -49,7 +49,7 @@ On the Cover: From the New York Times bestselling author of The First Heretic
 
 罗伯特.基里曼, 极限战士原体
 
-### 第十二军团 "吞世者":
+### 第十二军团 "吞世者"
 
 瓦瑞斯, 首席智库, 智库编制
 
@@ -83,7 +83,7 @@ On the Cover: From the New York Times bestselling author of The First Heretic
 
 奥菲欧.卡山德拉, 阿玛特拉摄政
 
-### 舰队人员:
+### 舰队人员
 
 洛塔拉.赛琳 十二军团旗舰征服者号舰长
 
@@ -95,13 +95,13 @@ On the Cover: From the New York Times bestselling author of The First Heretic
 
 卡吉克, 十二军团旗舰征服者号通讯主管
 
-受祝女士, 真言告解者
+赛瑞琳.瓦岚匂, 受祝女士, 真言告解者
 
-### 火星机械神教:
+### 火星机械神教
 
 维尔-柯雷达, 尊位贤者, 卡尔博-哈尔的代表
 
-### 琥狼军团:
+### 琥狼军团
 
 温里克.索罗斯廷, 泰坦领机Syrgalah机长, 终裁机长
 
@@ -113,7 +113,7 @@ On the Cover: From the New York Times bestselling author of The First Heretic
 
 奥顿.里拉克, 次裁机长
 
-### 边哨军团:
+### 边哨军团
 
 马克西米利安.德兰特, 泰坦热忱者号机长
 
@@ -121,13 +121,13 @@ On the Cover: From the New York Times bestselling author of The First Heretic
 
 凯.阿达拉斯, 泰坦热忱者号次席调制官
 
-### 非帝国人员:
+### 非帝国人员
 
 提巴拉尔.塔尔卡, Praxuary, 努凯里亚帝胄
 
 奥沙梅.艾弗瑞尔'科尔沙伊, 塔尔卡亲族卫队统领
 
-达蒙.普瑞塔尼斯, 永生者
+达蒙.普瑞坦尼斯, 永生者
 
 ## 引言
 
