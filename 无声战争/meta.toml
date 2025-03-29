@@ -32,6 +32,7 @@ chinese_name = "掌印者"
 english_name = "The Sigillite"
 type = "短篇小说"
 authors = ["Chris Wraight"]
+recommended_reading = ["福格瑞姆"]
 
 [[sub]]
 chinese_name = "狼猎"
@@ -68,18 +69,29 @@ chinese_name = "圣殿骑士"
 english_name = "Templar"
 type = "短篇小说"
 authors = ["John French"]
+recommended_reading = [
+    { name = "绯红之拳", belongto = { name = "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
+    { name = "肃清", belongto = { name = "无声战争", series = { name = "Horus Heresy", order = 37 } } },
+]
 
 [[sub]]
 chinese_name = "长夜回响"
 english_name = "Distant Echoes of Old Night"
 type = "短篇小说"
 authors = ["Rob Sanders"]
+recommended_reading = [
+    "燃烧的银河"
+]
+faction_keywords = ["死亡守卫", "帝国之拳", "游侠骑士"]
 
 [[sub]]
 chinese_name = "灰天使"
 english_name = "Grey Angel"
 type = "短篇小说"
 authors = ["John French"]
+recommended_reading = [
+    { name = "影月虚影", belongto = { name = "无声战争", series = { name = "Horus Heresy", order = 37 } } },
+]
 
 [[sub]]
 chinese_name = "失落之子"
