@@ -48,7 +48,7 @@ On the Cover: Featuring stories by James Swallow, Chris Wriaight, John French, G
 + [幽魂不语-TODO]
 + [圣殿骑士-TODO]
 + [长夜回响](/无声战争/长夜回响/meta)
-+ [灰天使-TODO]
++ [灰天使](/无声战争/灰天使/meta)
 + [失落之子](/无声战争/失落之子/meta)
 + [夜之子](/无声战争/夜之子/meta)
 + [影月虚影](/无声战争/影月虚影/meta)

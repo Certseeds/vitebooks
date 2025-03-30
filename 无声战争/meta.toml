@@ -79,9 +79,7 @@ chinese_name = "长夜回响"
 english_name = "Distant Echoes of Old Night"
 type = "短篇小说"
 authors = ["Rob Sanders"]
-recommended_reading = [
-    "燃烧的银河"
-]
+recommended_reading = ["燃烧的银河"]
 faction_keywords = ["死亡守卫", "帝国之拳", "游侠骑士"]
 
 [[sub]]
@@ -89,18 +87,15 @@ chinese_name = "灰天使"
 english_name = "Grey Angel"
 type = "短篇小说"
 authors = ["John French"]
-recommended_reading = [
-    { name = "影月虚影", belongto = { name = "无声战争", series = { name = "Horus Heresy", order = 37 } } },
-]
+factory_keywords = ["游侠骑士", "暗黑天使"]
+recommended_reading = ["堕天使"]
 
 [[sub]]
 chinese_name = "失落之子"
 english_name = "Lost Sons"
 type = "短篇小说"
 authors = ["James Swallow"]
-recommended_reading = [
-    "惧于踏足"
-]
+recommended_reading = ["惧于踏足"]
 faction_keywords = ["圣血天使", "游侠骑士"]
 
 [[sub]]
@@ -117,7 +112,7 @@ english_name = "Luna Mendax"
 type = "短篇小说"
 authors = ["Graham McNeill"]
 recommended_reading = [
-    { name = "灰天使", belongto = { name = "无声战争", series = { name = "Horus Heresy", order = 37 } } }
+    { name = "灰天使", belongto = { name = "无声战争", series = { name = "Horus Heresy", order = 37 } } },
 ]
 faction_keywords = ["荷鲁斯之子", "游侠骑士"]
 
