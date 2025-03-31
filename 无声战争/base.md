@@ -46,7 +46,7 @@ On the Cover: Featuring stories by James Swallow, Chris Wriaight, John French, G
 + [一人成军](/无声战争/一人成军/meta)
 + [泰拉之门-TODO]
 + [幽魂不语-TODO]
-+ [圣殿骑士-TODO]
++ [圣殿骑士](/无声战争/圣殿骑士/meta)
 + [长夜回响](/无声战争/长夜回响/meta)
 + [灰天使](/无声战争/灰天使/meta)
 + [失落之子](/无声战争/失落之子/meta)

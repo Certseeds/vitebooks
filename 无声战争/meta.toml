@@ -73,6 +73,7 @@ recommended_reading = [
     { name = "绯红之拳", belongto = { name = "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
     { name = "肃清", belongto = { name = "无声战争", series = { name = "Horus Heresy", order = 37 } } },
 ]
+faction_keywords = ["帝国之拳", "白色伤疤","暗黑天使", "怀言者", "吞世者", "混沌恶魔"]
 
 [[sub]]
 chinese_name = "长夜回响"
