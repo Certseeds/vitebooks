@@ -63,6 +63,7 @@ recommended_reading = [
     { name = "声音", belongto = { name = "异端传说", series = { name = "Horus Heresy", order = 10 } } },
     { name = "最后的记述者", belongto = { name = "黑暗时代", series = { name = "Horus Heresy", order = 16 } } },
 ]
+faction_keywords = ["死亡守卫", "寂静修女", "游侠骑士"]
 
 [[sub]]
 chinese_name = "圣殿骑士"
