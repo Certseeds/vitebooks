@@ -1,10 +1,10 @@
 ---
 prev:
-text: '无声战争-幽魂不语-base'
-link: '/无声战争/幽魂不语/base'
+  text: '无声战争-幽魂不语-base'
+  link: '/无声战争/幽魂不语/base'
 next:
-text: '无声战争-meta'
-link: '/无声战争/meta'
+  text: '无声战争-meta'
+  link: '/无声战争/meta'
 ---
 
 # 无声战争-幽魂不语
