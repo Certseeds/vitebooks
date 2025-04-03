@@ -1,6 +1,8 @@
 import { defineConfig } from 'vitepress'
 import mdFootnote from "markdown-it-footnote"
 
+const hostURL = 'https://vitebooks.certseeds.com'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: "vitebooks",
@@ -14,7 +16,7 @@ export default defineConfig({
         nav: [
             { text: 'Home', link: '/' }
             , { text: "无所畏惧", link: '/无所畏惧/meta' }
-            , { text: "法洛斯", link: '/法洛斯/meta' }
+            , { text: "epub总集", link: '/warhammer40k/epub' }
             , { text: "warhammer40k-元数据", link: '/warhammer40k/primarchs' }
             , { text: "dep-page", link: "/depage/index.html", target: '_blank' }
         ],
@@ -87,13 +89,13 @@ export default defineConfig({
     head: [
         ['meta', { property: 'og:type', content: 'website' }],
         ['meta', { property: 'og:locale', content: 'zh-CN' }],
-        ['meta', { property: 'og:title', content: 'ViteBooks | VitePress Powered Static Book Site' }],
+        ['meta', { property: 'og:title', content: 'ViteBooks | Static Book Site Powered by VitePress' }],
         ['meta', { property: 'og:site_name', content: 'ViteBooks' }],
-        ['meta', { property: 'og:image', content: 'https://vitebooks.certseeds.com/favicon.ico' }],
-        ['meta', { property: 'og:url', content: 'https://vitebooks.certseeds.com' }],
+        ['meta', { property: 'og:image', content: `${hostURL}/favicon.ico` }],
+        ['meta', { property: 'og:url', content: `${hostURL}` }],
         ['meta', { property: 'twitter:card', content: 'summary_large_image' }],
-        ['meta', { property: 'twitter:title', content: 'ViteBooks | VitePress Powered Static Book Site' }],
-        ['meta', { property: 'twitter:image', content: 'https://vitebooks.certseeds.com/favicon.ico' }],
+        ['meta', { property: 'twitter:title', content: 'ViteBooks | Static Book Site Powered by VitePress' }],
+        ['meta', { property: 'twitter:image', content: `${hostURL}/favicon.ico` }],
         ['meta', { property: 'twitter:description', content: 'warhammer cn translation collect and reformat' }],
         ['meta', { property: 'keywords', content: 'vitepress, warhammer, nodejs, llm' }],
         ['meta', { property: 'robots', content: 'index, follow' }],
@@ -108,7 +110,7 @@ export default defineConfig({
         },
     },
     sitemap: {
-        hostname: 'https://vitebooks.certseeds.com'
+        hostname: hostURL
     },
     lastUpdated: true,
     metaChunk: true
