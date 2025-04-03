@@ -53,6 +53,10 @@ chinese_name = "泰拉之门"
 english_name = "The Gates of Terra"
 type = "短篇小说"
 authors = ["Nick Kyme"]
+factory_keywords = ["极限战士"]
+recommended_reading = [
+    { name = "被遗忘的子嗣", belongto = { name = "黑暗时代", series = { name = "Horus Heresy", order = 16 } } },
+]
 
 [[sub]]
 chinese_name = "幽魂不语"
