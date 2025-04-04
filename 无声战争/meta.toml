@@ -33,12 +33,15 @@ english_name = "The Sigillite"
 type = "短篇小说"
 authors = ["Chris Wraight"]
 recommended_reading = ["福格瑞姆"]
+factory_keywords = ["审判庭"]
 
 [[sub]]
 chinese_name = "狼猎"
 english_name = "Wolf Hunt"
 type = "短篇小说"
 authors = ["Graham McNeill"]
+recommended_reading = ["流浪弃儿"]
+factory_keywords = ["游侠骑士"]
 
 [[sub]]
 chinese_name = "一人成军"

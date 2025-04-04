@@ -42,9 +42,9 @@ On the Cover: Featuring stories by James Swallow, Chris Wriaight, John French, G
 
 + [中篇-肃清](/无声战争/肃清/meta)
 + [掌印者-TODO]
-+ [狼猎-TODO]
++ [狼猎](/无声战争/狼猎/meta)
 + [一人成军](/无声战争/一人成军/meta)
-+ [泰拉之门](/无声战争/一人成军/meta)
++ [泰拉之门](/无声战争/泰拉之门/meta)
 + [幽魂不语](/无声战争/幽魂不语/meta)
 + [圣殿骑士](/无声战争/圣殿骑士/meta)
 + [长夜回响](/无声战争/长夜回响/meta)
