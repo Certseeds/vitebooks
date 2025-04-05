@@ -6,7 +6,7 @@ prev:
 
 # 无声战争-总序
 
-## 掌印者的选择 Chosen of the Sigillite
+## 掌印者的亲选 Chosen of the Sigillite
 
 On the Cover: Featuring stories by James Swallow, Chris Wriaight, John French, Graham McNeill and more
 
@@ -41,7 +41,7 @@ On the Cover: Featuring stories by James Swallow, Chris Wriaight, John French, G
 按原文顺序排列.
 
 + [中篇-肃清](/无声战争/肃清/meta)
-+ [掌印者-TODO]
++ [掌印者](/无声战争/掌印者/meta)
 + [狼猎](/无声战争/狼猎/meta)
 + [一人成军](/无声战争/一人成军/meta)
 + [泰拉之门](/无声战争/泰拉之门/meta)
