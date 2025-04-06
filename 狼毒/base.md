@@ -9,7 +9,7 @@ next:
 
 # 狼毒-总序
 
-## 掷出命运之矛 the Wyrd Spear Cast
+## 掷出命运之矛 The wyrd spear cast
 
 On The Cover: From the New York Times bestselling novel series
 
