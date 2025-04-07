@@ -47,6 +47,7 @@ export default defineConfig({
                     , { text: "原体", link: '/原体/meta' }
                     , { text: "惧于踏足", link: '/惧于踏足/meta' }
                     , { text: "背叛之影", link: '/背叛之影/meta' }
+                    , { text: "背叛者", link: '/背叛者/meta' }
                     , { text: "考斯印记", link: '/考斯印记/meta' }
                     , { text: "不被铭记的帝国", link: '/不被铭记的帝国/meta' }
                     , { text: "复仇之魂", link: '/复仇之魂/meta' }
@@ -55,6 +56,7 @@ export default defineConfig({
                     , { text: "法洛斯", link: '/法洛斯/meta' }
                     , { text: "泰拉之眼", link: '/泰拉之眼/meta' }
                     , { text: "无声战争", link: '/无声战争/meta' }
+                    , { text: "科拉克斯-不再", link: '/科拉克斯-不再/meta' }
                     , { text: "忠诚的负担", link: '/忠诚的负担/meta' }
                     , { text: "狼毒", link: '/狼毒/meta' }
                     , { text: "epub总集", link: '/warhammer40k/epub' }
