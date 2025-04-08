@@ -1,10 +1,10 @@
 ---
 prev:
   text: 'organize'
-  link: '/科拉克斯/organize'
+  link: '/科拉克斯-不再/organize'
 next:
   text: 'base'
-  link: '/科拉克斯/base'
+  link: '/科拉克斯-不再/base'
 ---
 
 # 科拉克斯-元数据

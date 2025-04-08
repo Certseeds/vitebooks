@@ -20,7 +20,11 @@ chinese_name = "灵魂熔炉"
 english_name = "Soulforge"
 type = "中篇小说"
 authors = ["Gav Thorpe"]
-
+factory_keywords = ["暗鸦守卫", "怀言者", "机械教", "黑暗机械教"]
+recommended_reading = [
+    "失落救赎",
+    { name = "暗影大师", belongto = { name = "科拉克斯-不再", series = { name = "Horus Heresy", order = 40 } } },
+]
 
 [[sub]]
 chinese_name = "暗影大师"
@@ -34,7 +38,10 @@ chinese_name = "暗鸦之主"
 english_name = "Ravenlord"
 type = "中篇小说"
 authors = ["Gav Thorpe"]
-
+factory_keywords = ["暗鸦守卫", "破碎军团", "怀言者", "帝皇之子", "荷鲁斯之子", "黑暗机械教"]
+recommended_reading = [
+    { name = "灵魂熔炉", belongto = { name = "科拉克斯-不再", series = { name = "Horus Heresy", order = 40 } } },
+]
 
 [[sub]]
 chinese_name = "恐惧的价值"
