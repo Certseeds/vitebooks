@@ -4,7 +4,7 @@ prev:
   link: '/科拉克斯-不再/灵魂熔炉/meta'
 next:
   text: 'src'
-  link: '/科拉克斯-不再/灵魂熔炉/src/chapter01'
+  link: '/科拉克斯-不再/灵魂熔炉/src/chapter1'
 ---
 
 # 科拉克斯-不再-灵魂熔炉-序章
@@ -76,7 +76,7 @@ next:
 
 [^12]: Indentured Navigator
 
-[^13]: Constanix 
+[^13]: Constanix
 
 [^14]: Delvere
 

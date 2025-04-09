@@ -40,10 +40,10 @@ On the Cover: The primarch of the Raven Guard wages his bitter guerrilla war aga
 
 + [科拉克斯](/科拉克斯-不再/科拉克斯/meta)
 + [中篇-灵魂熔炉](/科拉克斯-不再/灵魂熔炉/meta)
-+ [暗影大师-TODO]
++ [暗影大师](/科拉克斯-不再/暗影大师/meta)
 + [中篇-暗鸦之主](/科拉克斯-不再/暗鸦之主/meta)
-+ [恐惧的价值-TODO]
-+ [猛禽-TODO]
++ [恐惧的价值](/科拉克斯-不再/恐惧的价值/meta)
++ [猛禽](/科拉克斯-不再/猛禽/meta)
 + [中篇-死亡之债-TODO]
 
 

@@ -11,9 +11,9 @@ next:
 
 ## 原文来源
 
-+ 原译者: 未知
-+ <>
-+ 来源: 不明
++ 原译者: Azkaellon
++ <https://www.bilibili.com/read/cv15068026>
++ 来源: bilibili
 
 --------
 

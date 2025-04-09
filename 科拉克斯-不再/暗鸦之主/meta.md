@@ -11,9 +11,15 @@ next:
 
 ## 原文来源
 
-+ 原译者: 未知
-+ <>
-+ 来源: 不明
++ 原译者: 卡利班证人-
++ <https://tieba.baidu.com/p/6054796779?see_lz=1>
++ 来源: tieba
+
+---------
+
++ 原译者: Zharost
++ <https://www.bilibili.com/read/cv11957468>
++ 来源: bilibili
 
 --------
 
