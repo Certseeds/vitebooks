@@ -44,7 +44,7 @@ On the Cover: The primarch of the Raven Guard wages his bitter guerrilla war aga
 + [中篇-暗鸦之主](/科拉克斯/暗鸦之主/meta)
 + [恐惧的价值](/科拉克斯/恐惧的价值/meta)
 + [猛禽](/科拉克斯/猛禽/meta)
-+ [中篇-死亡之债-TODO]
++ [中篇-死亡之债](/科拉克斯/死亡之债/meta)
 
 
 按原文顺序排列.

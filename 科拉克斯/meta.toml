@@ -67,6 +67,7 @@ chinese_name = "死亡之债"
 english_name = "Weregeld"
 type = "中篇小说"
 authors = ["Gav Thorpe"]
+factory_keywords = ["暗鸦守卫", "太空野狼", "破碎军团", "荷鲁斯之子", "吞世者", "千子", "阿尔法军团"]
 recommended_reading = [
     "狼毒",
     { name = "恐惧的价值", belongto = { name = "科拉克斯", series = { name = "Horus Heresy", order = 40 } } },
