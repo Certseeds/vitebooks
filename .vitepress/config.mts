@@ -57,6 +57,7 @@ export default defineConfig({
                     , { text: "泰拉之眼", link: '/泰拉之眼/meta' }
                     , { text: "无声战争", link: '/无声战争/meta' }
                     , { text: "科拉克斯", link: '/科拉克斯/meta' }
+                    , { text: "破碎军团", link: '/破碎军团/meta' }
                     , { text: "忠诚的负担", link: '/忠诚的负担/meta' }
                     , { text: "狼毒", link: '/狼毒/meta' }
                     , { text: "epub总集", link: '/warhammer40k/epub' }

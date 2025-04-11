@@ -4,7 +4,7 @@ prev:
   link: '/科拉克斯/死亡之债/meta'
 next:
   text: 'src'
-  link: '/科拉克斯/死亡之债/src'
+  link: '/科拉克斯/死亡之债/src/chapter1'
 ---
 
 # 科拉克斯-死亡之债-序章

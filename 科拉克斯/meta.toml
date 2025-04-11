@@ -1,6 +1,6 @@
 [book]
 chinese_name = "科拉克斯"
-english_name = "Corax-Nevermore"
+english_name = "Corax"
 type = "短篇小说集"
 series.name = "Horus Heresy"
 series.order = 40
@@ -9,7 +9,7 @@ authors = ["Gav Thorpe"]
 
 [[sub]]
 chinese_name = "科拉克斯-序章"
-english_name = "Corax"
+english_name = "Corax-Prologue"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
 factory_keywords = ["暗鸦守卫", "太空野狼", "吞世者", "叛变泰坦军团", "叛变骑士家族", "千子", "阿尔法军团"]
