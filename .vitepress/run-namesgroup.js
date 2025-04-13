@@ -54,6 +54,10 @@ const level0 = async () => {
     const namesVectors = [];
     const length = names.length;
     for (let i = 0; i < length; i++) {
+        // 这里存在问题
+        // 只使用names, 则长度会极度影响输出
+        // 若只使用pinyin, 输出会有点奇怪
+        // 所以结合中英文, 中间加入一个相同的助embdding words
         const name_and_pinyin = `${names}'s pinyin can be represent ${namesPinyin[i]}`;
         const response = await ollama.embeddings({
             model: 'nomic-embed-text',
@@ -89,6 +93,5 @@ const level0 = async () => {
 }
 
 (async () => {
-    const auto = await ollama.embeddings({ model: 'mxbai-embed-large', prompt: 'Represent this sentence for searching relevant passages:  The sky is blue because of Rayleigh scattering' })
     await level0();
 })();

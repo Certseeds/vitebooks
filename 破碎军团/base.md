@@ -35,7 +35,7 @@ On the Cover: Shadrak Meduson rallies his kinsmen after Isstvan V, to wage a dif
 ## 章节
 
 + [美杜森](/破碎军团/美杜森/meta)
-+ [未锻造的-TODO] && [未铸之钢-TODO]
++ [未锻造的](/破碎军团/未锻造的/meta) && [未铸之钢](/破碎军团/未铸之钢/meta)
 + [不朽的职责-TODO]
 + [灰爪号-TODO]
 + [赫尔之钥-TODO]

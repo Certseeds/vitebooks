@@ -11,42 +11,63 @@ chinese_name = "美杜森"
 english_name = "Meduson"
 type = "短篇小说"
 authors = ["Dan Abnett"]
+keywords = ["钢铁之手", "火蜥蜴", "暗鸦守卫", "荷鲁斯之子"]
+recommended_reading = ["福格瑞姆"]
 
 [[sub]]
 chinese_name = "未锻造的"
 english_name = "Unforged"
 type = "短篇小说"
 authors = ["Guy Haley"]
+keywords = ["钢铁之手", "火蜥蜴"]
+recommended_reading = [
+    { name = "抗争并陨落", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 31 } } },
+    { enname = "Scorched Earth", belongto = { name = "生于烈焰", series = { name = "Horus Heresy", order = 50 } } },
+]
 
 [[sub]]
 chinese_name = "未铸之钢"
 english_name = "Unforged-2"
 type = "短篇小说"
 authors = ["Nick Kyme"]
+keywords = ["钢铁之手", "火蜥蜴"]
+recommended_reading = [
+    { name = "抗争并陨落", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 31 } } },
+    { enname = "Scorched Earth", belongto = { name = "生于烈焰", series = { name = "Horus Heresy", order = 50 } } },
+]
 
 [[sub]]
 chinese_name = "不朽的职责"
 english_name = "Immortal Duty"
 type = "短篇小说"
 authors = ["Nick Kyme"]
+recommended_reading = ["福格瑞姆"]
 
 [[sub]]
 chinese_name = "灰爪号"
 english_name = "Grey Talon"
 type = "短篇小说"
 authors = [" Chris Wraight"]
+recommended_reading = [
+    { name = "美杜森", belongto = { name = "破碎军团", series = { name = "Horus Heresy", order = 43 } } },
+    "伤疤"
+]
 
 [[sub]]
 chinese_name = "赫尔之钥"
 english_name = "The Keys of Hel"
 type = "短篇小说"
 authors = ["John French"]
+recommended_reading = [
+    { name = "分崩离析", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 31 } } },
+]
 
 [[sub]]
 chinese_name = "行为不朽"
 english_name = "Deeds Endure"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
+recommended_reading = ["福格瑞姆"]
 
 [[sub]]
 chinese_name = "绞索"
@@ -59,21 +80,34 @@ chinese_name = "未说出的"
 english_name = "Unspoken"
 type = "短篇小说"
 authors = ["Guy Haley"]
+recommended_reading = [
+    { name = "未锻造的", belongto = { name = "破碎军团", series = { name = "Horus Heresy", order = 50 } } },
+]
 
 [[sub]]
 chinese_name = "第七条蛇"
 english_name = "The Seventh Serpent"
 type = "中篇小说"
 authors = ["Graham McNeill"]
+recommended_reading = [
+    { name = "亦者", belongto = { name = "破碎军团", series = { name = "Horus Heresy", order = 43 } } },
+    "灭绝天使"
+]
 
 [[sub]]
 chinese_name = "手选"
 english_name = "The Hand Elect"
 type = "短篇小说"
 authors = ["Chris Wraight"]
+recommended_reading = [
+    { name = "美杜森", belongto = { name = "破碎军团", series = { name = "Horus Heresy", order = 43 } } },
 
+]
 [[sub]]
 chinese_name = "亦者"
 english_name = "The Either"
 type = "短篇小说"
 authors = ["Graham McNeill"]
+recommended_reading = [
+    { name = "灰爪号", belongto = { name = "破碎军团", series = { name = "Horus Heresy", order = 43 } } },
+]
