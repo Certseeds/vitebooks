@@ -156,4 +156,3 @@ next:
 [^16]: Barbarus
 
 [^17]: Luna
-

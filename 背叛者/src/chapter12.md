@@ -372,4 +372,3 @@ next:
 [^1]: Blood of the True
 
 [^2]: Monarchia
-

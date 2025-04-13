@@ -206,4 +206,3 @@ next:
 [^1]: stalk-argot
 
 [^2]: Kamiel 怀言者战列舰, 曾参与考斯之战
-

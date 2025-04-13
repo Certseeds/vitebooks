@@ -46,7 +46,6 @@ On the Cover: The primarch of the Raven Guard wages his bitter guerrilla war aga
 + [猛禽](/科拉克斯/猛禽/meta)
 + [中篇-死亡之债](/科拉克斯/死亡之债/meta)
 
-
 按原文顺序排列.
 
 [^0]: 这一部分和《不被铭记的帝国》对比并无改动, 因此复制自[不被铭记的帝国-总序](/不被铭记的帝国/base)

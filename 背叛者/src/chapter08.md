@@ -434,4 +434,3 @@ next:
 [^5]: Tyresius
 
 [^6]: battalion
-

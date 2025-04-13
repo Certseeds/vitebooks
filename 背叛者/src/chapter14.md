@@ -288,4 +288,3 @@ next:
 [^1]: Xaphen
 
 [^2]: Testamentum Veritas
-
