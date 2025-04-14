@@ -41,6 +41,7 @@ chinese_name = "不朽的职责"
 english_name = "Immortal Duty"
 type = "短篇小说"
 authors = ["Nick Kyme"]
+keywords = ["钢铁之手", "吞世者"]
 recommended_reading = ["福格瑞姆"]
 
 [[sub]]
@@ -50,7 +51,7 @@ type = "短篇小说"
 authors = [" Chris Wraight"]
 recommended_reading = [
     { name = "美杜森", belongto = { name = "破碎军团", series = { name = "Horus Heresy", order = 43 } } },
-    "伤疤"
+    "伤疤",
 ]
 
 [[sub]]
@@ -91,7 +92,7 @@ type = "中篇小说"
 authors = ["Graham McNeill"]
 recommended_reading = [
     { name = "亦者", belongto = { name = "破碎军团", series = { name = "Horus Heresy", order = 43 } } },
-    "灭绝天使"
+    "灭绝天使",
 ]
 
 [[sub]]
