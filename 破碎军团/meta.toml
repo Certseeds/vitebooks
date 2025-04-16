@@ -11,7 +11,7 @@ chinese_name = "美杜森"
 english_name = "Meduson"
 type = "短篇小说"
 authors = ["Dan Abnett"]
-keywords = ["钢铁之手", "火蜥蜴", "暗鸦守卫", "荷鲁斯之子"]
+keywords = ["钢铁之手", "火蜥蜴", "暗鸦守卫", "破碎军团", "荷鲁斯之子"]
 recommended_reading = ["福格瑞姆"]
 
 [[sub]]
@@ -53,6 +53,7 @@ recommended_reading = [
     { name = "美杜森", belongto = { name = "破碎军团", series = { name = "Horus Heresy", order = 43 } } },
     "伤疤",
 ]
+keywords = ["钢铁之手", "白色伤疤", "荷鲁斯之子", "破碎军团"]
 
 [[sub]]
 chinese_name = "赫尔之钥"

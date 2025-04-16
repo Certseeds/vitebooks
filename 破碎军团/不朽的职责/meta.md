@@ -11,8 +11,8 @@ next:
 
 ## 原文来源
 
-+ 原译者:
-+ <>
++ 原译者: mousealpha
++ <https://www.bilibili.com/read/cv16383904>
 + 来源: bilibili
 
 --------

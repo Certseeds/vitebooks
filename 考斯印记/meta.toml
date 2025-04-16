@@ -4,7 +4,7 @@ english_name = "Mark of Calth"
 type = "短篇小说集"
 series.name = "Horus Heresy"
 series.order = 25
-authors = ["Laurie Coulding"]
+authors = ["Laurie Goulding"]
 
 [[sub]]
 chinese_name = "幽界碎片"

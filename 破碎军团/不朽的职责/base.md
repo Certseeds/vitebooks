@@ -9,6 +9,4 @@ next:
 
 # 破碎军团-不朽的职责-序章
 
-作者: Nick Kyme
-
-
+作者: Grey Talon
