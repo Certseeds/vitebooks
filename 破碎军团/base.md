@@ -39,7 +39,7 @@ On the Cover: Shadrak Meduson rallies his kinsmen after Isstvan V, to wage a dif
 + [不朽的职责](/破碎军团/不朽的职责/meta)
 + [灰爪号](/破碎军团/灰爪号/meta)
 + [赫尔之钥](/破碎军团/赫尔之钥/meta)
-+ [行为不朽-TODO]
++ [行为不朽](/破碎军团/行为不朽/meta)
 + [绞索-TODO]
 + [未说出的-TODO]
 + [第七条蛇-TODO]
