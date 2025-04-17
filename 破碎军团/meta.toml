@@ -63,6 +63,7 @@ authors = ["John French"]
 recommended_reading = [
     { name = "分崩离析", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 31 } } },
 ]
+keywords = ["钢铁之手", "死亡守卫", "破碎军团"]
 
 [[sub]]
 chinese_name = "行为不朽"
