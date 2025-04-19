@@ -40,8 +40,8 @@ On the Cover: Shadrak Meduson rallies his kinsmen after Isstvan V, to wage a dif
 + [灰爪号](/破碎军团/灰爪号/meta)
 + [赫尔之钥](/破碎军团/赫尔之钥/meta)
 + [行为不朽](/破碎军团/行为不朽/meta)
-+ [绞索-TODO]
-+ [未说出的-TODO]
++ [绞索](/破碎军团/绞索/meta)
++ [未说出的](/破碎军团/未说出的/meta)
 + [第七条蛇-TODO]
 + [手选-TODO]
 + [亦者-TODO]

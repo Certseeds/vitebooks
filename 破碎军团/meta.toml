@@ -78,6 +78,8 @@ chinese_name = "绞索"
 english_name = "The Noose"
 type = "短篇小说"
 authors = ["David Annandale"]
+recommended_reading = ["福格瑞姆"]
+keywords = ["钢铁之手", "帝皇之子"]
 
 [[sub]]
 chinese_name = "未说出的"
@@ -87,6 +89,7 @@ authors = ["Guy Haley"]
 recommended_reading = [
     { name = "未锻造的", belongto = { name = "破碎军团", series = { name = "Horus Heresy", order = 50 } } },
 ]
+keywords = ["阿尔法军团", "钢铁之手", "火蜥蜴"]
 
 [[sub]]
 chinese_name = "第七条蛇"
