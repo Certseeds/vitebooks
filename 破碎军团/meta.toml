@@ -71,6 +71,7 @@ english_name = "Deeds Endure"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
 recommended_reading = ["福格瑞姆"]
+keywords = ["钢铁之手", "火蜥蜴", "吞世者"]
 
 [[sub]]
 chinese_name = "绞索"

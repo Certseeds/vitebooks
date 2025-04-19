@@ -21,7 +21,7 @@ chinese_name = "肃清"
 english_name = "The Purge"
 type = "中篇小说"
 authors = ["Anthony Reynolds"]
-factory_keywords = ["极限战士", "怀言者", "混沌恶魔"]
+faction_keywords = ["极限战士", "怀言者", "混沌恶魔"]
 recommended_reading = [
     "无所畏惧",
     { name = "风暴之嗣", belongto = { name = "异端传说", series = { name = "Horus Heresy", order = 10 } } },
@@ -33,7 +33,7 @@ english_name = "The Sigillite"
 type = "短篇小说"
 authors = ["Chris Wraight"]
 recommended_reading = ["福格瑞姆"]
-factory_keywords = ["审判庭"]
+faction_keywords = ["审判庭"]
 
 [[sub]]
 chinese_name = "狼猎"
@@ -41,14 +41,14 @@ english_name = "Wolf Hunt"
 type = "短篇小说"
 authors = ["Graham McNeill"]
 recommended_reading = ["流浪弃儿"]
-factory_keywords = ["游侠骑士"]
+faction_keywords = ["游侠骑士"]
 
 [[sub]]
 chinese_name = "一人成军"
 english_name = "Army of One"
 type = "短篇小说"
 authors = ["Rob Sanders"]
-factory_keywords = ["刺客庭"]
+faction_keywords = ["刺客庭"]
 recommended_reading = ["福格瑞姆"]
 
 [[sub]]
@@ -56,7 +56,7 @@ chinese_name = "泰拉之门"
 english_name = "The Gates of Terra"
 type = "短篇小说"
 authors = ["Nick Kyme"]
-factory_keywords = ["极限战士"]
+faction_keywords = ["极限战士"]
 recommended_reading = [
     { name = "被遗忘的子嗣", belongto = { name = "黑暗时代", series = { name = "Horus Heresy", order = 16 } } },
 ]
@@ -96,7 +96,7 @@ chinese_name = "灰天使"
 english_name = "Grey Angel"
 type = "短篇小说"
 authors = ["John French"]
-factory_keywords = ["游侠骑士", "暗黑天使"]
+faction_keywords = ["游侠骑士", "暗黑天使"]
 recommended_reading = ["堕天使"]
 
 [[sub]]
@@ -130,7 +130,7 @@ chinese_name = "耐心"
 english_name = "PATIENCE"
 type = "短篇小说"
 authors = ["James Swallow"]
-factory_keywords = ["游侠骑士", "混沌恶魔"]
+faction_keywords = ["游侠骑士", "混沌恶魔"]
 recommended_reading = [
     { name = "幽魂不语", belongto = { name = "无声战争", series = { name = "Horus Heresy", order = 37 } } },
 ]
@@ -140,5 +140,5 @@ chinese_name = "守望者"
 english_name = "The Watcher"
 type = "短篇小说"
 authors = ["Christian Dunn"]
-factory_keywords = ["游侠骑士", "太空野狼", "午夜领主"]
+faction_keywords = ["游侠骑士", "太空野狼", "午夜领主"]
 recommended_reading = []

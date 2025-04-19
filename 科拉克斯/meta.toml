@@ -12,7 +12,7 @@ chinese_name = "科拉克斯-序章"
 english_name = "Corax-Prologue"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
-factory_keywords = ["暗鸦守卫", "太空野狼", "吞世者", "叛变泰坦军团", "叛变骑士家族", "千子", "阿尔法军团"]
+faction_keywords = ["暗鸦守卫", "太空野狼", "吞世者", "叛变泰坦军团", "叛变骑士家族", "千子", "阿尔法军团"]
 
 
 [[sub]]
@@ -20,7 +20,7 @@ chinese_name = "灵魂熔炉"
 english_name = "Soulforge"
 type = "中篇小说"
 authors = ["Gav Thorpe"]
-factory_keywords = ["暗鸦守卫", "怀言者", "机械教", "黑暗机械教"]
+faction_keywords = ["暗鸦守卫", "怀言者", "机械教", "黑暗机械教"]
 recommended_reading = [
     "失落救赎",
     { name = "暗影大师", belongto = { name = "科拉克斯", series = { name = "Horus Heresy", order = 40 } } },
@@ -31,7 +31,7 @@ chinese_name = "暗影大师"
 english_name = "The shadowmasters"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
-factory_keywords = ["暗鸦守卫", "黑暗机械教"]
+faction_keywords = ["暗鸦守卫", "黑暗机械教"]
 recommended_reading = []
 
 [[sub]]
@@ -39,7 +39,7 @@ chinese_name = "暗鸦之主"
 english_name = "Ravenlord"
 type = "中篇小说"
 authors = ["Gav Thorpe"]
-factory_keywords = ["暗鸦守卫", "破碎军团", "怀言者", "帝皇之子", "荷鲁斯之子", "黑暗机械教"]
+faction_keywords = ["暗鸦守卫", "破碎军团", "怀言者", "帝皇之子", "荷鲁斯之子", "黑暗机械教"]
 recommended_reading = [
     { name = "灵魂熔炉", belongto = { name = "科拉克斯", series = { name = "Horus Heresy", order = 40 } } },
 ]
@@ -49,7 +49,7 @@ chinese_name = "恐惧的价值"
 english_name = "The Value of Fear"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
-factory_keywords = ["暗鸦守卫", "阿尔法军团", "午夜领主"]
+faction_keywords = ["暗鸦守卫", "阿尔法军团", "午夜领主"]
 recommended_reading = [
     { name = "暗鸦之主", belongto = { name = "科拉克斯", series = { name = "Horus Heresy", order = 40 } } },
 ]
@@ -59,7 +59,7 @@ chinese_name = "猛禽"
 english_name = "Raptor"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
-factory_keywords = ["暗鸦守卫", "荷鲁斯之子", "太空野狼"]
+faction_keywords = ["暗鸦守卫", "荷鲁斯之子", "太空野狼"]
 recommended_reading = ["失落救赎"]
 
 [[sub]]
@@ -67,7 +67,7 @@ chinese_name = "死亡之债"
 english_name = "Weregeld"
 type = "中篇小说"
 authors = ["Gav Thorpe"]
-factory_keywords = ["暗鸦守卫", "太空野狼", "破碎军团", "荷鲁斯之子", "吞世者", "千子", "阿尔法军团"]
+faction_keywords = ["暗鸦守卫", "太空野狼", "破碎军团", "荷鲁斯之子", "吞世者", "千子", "阿尔法军团"]
 recommended_reading = [
     "狼毒",
     { name = "恐惧的价值", belongto = { name = "科拉克斯", series = { name = "Horus Heresy", order = 40 } } },
