@@ -1,0 +1,24 @@
+[book]
+chinese_name = "黑暗之奴"
+english_name = "Slaves To Darkness"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 51
+authors = ["John French"]
+recommended_reading = [
+    "狼毒",
+    "灭绝天使",
+    "毁灭风暴",
+    { name = "The Soul, Servered", belongto = { name = "围城先驱", series = { name = "Horus Heresy", order = 52 } } },
+    { name = "Ironclad", belongto = { enname = "Tallarn ", series = { name = "Horus Heresy", order = 45 } } },
+]
+faction_keywords = [
+    "荷鲁斯之子",
+    "怀言者",
+    "帝皇之子",
+    "钢铁勇士",
+    "吞世者",
+    "极限战士",
+    "混沌恶魔",
+    "混沌教派",
+]

@@ -108,8 +108,9 @@ type = "短篇小说"
 authors = ["Chris Wraight"]
 recommended_reading = [
     { name = "美杜森", belongto = { name = "破碎军团", series = { name = "Horus Heresy", order = 43 } } },
-
 ]
+keywords = ["钢铁之手", "破碎军团"]
+
 [[sub]]
 chinese_name = "亦者"
 english_name = "The Either"
@@ -118,3 +119,4 @@ authors = ["Graham McNeill"]
 recommended_reading = [
     { name = "灰爪号", belongto = { name = "破碎军团", series = { name = "Horus Heresy", order = 43 } } },
 ]
+keywords = ["钢铁之手", "荷鲁斯之子", "破碎军团"]
