@@ -113,7 +113,7 @@ recommended_reading = [
 [[sub]]
 chinese_name = "亦者"
 english_name = "The Either"
-type = "短篇小说"
+type = "中篇小说"
 authors = ["Graham McNeill"]
 recommended_reading = [
     { name = "灰爪号", belongto = { name = "破碎军团", series = { name = "Horus Heresy", order = 43 } } },
