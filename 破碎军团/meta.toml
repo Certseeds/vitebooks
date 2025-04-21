@@ -100,6 +100,7 @@ recommended_reading = [
     { name = "亦者", belongto = { name = "破碎军团", series = { name = "Horus Heresy", order = 43 } } },
     "灭绝天使",
 ]
+keywords = ["钢铁之手", "暗鸦守卫", "阿尔法军团", "破碎军团"]
 
 [[sub]]
 chinese_name = "手选"
