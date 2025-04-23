@@ -1,0 +1,17 @@
+[book]
+chinese_name = "被埋葬的匕首"
+english_name = "The Buried Dagger"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 54
+authors = ["James Swallow"]
+recommended_reading = [
+    "黑暗之奴",
+    { name = "耐心", belongto = { name = "无声战争", series = { name = "Horus Heresy", order = 37 } }},
+    { name = "夜之子", belongto = { name = "无声战争", series = { name = "Horus Heresy", order = 37 } }},
+    { name = "灰天使", belongto = { name = "无声战争",  series = { name = "Horus Heresy", order = 37 } }},
+    { name = "灰鸦", belongto = { name = "围城先驱", series = { name = "Horus Heresy", order = 52 } }},
+    { name = "胞吐", belongto = { name =  "围城先驱", series = { name = "Horus Heresy", order = 52 } }},
+    { name = "普罗斯佩罗的最后之子", belongto = { name = "围城先驱", series = { name = "Horus Heresy", order = 52 } }},
+]
+faction_keywords = ["死亡守卫", "混沌恶魔", "游侠骑士", "寂静修女"]

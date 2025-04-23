@@ -61,6 +61,7 @@ export default defineConfig({
                     , { text: "忠诚的负担", link: '/忠诚的负担/meta' }
                     , { text: "狼毒", link: '/狼毒/meta' }
                     , { text: "黑暗之奴", link: '/黑暗之奴/meta' }
+                    , { text: "被埋葬的匕首", link: '/被埋葬的匕首/meta' }
                     , { text: "epub总集", link: '/warhammer40k/epub' }
                     , { text: "well-done", link: '/welldone/README' }
                 ]
