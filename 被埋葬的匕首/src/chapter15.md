@@ -1,10 +1,10 @@
 ---
 prev:
-  text: 'Chapter 14'
+  text: '第七章'
   link: '/被埋葬的匕首/src/chapter14'
 ---
 
-# chapter-15
+# 尾声
 
 ## [亚空间/行星巴巴鲁斯/未知; 现在/过去/未知]
 

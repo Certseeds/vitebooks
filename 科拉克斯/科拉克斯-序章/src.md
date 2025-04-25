@@ -78,4 +78,3 @@ next:
 [^5]: death...at your call...I shall return
 
 [^6]: 译: 我认为这里Hel是指北欧神话里的冥界神海拉, 不知道有没有对应到40k
-

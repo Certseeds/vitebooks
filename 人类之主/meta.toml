@@ -1,0 +1,14 @@
+[book]
+chinese_name = "人类之主"
+english_name = "The Master of Mankind"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 41
+authors = ["Aaron Dembski-Bowden"]
+recommended_reading = [
+    "流浪弃儿",
+    "普罗斯佩罗之焚",
+    { name = "流亡", belongto = { name = "忠诚的负担", series = { name = "Horus Heresy", order = 48 } } },
+    { name = "背叛之貌", belongto = { name = "黑暗时代", series = { name = "Horus Heresy", order = 16 } } },
+]
+faction_keywords = ["禁军", "寂静修女会", "混沌恶魔", "机械教", "圣血天使", "吞世者", "怀言者"]
