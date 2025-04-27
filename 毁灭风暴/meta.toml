@@ -1,0 +1,7 @@
+[book]
+chinese_name = "毁灭风暴"
+english_name = "Ruinstorm"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 46
+authors = ["David Annandale"]

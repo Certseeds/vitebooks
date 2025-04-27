@@ -56,12 +56,15 @@ export default defineConfig({
                     , { text: "法洛斯", link: '/法洛斯/meta' }
                     , { text: "泰拉之眼", link: '/泰拉之眼/meta' }
                     , { text: "无声战争", link: '/无声战争/meta' }
+                    , { text: "卡利班天使", link: '/卡利班天使/meta' }
                     , { text: "科拉克斯", link: '/科拉克斯/meta' }
                     , { text: "人类之主", link: '/人类之主/meta' }
                     , { text: "破碎军团", link: '/破碎军团/meta' }
+                    , { text: "毁灭风暴", link: '/毁灭风暴/meta' }
                     , { text: "忠诚的负担", link: '/忠诚的负担/meta' }
                     , { text: "狼毒", link: '/狼毒/meta' }
                     , { text: "黑暗之奴", link: '/黑暗之奴/meta' }
+                    , { text: "围城先驱", link: '/围城先驱/meta' }
                     , { text: "被埋葬的匕首", link: '/被埋葬的匕首/meta' }
                     , { text: "epub总集", link: '/warhammer40k/epub' }
                     , { text: "well-done", link: '/welldone/README' }

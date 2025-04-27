@@ -1,0 +1,110 @@
+[book]
+chinese_name = "围城先驱"
+english_name = "Heralds of the Siege"
+type = "短篇小说集"
+series.name = "Horus Heresy"
+series.order = 52
+authors = ["Nick Kyme", "Laruie Goulding"]
+
+[[sub]]
+chinese_name = "万变"
+english_name = "Myriad"
+type = "短篇小说"
+authors = ["Rob Sanders"]
+faction_keywords = ["机械教", "泰坦军团", "黑暗机械教"]
+recommended_reading = [
+    { name = "憎恶智能", belongto = { name = "忠诚的负担", series = { name = "Horus Heresy", order = 48 } } },
+]
+
+[[sub]]
+chinese_name = "灰鸦"
+english_name = "The Grey Raven"
+type = "短篇小说"
+authors = ["Gav Thorpe"]
+
+[[sub]]
+chinese_name = "瓦莱利乌斯"
+english_name = "Valerius"
+type = "短篇小说"
+authors = ["Gav Thorpe"]
+
+[[sub]]
+chinese_name = "灰烬狼群"
+english_name = "The Ember Wolves"
+type = "短篇小说"
+authors = ["Rob Sanders"]
+
+[[sub]]
+chinese_name = "黑盾"
+english_name = "Blackshield"
+type = "短篇小说"
+authors = ["Chris Wraight"]
+
+
+[[sub]]
+chinese_name = "魔域子民"
+english_name = "Children of Sicarus"
+type = "短篇小说"
+authors = ["Anthony Reynolds"]
+
+
+[[sub]]
+chinese_name = "胞吐"
+english_name = "Exocytosis"
+type = "短篇小说"
+authors = ["James Swallow"]
+
+
+[[sub]]
+chinese_name = "纹面伯爵"
+english_name = "The Painted Count"
+type = "短篇小说"
+authors = ["Guy Haley"]
+
+[[sub]]
+chinese_name = "普罗斯佩罗的最后之子"
+english_name = "The Last Son of Prospero"
+type = "短篇小说"
+authors = ["Chris Wraight"]
+
+[[sub]]
+chinese_name = "割魂者"
+english_name = "The Soul, Severed"
+type = "短篇小说"
+authors = ["Chris Wraight"]
+
+[[sub]]
+chinese_name = "黑暗顺从"
+english_name = "Dark Compliance"
+type = "短篇小说"
+authors = ["John French"]
+
+[[sub]]
+chinese_name = "职责等待"
+english_name = "Duty Waits"
+type = "短篇小说"
+authors = ["Guy Haley"]
+
+[[sub]]
+chinese_name = "教诲权"
+english_name = "Magisterium"
+type = "短篇小说"
+authors = ["Chris Wraight"]
+
+[[sub]]
+chinese_name = "午夜将至"
+english_name = "Now Peals Midnight"
+type = "短篇小说"
+authors = ["John French"]
+
+[[sub]]
+chinese_name = "统一之梦"
+english_name = "Dreams of Unity"
+type = "短篇小说"
+authors = ["Nick Kyme"]
+
+[[sub]]
+chinese_name = "棋局已定"
+english_name = "The Board is Set"
+type = "短篇小说"
+authors = ["Gav Thorpe"]
