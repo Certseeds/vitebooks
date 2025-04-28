@@ -1,0 +1,15 @@
+[book]
+chinese_name = "卡利班天使"
+english_name = "Angels of Caliban"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 38
+authors = ["Gav Thorpe"]
+faction_keywords = ["极限战士", "暗黑天使", "圣血天使", "堕天使", "午夜领主", "死亡守卫"]
+recommended_reading = [
+    "法洛斯",
+    { name = "野蛮武器", belongto = { enname = "Age of Darkness", series = { name = "Horus Heresy", order = 16 } } },
+    { name = "首席导师", belongto = { enname = "Eye of Terra", series = { name = "Horus Heresy", order = 35 } } },
+    { name = "雄狮有令", belongto = { enname = "War Without End", series = { name = "Horus Heresy", order = 33 } } },
+    { name = "赛弗-骑士团守护者", belongto = { enname = "Legacies of Betrayal", series = { name = "Horus Heresy", order = 31 } } },
+]
