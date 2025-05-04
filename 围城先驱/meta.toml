@@ -21,32 +21,43 @@ chinese_name = "灰鸦"
 english_name = "The Grey Raven"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
+faction_keywords = ["禁军", "暗鸦守卫", "帝国之拳", "游侠骑士"]
+recommended_reading = [
+    { name = "死亡之债", belongto = { name = "科拉克斯", series = { name = "Horus Heresy", order = 40 } } },
+]
 
 [[sub]]
-chinese_name = "瓦莱利乌斯"
+chinese_name = "瓦莱里乌斯"
 english_name = "Valerius"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
+faction_keywords = ["帝国卫队", "荷鲁斯之子", "叛变泰坦军团"]
+recommended_reading = [
+    { name = "死亡之债", belongto = { name = "科拉克斯", series = { name = "Horus Heresy", order = 40 } } },
+]
 
 [[sub]]
 chinese_name = "灰烬狼群"
 english_name = "The Ember Wolves"
 type = "短篇小说"
 authors = ["Rob Sanders"]
+faction_keywords = ["泰坦军团", "叛变泰坦军团"]
 
 [[sub]]
 chinese_name = "黑盾"
 english_name = "Blackshield"
 type = "短篇小说"
 authors = ["Chris Wraight"]
-
+faction_keywords = ["死亡守卫", "破碎军团"]
+recommended_reading = ["复仇之魂"]
 
 [[sub]]
 chinese_name = "魔域子民"
 english_name = "Children of Sicarus"
 type = "短篇小说"
 authors = ["Anthony Reynolds"]
-
+faction_keywords = ["怀言者", "混沌教派"]
+recommended_reading = ["无所畏惧"]
 
 [[sub]]
 chinese_name = "胞吐"

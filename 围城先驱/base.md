@@ -39,11 +39,11 @@ On the Cover: Featuring stories by James Swallow, Gav Thrope, John French, Chris
 按原文顺序排列.
 
 + [万变](/围城先驱/万变/meta)
-+ [灰鸦-TODO]
-+ [瓦莱利乌斯-TODO]
-+ [灰烬狼群-TODO]
-+ [黑盾-TODO]
-+ [魔域子民-TODO]
++ [灰鸦](/围城先驱/灰鸦/meta)
++ [瓦莱利乌斯](/围城先驱/瓦莱利乌斯/meta)
++ [灰烬狼群](/围城先驱/灰烬狼群/meta)
++ [黑盾](/围城先驱/黑盾/meta)
++ [魔域子民](/围城先驱/魔域子民/meta)
 + [胞吐-TODO]
 + [纹面伯爵-TODO]
 + [普罗斯佩罗的最后之子-TODO]
