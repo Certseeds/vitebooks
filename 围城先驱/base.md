@@ -40,7 +40,7 @@ On the Cover: Featuring stories by James Swallow, Gav Thrope, John French, Chris
 
 + [万变](/围城先驱/万变/meta)
 + [灰鸦](/围城先驱/灰鸦/meta)
-+ [瓦莱利乌斯](/围城先驱/瓦莱利乌斯/meta)
++ [瓦莱里乌斯](/围城先驱/瓦莱里乌斯/meta)
 + [灰烬狼群](/围城先驱/灰烬狼群/meta)
 + [黑盾](/围城先驱/黑盾/meta)
 + [魔域子民](/围城先驱/魔域子民/meta)

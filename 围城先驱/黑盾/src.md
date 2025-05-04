@@ -1,10 +1,10 @@
 ---
 prev:
-text: '围城先驱-黑盾-base'
-link: '/围城先驱/黑盾/base'
+  text: '围城先驱-黑盾-base'
+  link: '/围城先驱/黑盾/base'
 next:
-text: '围城先驱-meta'
-link: '/围城先驱/meta'
+  text: '围城先驱-meta'
+  link: '/围城先驱/meta'
 ---
 
 # 围城先驱-黑盾
