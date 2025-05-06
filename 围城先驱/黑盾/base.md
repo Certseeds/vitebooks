@@ -9,4 +9,6 @@ next:
 
 # 围城先驱-黑盾-序章
 
+作者: Chris Wraight
+
 On the Cover: As Mortarion's soul darkens, his sons begin to turn against one another.

@@ -30,5 +30,3 @@ next:
 [^1]: Hylas
 
 [^2]: Pelion
-
-

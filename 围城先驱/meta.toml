@@ -64,6 +64,8 @@ chinese_name = "胞吐"
 english_name = "Exocytosis"
 type = "短篇小说"
 authors = ["James Swallow"]
+faction_keywords = ["死亡守卫", "混沌教派", "暗黑天使", "堕天使"]
+recommended_reading = ["卡利班天使"]
 
 
 [[sub]]
@@ -71,6 +73,8 @@ chinese_name = "纹面伯爵"
 english_name = "The Painted Count"
 type = "短篇小说"
 authors = ["Guy Haley"]
+faction_keywords = ["午夜领主", "混沌恶魔"]
+recommended_reading = ["法洛斯"]
 
 [[sub]]
 chinese_name = "普罗斯佩罗的最后之子"

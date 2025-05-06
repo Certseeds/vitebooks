@@ -44,8 +44,8 @@ On the Cover: Featuring stories by James Swallow, Gav Thrope, John French, Chris
 + [灰烬狼群](/围城先驱/灰烬狼群/meta)
 + [黑盾](/围城先驱/黑盾/meta)
 + [魔域子民](/围城先驱/魔域子民/meta)
-+ [胞吐-TODO]
-+ [纹面伯爵-TODO]
++ [胞吐](/围城先驱/胞吐/meta)
++ [纹面伯爵](/围城先驱/纹面伯爵/meta)
 + [普罗斯佩罗的最后之子-TODO]
 + [割魂者-TODO]
 + [黑暗顺从-TODO]

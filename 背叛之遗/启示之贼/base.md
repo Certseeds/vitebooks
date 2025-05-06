@@ -40,4 +40,3 @@ next:
 [^3]: Hathor Maat
 
 [^4]: Magnus the Red
-

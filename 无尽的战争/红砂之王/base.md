@@ -10,7 +10,3 @@ next:
 # 无尽的战争-红砂之王-序章
 
 作者: Aaron Dembski-Bowden
-
-## 译者备注
-
-## 校注备注

@@ -10,4 +10,3 @@ next:
 # 背叛之遗-卡恩-八之正道-序章
 
 作者: Anthony Reynolds
-
