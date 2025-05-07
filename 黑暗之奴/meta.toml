@@ -9,7 +9,7 @@ recommended_reading = [
     "狼毒",
     "灭绝天使",
     "毁灭风暴",
-    { name = "The Soul, Servered", belongto = { name = "围城先驱", series = { name = "Horus Heresy", order = 52 } } },
+    { name = "The Soul, Severed", belongto = { name = "围城先驱", series = { name = "Horus Heresy", order = 52 } } },
     { name = "Ironclad", belongto = { enname = "Tallarn ", series = { name = "Horus Heresy", order = 45 } } },
 ]
 faction_keywords = [

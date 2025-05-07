@@ -5,3 +5,5 @@ type = "长篇小说"
 series.name = "Horus Heresy"
 series.order = 46
 authors = ["David Annandale"]
+recommended_reading=["卡利班天使", "毕索斯的诅咒"]
+faction_keywords=["暗黑天使", "圣血天使", "钢铁之手", "极限战士", "混沌恶魔"]

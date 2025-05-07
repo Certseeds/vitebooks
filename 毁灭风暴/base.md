@@ -32,10 +32,6 @@ On the Cover: Guilliman abandons the false dream of Imperium Secundus as he lead
 
 ## 出场人物
 
-参考每本书的base部分
-
-## 章节
-
-按原文顺序排列
+TODO
 
 [^0]: 这一部分和《不被铭记的帝国》对比并无改动, 因此复制自[不被铭记的帝国-总序](/不被铭记的帝国/base)

@@ -11,7 +11,7 @@ next:
 
 ## 原文来源
 
-+ 原译者: 毁灭风暴
++ 原译者: 乌尔干
 + <https://www.bilibili.com/read/readlist/rl526605>
 + 来源: bilibili
 
