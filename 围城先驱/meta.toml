@@ -67,7 +67,6 @@ authors = ["James Swallow"]
 faction_keywords = ["死亡守卫", "混沌教派", "暗黑天使", "堕天使"]
 recommended_reading = ["卡利班天使"]
 
-
 [[sub]]
 chinese_name = "纹面伯爵"
 english_name = "The Painted Count"
@@ -81,6 +80,8 @@ chinese_name = "普罗斯佩罗的最后之子"
 english_name = "The Last Son of Prospero"
 type = "短篇小说"
 authors = ["Chris Wraight"]
+faction_keywords = ["千子", "白色伤疤"]
+recommended_reading=["天堂之路"]
 
 [[sub]]
 chinese_name = "割魂者"

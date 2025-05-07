@@ -11,6 +11,8 @@ next:
 
 作者: Gav Thorpe
 
+On the Cover: Returning to Terra, former Librarian Balsar Kurthuri faces the judgement of the Sigillite
+
 ## 译者备注
 
 暗鸦守卫的巴尔萨·库图里一直遵循着他原体的教诲。当尼凯亚法令禁止灵能者进入军团时，他毫不犹豫地回到了前线小队。当战帅的背叛行为被揭露时，他不求回报地解放了自己的力量。现在，随着战争进入了最后的残酷阶段，在科拉克斯大人的命令下，他必须返回泰拉，面对自己的审判……
