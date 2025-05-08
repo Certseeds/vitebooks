@@ -88,6 +88,8 @@ chinese_name = "割魂者"
 english_name = "The Soul, Severed"
 type = "短篇小说"
 authors = ["Chris Wraight"]
+faction_keywords = ["帝皇之子"]
+recommended_reading=["天堂之路"]
 
 [[sub]]
 chinese_name = "黑暗顺从"

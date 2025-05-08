@@ -11,6 +11,8 @@ next:
 
 作者: Dan Abnett
 
+On the Cover: Oll Persson and his band of survivors become trapped in a city on the edge of reality
+
 ## 出场人物[^1]
 
 ### 旅行小队[^2]

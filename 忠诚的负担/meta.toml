@@ -43,7 +43,7 @@ faction_keywords = ["泰坦军团", "禁军"]
 
 [[sub]]
 chinese_name = "法洛斯之心"
-english_name = "The Heart of the Paaros"
+english_name = "The Heart of the Pharos"
 type = "短篇小说"
 authors = ["Laurie Goulding"]
 faction_keywords = ["极限战士"]

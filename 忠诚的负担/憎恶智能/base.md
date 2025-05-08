@@ -11,6 +11,8 @@ next:
 
 作者: Rob Sanders
 
+On the Cover: Agents from Terra launch a covert assault against the traitors occupying the Red Planet
+
 ## 主要出场人物
 
 ### 第十九军团 暗鸦守卫

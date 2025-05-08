@@ -11,6 +11,8 @@ next:
 
 作者: Rob Sanders
 
+On the Cover: The imopenetrable schemes of the Alpha Legion begin to conflict
+
 ## 出场人物[^1]
 
 ### 第二十军团, '阿尔法军团'

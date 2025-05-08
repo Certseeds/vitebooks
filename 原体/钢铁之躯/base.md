@@ -11,6 +11,8 @@ next:
 
 作者: Nick Kyme
 
+On the Cover: Ferrus Manus is confronted by the prospect of his own grim destiny
+
 ## 校者备注
 
 原文由于未知原因缺失了部分, 以机翻补全.

@@ -11,6 +11,8 @@ next:
 
 作者: Gav Thorpe
 
+On the Cover: In taking the war to the traitor, the Dark Angels primarch courts disaster
+
 ## 校者备注
 
 本文中亚空间核心为'warp core', 亚空间引擎为'warp engine', 似乎core比较小, engine更综合, 指的是驱动系统.

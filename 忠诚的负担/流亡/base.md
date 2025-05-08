@@ -11,6 +11,8 @@ next:
 
 作者: Aaron Dembski-Bowden
 
+On the Cover: Renowned Mechanicum technoarchaeologist Arkhan Land is evacuated from Mars
+
 ## 出场人物[^1]
 
 阿坎·兰德, 科技考古学家

@@ -11,6 +11,8 @@ next:
 
 作者: John French
 
+On the Cover: With the Webway breached, a Psi-Titan must hold back the daemon hordes assailing the Palace
+
 ## 出场人物[^1]
 
 伯雷利斯·杜恩, 灵能泰坦

@@ -11,6 +11,8 @@ next:
 
 作者: Gav Thorpe
 
+On the Cover: In taking the war to the traitor, the Dark Angels primarch courts disaster
+
 ## 译者备注
 
 The Lion 渣翻 雄狮

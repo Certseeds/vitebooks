@@ -11,6 +11,8 @@ next:
 
 作者: Rob Sanders
 
+On the Cover: Does the future of Mars lie in the forbidden mysteries of Abominable Intelligence?
+
 ## 译者备注
 
 战锤30k短篇小说试翻——《万变》
