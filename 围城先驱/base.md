@@ -48,8 +48,8 @@ On the Cover: Featuring stories by James Swallow, Gav Thrope, John French, Chris
 + [纹面伯爵](/围城先驱/纹面伯爵/meta)
 + [普罗斯佩罗的最后之子](/围城先驱/普罗斯佩罗的最后之子/meta)
 + [割魂者](/围城先驱/割魂者/meta)
-+ [黑暗顺从-TODO]
-+ [职责等待-TODO]
++ [黑暗顺从](/围城先驱/黑暗顺从/meta)
++ [职责等待](/围城先驱/职责等待/meta)
 + [教诲权-TODO]
 + [午夜将至-TODO]
 + [统一之梦-TODO]

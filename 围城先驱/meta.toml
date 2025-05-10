@@ -96,12 +96,16 @@ chinese_name = "黑暗顺从"
 english_name = "Dark Compliance"
 type = "短篇小说"
 authors = ["John French"]
+faction_keywords = ["荷鲁斯之子", "机械教"]
+recommended_reading=["福格瑞姆"]
 
 [[sub]]
 chinese_name = "职责等待"
 english_name = "Duty Waits"
 type = "短篇小说"
 authors = ["Guy Haley"]
+faction_keywords = ["帝国之拳"]
+recommended_reading=["多恩禁卫"]
 
 [[sub]]
 chinese_name = "教诲权"

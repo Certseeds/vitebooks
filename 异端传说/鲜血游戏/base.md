@@ -11,6 +11,8 @@ next:
 
 作者: Dan Abnett
 
+On the Cover: As Terra prepares for war, Imperial Fists and Custodes test the defences of the Emperor's Palace to the very limit
+
 ## 译者翻译的本书序
 
 这是一个传奇的年代。
