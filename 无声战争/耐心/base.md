@@ -11,6 +11,8 @@ next:
 
 作者: James Swallow
 
+On the Cover: Two tales of the Silent War, featuring Amendera Kendel and Nathaniel Garro
+
 ## 译者备注
 
 还是节选于The Silent War, 伽罗的小短篇.

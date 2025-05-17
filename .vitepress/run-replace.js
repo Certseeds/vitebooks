@@ -84,13 +84,13 @@ const thirdReplacement = (text) => {
                 }
                 if (numbers % 2 === 0 && line[i] === '"' && i + 1 < line.length && isChineseCharacter(line[i + 1])) {
                     result += '" ';
-                }
-                else if (numbers % 2 === 1 && line[i] === '"' && isChineseCharacter(line[i - 1])) {
+                } else if (numbers % 2 === 1 && line[i] === '"' && line[i - 1]!= ' ') {
                     result += ' "';
                 } else {
                     result += line[i];
                 }
             }
+            result = result.trim();
             if (doubleQuotes(line) % 2 === 1) {
                 result += ' [ERROR] QUOTA NUMBER NOT MATCH';
             }
@@ -116,8 +116,10 @@ const fourthReplacement = (text) => {
                 }
                 if (numbers % 2 === 1 && line[i] === '"' && '.' === line[i - 1]) {
                     result += ' "';
+                } else if ('.' === line[i] && i + 1 < line.length && isChineseCharacter(line[i + 1])) {
+                        result += '. ';
                 } else {
-                    result += line[i];
+                     result += line[i];
                 }
             }
             return result;

@@ -11,6 +11,8 @@ next:
 
 作者: Anthony Reynolds
 
+On the Cover: The Word Bearers begin their preparations for the final and inevitable assault on Terra
+
 ## 荷鲁斯之乱
 
 这是个传奇的时代.

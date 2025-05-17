@@ -11,6 +11,8 @@ next:
 
 作者: John French
 
+On the Cover: Fel Zharost, once Chief Librarian of the VIII Legion, must prove his worth or face immediate execution
+
 ## 引文
 
 > > "何为过去之法度、未来之展望皆可测算之物?"

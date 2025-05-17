@@ -11,6 +11,8 @@ next:
 
 作者: Graham McNeill
 
+On the Cover: Garviel Loken, scarred by foul betrayal, is haunted by the ghosts of his past
+
 ## 译者备注
 
 是说为什么标题中文写在后面……我看到这个词的时候不知为何满脑子都是月まで届け、不死の煙……咳, 等我脑子清醒一点再说.

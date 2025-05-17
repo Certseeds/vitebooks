@@ -74,7 +74,7 @@ const level2 = async (line) => {
         "stream": false,
         options: {
             "temperature": 0,
-            "num_predict": Math.max(line.length, 11)
+            "num_predict": Math.max(line.length * 2 + 15, 11)
         },
     };
     try {
