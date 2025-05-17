@@ -53,12 +53,12 @@ const level1 = async (todoFiles) => {
 const blackLists = ["你", "我", "他", "她", "它", "您", "大人", "指挥官", "队长", "大师", "总管", "兄弟", "姐妹", "父亲", "表亲", "原体", "连长", "团长", "军士", "中士", "智库", "军官", '贤者', "将军", "帝皇",];
 const level2 = async (line) => {
     if (line.length < 2) {
-        return ;
+        return;
     }
     console.log(line);
     const postObject = {
-        "model": "qwen2.5:14b",
-        "prompt": `hey, 请阅读下面用三个 at 符号括住的一段话, 使用/no_think模式, 这摘录自一篇战锤30k荷鲁斯叛乱系列小说中. 希望你在读完之后, 从中提取出人名, 并以json格式返回, 要求逐个放入names这个列表中, 只需要人名, 不需要'他','她','它','您'等第三人称代词, 不需要'兄弟', '姐妹'这样的亲属称谓, 不需要'大人', '指挥官', '队长', '大师', '总管'之类的职位称呼, 不需要A的B这样的连词(至少要将其拆分为A和B), 不需要车辆, 飞行器的名称(比如xx号), 不要输出代码, 也不需要输出额外的前缀、后缀. 如果没有人名则输出'WU-REN-MING'。@@@${line}@@@`,
+        "model": "qwen3:14b",
+        "prompt": `/no_think hey, 请阅读下面用三个 at 符号括住的一段话, 这摘录自一篇战锤30k荷鲁斯叛乱系列小说中. 希望你在读完之后, 从中提取出人名, 并以json格式返回, 要求逐个放入names这个列表中, 只需要人名, 不需要'他','她','它','您'等第三人称代词, 不需要'兄弟', '姐妹'这样的亲属称谓, 不需要'大人', '指挥官', '队长', '大师', '总管'之类的职位称呼, 不需要A的B这样的连词(至少要将其拆分为A和B), 不需要车辆, 飞行器的名称(比如xx号), 不要输出代码, 也不需要输出额外的前缀、后缀. 如果没有人名则输出'WU-REN-MING'。@@@${line}@@@`,
         "format": {
             "type": "object",
             "properties": {
@@ -71,8 +71,11 @@ const level2 = async (line) => {
             },
             "required": ["names"]
         },
-        "temperature": 0,
         "stream": false,
+        options: {
+            "temperature": 0,
+            "num_predict": Math.max(line.length, 11)
+        },
     };
     try {
         const response = await fetch('http://127.0.0.1:11434/api/generate', {

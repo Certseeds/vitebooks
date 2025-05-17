@@ -52,7 +52,7 @@ On the Cover: Featuring stories by James Swallow, Gav Thrope, John French, Chris
 + [职责等待](/围城先驱/职责等待/meta)
 + [教诲权](/围城先驱/教诲权/meta)
 + [午夜将至](/围城先驱/午夜将至/meta)
-+ [统一之梦-TODO]
-+ [棋局已定-TODO]
++ [统一之梦](/围城先驱/统一之梦/meta)
++ [棋局已定](/围城先驱/棋局已定/meta)
 
 [^0]: 这一部分和《不被铭记的帝国》对比并无改动, 因此复制自[不被铭记的帝国-总序](/不被铭记的帝国/base)

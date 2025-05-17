@@ -11,6 +11,8 @@ next:
 
 作者: James Swallow
 
+On the Cover: In the shadowy undercroft of the *Vengeful Spirit*, deadly Assassin Eristede Kell still seeks his target
+
 ## 译者备注
 
 选自HH短篇集, "War Without End", 之前也收录在"Death And Defiance"里面.

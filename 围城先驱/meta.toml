@@ -112,21 +112,28 @@ chinese_name = "教诲权"
 english_name = "Magisterium"
 type = "短篇小说"
 authors = ["Chris Wraight"]
+faction_keywords = ["帝国之拳", "太空野狼", "禁军"]
+recommended_reading=["人类之主"]
 
 [[sub]]
 chinese_name = "午夜将至"
 english_name = "Now Peals Midnight"
 type = "短篇小说"
 authors = ["John French"]
+faction_keywords = ["帝国之拳", "帝国卫队"]
+recommended_reading=["多恩禁卫"]
 
 [[sub]]
 chinese_name = "统一之梦"
 english_name = "Dreams of Unity"
 type = "短篇小说"
 authors = ["Nick Kyme"]
+faction_keywords = ["禁军", "雷霆战士", "阿尔法军团", "混沌教派"]
+recommended_reading=["人类之主"]
 
 [[sub]]
 chinese_name = "棋局已定"
 english_name = "The Board is Set"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
+recommended_reading=["人类之主"]
