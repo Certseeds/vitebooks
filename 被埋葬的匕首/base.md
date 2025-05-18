@@ -71,7 +71,7 @@ On the Cover: As the Siege of Terra draws ever closer, Mortarion and his sons fi
 
 ### 游侠骑士
 
-纳撒尼尔 加罗 [^17], 首席特工, 死亡守卫的前战斗连长
+纳撒尼尔 伽罗 [^17], 首席特工, 死亡守卫的前战斗连长
 
 泰洛斯 卢比奥 [^18], 曾为极限战士的典记长
 

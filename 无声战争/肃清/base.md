@@ -85,7 +85,7 @@ On the Cover: The Word Bearers begin their preparations for the final and inevit
 
 泰伯-阿肯色斯, 看守所卫士
 
-纳撒尼尔-加罗, 前死亡守卫连长
+纳撒尼尔-伽罗, 前死亡守卫连长
 
 ## 引言
 

@@ -142,3 +142,11 @@ type = "短篇小说"
 authors = ["Christian Dunn"]
 faction_keywords = ["游侠骑士", "太空野狼", "午夜领主"]
 recommended_reading = []
+
+[[sub]]
+chinese_name = "伽罗-一人的军团"
+english_name = "Garro: Legion of One"
+type = "短篇小说"
+authors = ["James Swallow"]
+faction_keywords = ["游侠骑士", "影月苍狼"]
+recommended_reading = ["燃烧的银河", "艾森斯坦号的逃亡"]

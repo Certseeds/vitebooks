@@ -84,13 +84,12 @@ const thirdReplacement = (text) => {
                 }
                 if (numbers % 2 === 0 && line[i] === '"' && i + 1 < line.length && isChineseCharacter(line[i + 1])) {
                     result += '" ';
-                } else if (numbers % 2 === 1 && line[i] === '"' && line[i - 1]!= ' ') {
+                } else if (numbers % 2 === 1 && line[i] === '"' && line[i - 1] != ' ') {
                     result += ' "';
                 } else {
                     result += line[i];
                 }
             }
-            result = result.trim();
             if (doubleQuotes(line) % 2 === 1) {
                 result += ' [ERROR] QUOTA NUMBER NOT MATCH';
             }
@@ -117,9 +116,9 @@ const fourthReplacement = (text) => {
                 if (numbers % 2 === 1 && line[i] === '"' && '.' === line[i - 1]) {
                     result += ' "';
                 } else if ('.' === line[i] && i + 1 < line.length && isChineseCharacter(line[i + 1])) {
-                        result += '. ';
+                    result += '. ';
                 } else {
-                     result += line[i];
+                    result += line[i];
                 }
             }
             return result;
@@ -186,6 +185,22 @@ const ninthReplacement = (text) => {
     }
     return lines.join('\n');
 }
+const tenthReplacement = (text) => {
+    let lines = text.split('\n');
+    let resultLines = lines
+        .map(line => {
+            if (line.trim().length === 0) {
+                return '';
+            }
+            if (line.startsWith("next:") ||
+                line.startsWith("  text:") ||
+                line.startsWith("  link:")) {
+                return line;
+            }
+            return line.trim();
+        });
+    return resultLines.join('\n');
+}
 todoFiles.forEach(filePath => {
     fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) {
@@ -215,6 +230,7 @@ todoFiles.forEach(filePath => {
         // modifiedContent = seventhReplacement(modifiedContent);
         modifiedContent = eightReplacement(modifiedContent);
         modifiedContent = ninthReplacement(modifiedContent);
+        modifiedContent = tenthReplacement(modifiedContent);
         modifiedContent += '\n';
         {
             const regex = new RegExp(' \n', 'g');
