@@ -34,7 +34,7 @@ english_name = "The Voice"
 type = "短篇小说"
 authors = ["James Swallow"]
 recommended_reading = ["普罗斯佩罗之焚", "艾森斯坦号的逃亡"]
-faction_keywords = ["寂静修女会"]
+faction_keywords = ["寂静修女"]
 
 [[sub]]
 chinese_name = "狮子的召唤"

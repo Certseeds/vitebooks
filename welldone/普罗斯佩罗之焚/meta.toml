@@ -6,4 +6,4 @@ series.name = "Horus Heresy"
 series.order = 15
 authors = ["Dan Abnett"]
 recommended_reading = ["千子"]
-faction_keywords = ["千子", "太空野狼", "寂静修女会", "禁军"]
+faction_keywords = ["千子", "太空野狼", "寂静修女", "禁军"]

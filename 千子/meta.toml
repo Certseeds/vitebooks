@@ -6,4 +6,4 @@ series.name = "Horus Heresy"
 series.order = 12
 authors = ["Graham McNeill"]
 recommended_reading = []
-faction_keywords = ["千子", "太空野狼", "混沌恶魔", "寂静修女会", "禁军"]
+faction_keywords = ["千子", "太空野狼", "混沌恶魔", "寂静修女", "禁军"]

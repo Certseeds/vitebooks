@@ -159,6 +159,9 @@ english_name = "The Eagle's Talon"
 type = "短篇小说"
 authors = ["John French"]
 faction_keywords = ["帝国之拳", "钢铁勇士"]
+recommended_reading = [
+    { name = "塔兰-处决者", belongto = { name = "塔兰", series = { name = "Horus Heresy", order = 45 } } },
+]
 
 [[sub]]
 chinese_name = "钢铁尸体"
@@ -166,6 +169,9 @@ english_name = "Iron Corpses"
 type = "短篇小说"
 authors = ["David Annandale"]
 faction_keywords = ["钢铁勇士", "泰坦军团"]
+recommended_reading = [
+    { name =  "鹰之爪", belongto = { name = "泰拉之眼", series = { name = "Horus Heresy", order = 35 } } },
+]
 
 [[sub]]
 chinese_name = "63-14世界的最终归顺"

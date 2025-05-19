@@ -1,0 +1,46 @@
+[book]
+chinese_name = "塔兰"
+english_name = "The Silent War"
+type = "短篇小说集"
+series.name = "Horus Heresy"
+series.order = 45
+authors = ["John French"]
+
+[[sub]]
+chinese_name = "塔兰-见证者"
+english_name = "Tallarn Witness"
+type = "短篇小说"
+authors = ["John French"]
+recommended_reading = [
+    { name = "塔兰-处决者", belongto = { name = "塔兰", series = { name = "Horus Heresy", order = 45 } } },
+]
+
+[[sub]]
+chinese_name = "塔兰-处决者"
+english_name = "Tallarn Executioner"
+type = "中篇小说"
+authors = ["John French"]
+recommended_reading = [
+    { name = "黑暗之眼", belongto = { name = "无尽的战争", series = { name = "Horus Heresy", order = 33 } } },
+]
+
+[[sub]]
+chinese_name = "塔兰-警报器"
+english_name = "Tallarn Siren"
+type = "短篇小说"
+authors = ["John French"]
+recommended_reading = [
+    { name = "塔兰-处决者", belongto = { name = "塔兰", series = { name = "Horus Heresy", order = 45 } } },
+]
+
+[[sub]]
+chinese_name = "塔兰-铁甲"
+english_name = "Tallarn Ironclad"
+type = "中篇小说"
+authors = ["John French"]
+recommended_reading = [
+    { name = "鹰之爪", belongto = { name = "泰拉之眼", series = { name = "Horus Heresy", order = 35 } } },
+    { name = "塔兰-见证者", belongto = { name = "塔兰", series = { name = "Horus Heresy", order = 45 } } },
+    { name = "塔兰-警报器", belongto = { name = "塔兰", series = { name = "Horus Heresy", order = 45 } } },
+    { name = "黑暗顺从", belongto = { name = "围城先驱", series = { name = "Horus Heresy", order = 52 } } },
+]

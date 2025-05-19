@@ -61,7 +61,7 @@ chinese_name = "帝皇之手"
 english_name = "Hands of the Emperor"
 type = "短篇小说"
 authors = ["Rob Sanders"]
-faction_keywords = ["禁军", "寂静修女会"]
+faction_keywords = ["禁军", "寂静修女"]
 
 [[sub]]
 chinese_name = "涅盘者"

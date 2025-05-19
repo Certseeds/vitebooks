@@ -43,7 +43,7 @@ On the Cover: As Imperium Secundus begins to crumble, the Lion El'jonson returns
 
 --------
 
-梅里尔·阿斯特兰 第一战团战团长
+梅里尔·阿斯特兰 第一战团长
 
 嘉莱丹 战团长 守望元帅
 

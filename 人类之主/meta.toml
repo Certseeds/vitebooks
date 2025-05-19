@@ -11,4 +11,4 @@ recommended_reading = [
     { name = "流亡", belongto = { name = "忠诚的负担", series = { name = "Horus Heresy", order = 48 } } },
     { name = "背叛之貌", belongto = { name = "黑暗时代", series = { name = "Horus Heresy", order = 16 } } },
 ]
-faction_keywords = ["禁军", "寂静修女会", "混沌恶魔", "机械教", "圣血天使", "吞世者", "怀言者"]
+faction_keywords = ["禁军", "寂静修女", "混沌恶魔", "机械教", "圣血天使", "吞世者", "怀言者"]

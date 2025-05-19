@@ -47,7 +47,7 @@ On the Cover: Guilliman abandons the false dream of Imperium Secundus as he lead
 
 德拉库斯·哥罗德[^4], 常胜铁卫军指挥官
 
-伊亚苏斯, 第二十二战团战团长, 毁灭者
+伊亚苏斯, 第二十二战团长, 毁灭者
 
 朱尼萨·特伦斯[^5], 通讯官, 萨莫色雷斯号
 
