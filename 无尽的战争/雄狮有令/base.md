@@ -11,6 +11,8 @@ next:
 
 作者: Gav Thorpe
 
+On the Cover: In a galaxy riven by war, there can be no innocent bystanders
+
 ## 校注备注
 
 本文中, 斜体用来表示Vox通讯对面的话语, 不影响理解, 部分可能没有对应上, 请注意.

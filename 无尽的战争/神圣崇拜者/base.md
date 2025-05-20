@@ -11,6 +11,8 @@ next:
 
 作者: Graham McNeill
 
+On the Cover: The heirs of Molech embrace their birthright
+
 ## 译者备注
 
 现在是第41个千年. 在将近一万年间, 帝皇端坐在地球的黄金王座上. 他是以神力统治百万世界的人类之主, 是借助着黑暗年代的技术艰难喘息的尸骸, 是只有每天牺牲1000条帝国生命才得以苟延残喘的腐烂帝王.

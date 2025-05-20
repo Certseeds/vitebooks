@@ -14,6 +14,7 @@ authors = ["John French"]
 recommended_reading = [
     { name = "塔兰-处决者", belongto = { name = "塔兰", series = { name = "Horus Heresy", order = 45 } } },
 ]
+faction_keywords = ["帝国卫队"]
 
 [[sub]]
 chinese_name = "塔兰-处决者"
@@ -23,6 +24,7 @@ authors = ["John French"]
 recommended_reading = [
     { name = "黑暗之眼", belongto = { name = "无尽的战争", series = { name = "Horus Heresy", order = 33 } } },
 ]
+faction_keywords = ["帝国卫队", "钢铁之手", "叛变泰坦军团", "阿尔法军团", "白色伤疤", "帝国之拳", "暗黑天使"]
 
 [[sub]]
 chinese_name = "塔兰-警报器"

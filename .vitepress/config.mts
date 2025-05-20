@@ -60,6 +60,7 @@ export default defineConfig({
                     , { text: "科拉克斯", link: '/科拉克斯/meta' }
                     , { text: "人类之主", link: '/人类之主/meta' }
                     , { text: "破碎军团", link: '/破碎军团/meta' }
+                    , { text: "塔兰", link: '/塔兰/meta' }
                     , { text: "毁灭风暴", link: '/毁灭风暴/meta' }
                     , { text: "忠诚的负担", link: '/忠诚的负担/meta' }
                     , { text: "狼毒", link: '/狼毒/meta' }

@@ -11,6 +11,8 @@ next:
 
 作者: Rob Sanders
 
+On the Cover: While reinforcing the Imperial Palace, the Custodian Guard and the VII Legion clash in the skies over Terra
+
 ## 校者备注
 
 本篇许多翻译与通常的翻译不同,包括但不限于禁军, 寂静修女, 不一一指出, 请注意.

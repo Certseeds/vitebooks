@@ -11,4 +11,4 @@ next:
 
 作者: Aaron Dembski-Bowden
 
-## 校者备注
+On the Cover: In accordance with Malcador's decree, Leman Russ sends his greatest warriors to watch over Rogal Dorn on Terra

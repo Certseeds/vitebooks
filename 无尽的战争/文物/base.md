@@ -11,6 +11,8 @@ next:
 
 作者: Nick Kyme
 
+On the Cover: Wary of what the future may bring, Vulkan orders the destruction of his own most deadly weapons
+
 ## 校者备注
 
 本文中所有伏尔甘的回忆在原文中皆为斜体, 由于不影响正常理解, 不全部修改.

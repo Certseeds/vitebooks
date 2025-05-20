@@ -36,11 +36,11 @@ On the Cover: The Iron Warriors engage the Imperial Army in the largest armoured
 
 Dellasarius, Governor-Militant of Tallarn
 
-苏萨达·希恩(Susada Syn), Dellasarius的法定继承人(Designated successor )
+苏萨达·希恩(Susada Syn), Dellasarius的法定继承人(Designated successor)
 
 --------
 
-Akil Sulan, Merchant prince of the Sapphire City
+阿基尔·苏兰(Akil Sulan), 萨菲尔城商业巨头(Merchant prince of the Sapphire City)
 
 Sabir, Prefectus, Tallarn government administration
 
@@ -50,35 +50,35 @@ Kulok, Citizen
 
 --------
 
-Tahirah, Lieutenant, First Squadron commander, Amaranth Company, Jurnian 701st
+塔荷拉(Tahirah), Lieutenant, 第一中队指挥官(First Squadron commander), 阿马兰斯连(Amaranth Company), 卓尼安(Jurnian)第701团
 
-Lachlan, Gunner, 111 Executioner Lantern
+拉克兰Lachlan, 炮手(Gunner), 111号车处决者(Executioner)“灯笼(Lantern)”
 
-Makis, Driver, 111 Executioner Lantern
+马吉斯Makis, 驾驶员, 111号车处决者“灯笼”
 
-Vail, Loader, 111 Executioner Lantern
+范尔Vail, 装填手(Loader), 111号车处决者“灯笼”
 
-Udo, Sponson gunner, 111 Executioner Lantern
+乌多Udo, 侧炮手(Sponson gunner), 111号车处决者“灯笼”
 
-Genji, Sponson gunner, 111 Executioner Lantern
-
---------
-
-Hector, Corporal, commander, 112 Executioner Deathlight
+根吉Genji, 侧炮手(Sponson gunner), 111号车处决者“灯笼”
 
 --------
 
-Brel, Sergeant, commander, 113 (field attachment) Vanquisher Silence
-
-Jallinika, Gunner, 113 (field attachment) Vanquisher Silence
-
-Calsuriz, Driver, 113 (field attachment) Vanquisher Silence
-
-Selq, Loader, 113 (field attachment) Vanquisher Silence
+赫克托(Hector), 下士(Corporal), 指挥官, 112号车处决者“死光(Deathlight)”
 
 --------
 
-Rashne, Gunner/signaller, 114 (field attachment) scout vehicle Talon
+伯瑞尔(Brel), 中士(Sergeant), commander, 113号车征服者-战地改装- “沉默”(113 -field attachment- Vanquisher Silence)
+
+加里尼卡(Jallinika), 炮手, 113号车征服者-战地改装- “沉默”
+
+卡苏瑞兹(Calsuriz), 驾驶员, 113号车征服者-战地改装- “沉默”
+
+希里克(Selq), 装填手, 113号车征服者-战地改装- “沉默”
+
+--------
+
+拉什尼(Rashne), 炮手/信号员(signaller), 114号侦察车-战地改装-“利爪” (114 -field attachment- scout vehicle Talon)
 
 --------
 
@@ -128,17 +128,17 @@ Iaeo, Unbound Infocyte, Omega Tabulation, Clade Vanus
 
 Hes-Thal, Black Oculus Navigator
 
-### The IV Legion ‘Iron Warriors’
+### The IV Legion 'Iron Warriors'
 
 Perturabo, Primarch of the Iron Warriors
 
-Forrix, ‘The Breaker’, First Captain, triarch
+Forrix, 'The Breaker', First Captain, triarch
 
 --------
 
-Hrend, ‘The Ironclad’, Contemptor-class Dreadnought, commander of Cyllaros armoured assault group
+Hrend, 'The Ironclad', Contemptor-class Dreadnought, commander of Cyllaros armoured assault group
 
-Jarvak, Commander, Sicaran ‘78/5’, lieutenant of Cyllaros group
+Jarvak, Commander, Sicaran '78/5', lieutenant of Cyllaros group
 
 Orun, Castraferrum-class Dreadnought (Mortis-pattern) Cyllaros group
 
@@ -150,32 +150,32 @@ Volk, Commander of Sightless Warren (Core Reach I), Master of 786th Grand Flight
 
 Taldak, Warrior of the 17th Grand Battalion elite
 
-### The VII Legion ‘Imperial Fists’
+### 第七军团 帝国之拳
 
 Lycus, Marshal, commander of the Light of Inwit
 
-### The X Legion ‘Iron Hands’
+### 第十军团 钢铁之手
 
 Menoetius, Commander, Predator Cretatogran
 
-### The XVI Legion ‘Sons of Horus’
+### 第十六军团 荷鲁斯之子
 
-Argonis, ‘The Unscarred’, emissary of the Warmaster, Chieftain of the Isidis Flight
+Argonis, 'The Unscarred', emissary of the Warmaster, Chieftain of the Isidis Flight
 
-### The XX Legion ‘Alpha Legion’
+### 第二十军团 阿尔法军团
 
 Thetacron, Commander, Harrow Group Arcadus
 
 ### Others
 
-Jalen
+加林(Jalen)
 
 ## 章节
 
 按原文顺序排列.
 
-+ [塔兰-见证者-TODO]
-+ [塔兰-处决者-TODO]
++ [塔兰-见证者](/塔兰/塔兰-见证者/meta)
++ [塔兰-处决者](/塔兰/塔兰-处决者/meta)
 + [塔兰-警报器-TODO]
 + [塔兰-铁甲-TODO]
 

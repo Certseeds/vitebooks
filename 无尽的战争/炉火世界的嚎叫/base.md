@@ -11,6 +11,8 @@ next:
 
 作者: Aaron Dembski-Bowden
 
+On the Cover: In accordance with Malcador's decree, Leman Russ sends his greatest warriors to watch over Rogal Dorn on Terra
+
 ## 译者备注
 
 狼团在很多方面都很有意思, 这里面都是奇怪的名字.

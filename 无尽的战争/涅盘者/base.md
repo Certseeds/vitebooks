@@ -10,3 +10,5 @@ next:
 # 无尽的战争-涅盘者-序章
 
 作者: Nick Kyme
+
+On the Cover: In his dying moments, Gabriel Santar witnesses his father's murder at the hands of Fulgrim
