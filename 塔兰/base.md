@@ -34,7 +34,7 @@ On the Cover: The Iron Warriors engage the Imperial Army in the largest armoured
 
 ### Imperial Personae
 
-Dellasarius, Governor-Militant of Tallarn
+Dellasarius, Governor-Militant of 塔兰(Tallarn)
 
 苏萨达·希恩(Susada Syn), Dellasarius的法定继承人(Designated successor)
 
@@ -42,25 +42,25 @@ Dellasarius, Governor-Militant of Tallarn
 
 阿基尔·苏兰(Akil Sulan), 萨菲尔城商业巨头(Merchant prince of the Sapphire City)
 
-Sabir, Prefectus, Tallarn government administration
+萨比尔(Sabir), 省长(Prefectus), 塔兰政府行政机构
 
-Gatt, Menial, Tallarn government administration
+盖特(Gatt), 勤务员(Menial), 塔兰政府行政机构
 
-Kulok, Citizen
+库洛克(Kulok), 市民
 
 --------
 
 塔荷拉(Tahirah), Lieutenant, 第一中队指挥官(First Squadron commander), 阿马兰斯连(Amaranth Company), 卓尼安(Jurnian)第701团
 
-拉克兰Lachlan, 炮手(Gunner), 111号车处决者(Executioner)“灯笼(Lantern)”
+拉克兰(Lachlan), 炮手(Gunner), 111号车处决者(Executioner)“灯笼(Lantern)”
 
-马吉斯Makis, 驾驶员, 111号车处决者“灯笼”
+马吉斯(Makis), 驾驶员, 111号车处决者“灯笼”
 
-范尔Vail, 装填手(Loader), 111号车处决者“灯笼”
+范尔(Vail), 装填手(Loader), 111号车处决者“灯笼”
 
-乌多Udo, 侧炮手(Sponson gunner), 111号车处决者“灯笼”
+乌多(Udo), 侧炮手(Sponson gunner), 111号车处决者“灯笼”
 
-根吉Genji, 侧炮手(Sponson gunner), 111号车处决者“灯笼”
+根吉(Genji), 侧炮手(Sponson gunner), 111号车处决者“灯笼”
 
 --------
 
@@ -128,9 +128,9 @@ Iaeo, Unbound Infocyte, Omega Tabulation, Clade Vanus
 
 Hes-Thal, Black Oculus Navigator
 
-### The IV Legion 'Iron Warriors'
+### 第四军团 钢铁勇士
 
-Perturabo, Primarch of the Iron Warriors
+佩图拉博, 钢铁勇士的原体
 
 Forrix, 'The Breaker', First Captain, triarch
 
@@ -152,7 +152,7 @@ Taldak, Warrior of the 17th Grand Battalion elite
 
 ### 第七军团 帝国之拳
 
-Lycus, Marshal, commander of the Light of Inwit
+莱库斯(Lycus), 总管(Marshal), 因维特之光号(the Light of Inwit)的指挥官
 
 ### 第十军团 钢铁之手
 
@@ -176,7 +176,7 @@ Thetacron, Commander, Harrow Group Arcadus
 
 + [塔兰-见证者](/塔兰/塔兰-见证者/meta)
 + [塔兰-处决者](/塔兰/塔兰-处决者/meta)
-+ [塔兰-警报器-TODO]
++ [塔兰-警报器](/塔兰/塔兰-警报器/meta)
 + [塔兰-铁甲-TODO]
 
 [^0]: 这一部分和《不被铭记的帝国》对比并无改动, 因此复制自[不被铭记的帝国-总序](/不被铭记的帝国/base)

@@ -10,3 +10,5 @@ next:
 # 塔兰-见证者-序章
 
 作者: John French
+
+On the Cover: The Imperium stands victorious, but at what price?

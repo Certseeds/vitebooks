@@ -34,6 +34,7 @@ authors = ["John French"]
 recommended_reading = [
     { name = "塔兰-处决者", belongto = { name = "塔兰", series = { name = "Horus Heresy", order = 45 } } },
 ]
+faction_keywords = ["帝国卫队", "帝国之拳", "钢铁勇士"]
 
 [[sub]]
 chinese_name = "塔兰-铁甲"
