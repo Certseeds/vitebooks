@@ -34,141 +34,130 @@ On the Cover: The Iron Warriors engage the Imperial Army in the largest armoured
 
 ### Imperial Personae
 
-Dellasarius, Governor-Militant of 塔兰(Tallarn)
+德拉萨琉斯[^1], 塔兰军事总督[^2]
 
-苏萨达·希恩(Susada Syn), Dellasarius的法定继承人(Designated successor)
-
---------
-
-阿基尔·苏兰(Akil Sulan), 萨菲尔城商业巨头(Merchant prince of the Sapphire City)
-
-萨比尔(Sabir), 省长(Prefectus), 塔兰政府行政机构
-
-盖特(Gatt), 勤务员(Menial), 塔兰政府行政机构
-
-库洛克(Kulok), 市民
+苏萨达·希恩[^3], 德拉萨琉斯的法定继承人[^4]
 
 --------
 
-塔荷拉(Tahirah), Lieutenant, 第一中队指挥官(First Squadron commander), 阿马兰斯连(Amaranth Company), 卓尼安(Jurnian)第701团
+阿基尔·苏兰[^5], 萨菲尔城商业巨头[^6]
 
-拉克兰(Lachlan), 炮手(Gunner), 111号车处决者(Executioner)“灯笼(Lantern)”
+萨比尔[^7], 省长[^8], 塔兰政府行政机构
 
-马吉斯(Makis), 驾驶员, 111号车处决者“灯笼”
+盖特[^9], 勤务员[^10], 塔兰政府行政机构
 
-范尔(Vail), 装填手(Loader), 111号车处决者“灯笼”
-
-乌多(Udo), 侧炮手(Sponson gunner), 111号车处决者“灯笼”
-
-根吉(Genji), 侧炮手(Sponson gunner), 111号车处决者“灯笼”
+库洛克[^11], 市民
 
 --------
 
-赫克托(Hector), 下士(Corporal), 指挥官, 112号车处决者“死光(Deathlight)”
+塔荷拉[^12], 中尉[^13], 第一中队指挥官[^14], 阿马兰斯连[^15], 卓尼安[^16]第701团
+
++ 拉克兰[^17], 炮手[^18], 111号车处决者[^19] "灯笼[^20]"
++ 马吉斯[^21], 驾驶员, 111号车处决者 "灯笼"
++ 范尔[^22], 装填手[^23], 111号车处决者 "灯笼"
++ 乌多[^24], 侧炮手[^25], 111号车处决者 "灯笼"
++ 根吉[^26], 侧炮手[^27], 111号车处决者 "灯笼"
 
 --------
 
-伯瑞尔(Brel), 中士(Sergeant), commander, 113号车征服者-战地改装- “沉默”(113 -field attachment- Vanquisher Silence)
-
-加里尼卡(Jallinika), 炮手, 113号车征服者-战地改装- “沉默”
-
-卡苏瑞兹(Calsuriz), 驾驶员, 113号车征服者-战地改装- “沉默”
-
-希里克(Selq), 装填手, 113号车征服者-战地改装- “沉默”
+赫克托[^28], 下士[^29], 指挥官, 112号车处决者 "死光[^30]"
 
 --------
 
-拉什尼(Rashne), 炮手/信号员(signaller), 114号侦察车-战地改装-“利爪” (114 -field attachment- scout vehicle Talon)
+伯瑞尔[^31], 中士[^32], commander, 113号车征服者-战地改装- "沉默"[^33]
+
++ 加里尼卡[^34], 炮手, 113号车征服者-战地改装- "沉默"
++ 卡苏瑞兹[^35], 驾驶员, 113号车征服者-战地改装- "沉默"
++ 希里克[^36], 装填手, 113号车征服者-战地改装- "沉默"
 
 --------
 
-Silas Kord, Colonel commanding Tallarn 71st, 001 Malcador assault tank War Anvil
-
-Mori, Driver, 001 Malcador assault tank War Anvil
-
-Zade, First Gunner, 001 Malcador assault tank War Anvil
-
-Sacha, First Loader, 001 Malcador assault tank War Anvil
-
-Saul, Forward Gunner, 001 Malcador assault tank War Anvil
-
-Kogetsu, Sponson Gunner, 001 Malcador assault tank War Anvil
-
-Shornal, Sponson Gunner, 001 Malcador assault tank War Anvil
+拉什尼[^37], 炮手/信号员[^38], 114号侦察车-战地改装- "利爪" [^39]
 
 --------
 
-Abbas, Lieutenant, 111 Vanquisher Mourner, First Squadron commander, Tallarn 71st
+希拉斯·科德[^40], 塔兰第71团上校指挥官[^41], 001号马卡多突击坦克 "战争铁砧"[^42]
 
-Zekenilla, Lieutenant, 211 Executioner Noon Star, Second Squadron commander, Tallarn 71st
-
-Origo, Lieutenant, lead scout vehicle Razor, Tallarn 71st
++ 莫利[^43], 驾驶员, 001号马卡多突击坦克 "战争铁砧"
++ 扎德[^44], 主炮炮手[^45], 001号马卡多突击坦克 "战争铁砧"
++ 萨查[^46], 主炮装填手[^47], 001号马卡多突击坦克 "战争铁砧"
++ 索尔[^48], 前炮炮手[^49], 001号马卡多突击坦克 "战争铁砧"
++ 考格茨[^50], 侧炮炮手[^51], 001号马卡多突击坦克 "战争铁砧"
++ 肖纳[^52], 侧炮炮手, 001号马卡多突击坦克 "战争铁砧"
 
 --------
 
-Augustus Fask, Colonel, Crescent Shelter command staff
+阿巴斯[^53], 中尉, 111号征服者坦克 "送葬者"[^54], 第一中队指挥官[^55], 塔兰第71团[^56]
 
-Elo Sussabarka, Brigadier-elite, commander of the Rachab fortress
+齐康妮亚[^57], 中尉, 211号处决者坦克 "正午之星"[^58], 第二中队指挥官[^59], 塔兰第71团
 
-### Adeptus Astra Telepathica
+欧瑞格[^60], 中尉, 侦查长车 "剃刀"[^61], 塔兰第71团
 
-Prophesius, Metatron
+--------
 
-Halakime, Astropath
+奥古斯都·法斯克[^62], 上校, 新月避难所司令部[^63]
 
-### The Dark Mechanicum
+埃洛·苏萨巴卡[^64], 精英准将[^65], 拉卡布要塞[^66]指挥官
 
-Sota-Nul, Disciple of Kelbor-Hal
+### 星语厅
 
-### Officio Assassinorum
+玻非苏斯[^67], 梅塔特隆[^68]-预言者
 
-Iaeo, Unbound Infocyte, Omega Tabulation, Clade Vanus
+哈拉基梅[^69], 星语者[^70]
 
-### Navis Nobilite
+### 黑暗机械教
 
-Hes-Thal, Black Oculus Navigator
+苏塔-努[^71], 卡尔博-哈尔的门徒
+
+### 刺客庭
+
+艾欧[^72], 无羁筹算者[^73], 欧米伽名册[^74], 文努斯支派[^75]
+
+### 导航者家族
+
+海斯-塔尔[^76], 黑暗之眼导航者[^77]
 
 ### 第四军团 钢铁勇士
 
 佩图拉博, 钢铁勇士的原体
 
-Forrix, 'The Breaker', First Captain, triarch
+弗瑞克斯[^78], "击碎者"[^79], 第一连长[^80], 三叉戟[^81]
 
 --------
 
-Hrend, 'The Ironclad', Contemptor-class Dreadnought, commander of Cyllaros armoured assault group
+赫伦德[^82], "铁甲"[^83], 蔑视者无畏[^84], 塞拉罗斯装甲突击组指挥官[^85]
 
-Jarvak, Commander, Sicaran '78/5', lieutenant of Cyllaros group
+贾瓦克[^86], 指挥官[^87], 西卡然坦克 "78/5" 号[^88], 塞拉罗斯小组副官[^89]
 
-Orun, Castraferrum-class Dreadnought (Mortis-pattern) Cyllaros group
+欧伦[^90], 铁堡无畏-莫提斯型[^91], 塞拉罗斯小组[^92]
 
-Gortun, Contemptor-class Dreadnought, Cyllaros group
+高顿[^93], 蔑视者无畏[^94], 塞拉罗斯小组[^95]
 
 --------
 
-Volk, Commander of Sightless Warren (Core Reach I), Master of 786th Grand Flight armada
+沃尔克[^96], 无影迷宫[^97]指挥官[^98]), 第786飞行大队长官[^99]
 
-Taldak, Warrior of the 17th Grand Battalion elite
+塔达克[^100], 第17大营精英战士[^101]
 
 ### 第七军团 帝国之拳
 
-莱库斯(Lycus), 总管(Marshal), 因维特之光号(the Light of Inwit)的指挥官
+莱库斯[^102], 总管[^103], 因维特之光号[^104]的指挥官
 
 ### 第十军团 钢铁之手
 
-Menoetius, Commander, Predator Cretatogran
+墨诺提俄斯[^105], 指挥官[^106], 捕食者坦克 "克里塔托格兰"[^107]
 
 ### 第十六军团 荷鲁斯之子
 
-Argonis, 'The Unscarred', emissary of the Warmaster, Chieftain of the Isidis Flight
+亚格尼斯[^108], "无疤者"[^109], 战帅特使[^110], 伊西底斯飞行队首领[^111]
 
 ### 第二十军团 阿尔法军团
 
-Thetacron, Commander, Harrow Group Arcadus
+赛塔克隆[^112], 指挥官[^113], 掠夺小组阿尔卡德[^114]
 
 ### Others
 
-加林(Jalen)
+加林[^115], 特工
 
 ## 章节
 
@@ -177,6 +166,243 @@ Thetacron, Commander, Harrow Group Arcadus
 + [塔兰-见证者](/塔兰/塔兰-见证者/meta)
 + [塔兰-处决者](/塔兰/塔兰-处决者/meta)
 + [塔兰-警报器](/塔兰/塔兰-警报器/meta)
-+ [塔兰-铁甲-TODO]
++ [塔兰-铁甲](/塔兰/塔兰-铁甲/meta)
 
 [^0]: 这一部分和《不被铭记的帝国》对比并无改动, 因此复制自[不被铭记的帝国-总序](/不被铭记的帝国/base)
+
+[^1]: Dellasarius
+
+[^2]: Governor-Militant of Tallarn
+
+[^3]: Susada Syn
+
+[^4]: Designated successor
+
+[^5]: Akil Sulan
+
+[^6]: Merchant prince of the Sapphire City
+
+[^7]: Sabir
+
+[^8]: Prefectus
+
+[^9]: Gatt
+
+[^10]: Menial
+
+[^11]: Kulok
+
+[^12]: Tahirah
+
+[^13]: Lieutenant
+
+[^14]: First Squadron commander
+
+[^15]: Amaranth Company
+
+[^16]: Jurnian
+
+[^17]: Lachlan
+
+[^18]: Gunner
+
+[^19]: Executioner
+
+[^20]: Lantern
+
+[^21]: Makis
+
+[^22]: Vail
+
+[^23]: Loader
+
+[^24]: Udo
+
+[^25]: Sponson gunner
+
+[^26]: Genji
+
+[^27]: Sponson gunner
+
+[^28]: Hector
+
+[^29]: Corporal
+
+[^30]: Deathlight
+
+[^31]: Brel
+
+[^32]: Sergeant
+
+[^33]: 113 -field attachment- Vanquisher Silence
+
+[^34]: Jallinika
+
+[^35]: Calsuriz
+
+[^36]: Selq
+
+[^37]: Rashne
+
+[^38]: signaller
+
+[^39]: 114 -field attachment- scout vehicle Talon
+
+[^40]: Hyras Kord
+
+[^41]: Colonel commanding
+
+[^42]: 001 Malcador Assault Tank
+"Anvil of War"
+
+[^43]: Mori
+
+[^44]: Zade
+
+[^45]: First Gunner
+
+[^46]: Sacha
+
+[^47]: First Loader
+
+[^48]: Saul
+
+[^49]: Forward Gunner
+
+[^50]: Kogetsu
+
+[^51]: Sponson Gunner
+
+[^52]: Shornal
+
+[^53]: Abbas
+
+[^54]: 111 Vanquisher Mourner
+
+[^55]: First Squadron
+commander
+
+[^56]: Tallarn 71st
+
+[^57]: Zekenilla
+
+[^58]: 211 Executioner Noon Star
+
+[^59]: Second
+Squadron commander
+
+[^60]: Origo
+
+[^61]: lead scout vehicle Razor
+
+[^62]: Augustus Fask
+
+[^63]: Crescent Shelter command staff
+
+[^64]: Elo Sussabarka
+
+[^65]: Brigadier-elite
+
+[^66]: Rachab fortress
+
+[^67]: Prophesius
+
+[^68]: Metatron
+
+[^69]: Halakime
+
+[^70]: Astropath
+
+[^71]: Sota-Nul
+
+[^72]: Iaeo
+
+[^73]: Unbound Infocyte
+
+[^74]: Omega Tabulation
+
+[^75]: Clade Vanus
+
+[^76]: Hes-Thal
+
+[^77]: Black Oculus Navigator
+
+[^78]: Forrix
+
+[^79]: 'The Breaker'
+
+[^80]: First Captain
+
+[^81]: triarch
+
+[^82]: Hrend
+
+[^83]: 'The Ironclad'
+
+[^84]: Contemptor-class Dreadnought
+
+[^85]:
+commander of Cyllaros armoured assault group
+
+[^86]: Jarvak
+
+[^87]: Commander
+
+[^88]: Sicaran '78/5'
+
+[^89]: lieutenant of
+Cyllaros group
+
+[^90]: Orun
+
+[^91]: Castraferrum-class Dreadnought Mortis-pattern
+
+[^92]: Cyllaros
+group
+
+[^93]: Gortun
+
+[^94]: Contemptor-class Dreadnought
+
+[^95]: Cyllaros group
+
+[^96]: Volk
+
+[^97]: 核心段 I
+
+[^98]: Commander of Sightless Warren (Core Reach I
+
+[^99]:
+Master of 786th Grand Flight armada
+
+[^100]: Taldak
+
+[^101]: Warrior of the 17th Grand Battalion elite
+
+[^102]: Lycus
+
+[^103]: Marshal
+
+[^104]: the Light of Inwit
+
+[^105]: Menoetius
+
+[^106]: Commander
+
+[^107]: Predator Cretatogran
+
+[^108]: Argonis
+
+[^109]: 'The Unscarred'
+
+[^110]: emissary of the Warmaster
+
+[^111]: Chieftain of the Isidis Flight
+
+[^112]: Thetacron
+
+[^113]: Commander
+
+[^114]: Harrow Group Arcadus
+
+[^115]: Jalen

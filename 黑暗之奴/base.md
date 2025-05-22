@@ -91,7 +91,7 @@ On The Cover: The traitor primarchs gather as Horus pushes for Terra
 
 阿克提雅 灰圣之神谕
 
-索塔-Nul 凯尔博-哈尔的特使
+苏塔-努 卡尔博-哈尔的特使
 
 ### 未生者
 

@@ -99,7 +99,7 @@ On the Cover: As the Siege of Terra draws ever closer, Mortarion and his sons fi
 
 萨特 [^28] , ***身份被删除***
 
-亚纽斯 [^29], ***身份被删除***
+雅努斯 [^29], ***身份被删除***
 
 约顿 [^30] , ***身份被删除***
 

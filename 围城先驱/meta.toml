@@ -80,7 +80,7 @@ chinese_name = "普罗斯佩罗的最后之子"
 english_name = "The Last Son of Prospero"
 type = "短篇小说"
 authors = ["Chris Wraight"]
-faction_keywords = ["千子", "白色伤疤"]
+faction_keywords = ["千子", "白色伤疤", "游侠骑士"]
 recommended_reading=["天堂之路"]
 
 [[sub]]

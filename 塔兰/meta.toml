@@ -47,3 +47,4 @@ recommended_reading = [
     { name = "塔兰-警报器", belongto = { name = "塔兰", series = { name = "Horus Heresy", order = 45 } } },
     { name = "黑暗顺从", belongto = { name = "围城先驱", series = { name = "Horus Heresy", order = 52 } } },
 ]
+faction_keywords = ["帝国卫队", "刺客庭", "黑暗机械教", "钢铁勇士", "荷鲁斯之子", "钢铁之手", "阿尔法军团"]
