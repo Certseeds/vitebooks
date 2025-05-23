@@ -78,6 +78,10 @@ jobs:
         working-directory: ./depage
         run: pnpm install
 
+      - name: install dependencies web-cmp-translate
+        working-directory: ./web-cmp-translate
+        run: pnpm install       
+
       - name: scan and build meta.tgz, epubs
         env:
           RUN_NUMBER: ${{ github.run_number }}
@@ -97,10 +101,16 @@ jobs:
         working-directory: ./depage
         run: pnpm build
 
-      - name: cp depage
+      - name: build web-cmp-translate
+        working-directory: ./web-cmp-translate
+        run: pnpm build
+
+      - name: cp subprojects
         run: |
           mkdir -p ./public/depage
+          mkdir -p ./public/web-cmp-translate
           cp -r ./depage/dist/* ./public/depage/
+          cp -r ./web-cmp-translate/dist/* ./public/web-cmp-translate/
 
       - name: build
         run: pnpm run docs:build

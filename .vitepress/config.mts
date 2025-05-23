@@ -19,6 +19,7 @@ export default defineConfig({
             , { text: "epub总集", link: '/warhammer40k/epub' }
             , { text: "warhammer40k-元数据", link: '/warhammer40k/primarchs' }
             , { text: "dep-page", link: "/depage/index.html", target: '_blank' }
+            , { text: "web-cmp-translate", link: "/web-cmp-trans/index.html", target: '_blank' }
         ],
         sidebar: [
             {
