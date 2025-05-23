@@ -78,7 +78,7 @@ jobs:
         working-directory: ./depage
         run: pnpm install
 
-      - name: install dependencies web-cmp-translate
+      - name: install dependencies web-cmp-trans
         working-directory: ./web-cmp-translate
         run: pnpm install       
 
@@ -101,16 +101,16 @@ jobs:
         working-directory: ./depage
         run: pnpm build
 
-      - name: build web-cmp-translate
+      - name: build web-cmp-trans
         working-directory: ./web-cmp-translate
         run: pnpm build
 
       - name: cp subprojects
         run: |
           mkdir -p ./public/depage
-          mkdir -p ./public/web-cmp-translate
+          mkdir -p ./public/web-cmp-trans
           cp -r ./depage/dist/* ./public/depage/
-          cp -r ./web-cmp-translate/dist/* ./public/web-cmp-translate/
+          cp -r ./web-cmp-translate/dist/* ./public/web-cmp-trans/
 
       - name: build
         run: pnpm run docs:build
