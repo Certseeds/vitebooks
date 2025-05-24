@@ -11,6 +11,8 @@ next:
 
 作者: Graham McNeill
 
+On the Cover: After the Battle of Molech, Alivia Sureka and Severian infiltrate what remains of the vile serpent cult
+
 ## 校者备注
 
 本文用的各种引号很乱, 都统一成了`"`.

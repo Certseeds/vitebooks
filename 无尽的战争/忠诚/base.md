@@ -11,6 +11,8 @@ next:
 
 作者: Chris Wraight
 
+On the Cover: Assailed by doubt, the Last Son of Prospero battles the past and the future to restore his soul
+
 ## 译者备注
 
 本文版权归于GamesWorkshop 所有, 禁止未经允许转载以及商业用途

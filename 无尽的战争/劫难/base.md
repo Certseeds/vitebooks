@@ -10,3 +10,5 @@ next:
 # 无尽的战争-劫难-序章
 
 作者: Rob Sanders
+
+On the Cover: The Alpha Legion bring their own brand of terror to the world of Callistra Mundi

@@ -11,6 +11,8 @@ next:
 
 作者: Guy Haley
 
+On the Cover: Maloghurst, equerry to the Warmaster, uncovers a dark conspiracy on board the Vengesul Spirit
+
 ## 校者备注
 
 本文中斜体与粗体均与原文保持一致.

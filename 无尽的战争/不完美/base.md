@@ -10,3 +10,5 @@ next:
 # 无尽的战争-不完美-序章
 
 作者: Nick Kyme
+
+On the Cover: Recalling a more civilised age, Fulgrim and Ferrus Mamis clash in a noble contest of tactics and skill

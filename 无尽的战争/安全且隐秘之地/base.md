@@ -11,6 +11,8 @@ next:
 
 作者: Guy Haley
 
+On the Cover: Still reeling from defeat at Thramas, the Night Lords discover that the world of Sotha is far from a quiet sanctuary
+
 ## 出场人物[^1]
 
 ### 棕袍王子号

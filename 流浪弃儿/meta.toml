@@ -1,0 +1,12 @@
+[book]
+chinese_name = "流浪弃儿"
+english_name = "The Outcast Dead"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 17
+authors = ["Graham McNeill"]
+faction_keywords = ["吞世者", "帝皇之子", "死亡守卫", "千子", "影月苍狼", "禁军", "雷霆战士"]
+recommended_reading = [
+    "千子",
+    "福格瑞姆"
+]
