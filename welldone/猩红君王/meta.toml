@@ -6,7 +6,9 @@ series.name = "Horus Heresy"
 series.order = 44
 authors = ["Graham McNeill"]
 recommended_reading = [
-    "普罗斯佩罗之焚",
     { name = "启示之贼", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 31 } } },
+    { name = "狼猎", belongto = { name = "无声战争", series = { name = "Horus Heresy", order = 37 } } },
+    "普罗斯佩罗之焚",
+    { name = "卢修斯-永恒之刃", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 31 } } },
 ]
 faction_keywords = ["千子", "太空野狼", "游侠骑士", "怀言者"]
