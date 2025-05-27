@@ -11,6 +11,8 @@ next:
 
 作者: Aaron Dembski-Bowden
 
+On the Cover: Even when held captive by the Dark Angels, Sevatar still seeks to punish the guilty
+
 ## 译者备注
 
 长夜是情景剧, 剧情接在群鸦王子赛维塔被抓后

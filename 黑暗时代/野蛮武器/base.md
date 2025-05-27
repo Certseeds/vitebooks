@@ -11,6 +11,8 @@ next:
 
 作者: Aaron Dembski-Bowden
 
+On the Cover: The Night Lords and the Dark Angels clash in the Thramas Crusade
+
 ## 出场人物[^1]
 
 ### 第一军团, '暗黑天使'

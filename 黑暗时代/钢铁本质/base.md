@@ -11,6 +11,8 @@ next:
 
 作者: Rob Sanders
 
+On the Cover: Conflicting loyalties turn the forces of the IV Legion upon themselves
+
 ## 译者注[^1]
 
 钢身躯. 铁心肠. 何处无钢铁, 王朝崛又殇. 我曾死斗古老种, 同袍更将战歌唱. 吾等乃不落之钢铁帝国. 无论厮杀在何处, 血肉早已忘, 久远唯金钢. 巢都终会倾, 舰队也将荒. 我辈闪亮骸骨作风中尘时, 手中枪炮铁甲亦无有腐黄. 沙场埋下好战魂, 叛徒伴着忠魂岗. 后来者可得警言, 于战事遗址中藏. 钢铁无信背, 钢铁恒流长.

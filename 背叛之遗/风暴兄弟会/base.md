@@ -11,6 +11,8 @@ next:
 
 作者: Chris Wraight
 
+On the Cover: Full and unabridged
+
 ## 译者备注
 
 为了大汗!

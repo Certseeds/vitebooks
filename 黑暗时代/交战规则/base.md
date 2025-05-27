@@ -10,3 +10,5 @@ next:
 # 黑暗时代-交战规则-序章
 
 作者: Graham McNeill
+
+On the Cover: Roboute Guilliman perfects his strategies for the coming war

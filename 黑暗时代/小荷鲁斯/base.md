@@ -11,6 +11,8 @@ next:
 
 作者: Dan Abnett
 
+On the Cover: The Sons of Horus face the fury of the Shattered Legions
+
 ## 相关人物
 
 ### 影月议会[^1]

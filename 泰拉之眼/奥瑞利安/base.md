@@ -11,6 +11,10 @@ next:
 
 作者: Aaron Dembski-Bowden
 
+On the Cover: The primarch of the Word Bearers journeys tp the heart of Chaos itself
+
+## 凝视的回望 The Eye Stares back
+
 ## 校者备注
 
 本书中恶魔的话大部分为斜体加粗, 不影响理解, 不全部对应.

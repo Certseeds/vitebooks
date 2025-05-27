@@ -11,6 +11,8 @@ next:
 
 作者: Nick Kyme
 
+On the Cover: Warriors left behind by their Legions seek new purpose
+
 ## 译者备注
 
 标注了原文的页数方便翻译庭校对, 如有翻译勘误请指出, 谢谢!

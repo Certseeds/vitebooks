@@ -11,6 +11,8 @@ next:
 
 作者: Aaron Dembski-Bowden
 
+On the Cover: Angron's ascension to daemonhood drives the Legion's mortal followers into madness
+
 ## 出场人物
 
 妮莎 安德拉斯塔, 导航员, 征服者号

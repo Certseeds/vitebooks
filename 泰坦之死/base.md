@@ -125,7 +125,7 @@ On The Cover: At Beta-Garmon, the Titan Legions clash in a brutal conflict that 
 
 拉多隆, 首席连长
 
-阿兹凯隆, 圣血卫队的指挥官
+阿兹卡隆, 圣血卫队的指挥官
 
 ### 白色疤痕, 第五阿斯塔特军团
 

@@ -10,3 +10,5 @@ next:
 # 泰拉之眼-大屠杀-序章
 
 作者: Aaron Dembski-Bowden
+
+On the Cover: The Night Lords of First Claw prepare for their Legion's treachery at Isstvan V

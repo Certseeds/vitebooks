@@ -11,6 +11,8 @@ next:
 
 作者: Chris Wraight
 
+On the Cover: A small group of Thousand Sons return to the ruins of Prospero
+
 ## 译者备注
 
 本篇选自荷鲁斯之乱短篇小说集《黑暗时代》

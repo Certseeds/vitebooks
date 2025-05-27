@@ -129,13 +129,13 @@ On the Cover: The Iron Warriors engage the Imperial Army in the largest armoured
 
 贾瓦克[^86], 指挥官[^87], 西卡然坦克 "78/5" 号[^88], 塞拉罗斯小组副官[^89]
 
-欧伦[^90], 铁堡无畏-莫提斯型[^91], 塞拉罗斯小组[^92]
+欧伦[^90], 铁堡无畏-莫提斯型[^91], 塞拉罗斯小组
 
-高顿[^93], 蔑视者无畏[^94], 塞拉罗斯小组[^95]
+高顿[^93], 蔑视者无畏[^94], 塞拉罗斯小组
 
 --------
 
-沃尔克[^96], 无影迷宫[^97]指挥官[^98]), 第786飞行大队长官[^99]
+沃尔克[^96], 无影迷宫指挥官-核心段I[^98], 第786飞行大队长官[^99]
 
 塔达克[^100], 第17大营精英战士[^101]
 
@@ -252,8 +252,7 @@ On the Cover: The Iron Warriors engage the Imperial Army in the largest armoured
 
 [^41]: Colonel commanding
 
-[^42]: 001 Malcador Assault Tank
-"Anvil of War"
+[^42]: 001 Malcador Assault Tank "Anvil of War"
 
 [^43]: Mori
 
@@ -279,8 +278,7 @@ On the Cover: The Iron Warriors engage the Imperial Army in the largest armoured
 
 [^54]: 111 Vanquisher Mourner
 
-[^55]: First Squadron
-commander
+[^55]: First Squadron commander
 
 [^56]: Tallarn 71st
 
@@ -288,8 +286,7 @@ commander
 
 [^58]: 211 Executioner Noon Star
 
-[^59]: Second
-Squadron commander
+[^59]: Second Squadron commander
 
 [^60]: Origo
 
@@ -341,8 +338,7 @@ Squadron commander
 
 [^84]: Contemptor-class Dreadnought
 
-[^85]:
-commander of Cyllaros armoured assault group
+[^85]: commander of Cyllaros armoured assault group
 
 [^86]: Jarvak
 
@@ -350,30 +346,21 @@ commander of Cyllaros armoured assault group
 
 [^88]: Sicaran '78/5'
 
-[^89]: lieutenant of
-Cyllaros group
+[^89]: lieutenant of Cyllaros group
 
 [^90]: Orun
 
 [^91]: Castraferrum-class Dreadnought Mortis-pattern
 
-[^92]: Cyllaros
-group
-
 [^93]: Gortun
 
 [^94]: Contemptor-class Dreadnought
 
-[^95]: Cyllaros group
-
 [^96]: Volk
 
-[^97]: 核心段 I
+[^98]: Commander of Sightless Warren (Core Reach I)
 
-[^98]: Commander of Sightless Warren (Core Reach I
-
-[^99]:
-Master of 786th Grand Flight armada
+[^99]: Master of 786th Grand Flight armada
 
 [^100]: Taldak
 

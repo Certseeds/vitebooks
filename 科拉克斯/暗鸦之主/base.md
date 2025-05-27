@@ -11,6 +11,8 @@ next:
 
 作者: Gav Thorpe
 
+On the Cover: Corax rallies the scattered loyalists to his banner, to strike back at the Warmaster's forces
+
 ## 出场人物
 
 ### 复仇力量
