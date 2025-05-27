@@ -24,7 +24,7 @@ faction_keywords = ["阿尔法军团"]
 
 [[sub]]
 chinese_name = "被遗忘的子嗣"
-english_name = "Forgotten Sons "
+english_name = "Forgotten Sons"
 type = "中篇小说"
 authors = ["Nick Kyme"]
 recommended_reading = [
@@ -51,7 +51,7 @@ faction_keywords = ["千子", "吞世者"]
 
 [[sub]]
 chinese_name = "背叛之貌"
-english_name = "The Face of Treachery "
+english_name = "The Face of Treachery"
 type = "短篇小说"
 authors = ["Gav Thorpe"]
 recommended_reading = [

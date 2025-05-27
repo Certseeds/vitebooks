@@ -11,6 +11,8 @@ next:
 
 作者: John French
 
+On the Cover: What dark secrets does the infamous Solomon Voss keep?
+
 ## 译者备注
 
 选自HH短篇小说集"Age of Darkness", 篇名"The Last Remembrancer", 作者John French.

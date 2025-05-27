@@ -11,6 +11,8 @@ next:
 
 作者: John French
 
+On the Cover: In the skies over Tallarn, the Imperial Fists storm a renegade warship
+
 ## 译者备注
 
 这篇文章也是收录于Eye of Terra

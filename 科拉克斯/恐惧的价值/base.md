@@ -11,4 +11,4 @@ next:
 
 作者: Gav Thorpe
 
-Transhuman dread, multiplied and turned back upon those who would wield it
+On the Cover: Transhuman dread, multiplied and turned back upon those who would wield it

@@ -43,7 +43,7 @@ On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Impe
 
 圣吉列斯, 不情愿的皇帝(The reluctant emperor), 第二帝国的统治者(ruler of Imperium Secundus), 第九军团的基因原体
 
-阿兹凯隆(Azkaellon) ,圣血守卫的指挥官(Commander, Sanguinary Guard)
+阿兹卡隆(Azkaellon) ,圣血守卫的指挥官(Commander, Sanguinary Guard)
 
 ### 第十三军团-极限战士
 

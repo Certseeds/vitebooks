@@ -10,3 +10,5 @@ next:
 # 泰拉之眼-圣吉列斯先躯-序章
 
 作者: Andy Smillie
+
+On the Cover: The dream of Imperium-Secundus lives or dies with its newly crowned Emperor

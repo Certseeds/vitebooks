@@ -10,3 +10,5 @@ next:
 # 泰拉之眼-策略-序章
 
 作者: Nick Kyme
+
+On the Cover: Aeonid Thiel is summoned to a mysterious audience with the Master of Ultramar
