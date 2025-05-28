@@ -1,6 +1,6 @@
 import OpenAI from 'openai'
 
-const translate = async function (baseURL, apiKey, model, prompt, text) {
+const translate = async function (baseURL, apiKey, model, prompt, text, temperature) {
     const maxRetries = 3;
     let lastError = null;
 
@@ -8,23 +8,25 @@ const translate = async function (baseURL, apiKey, model, prompt, text) {
         baseURL: baseURL,
         apiKey: apiKey, // required but unused
         dangerouslyAllowBrowser: true,
-        temperature: 0.5,
+        temperature: temperature,
+        defaultHeaders: {
+            "HTTP-Referer": "https://vitebooks.certseeds.com/web-cmp-trans/",
+            "X-Title": "vitebooks-web-cmp-translate",
+        },
     })
     for (let attempt = 1; attempt <= maxRetries; attempt++) {
         try {
             const completion = await openai.chat.completions.create({
-                model: model,
-                messages: [
+                model : model,
+                messages : [
                     { role: "system", content: prompt }
                     , { role: "user", content: `${text}` }
-                ],
+                ]
             })
-
             // 检查响应是否有效
             if (!completion || !completion.choices || !completion.choices[0] || !completion.choices[0].message) {
                 throw new Error('Invalid response structure from API');
             }
-
             return completion.choices[0].message.content;
         } catch (error) {
             lastError = error;

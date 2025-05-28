@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch } from 'vue'; // 导入 watch
+import { ref } from 'vue'; 
 import { parseJsonVocabulary, parseTxtVocabulary } from './vocabularyParser.js';
 import { translate } from './api.js'
 
@@ -7,6 +7,17 @@ import { translate } from './api.js'
 const apiUrl = ref('http://127.0.0.1:11434/v1');
 const modelName = ref('qwen2.5:14b')
 const apiToken = ref('');
+const temperature = ref(1.3); // 预设温度值，可以通过界面调整
+
+// Initialize from URL query parameters
+const params = new URLSearchParams(window.location.search);
+if (params.has('apiUrl')) { apiUrl.value = params.get('apiUrl') || apiUrl.value; }
+if (params.has('modelName')) { modelName.value = params.get('modelName') || modelName.value; }
+if (params.has('apiToken')) { apiToken.value = params.get('apiToken') || apiToken.value; }
+if (params.has('temperature')) { 
+    const tempValue = parseFloat(params.get('temperature')); 
+    temperature.value = !isNaN(tempValue) ? tempValue : temperature.value; 
+};
 
 const textFile = ref(null);
 const originalFileName = ref(''); // 新增：存储原始文件名
@@ -28,6 +39,7 @@ const customPrompt = ref(`你是一具战锤40K小说翻译机仆。请将以下
 请翻译以下内容：
 `);
 
+
 const logs = ref([]);
 
 const sourceSegments = ref([]);
@@ -35,509 +47,543 @@ const translatedSegments = ref([]);
 
 // 新增处理文本文件的函数
 async function handleTextFileUpload(event) {
-  const file = event.target.files[0];
-  if (!file) {
-    return;
-  }
-  textFile.value = file;
-  originalFileName.value = file.name; // 保存原始文件名
-  appendLog(`Text file selected: ${originalFileName.value}`);
-
-  const reader = new FileReader();
-  reader.onload = async (e) => {
-    const fileContent = e.target.result;
-    try {
-      // 将文件内容按行分割，并过滤掉空行
-      const lines = fileContent.split(/\r?\n/);
-      sourceSegments.value = lines.filter(line => line.trim() !== '');
-      
-      appendLog(`文本文件已加载，共 ${sourceSegments.value.length} 段有效内容。`);
-      
-      // 清除旧的翻译
-      translatedSegments.value = [];
-      
-      // 清空文件选择
-      event.target.value = null;
-      // textFile.value = null; // 保持 textFile.value 直到翻译或新文件上传，但原始文件名已保存
-    } catch (error) {
-      appendLog(`Error loading text file: ${error.message}`);
-      event.target.value = null;
-      // textFile.value = null;
-      originalFileName.value = ''; // 出错时清空
+    const file = event.target.files[0];
+    if (!file) {
+        return;
     }
-  };
-  reader.onerror = () => {
-    appendLog('Error reading text file.');
-    event.target.value = null;
-    // textFile.value = null;
-    originalFileName.value = ''; // 出错时清空
-  };
-  reader.readAsText(textFile.value);
+    textFile.value = file;
+    originalFileName.value = file.name; // 保存原始文件名
+    appendLog(`Text file selected: ${originalFileName.value}`);
+
+    const reader = new FileReader();
+    reader.onload = async (e) => {
+        const fileContent = e.target.result;
+        try {
+            // 将文件内容按行分割，并过滤掉空行
+            const lines = fileContent.split(/\r?\n/);
+            sourceSegments.value = lines.filter(line => line.trim() !== '');
+
+            appendLog(`文本文件已加载，共 ${sourceSegments.value.length} 段有效内容。`);
+
+            // 清除旧的翻译
+            translatedSegments.value = [];
+
+            // 清空文件选择
+            event.target.value = null;
+            // textFile.value = null; // 保持 textFile.value 直到翻译或新文件上传，但原始文件名已保存
+        } catch (error) {
+            appendLog(`Error loading text file: ${error.message}`);
+            event.target.value = null;
+            // textFile.value = null;
+            originalFileName.value = ''; // 出错时清空
+        }
+    };
+    reader.onerror = () => {
+        appendLog('Error reading text file.');
+        event.target.value = null;
+        // textFile.value = null;
+        originalFileName.value = ''; // 出错时清空
+    };
+    reader.readAsText(textFile.value);
 }
 
 async function handlePreDealUpload(event) {
-  vocabularyFile.value = event.target.files[0];
-  console.log('File selected:', vocabularyFile.value);
-  if (!vocabularyFile.value) {
-    return;
-  }
-  appendLog(`Vocabulary file selected: ${vocabularyFile.value.name}`);
+    vocabularyFile.value = event.target.files[0];
+    console.log('File selected:', vocabularyFile.value);
+    if (!vocabularyFile.value) {
+        return;
+    }
+    appendLog(`Vocabulary file selected: ${vocabularyFile.value.name}`);
 
-  const reader = new FileReader();
-  reader.onload = async (e) => {
-    const fileContent = e.target.result;
-    try {
-      let parsedVocab;
-      if (vocabularyFile.value.name.endsWith('.json')) {
-        parsedVocab = parseJsonVocabulary(fileContent);
-        appendLog('Parsing JSON vocabulary...');
-      } else if (vocabularyFile.value.name.endsWith('.txt')) {
-        parsedVocab = parseTxtVocabulary(fileContent);
-        appendLog('Parsing TXT vocabulary...');
-      } else {
-        appendLog('Unsupported file type. Please upload a .json or .txt file.');
+    const reader = new FileReader();
+    reader.onload = async (e) => {
+        const fileContent = e.target.result;
+        try {
+            let parsedVocab;
+            if (vocabularyFile.value.name.endsWith('.json')) {
+                parsedVocab = parseJsonVocabulary(fileContent);
+                appendLog('Parsing JSON vocabulary...');
+            } else if (vocabularyFile.value.name.endsWith('.txt')) {
+                parsedVocab = parseTxtVocabulary(fileContent);
+                appendLog('Parsing TXT vocabulary...');
+            } else {
+                appendLog('Unsupported file type. Please upload a .json or .txt file.');
+                // 清空文件选择，以便可以再次选择同一个文件
+                event.target.value = null;
+                vocabularyFile.value = null;
+                return;
+            }
+            // 更新词汇表, 合并而不是替换
+            parsedVocab.forEach((value, key) => {
+                appendLog(`新预处理词对: ${key} - ${value}`);
+                preWordsMap.value.set(key, value);
+            });
+            appendLog(`Vocabulary loaded successfully. Total entries: ${preWordsMap.value.size}`);
+            // 清空文件选择，以便可以再次选择同一个文件
+            event.target.value = null;
+            vocabularyFile.value = null;
+        } catch (error) {
+            appendLog(`Error loading vocabulary: ${error.message}`);
+            // 清空文件选择，以便可以再次选择同一个文件
+            event.target.value = null;
+            vocabularyFile.value = null;
+        }
+    };
+    reader.onerror = () => {
+        appendLog('Error reading file.');
         // 清空文件选择，以便可以再次选择同一个文件
         event.target.value = null;
         vocabularyFile.value = null;
-        return;
-      }
-      // 更新词汇表, 合并而不是替换
-      parsedVocab.forEach((value, key) => {
-        appendLog(`新预处理词对: ${key} - ${value}`);
-        preWordsMap.value.set(key, value);
-      });
-      appendLog(`Vocabulary loaded successfully. Total entries: ${preWordsMap.value.size}`);
-      // 清空文件选择，以便可以再次选择同一个文件
-      event.target.value = null;
-      vocabularyFile.value = null;
-    } catch (error) {
-      appendLog(`Error loading vocabulary: ${error.message}`);
-      // 清空文件选择，以便可以再次选择同一个文件
-      event.target.value = null;
-      vocabularyFile.value = null;
-    }
-  };
-  reader.onerror = () => {
-    appendLog('Error reading file.');
-    // 清空文件选择，以便可以再次选择同一个文件
-    event.target.value = null;
-    vocabularyFile.value = null;
-  };
-  reader.readAsText(vocabularyFile.value);
+    };
+    reader.readAsText(vocabularyFile.value);
 }
 
 async function handleAfterDealUpload(event) {
-  vocabularyFile.value = event.target.files[0];
-  console.log('After-deal file selected:', vocabularyFile.value);
-  if (!vocabularyFile.value) {
-    return;
-  }
-  appendLog(`后处理词表文件已选择: ${vocabularyFile.value.name}`);
+    vocabularyFile.value = event.target.files[0];
+    console.log('After-deal file selected:', vocabularyFile.value);
+    if (!vocabularyFile.value) {
+        return;
+    }
+    appendLog(`后处理词表文件已选择: ${vocabularyFile.value.name}`);
 
-  const reader = new FileReader();
-  reader.onload = async (e) => {
-    const fileContent = e.target.result;
-    try {
-      let parsedVocab;
-      if (vocabularyFile.value.name.endsWith('.json')) {
-        parsedVocab = parseJsonVocabulary(fileContent);
-        appendLog('解析JSON后处理词表...');
-      } else if (vocabularyFile.value.name.endsWith('.txt')) {
-        parsedVocab = parseTxtVocabulary(fileContent);
-        appendLog('解析TXT后处理词表...');
-      } else {
-        appendLog('不支持的文件类型。请上传 .json 或 .txt 文件。');
+    const reader = new FileReader();
+    reader.onload = async (e) => {
+        const fileContent = e.target.result;
+        try {
+            let parsedVocab;
+            if (vocabularyFile.value.name.endsWith('.json')) {
+                parsedVocab = parseJsonVocabulary(fileContent);
+                appendLog('解析JSON后处理词表...');
+            } else if (vocabularyFile.value.name.endsWith('.txt')) {
+                parsedVocab = parseTxtVocabulary(fileContent);
+                appendLog('解析TXT后处理词表...');
+            } else {
+                appendLog('不支持的文件类型。请上传 .json 或 .txt 文件。');
+                event.target.value = null;
+                vocabularyFile.value = null;
+                return;
+            }
+            // 更新后处理词汇表
+            parsedVocab.forEach((value, key) => {
+                appendLog(`新后处理词对: ${key} - ${value}`);
+                postWordsMap.value.set(key, value);
+            });
+            appendLog(`后处理词表加载成功。总词条数: ${postWordsMap.value.size}`);
+            event.target.value = null;
+            vocabularyFile.value = null;
+        } catch (error) {
+            appendLog(`加载后处理词表错误: ${error.message}`);
+            event.target.value = null;
+            vocabularyFile.value = null;
+        }
+    };
+    reader.onerror = () => {
+        appendLog('读取后处理词表文件错误。');
         event.target.value = null;
         vocabularyFile.value = null;
-        return;
-      }
-      // 更新后处理词汇表
-      parsedVocab.forEach((value, key) => {
-        appendLog(`新后处理词对: ${key} - ${value}`);
-        postWordsMap.value.set(key, value);
-      });
-      appendLog(`后处理词表加载成功。总词条数: ${postWordsMap.value.size}`);
-      event.target.value = null;
-      vocabularyFile.value = null;
-    } catch (error) {
-      appendLog(`加载后处理词表错误: ${error.message}`);
-      event.target.value = null;
-      vocabularyFile.value = null;
-    }
-  };
-  reader.onerror = () => {
-    appendLog('读取后处理词表文件错误。');
-    event.target.value = null;
-    vocabularyFile.value = null;
-  };
-  reader.readAsText(vocabularyFile.value);
+    };
+    reader.readAsText(vocabularyFile.value);
 }
 
 async function translateText() {
-  appendLog('Translate button clicked.');
+    appendLog('Translate button clicked.');
 
-  if (sourceSegments.value.length === 0) {
-    appendLog('没有有效的原文分段可供翻译。请先上传文本文件。');
-    translatedSegments.value = [];
-    return;
-  }
-
-  appendLog(`开始翻译 ${sourceSegments.value.length} 段原文。`);
-
-  // 初始化译文数组
-  translatedSegments.value = new Array(sourceSegments.value.length).fill('翻译中...');
-
-  // 按长度从长到短排序预处理词表的键
-  const sortedPreKeys = Array.from(preWordsMap.value.keys())
-    .sort((a, b) => b.length - a.length);
-  
-  if (sortedPreKeys.length > 0) {
-    appendLog(`已加载预处理词表，将对原文进行 ${sortedPreKeys.length} 个词条的预处理替换。`);
-  }
-
-  // 逐一翻译每个分段
-  for (let index = 0; index < sourceSegments.value.length; index++) {
-    let segment = sourceSegments.value[index];
-
-    // 应用预处理词表替换（从最长的键到最短的键）
-    if (preWordsMap.value.size > 0) {
-      const originalSegmentForLogging = segment;
-      // sortedPreKeys 已经按长度从长到短排序
-      // preWordsMap 中的键（以及 sortedPreKeys 中的键）对于英文词汇已经是小写
-
-      for (const key of sortedPreKeys) {
-        // key 是要不区分大小写搜索的（小写）字符串
-        // 对正则表达式中的特殊字符进行转义
-        const escapedKey = key.replace(/[.*+?^${}()|[\\\]\\\\]/g, '\\\\$&');
-        const regex = new RegExp(escapedKey, 'gi'); // 'g' 表示全局, 'i' 表示不区分大小写
-        
-        const replacement = preWordsMap.value.get(key); // 获取替换值
-        
-        // 在 segment 的当前状态上执行不区分大小写的替换
-        segment = segment.replaceAll(regex, replacement);
-      }
-      
-      if (segment !== originalSegmentForLogging) {
-        appendLog(`段落 ${index + 1} 已完成预处理替换。`);
-      }
+    if (sourceSegments.value.length === 0) {
+        appendLog('没有有效的原文分段可供翻译。请先上传文本文件。');
+        translatedSegments.value = [];
+        return;
     }
 
-    try {
-      // 使用处理后的文本进行翻译
-      const translatedText = await translate(
-        apiUrl.value, 
-        apiToken.value, 
-        modelName.value,
-        customPrompt.value || '请将以下文本翻译为中文：', 
-        segment
-      );
-      
-      // 应用后处理词表替换（使用正则表达式）
-      let processedTranslation = translatedText;
-      if (postWordsMap.value.size > 0) {
-        postWordsMap.value.forEach((value, keyRegexString) => {
-          try {
-            // 后处理词表的key本身就是正则表达式字符串
-            const regex = new RegExp(keyRegexString, 'g');
-            processedTranslation = processedTranslation.replaceAll(regex, value);
-          } catch (regexError) {
-            appendLog(`后处理正则表达式错误 (${keyRegexString}): ${regexError.message}`);
-          }
-        });
-        
-        if (processedTranslation !== translatedText) {
-          appendLog(`段落 ${index + 1} 已完成后处理替换。`);
+    appendLog(`开始翻译 ${sourceSegments.value.length} 段原文。`);
+
+    // 初始化译文数组
+    translatedSegments.value = new Array(sourceSegments.value.length).fill('翻译中...');
+
+    // 按长度从长到短排序预处理词表的键
+    const sortedPreKeys = Array.from(preWordsMap.value.keys())
+        .sort((a, b) => b.length - a.length);
+
+    if (sortedPreKeys.length > 0) {
+        appendLog(`已加载预处理词表，将对原文进行 ${sortedPreKeys.length} 个词条的预处理替换。`);
+    }
+
+    // 逐一翻译每个分段
+    for (let index = 0; index < sourceSegments.value.length; index++) {
+        let segment = sourceSegments.value[index];
+
+        // 应用预处理词表替换（从最长的键到最短的键）
+        if (preWordsMap.value.size > 0) {
+            const originalSegmentForLogging = segment;
+            // sortedPreKeys 已经按长度从长到短排序
+            // preWordsMap 中的键（以及 sortedPreKeys 中的键）对于英文词汇已经是小写
+
+            for (const key of sortedPreKeys) {
+                // key 是要不区分大小写搜索的（小写）字符串
+                // 对正则表达式中的特殊字符进行转义
+                const escapedKey = key.replace(/[.*+?^${}()|[\\\]\\\\]/g, '\\\\$&');
+                const regex = new RegExp(escapedKey, 'gi'); // 'g' 表示全局, 'i' 表示不区分大小写
+
+                const replacement = preWordsMap.value.get(key); // 获取替换值
+
+                // 在 segment 的当前状态上执行不区分大小写的替换
+                segment = segment.replaceAll(regex, replacement);
+            }
+
+            if (segment !== originalSegmentForLogging) {
+                appendLog(`段落 ${index + 1} 已完成预处理替换。`);
+            }
         }
-      }
-      
-      translatedSegments.value[index] = processedTranslation;
-      appendLog(`翻译完成 ${index + 1}/${sourceSegments.value.length}: ${segment.substring(0, 50)}... -> ${processedTranslation.substring(0, 50)}...`);
-    } catch (error) {
-      translatedSegments.value[index] = segment; // 如果翻译失败，保留原文
-      appendLog(`翻译失败 ${index + 1}/${sourceSegments.value.length}: ${error.message}`);
+
+        try {
+            // 使用处理后的文本进行翻译
+            const translatedText = await translate(
+                apiUrl.value,
+                apiToken.value,
+                modelName.value,
+                customPrompt.value || '请将以下文本翻译为中文：',
+                segment,
+                temperature
+            );
+
+            // 应用后处理词表替换（使用正则表达式）
+            let processedTranslation = translatedText;
+            if (postWordsMap.value.size > 0) {
+                postWordsMap.value.forEach((value, keyRegexString) => {
+                    try {
+                        // 后处理词表的key本身就是正则表达式字符串
+                        const regex = new RegExp(keyRegexString, 'g');
+                        processedTranslation = processedTranslation.replaceAll(regex, value);
+                    } catch (regexError) {
+                        appendLog(`后处理正则表达式错误 (${keyRegexString}): ${regexError.message}`);
+                    }
+                });
+
+                if (processedTranslation !== translatedText) {
+                    appendLog(`段落 ${index + 1} 已完成后处理替换。`);
+                }
+            }
+
+            translatedSegments.value[index] = processedTranslation;
+            appendLog(`翻译完成 ${index + 1}/${sourceSegments.value.length}: ${segment.substring(0, 50)}... -> ${processedTranslation.substring(0, 50)}...`);
+        } catch (error) {
+            translatedSegments.value[index] = segment; // 如果翻译失败，保留原文
+            appendLog(`翻译失败 ${index + 1}/${sourceSegments.value.length}: ${error.message}`);
+        }
     }
-  }
-  
-  appendLog(`翻译完成，共处理 ${translatedSegments.value.length} 条分段。`);
+
+    appendLog(`翻译完成，共处理 ${translatedSegments.value.length} 条分段。`);
 }
 
 function exportTranslatedFile() {
-  if (!originalFileName.value) {
-    appendLog('错误：未找到原始文件名，无法导出。请先上传并处理一个文本文件。');
-    return;
-  }
-  if (translatedSegments.value.length === 0) {
-    appendLog('没有翻译内容可供导出。');
-    return;
-  }
+    if (!originalFileName.value) {
+        appendLog('错误：未找到原始文件名，无法导出。请先上传并处理一个文本文件。');
+        return;
+    }
+    if (translatedSegments.value.length === 0) {
+        appendLog('没有翻译内容可供导出。');
+        return;
+    }
 
-  const nameParts = originalFileName.value.split('.');
-  let baseName;
-  if (nameParts.length > 1) {
-    baseName = nameParts.slice(0, -1).join('.');
-  } else {
-    baseName = originalFileName.value; // 如果文件名没有扩展名
-  }
-  const outputFilename = `${baseName}.translate.md`;
+    const nameParts = originalFileName.value.split('.');
+    let baseName;
+    if (nameParts.length > 1) {
+        baseName = nameParts.slice(0, -1).join('.');
+    } else {
+        baseName = originalFileName.value; // 如果文件名没有扩展名
+    }
+    const outputFilename = `${baseName}.translate.md`;
 
-  const content = translatedSegments.value.join('\r\n\r\n');
-  
-  const blob = new Blob([content], { type: 'text/markdown;charset=utf-8;' });
-  const link = document.createElement('a');
-  link.href = URL.createObjectURL(blob);
-  link.setAttribute('download', outputFilename);
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-  URL.revokeObjectURL(link.href);
-  appendLog(`已导出文件: ${outputFilename}`);
+    const content = translatedSegments.value.join('\r\n\r\n');
+
+    const blob = new Blob([content], { type: 'text/markdown;charset=utf-8;' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.setAttribute('download', outputFilename);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(link.href);
+    appendLog(`已导出文件: ${outputFilename}`);
 }
 
 function appendLog(message) {
-  const timestamp = new Date().toLocaleTimeString();
-  logs.value.push(`[${timestamp}] ${message}`);
-  // 保持日志数量不超过一定值，例如100条
-  if (logs.value.length > 100) {
-    logs.value.shift();
-  }
+    const timestamp = new Date().toLocaleTimeString();
+    logs.value.push(`[${timestamp}] ${message}`);
+    // 保持日志数量不超过一定值，例如100条
+    if (logs.value.length > 100) {
+        logs.value.shift();
+    }
 }
 
 </script>
 
 <template>
-  <div class="app-container">
-    <div class="main-content">
-      <!-- 文本文件上传按钮 -->
-      <div class="file-upload-section">
-        <input type="file" @change="handleTextFileUpload" accept=".txt,.md">
-        <label>选择要翻译的文本文件 (txt, md)</label>
-      </div>
-      
-      <!-- 段落式显示区域 -->
-      <div class="segments-container">
-        <div v-if="sourceSegments.length === 0" class="no-content">
-          <p>请先上传文本文件</p>
-        </div>
-        <div v-else>
-          <div v-for="(segment, index) in sourceSegments" :key="index" class="row">
-            <div class="original-segment">
-              <p class="segment-content">{{ segment }}</p>
+    <div class="app-container">
+        <div class="main-content">
+            <!-- 文本文件上传按钮 -->
+            <div class="file-upload-section">
+                <input type="file" @change="handleTextFileUpload" accept=".txt,.md">
+                <label>选择要翻译的文本文件 (txt, md)</label>
             </div>
-            <div class="translated-segment">
-              <p class="segment-content">
-                {{ translatedSegments[index] || '待翻译...' }}
-              </p>
+
+            <!-- 段落式显示区域 -->
+            <div class="segments-container">
+                <div v-if="sourceSegments.length === 0" class="no-content">
+                    <p>请先上传文本文件</p>
+                </div>
+                <div v-else>
+                    <div v-for="(segment, index) in sourceSegments" :key="index" class="row">
+                        <div class="original-segment">
+                            <p class="segment-content">{{ segment }}</p>
+                        </div>
+                        <div class="translated-segment">
+                            <p class="segment-content">
+                                {{ translatedSegments[index] || '待翻译...' }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="sidebar">
-      <div class="sidebar-top">
-        <h3>API 设置</h3>
-        <input type="text" v-model="apiUrl" placeholder="deepseek的API为 https://api.deepseek.com">
-        <input type="text" v-model="modelName" placeholder="deepseek-V3的模型名为 deepseek-chat">
-        <input type="password" v-model="apiToken" placeholder="API Token">
-      </div>      <div class="sidebar-middle">
-        <h3>词表和 Prompt</h3>
-        <div class="file-input-group">
-          <label>预处理词表：</label>
-          <input type="file" @change="handlePreDealUpload" accept=".json,.txt">
-        </div>
-        <div class="file-input-group">
-          <label>后处理词表：</label>
-          <input type="file" @change="handleAfterDealUpload" accept=".json,.txt">
-        </div>
-        <textarea v-model="customPrompt" placeholder="自定义 Prompt"></textarea>
-      </div>
-       <button @click="translateText" class="translate-button">翻译</button>
-       <button @click="exportTranslatedFile" class="export-button">导出译文</button>
+        <div class="sidebar">
+            <div class="sidebar-top">
+                <h3>API 设置</h3>
+                <input type="text" v-model="apiUrl" placeholder="deepseek的API为 https://api.deepseek.com">
+                <input type="text" v-model="modelName" placeholder="deepseek-V3的模型名为 deepseek-chat">
+                <input type="password" v-model="apiToken" placeholder="API Token">
+                <label>温度 (0-2)：</label>
+                <input type="number" v-model.number="temperature" min="0" max="2" step="0.1" placeholder="越低越稳定, 越高输出越多样化">
+            </div>
+            <div class="sidebar-middle">
+                <h3>词表和 Prompt</h3>
+                <div class="file-input-group">
+                    <label>预处理词表：</label>
+                    <input type="file" @change="handlePreDealUpload" accept=".json,.txt">
+                </div>
+                <div class="file-input-group">
+                    <label>后处理词表：</label>
+                    <input type="file" @change="handleAfterDealUpload" accept=".json,.txt">
+                </div>
+                <textarea v-model="customPrompt" placeholder="自定义 Prompt"></textarea>
+            </div>
+            <button @click="translateText" class="translate-button">翻译</button>
+            <button @click="exportTranslatedFile" class="export-button">导出译文</button>
 
-      <div class="sidebar-bottom">
-        <h3>日志</h3>
-        <div class="log-display">
-          <div v-for="(log, index) in logs" :key="index">{{ log }}</div>
+            <div class="sidebar-bottom">
+                <h3>日志</h3>
+                <div class="log-display">
+                    <div v-for="(log, index) in logs" :key="index">{{ log }}</div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </template>
 
 <style scoped>
 .app-container {
-  display: flex;
-  height: 100vh;
-  font-family: sans-serif;
+    display: flex;
+    height: 100vh;
+    font-family: sans-serif;
 }
 
 .main-content {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  gap: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
 }
 
 .file-upload-section {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
 }
 
 .file-upload-section label {
-  font-weight: bold;
-  color: #333;
+    font-weight: bold;
+    color: #333;
 }
 
 .segments-container {
-  flex-grow: 1;
-  overflow-y: auto;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 10px;
+    flex-grow: 1;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
 }
 
 .no-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  color: #666;
-  font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #666;
+    font-style: italic;
 }
 
 .row {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 20px;
-  padding: 15px;
-  border: 1px solid #eee;
-  border-radius: 4px;
-  background-color: #fafafa;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background-color: #fafafa;
 }
 
 .original-segment,
 .translated-segment {
-  flex: 1;
-  padding: 10px;
-  border-radius: 4px;
+    flex: 1;
+    padding: 10px;
+    border-radius: 4px;
 }
 
 .original-segment {
-  background-color: #e8f4fd;
-  border-left: 4px solid #007bff;
+    background-color: #e8f4fd;
+    border-left: 4px solid #007bff;
 }
 
 .translated-segment {
-  background-color: #f0f9ff;
-  border-left: 4px solid #28a745;
+    background-color: #f0f9ff;
+    border-left: 4px solid #28a745;
 }
 
 .segment-content {
-  margin: 0;
-  line-height: 1.5;
-  color: #333;
+    margin: 0;
+    line-height: 1.5;
+    color: #333;
 }
 
 .sidebar {
-  width: 300px;
-  min-width: 300px; /* 新增：确保侧边栏最小宽度 */
-  padding: 10px;
-  border-left: 1px solid #ccc;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    width: 300px;
+    min-width: 300px;
+    /* 新增：确保侧边栏最小宽度 */
+    padding: 10px;
+    border-left: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .sidebar-top,
 .sidebar-middle,
 .sidebar-bottom {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .sidebar-bottom {
-  flex-grow: 1; /* 使日志区域填满剩余空间 */
-  overflow-y: hidden; /* 隐藏日志区域本身的滚动条 */
+    flex-grow: 1;
+    /* 使日志区域填满剩余空间 */
+    overflow-y: hidden;
+    /* 隐藏日志区域本身的滚动条 */
 }
 
 .log-display {
-  border: 1px solid #eee;
-  padding: 10px;
-  height: 100%; /* 确保日志显示区域填满其父容器 */
-  overflow-y: auto; /* 当内容超出时显示滚动条 */
-  background-color: #f9f9f9;
-  font-size: 12px;
-  line-height: 1.4;
+    border: 1px solid #eee;
+    padding: 10px;
+    height: 100%;
+    /* 确保日志显示区域填满其父容器 */
+    overflow-y: auto;
+    /* 当内容超出时显示滚动条 */
+    background-color: #f9f9f9;
+    font-size: 12px;
+    line-height: 1.4;
 }
 
 input[type="text"],
 input[type="password"],
 input[type="file"] {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: calc(100% - 16px); /* 减去padding */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 16px);
+    /* 减去padding */
 }
 
 /* 更新文件上传按钮的标签文本，使其更清晰 */
-.file-upload-section input[type="file"] + label {
-  margin-left: 10px; /* 如果需要，可以调整间距 */
+.file-upload-section input[type="file"]+label {
+    margin-left: 10px;
+    /* 如果需要，可以调整间距 */
 }
 
 
 .file-input-group {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .file-input-group label {
-  font-size: 14px;
-  font-weight: bold;
-  color: #555;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
 }
 
 .translate-button {
-  padding: 10px 15px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  text-align: center;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
 }
 
 .translate-button:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 .export-button {
-  padding: 10px 15px;
-  background-color: #28a745; /* 绿色背景 */
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  text-align: center;
-  margin-top: 10px; /* 与翻译按钮的间距 */
+    padding: 10px 15px;
+    background-color: #28a745;
+    /* 绿色背景 */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    /* 与翻译按钮的间距 */
 }
 
 .export-button:hover {
-  background-color: #218838; /* 深绿色 */
+    background-color: #218838;
+    /* 深绿色 */
 }
 
 h3 {
-  margin-top: 0;
-  margin-bottom: 5px;
-  font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.temperature-setting {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.temperature-setting label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 16px);
+    /* 减去padding */
 }
 </style>
