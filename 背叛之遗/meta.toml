@@ -134,7 +134,7 @@ recommended_reading = [
     "无所畏惧",
     { name = "群鸦王子", belongto = { name = "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
 ]
-keywords = ["千子"]
+faction_keywords = ["千子"]
 
 [[sub]]
 chinese_name = "圣言"
@@ -144,7 +144,7 @@ authors = ["Gav Thorpe"]
 recommended_reading = [
     { name = "背叛之貌", belongto = { name = "黑暗时代", series = { name = "Horus Heresy", order = 16 } } },
 ]
-keywords = ["帝国卫队", "暗鸦守卫", "阿尔法军团"]
+faction_keywords = ["帝国卫队", "暗鸦守卫", "阿尔法军团"]
 
 [[sub]]
 chinese_name = "卢修斯-永恒之刃"
@@ -152,7 +152,7 @@ english_name = "Lucius: The Eternal Blade"
 type = "短篇小说"
 authors = ["Graham McNeill"]
 recommended_reading = ["灭绝天使"]
-keywords = ["帝皇之子", "千子"]
+faction_keywords = ["帝皇之子", "千子"]
 
 [[sub]]
 chinese_name = "卡恩-八之正道"
