@@ -1,0 +1,12 @@
+[book]
+chinese_name = "伏尔甘永存"
+english_name = "Vulkan Lives"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 26
+authors = ["Nick Kyme"]
+faction_keywords = ["火蜥蜴", "午夜领主", "钢铁之手", "暗鸦守卫", "怀言者", "永生者"]
+recommended_reading=[
+  { name = "焦土", belongto = { name = "生于烈焰", series = { name = "Horus Heresy", order = 50 } }},
+  { name = "文物", belongto = { name = "无尽的战争", series = { name = "Horus Heresy", order = 33 } }},
+]

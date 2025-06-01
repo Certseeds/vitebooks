@@ -53,7 +53,10 @@ chinese_name = "文物"
 english_name = "Artefacts"
 type = "短篇小说"
 authors = ["Nick Kyme"]
-recommended_reading = ["福格瑞姆"]
+recommended_reading = [
+    "福格瑞姆",
+    { name = "黑暗之王", belongto = { name = "背叛之影", series = { name = "Horus Heresy", order = 22 } } },
+]
 faction_keywords = ["火蜥蜴"]
 
 [[sub]]

@@ -148,6 +148,32 @@ const fifthReplacement = (text) => {
         });
     return resultLines.join('\n');
 };
+const punctuationReplacement = (text) => {
+    let lines = text.split('\n');
+    const pubtions = new Set(['?', '!'])
+    let resultLines = lines
+        //.map(line => line.trim())
+        .map(line => {
+            let result = '';
+            if (line.trim().length === 0) {
+                return result;
+            }
+            for (let i = 0; i < line.length; i++) {
+                if (pubtions.has(line[i])) {
+                    // Add the punctuation mark
+                    result += line[i];
+                    // Add a space after the punctuation unless it's followed by a space or quote
+                    if (i + 1 < line.length && line[i + 1] !== ' ' && line[i + 1] !== '"') {
+                        result += ' ';
+                    }
+                } else {
+                    result += line[i];
+                }
+            }
+            return result;
+        });
+    return resultLines.join('\n');
+};
 
 const sixthReplacement = (text) => {
     const result = text.replace(/\n{3,}/g, '\n\n--------\n\n');
@@ -225,6 +251,7 @@ todoFiles.forEach(filePath => {
         modifiedContent = thirdReplacement(modifiedContent);
         modifiedContent = fourthReplacement(modifiedContent);
         modifiedContent = fifthReplacement(modifiedContent);
+        modifiedContent = punctuationReplacement(modifiedContent);
         modifiedContent = eightReplacement(modifiedContent);
         modifiedContent = sixthReplacement(modifiedContent);
         // modifiedContent = seventhReplacement(modifiedContent);

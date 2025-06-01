@@ -1,5 +1,5 @@
 [book]
-chinese_name = "伤疤"
+chinese_name = "疤痕"
 english_name = "Scars"
 type = "长篇小说"
 series.name = "Horus Heresy"
@@ -10,4 +10,4 @@ recommended_reading = [
     "福格瑞姆",
     { name = "风暴兄弟会", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 31 } } },
 ]
-faction_keywords = ["白色伤疤", "阿尔法军团", "太空野狼", "破碎军团"]
+faction_keywords = ["白色伤疤", "阿尔法军团", "太空野狼", "千子", "死亡守卫", "破碎军团"]
