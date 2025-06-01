@@ -1,0 +1,12 @@
+[book]
+chinese_name = "泰坦之死"
+english_name = "Titandeath"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 53
+authors = ["Guy Haley"]
+faction_keywords = ["泰坦军团", "叛变泰坦军团", "骑士家族", "圣血天使", "白色伤疤", "机械教", "黑暗机械教"]
+recommended_reading=[
+  "黑暗之奴",
+  { name = "瓦莱里乌斯", belongto = { name = "围城先驱", series = { name = "Horus Heresy", order = 52 } }},
+]

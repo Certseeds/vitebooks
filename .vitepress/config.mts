@@ -68,6 +68,7 @@ export default defineConfig({
                     , { text: "狼毒", link: '/狼毒/meta' }
                     , { text: "黑暗之奴", link: '/黑暗之奴/meta' }
                     , { text: "围城先驱", link: '/围城先驱/meta' }
+                    , { text: "泰坦之死", link: '/泰坦之死/meta' }
                     , { text: "被埋葬的匕首", link: '/被埋葬的匕首/meta' }
                     , { text: "epub总集", link: '/warhammer40k/epub' }
                     , { text: "well-done", link: '/welldone/README' }

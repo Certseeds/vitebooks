@@ -56,6 +56,9 @@ for (let i = order["begin"]; i <= order["end"]; i++) {
     const filePath = path.resolve(input["path"], ...bookModule.generatePattern(i));
     const array = contentMap[i - 1];
 
+    const subtitles = array[2];
+    array[2] = `## ${subtitles}`;
+
     const content = array.join('\n');
     if (!fs.existsSync(filePath)) {
         fs.appendFileSync(filePath, content, 'utf8');

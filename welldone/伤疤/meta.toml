@@ -6,6 +6,7 @@ series.name = "Horus Heresy"
 series.order = 28
 authors = ["Chris Wraight"]
 recommended_reading = [
+    { name = "重生", belongto = { name = "黑暗时代", series = { name = "Horus Heresy", order = 16 } } },
     "福格瑞姆",
     { name = "风暴兄弟会", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 31 } } },
 ]
