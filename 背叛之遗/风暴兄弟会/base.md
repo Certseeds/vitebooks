@@ -29,7 +29,7 @@ On the Cover: Full and unabridged
 
 《天堂之路》[^2]: 黑色琉璃
 
-《普罗斯佩罗的最后子嗣》 《Restorer》: 围城前的故事
+《普罗斯佩罗的最后之子》 《Restorer》: 围城前的故事
 
 ## 主要出场人物
 

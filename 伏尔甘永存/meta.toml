@@ -9,4 +9,5 @@ faction_keywords = ["火蜥蜴", "午夜领主", "钢铁之手", "暗鸦守卫",
 recommended_reading=[
   { name = "焦土", belongto = { name = "生于烈焰", series = { name = "Horus Heresy", order = 50 } }},
   { name = "文物", belongto = { name = "无尽的战争", series = { name = "Horus Heresy", order = 33 } }},
+  "惧于踏足"
 ]

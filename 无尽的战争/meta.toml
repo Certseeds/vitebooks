@@ -172,7 +172,7 @@ type = "短篇小说"
 authors = ["Guy Haley"]
 recommended_reading = [
     "不被铭记的帝国",
-    { name = "向死者致敬", belongto = { name = "背叛的遗产", series = { name = "Horus Heresy", order = 31 } } },
+    { name = "向死者致敬", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 31 } } },
 ]
 faction_keywords = ["极限战士"]
 
@@ -183,7 +183,7 @@ type = "短篇小说"
 authors = ["Guy Haley"]
 recommended_reading = [
     "不被铭记的帝国",
-    { name = "向死者致敬", belongto = { name = "背叛的遗产", series = { name = "Horus Heresy", order = 31 } } },
+    { name = "向死者致敬", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 31 } } },
 ]
 faction_keywords = ["极限战士"]
 
