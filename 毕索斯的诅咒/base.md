@@ -37,7 +37,7 @@ On the Cover: The Shattered Legions stumble into the darkness at the heart of th
 
 ### 第十军团, 钢铁之手
 
-杜伦. 阿提库斯, 第111部族连长 指挥官
+杜伦·阿提库斯, 第111部族连长 指挥官
 
 奥卢斯, 中士, 第111部族
 
@@ -75,15 +75,15 @@ On the Cover: The Shattered Legions stumble into the darkness at the heart of th
 
 --------
 
-瑞迪雅. 伊尔拉芬, 星语者
+瑞迪雅·伊尔拉芬, 星语者
 
-哈利夫. 斯特拉尼斯, 领航员
+哈利夫·斯特拉尼斯, 领航员
 
-杰伦. 坎瑟尔, 军团仆役
+杰伦·坎瑟尔, 军团仆役
 
-阿格尼斯. 塔纳拉, 军团仆役
+阿格尼斯·塔纳拉, 军团仆役
 
-乔治. 帕尔特, 军团仆役
+乔治·帕尔特, 军团仆役
 
 ### 第十八军团, 火蜥蜴
 
@@ -91,7 +91,7 @@ On the Cover: The Shattered Legions stumble into the darkness at the heart of th
 
 ### 第十九军团, 暗鸦守卫
 
-斯. 普特罗, 老兵
+斯·普特罗, 老兵
 
 朱德克斯, 战斗兄弟
 
