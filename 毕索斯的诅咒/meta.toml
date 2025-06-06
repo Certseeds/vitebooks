@@ -1,0 +1,12 @@
+[book]
+chinese_name = "毕索斯的诅咒"
+english_name = "The Damnation of Pythos"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 30
+authors = ["David Annandale"]
+faction_keywords = ["火蜥蜴", "钢铁之手", "暗鸦守卫", "帝皇之子", "混沌教派", "混沌恶魔"]
+recommended_reading=[
+  { name = "绞索", belongto = { name = "破碎军团", series = { name = "Horus Heresy", order = 43 } }},
+  { name = "钢铁真言", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 31 } }},
+]

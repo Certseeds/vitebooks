@@ -62,7 +62,7 @@ export default defineConfig({
                     , { text: "不被铭记的帝国", link: '/不被铭记的帝国/meta' }
                     // , { text: "疤痕", link: '/welldone/疤痕/meta.toml' }
                     , { text: "复仇之魂", link: '/复仇之魂/meta' }
-                    // , { text: "毕索斯的诅咒", link: '/毕索斯的诅咒-TODO/meta' }
+                    , { text: "毕索斯的诅咒", link: '/毕索斯的诅咒/meta' }
                     , { text: "背叛之遗", link: '/背叛之遗/meta' }
                     // , { text: "死火", link: '/死火-TODO/meta' }
                     , { text: "无尽的战争", link: '/无尽的战争/meta' }
