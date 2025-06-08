@@ -37,7 +37,7 @@ On the Cover: The Shattered Legions stumble into the darkness at the heart of th
 
 ### 第十军团, 钢铁之手
 
-杜伦·阿提库斯, 第111部族连长 指挥官
+杜伦·阿提库斯(Atticus), 第111部族连长 指挥官
 
 奥卢斯, 中士, 第111部族
 
@@ -97,7 +97,7 @@ On the Cover: The Shattered Legions stumble into the darkness at the heart of th
 
 ### 第三军团, 帝皇之子
 
-克莱奥斯, 上尉, 卡丽拉多之主
+克莱奥斯, 上尉, 卡丽多拉(Callidora)之主
 
 ### 毕索斯上的殖民者
 
@@ -115,7 +115,7 @@ On the Cover: The Shattered Legions stumble into the darkness at the heart of th
 
 ### 关于主角
 
-主角所在的是一艘名为Veritas Ferrum的打击巡洋舰, 参与了伊斯塔万V上方的舰队战, 是第二批次 "铁手" 舰队的一部分, 因为在Callinedes遭受帝皇之子的伏击, 无法前往支援原体的第一批的登陆作战. 登陆场大屠杀开始时, 由于遭到其他叛徒军团的攻击, 铁手第二批舰队被击败, 当得知他们的原体已经殒命时, 开始进行撤退, 并在此过程中救下了从伊斯塔万V地表逃离的火蜥蜴139连中士基恩德[^1]在他的说服下, 返回去救援地表的战士, 这一行动使得铁手付出了远比他们所救下人多的损失. 在叛徒的战舰靠近时, 最终紧急跳跃进了亚空间, 前往毕索斯星球[^2] [ERROR] QUOTA NUMBER NOT MATCH [ERROR] QUOTA NUMBER NOT MATCH
+主角所在的是一艘名为Veritas Ferrum的打击巡洋舰, 参与了伊斯塔万V上方的舰队战, 是第二批次 "铁手" 舰队的一部分, 因为在Callinedes遭受帝皇之子的伏击, 无法前往支援原体的第一批的登陆作战. 登陆场大屠杀开始时, 由于遭到其他叛徒军团的攻击, 铁手第二批舰队被击败, 当得知他们的原体已经殒命时, 开始进行撤退, 并在此过程中救下了从伊斯塔万V地表逃离的火蜥蜴139连中士基恩德[^1]在他的说服下, 返回去救援地表的战士, 这一行动使得铁手付出了远比他们所救下人多的损失. 在叛徒的战舰靠近时, 最终紧急跳跃进了亚空间, 前往毕索斯星球[^2]
 
 ### Diasporex
 
