@@ -387,7 +387,7 @@ next:
 
 [^1]: ossmodula, 改造手术的第二阶段
 
-[^2]: Betcher's Gland, 改造手术的阶段十七, 不是懒, 这个名字没人翻译 [ERROR] QUOTA NUMBER NOT MATCH
+[^2]: Betcher's Gland, 改造手术的阶段十七, 不是懒, 这个名字没人翻译
 
 [^3]: Biscopea, 改造手术的第三阶段
 
