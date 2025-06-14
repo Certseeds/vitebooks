@@ -1,0 +1,11 @@
+[book]
+chinese_name = "焚天业火"
+english_name = "Deathfire"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 32
+authors = ["Nick Kyme"]
+recommended_reading = [
+    { name = "策略", belongto = { name = "泰拉之眼", series = { name = "Horus Heresy", order = 35 } } },
+]
+faction_keywords=["火蜥蜴", "钢铁之手", "极限战士", "暗黑天使", "千子", "怀言者", "死亡守卫", "混沌恶魔"]

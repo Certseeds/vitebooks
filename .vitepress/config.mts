@@ -64,7 +64,7 @@ export default defineConfig({
                     , { text: "复仇之魂", link: '/复仇之魂/meta' }
                     , { text: "毕索斯的诅咒", link: '/毕索斯的诅咒/meta' }
                     , { text: "背叛之遗", link: '/背叛之遗/meta' }
-                    // , { text: "死火", link: '/死火-TODO/meta' }
+                    , { text: "焚天业火", link: '/焚天业火/meta' }
                     , { text: "无尽的战争", link: '/无尽的战争/meta' }
                     , { text: "法洛斯", link: '/法洛斯/meta' }
                     , { text: "泰拉之眼", link: '/泰拉之眼/meta' }
