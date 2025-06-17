@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 39'
+  link: '/焚天业火/src/chapter40'
+next:
+  text: 'Chapter 41'
+  link: '/焚天业火/src/chapter42'
+---
+
 # chapter-40
 
 ## 他们还是我们

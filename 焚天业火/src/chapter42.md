@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 40'
+  link: '/焚天业火/src/chapter41'
+next:
+  text: 'Chapter 42'
+  link: '/焚天业火/src/chapter43'
+---
+
 # chapter-41
 
 ## 缺席的父亲

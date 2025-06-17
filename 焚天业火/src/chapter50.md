@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 48'
+  link: '/焚天业火/src/chapter49'
+next:
+  text: 'Chapter 50'
+  link: '/焚天业火/src/chapter51'
+---
+
 # chapter-49
 
 ## 脆弱的联盟

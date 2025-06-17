@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 32'
+  link: '/焚天业火/src/chapter33'
+next:
+  text: 'Chapter 34'
+  link: '/焚天业火/src/chapter35'
+---
+
 # chapter-33
 
 ## 疫病

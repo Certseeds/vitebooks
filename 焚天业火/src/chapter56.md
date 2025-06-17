@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 54'
+  link: '/焚天业火/src/chapter55'
+next:
+  text: 'Chapter 56'
+  link: '/焚天业火/src/chapter57'
+---
+
 # chapter-55
 
 ## 我们的火焰之路

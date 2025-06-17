@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 43'
+  link: '/焚天业火/src/chapter44'
+next:
+  text: 'Chapter 45'
+  link: '/焚天业火/src/chapter46'
+---
+
 # chapter-44
 
 ## 挖出卡巴

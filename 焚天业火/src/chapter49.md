@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 47'
+  link: '/焚天业火/src/chapter48'
+next:
+  text: 'Chapter 49'
+  link: '/焚天业火/src/chapter50'
+---
+
 # chapter-48
 
 ## 猩红之王

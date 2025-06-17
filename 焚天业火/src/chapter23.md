@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 21'
+  link: '/焚天业火/src/chapter22'
+next:
+  text: 'Chapter 23'
+  link: '/焚天业火/src/chapter24'
+---
+
 # chapter-22
 
 ## 疑问

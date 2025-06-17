@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 49'
+  link: '/焚天业火/src/chapter50'
+next:
+  text: 'Chapter 51'
+  link: '/焚天业火/src/chapter52'
+---
+
 # chapter-50
 
 ## 从风暴中脱离

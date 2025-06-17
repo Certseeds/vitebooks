@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 11'
+  link: '/焚天业火/src/chapter12'
+next:
+  text: 'Chapter 13'
+  link: '/焚天业火/src/chapter14'
+---
+
 # chapter-12
 
 ## 血之仪式
@@ -72,7 +81,7 @@
 
 "我会净化你那肮脏渺小的灵魂...." 他在黑暗中自言自语.
 
-".... 巴图斯·纳瑞克."
+".... 巴图萨·纳瑞克."
 
 [^1]: Quor Gallek
 

@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 31'
+  link: '/焚天业火/src/chapter32'
+next:
+  text: 'Chapter 33'
+  link: '/焚天业火/src/chapter34'
+---
+
 # chapter-32
 
 ## 战斗驳船卡律布狄斯号, 伊格尼姆房间[^1]

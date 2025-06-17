@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 09'
+  link: '/焚天业火/src/chapter10'
+next:
+  text: 'Chapter 11'
+  link: '/焚天业火/src/chapter12'
+---
+
 # chapter-10
 
 ## 下落不明

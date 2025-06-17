@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 24'
+  link: '/焚天业火/src/chapter25'
+next:
+  text: 'Chapter 26'
+  link: '/焚天业火/src/chapter27'
+---
+
 # chapter-25
 
 ## 父亲的儿子们

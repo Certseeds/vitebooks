@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 60'
+  link: '/焚天业火/src/chapter61'
+next:
+  text: 'Chapter 62'
+  link: '/焚天业火/src/chapter63'
+---
+
 # chapter-61
 
 ## 最终的清算

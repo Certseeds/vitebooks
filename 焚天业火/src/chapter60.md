@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 58'
+  link: '/焚天业火/src/chapter59'
+next:
+  text: 'Chapter 60'
+  link: '/焚天业火/src/chapter61'
+---
+
 # chapter-59
 
 ## 严酷考验

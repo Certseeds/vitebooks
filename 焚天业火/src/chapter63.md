@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 61'
+  link: '/焚天业火/src/chapter62'
+next:
+  text: 'Chapter 63'
+  link: '/焚天业火/src/chapter64'
+---
+
 # chapter-62
 
 ## 最后一次

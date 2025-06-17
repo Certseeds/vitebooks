@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 55'
+  link: '/焚天业火/src/chapter56'
+next:
+  text: 'Chapter 57'
+  link: '/焚天业火/src/chapter58'
+---
+
 # chapter-56
 
 ## 眼花缭乱

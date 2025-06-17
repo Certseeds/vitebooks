@@ -15,7 +15,7 @@ next:
 
 On the Cover: The Salamanders fight to bear their primarch's body home to Nocturne
 
-> 伏尔甘已经长眠于赫拉的堡垒之下, 但是他的大多数子嗣们拒绝承认原体的死亡. 最终在极限战士的援助下, 阿尔特鲁斯·努米恩, 这位前柴薪卫连长, 带着马库拉格上的其他火蜥蜴们离开了第二帝国. 他们要把原体的身躯带回夜曲星, 在那里, 伏尔甘将在烈火中重生. 努米恩在这一过程中无休止地与对军团未来的迷茫和恐惧作斗争, 但是在暗处蠕动的阴影不会放仍他们开辟属于自己的崭新命运.....
+> 伏尔甘已经长眠于赫拉的堡垒之下, 但是他的大多数子嗣们拒绝承认原体的死亡. 最终在极限战士的援助下, 阿特勒斯·努米恩, 这位前柴薪卫连长, 带着马库拉格上的其他火蜥蜴们离开了第二帝国. 他们要把原体的身躯带回夜曲星, 在那里, 伏尔甘将在烈火中重生. 努米恩在这一过程中无休止地与对军团未来的迷茫和恐惧作斗争, 但是在暗处蠕动的阴影不会放仍他们开辟属于自己的崭新命运.....
 
 ## 荷鲁斯之乱[^0]
 
@@ -43,9 +43,9 @@ On the Cover: The Salamanders fight to bear their primarch's body home to Noctur
 
 圣吉列斯, 血天使, 第二帝国皇帝
 
-罗伯特·基里曼 奥特拉玛之主, 复仇之子
+罗伯特·基里曼, 奥特拉玛之主, 复仇之子
 
-莱恩·艾·庄森 第二帝国护国公
+莱恩·艾尔·庄森, 第二帝国护国公
 
 --------
 
@@ -59,15 +59,15 @@ On the Cover: The Salamanders fight to bear their primarch's body home to Noctur
 
 阿特勒斯·努米恩[^1], 柴薪卫队长[^2], 伏尔甘的近侍
 
-Nomus Rhy'tan, Voice of Fire and Keeper of the Keys
+诺默斯·雷坦[^38], 火之声, 钥匙的守护者[^39]
 
 费尔图斯[^3] 瓦尔基[^4], 牧师[^5]
 
-Ushamann, 智库, 星语官[^6]
+乌沙曼[^40], 智库, 星语官[^6]
 
-Orhn, Firedrake
+欧恩[^41], 火龙战士[^42]
 
-Ran'd, Firedrake
+朗德[^43], 火龙战士[^44]
 
 --------
 
@@ -85,23 +85,23 @@ Ran'd, Firedrake
 
 巴雷克[^15]宰托斯[^16], 军士长[^17]
 
-Abidemi, 军团士兵
+阿比德米[^45], 军团士兵
 
-Dakar, 军团士兵
+达喀尔[^46], 军团士兵
 
 伊根·加戈[^18], 军团士兵
 
-Feron, 军团士兵
+费隆[^47], 军团士兵
 
-Kadir, 军团士兵
+卡迪尔[^48], 军团士兵
 
-Mur'ak, 军团士兵
+穆拉克[^49], 军团士兵
 
-Ungan, 军团士兵
+昂根[^50], 军团士兵
 
-Vorko, 军团士兵
+沃尔科[^51], 军团士兵
 
-Xorn, 军团士兵
+肖恩[^52], 军团士兵
 
 --------
 
@@ -111,9 +111,9 @@ Xorn, 军团士兵
 
 科洛·阿德赛安[^20], 卡律布狄斯号[^21]船长
 
-Arikk Gullero, Lieutenant, first officer
+阿瑞克·古列罗[^53], 中尉[^54], 大副[^55]
 
-莉莎·艾森齐[^22], Flag lieutenant, helm officer
+莉莎·艾森齐[^22], 中尉[^56], 舵手[^57]
 
 喀耳刻[^23], 导航员
 
@@ -147,27 +147,27 @@ Arikk Gullero, Lieutenant, first officer
 
 佩特罗尼乌斯[^35], 红印
 
-Venator, 红印
+维纳特[^58], 红印
 
 ### 第十七军团 怀言者
 
-Quor Gallek, 'The Preacher', former Chaplain, Dark Apostle magister
+图沃·盖克沙[^59], '传教士'[^60], 前牧师[^61], 黑暗使徒[^62]
 
-Xenut Sul, Unburdened
+西努特·索尔[^63], 无负者[^64]
 
-Degat, Master sergeant, on board the Monarchia
+德加特[^65], 神殿号甲板上的[^66]士官长[^67]
 
 --------
 
-巴图斯·纳瑞克[^36], Former Vigilator
+巴图萨·纳瑞克[^36], 前警戒者[^68]
 
 ### 第十四军团 死亡守卫
 
-Malig Laestygon, 指挥官
+马利格-拉伊提冈[^69], 指挥官
 
-Ukteg, 军士
+乌克特格[^70], 军士
 
-Rack, Shipmaster of the Reaper's Shroud
+拉克[^71], 死亡寿衣号的船长[^72]
 
 ### 游侠骑士
 
@@ -248,3 +248,73 @@ Rack, Shipmaster of the Reaper's Shroud
 [^36]: Barthusa Narek
 
 [^37]: Kaspian Hecht
+
+[^38]: Nomus Rhy'tan
+
+[^39]: Voice of Fire and Keeper of the Keys
+
+[^40]: Ushamann
+
+[^41]: Orhn
+
+[^42]: Firedrake
+
+[^43]: Ran'd
+
+[^44]: Firedrake
+
+[^45]: Abidemi
+
+[^46]: Dakar
+
+[^47]: Feron
+
+[^48]: Kadir
+
+[^49]: Mur'ak
+
+[^50]: Ungan
+
+[^51]: Vorko
+
+[^52]: Xorn
+
+[^53]: Arikk Gullero
+
+[^54]: Lieutenant
+
+[^55]: first officer
+
+[^56]: Flag lieutenant
+
+[^57]: helm officer
+
+[^58]: Venator
+
+[^59]: Quor Gallek
+
+[^60]: 'The Preacher'
+
+[^61]: former Chaplain
+
+[^62]: Dark Apostle magister
+
+[^63]: Xenut Sul
+
+[^64]: Unburdened
+
+[^65]: Degat
+
+[^66]: on board the Monarchia
+
+[^67]: Master sergeant
+
+[^68]: Former Vigilator
+
+[^69]: Malig Laestygon
+
+[^70]: Ukteg
+
+[^71]: Rack
+
+[^72]: Shipmaster of the Reaper's Shroud

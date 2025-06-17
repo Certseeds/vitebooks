@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 35'
+  link: '/焚天业火/src/chapter36'
+next:
+  text: 'Chapter 37'
+  link: '/焚天业火/src/chapter38'
+---
+
 # chapter-36
 
 ## 重新锻造

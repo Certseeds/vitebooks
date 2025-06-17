@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 25'
+  link: '/焚天业火/src/chapter26'
+next:
+  text: 'Chapter 27'
+  link: '/焚天业火/src/chapter28'
+---
+
 # chapter-26
 
 ## 破碎兄弟

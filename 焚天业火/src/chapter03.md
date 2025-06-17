@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 01'
+  link: '/焚天业火/src/chapter02'
+next:
+  text: 'Chapter 03'
+  link: '/焚天业火/src/chapter04'
+---
+
 # chapter-02
 
 ## "红印们"

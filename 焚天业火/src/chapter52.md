@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 50'
+  link: '/焚天业火/src/chapter51'
+next:
+  text: 'Chapter 52'
+  link: '/焚天业火/src/chapter53'
+---
+
 # chapter-51
 
 ## 泰拉屹立不倒

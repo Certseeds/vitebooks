@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'base'
+  link: '/焚天业火/base'
+next:
+  text: 'Chapter 01'
+  link: '/焚天业火/src/chapter02'
+---
+
 # 序言
 
 ## 独眼之王的预言

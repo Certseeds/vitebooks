@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 33'
+  link: '/焚天业火/src/chapter34'
+next:
+  text: 'Chapter 35'
+  link: '/焚天业火/src/chapter36'
+---
+
 # chapter-34
 
 ## 奇迹

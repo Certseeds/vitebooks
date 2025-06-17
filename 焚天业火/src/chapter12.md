@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 10'
+  link: '/焚天业火/src/chapter11'
+next:
+  text: 'Chapter 12'
+  link: '/焚天业火/src/chapter13'
+---
+
 # chapter-11
 
 ## 引领者

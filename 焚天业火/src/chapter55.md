@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 53'
+  link: '/焚天业火/src/chapter54'
+next:
+  text: 'Chapter 55'
+  link: '/焚天业火/src/chapter56'
+---
+
 # chapter-54
 
 ## 牺牲的必要

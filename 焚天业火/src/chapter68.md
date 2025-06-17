@@ -1,3 +1,9 @@
+---
+prev:
+  text: 'Chapter 66'
+  link: '/焚天业火/src/chapter67'
+---
+
 # chapter-67
 
 ## 火之循环

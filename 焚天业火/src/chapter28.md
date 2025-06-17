@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 26'
+  link: '/焚天业火/src/chapter27'
+next:
+  text: 'Chapter 28'
+  link: '/焚天业火/src/chapter29'
+---
+
 # chapter-27
 
 ## 即将逝去的光芒

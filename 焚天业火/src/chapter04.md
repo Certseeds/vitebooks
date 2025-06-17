@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 02'
+  link: '/焚天业火/src/chapter03'
+next:
+  text: 'Chapter 04'
+  link: '/焚天业火/src/chapter05'
+---
+
 # chapter-03
 
 ## 漫漫长夜

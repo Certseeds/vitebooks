@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 28'
+  link: '/焚天业火/src/chapter29'
+next:
+  text: 'Chapter 30'
+  link: '/焚天业火/src/chapter31'
+---
+
 # chapter-29
 
 ## 破坏

@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 51'
+  link: '/焚天业火/src/chapter52'
+next:
+  text: 'Chapter 53'
+  link: '/焚天业火/src/chapter54'
+---
+
 # chapter-52
 
 ## 最后的守夜

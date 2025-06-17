@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 36'
+  link: '/焚天业火/src/chapter37'
+next:
+  text: 'Chapter 38'
+  link: '/焚天业火/src/chapter39'
+---
+
 # chapter-37
 
 ## 混乱

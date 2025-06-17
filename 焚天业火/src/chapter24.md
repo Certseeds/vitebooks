@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 22'
+  link: '/焚天业火/src/chapter23'
+next:
+  text: 'Chapter 24'
+  link: '/焚天业火/src/chapter25'
+---
+
 # chapter-23
 
 ## 我们的传统

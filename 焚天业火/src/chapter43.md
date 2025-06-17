@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 41'
+  link: '/焚天业火/src/chapter42'
+next:
+  text: 'Chapter 43'
+  link: '/焚天业火/src/chapter44'
+---
+
 # chapter-42
 
 ## 生命和肢体

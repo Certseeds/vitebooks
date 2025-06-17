@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 65'
+  link: '/焚天业火/src/chapter66'
+next:
+  text: 'Chapter 67'
+  link: '/焚天业火/src/chapter68'
+---
+
 # chapter-66
 
 ## 进入业火

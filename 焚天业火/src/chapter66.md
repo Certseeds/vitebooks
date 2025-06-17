@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 64'
+  link: '/焚天业火/src/chapter65'
+next:
+  text: 'Chapter 66'
+  link: '/焚天业火/src/chapter67'
+---
+
 # chapter-65
 
 ## 夜曲星的愤怒

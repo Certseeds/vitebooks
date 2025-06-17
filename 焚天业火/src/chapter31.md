@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 29'
+  link: '/焚天业火/src/chapter30'
+next:
+  text: 'Chapter 31'
+  link: '/焚天业火/src/chapter32'
+---
+
 # chapter-30
 
 ## 战斗驳船卡律布狄斯号, 货舱甲板

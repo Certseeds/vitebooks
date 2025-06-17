@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 57'
+  link: '/焚天业火/src/chapter58'
+next:
+  text: 'Chapter 59'
+  link: '/焚天业火/src/chapter60'
+---
+
 # chapter-58
 
 ## 摘下面具

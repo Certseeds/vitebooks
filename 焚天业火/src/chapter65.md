@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 63'
+  link: '/焚天业火/src/chapter64'
+next:
+  text: 'Chapter 65'
+  link: '/焚天业火/src/chapter66'
+---
+
 # chapter-64
 
 ## 登陆

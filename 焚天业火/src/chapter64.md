@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 62'
+  link: '/焚天业火/src/chapter63'
+next:
+  text: 'Chapter 64'
+  link: '/焚天业火/src/chapter65'
+---
+
 # chapter-63
 
 ## 下降到地面

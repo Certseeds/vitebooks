@@ -97,7 +97,7 @@ On the Cover: As Imperium Secundus begins to crumble, the Lion El'jonson returns
 
 罗伯特·基里曼 摄政王 极限战士出身显赫的原体
 
-莱恩·艾·庄森 护国公 暗黑天使复仇心切的原体
+莱恩·艾尔·庄森 护国公 暗黑天使复仇心切的原体
 
 --------
 

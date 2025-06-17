@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 45'
+  link: '/焚天业火/src/chapter46'
+next:
+  text: 'Chapter 47'
+  link: '/焚天业火/src/chapter48'
+---
+
 # chapter-46
 
 ## 漂流

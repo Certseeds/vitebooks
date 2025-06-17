@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 27'
+  link: '/焚天业火/src/chapter28'
+next:
+  text: 'Chapter 29'
+  link: '/焚天业火/src/chapter30'
+---
+
 # chapter-28
 
 ## 震动

@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 44'
+  link: '/焚天业火/src/chapter45'
+next:
+  text: 'Chapter 46'
+  link: '/焚天业火/src/chapter47'
+---
+
 # chapter-45
 
 ## 没有火焰就没有救赎

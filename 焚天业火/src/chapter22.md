@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 20'
+  link: '/焚天业火/src/chapter21'
+next:
+  text: 'Chapter 22'
+  link: '/焚天业火/src/chapter23'
+---
+
 # chapter-21
 
 ## 污染
@@ -598,6 +607,6 @@
 
 [^2]: 如果还有的话
 
-[^3]:  Draukoros 一把巨大的链锯剑
+[^3]: Draukoros 一把巨大的链锯剑
 
 [^4]: 锯链剑

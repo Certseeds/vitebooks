@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 52'
+  link: '/焚天业火/src/chapter53'
+next:
+  text: 'Chapter 54'
+  link: '/焚天业火/src/chapter55'
+---
+
 # chapter-53
 
 ## 柴薪的集结

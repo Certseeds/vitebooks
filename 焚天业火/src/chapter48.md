@@ -1,3 +1,12 @@
+---
+prev:
+  text: 'Chapter 46'
+  link: '/焚天业火/src/chapter47'
+next:
+  text: 'Chapter 48'
+  link: '/焚天业火/src/chapter49'
+---
+
 # chapter-47
 
 ## 闯入者
