@@ -6,7 +6,7 @@ import { translate } from './api.js'
 
 const apiUrl = ref('http://127.0.0.1:11434/v1');
 const modelName = ref('qwen2.5:14b')
-const apiToken = ref('');
+const apiToken = ref('ollama');
 const temperature = ref(1.3); // 预设温度值，可以通过界面调整
 
 // Initialize from URL query parameters
@@ -185,6 +185,79 @@ async function handleAfterDealUpload(event) {
     reader.readAsText(vocabularyFile.value);
 }
 
+// 新增：公共翻译函数
+async function translateSingleSegment(segment, index) {
+    // 应用预处理词表替换
+    const sortedPreKeys = Array.from(preWordsMap.value.keys())
+        .sort((a, b) => b.length - a.length);
+
+    let processedSegment = segment;
+    if (preWordsMap.value.size > 0) {
+        const originalSegmentForLogging = segment;
+        for (const key of sortedPreKeys) {
+            const escapedKey = key.replace(/[.*+?^${}()|[\\\]\\\\]/g, '\\\\$&');
+            const regex = new RegExp(escapedKey, 'gi');
+            const replacement = preWordsMap.value.get(key);
+            processedSegment = processedSegment.replaceAll(regex, replacement);
+        }
+
+        if (processedSegment !== originalSegmentForLogging) {
+            appendLog(`段落 ${index + 1} 已完成预处理替换。`);
+        }
+    }
+
+    // 调用翻译API
+    const translatedText = await translate(
+        apiUrl.value,
+        apiToken.value,
+        modelName.value,
+        customPrompt.value || '请将以下文本翻译为中文：',
+        processedSegment,
+        temperature.value
+    );
+
+    // 应用后处理词表替换
+    let processedTranslation = translatedText;
+    if (postWordsMap.value.size > 0) {
+        postWordsMap.value.forEach((value, keyRegexString) => {
+            try {
+                const regex = new RegExp(keyRegexString, 'g');
+                processedTranslation = processedTranslation.replaceAll(regex, value);
+            } catch (regexError) {
+                appendLog(`后处理正则表达式错误 (${keyRegexString}): ${regexError.message}`);
+            }
+        });
+
+        if (processedTranslation !== translatedText) {
+            appendLog(`段落 ${index + 1} 已完成后处理替换。`);
+        }
+    }
+
+    return processedTranslation;
+}
+
+// 新增：重试单个段落的翻译
+async function retryTranslateSegment(index) {
+    if (index < 0 || index >= sourceSegments.value.length) {
+        appendLog(`错误：段落索引 ${index} 超出范围。`);
+        return;
+    }
+
+    appendLog(`开始重试翻译段落 ${index + 1}...`);
+    
+    // 设置该段落为翻译中状态
+    translatedSegments.value[index] = '重新翻译中...';
+
+    try {
+        const result = await translateSingleSegment(sourceSegments.value[index], index);
+        translatedSegments.value[index] = result;
+        appendLog(`重试翻译完成 ${index + 1}: ${sourceSegments.value[index].substring(0, 50)}... -> ${result.substring(0, 50)}...`);
+    } catch (error) {
+        translatedSegments.value[index] = sourceSegments.value[index]; // 如果翻译失败，保留原文
+        appendLog(`重试翻译失败 ${index + 1}: ${error.message}`);
+    }
+}
+
 async function translateText() {
     appendLog('Translate button clicked.');
 
@@ -209,64 +282,12 @@ async function translateText() {
 
     // 逐一翻译每个分段
     for (let index = 0; index < sourceSegments.value.length; index++) {
-        let segment = sourceSegments.value[index];
-
-        // 应用预处理词表替换（从最长的键到最短的键）
-        if (preWordsMap.value.size > 0) {
-            const originalSegmentForLogging = segment;
-            // sortedPreKeys 已经按长度从长到短排序
-            // preWordsMap 中的键（以及 sortedPreKeys 中的键）对于英文词汇已经是小写
-
-            for (const key of sortedPreKeys) {
-                // key 是要不区分大小写搜索的（小写）字符串
-                // 对正则表达式中的特殊字符进行转义
-                const escapedKey = key.replace(/[.*+?^${}()|[\\\]\\\\]/g, '\\\\$&');
-                const regex = new RegExp(escapedKey, 'gi'); // 'g' 表示全局, 'i' 表示不区分大小写
-
-                const replacement = preWordsMap.value.get(key); // 获取替换值
-
-                // 在 segment 的当前状态上执行不区分大小写的替换
-                segment = segment.replaceAll(regex, replacement);
-            }
-
-            if (segment !== originalSegmentForLogging) {
-                appendLog(`段落 ${index + 1} 已完成预处理替换。`);
-            }
-        }
-
         try {
-            // 使用处理后的文本进行翻译
-            const translatedText = await translate(
-                apiUrl.value,
-                apiToken.value,
-                modelName.value,
-                customPrompt.value || '请将以下文本翻译为中文：',
-                segment,
-                temperature
-            );
-
-            // 应用后处理词表替换（使用正则表达式）
-            let processedTranslation = translatedText;
-            if (postWordsMap.value.size > 0) {
-                postWordsMap.value.forEach((value, keyRegexString) => {
-                    try {
-                        // 后处理词表的key本身就是正则表达式字符串
-                        const regex = new RegExp(keyRegexString, 'g');
-                        processedTranslation = processedTranslation.replaceAll(regex, value);
-                    } catch (regexError) {
-                        appendLog(`后处理正则表达式错误 (${keyRegexString}): ${regexError.message}`);
-                    }
-                });
-
-                if (processedTranslation !== translatedText) {
-                    appendLog(`段落 ${index + 1} 已完成后处理替换。`);
-                }
-            }
-
-            translatedSegments.value[index] = processedTranslation;
-            appendLog(`翻译完成 ${index + 1}/${sourceSegments.value.length}: ${segment.substring(0, 50)}... -> ${processedTranslation.substring(0, 50)}...`);
+            const result = await translateSingleSegment(sourceSegments.value[index], index);
+            translatedSegments.value[index] = result;
+            appendLog(`翻译完成 ${index + 1}/${sourceSegments.value.length}: ${sourceSegments.value[index].substring(0, 50)}... -> ${result.substring(0, 50)}...`);
         } catch (error) {
-            translatedSegments.value[index] = segment; // 如果翻译失败，保留原文
+            translatedSegments.value[index] = sourceSegments.value[index]; // 如果翻译失败，保留原文
             appendLog(`翻译失败 ${index + 1}/${sourceSegments.value.length}: ${error.message}`);
         }
     }
@@ -324,17 +345,20 @@ function appendLog(message) {
             <div class="file-upload-section">
                 <input type="file" @change="handleTextFileUpload" accept=".txt,.md">
                 <label>选择要翻译的文本文件 (txt, md)</label>
-            </div>
-
-            <!-- 段落式显示区域 -->
+            </div>            <!-- 段落式显示区域 -->
             <div class="segments-container">
                 <div v-if="sourceSegments.length === 0" class="no-content">
                     <p>请先上传文本文件</p>
                 </div>
                 <div v-else>
                     <div v-for="(segment, index) in sourceSegments" :key="index" class="row">
-                        <div class="original-segment">
+                        <div 
+                            class="original-segment clickable-segment" 
+                            @click="retryTranslateSegment(index)"
+                            :title="'点击重试翻译段落 ' + (index + 1)"
+                        >
                             <p class="segment-content">{{ segment }}</p>
+                            <div class="retry-hint">点击重试</div>
                         </div>
                         <div class="translated-segment">
                             <p class="segment-content">
@@ -447,6 +471,34 @@ function appendLog(message) {
 .original-segment {
     background-color: #e8f4fd;
     border-left: 4px solid #007bff;
+    position: relative;
+}
+
+.clickable-segment {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.clickable-segment:hover {
+    background-color: #d1ecf1;
+}
+
+.clickable-segment:hover .retry-hint {
+    opacity: 1;
+}
+
+.retry-hint {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(0, 123, 255, 0.8);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
 }
 
 .translated-segment {

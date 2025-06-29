@@ -3,22 +3,21 @@ import OpenAI from 'openai'
 const translate = async function (baseURL, apiKey, model, prompt, text, temperature) {
     const maxRetries = 3;
     let lastError = null;
-
     const openai = new OpenAI({
         baseURL: baseURL,
         apiKey: apiKey, // required but unused
         dangerouslyAllowBrowser: true,
         temperature: temperature,
-        defaultHeaders: {
+        defaultHeaders:  (baseURL.includes("127.0.0.1") || baseURL.includes("localhost")) ? {} : {
             "HTTP-Referer": "https://vitebooks.certseeds.com/web-cmp-trans/",
             "X-Title": "vitebooks-web-cmp-translate",
-        },
+        }, // localhost Ollama do not accept any other headers
     })
     for (let attempt = 1; attempt <= maxRetries; attempt++) {
         try {
             const completion = await openai.chat.completions.create({
-                model : model,
-                messages : [
+                model: model,
+                messages: [
                     { role: "system", content: prompt }
                     , { role: "user", content: `${text}` }
                 ]
