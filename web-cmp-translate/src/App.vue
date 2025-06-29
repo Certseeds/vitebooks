@@ -1,6 +1,6 @@
 <script setup>
-import { ref } from 'vue'; 
-import { parseJsonVocabulary, parseTxtVocabulary } from './vocabularyParser.js';
+import { ref } from 'vue';
+import { parseJsonVocabulary, parseTxtVocabulary, jsonFormat, textFormat } from './vocabularyParser.js';
 import { translate } from './api.js'
 
 
@@ -14,9 +14,9 @@ const params = new URLSearchParams(window.location.search);
 if (params.has('apiUrl')) { apiUrl.value = params.get('apiUrl') || apiUrl.value; }
 if (params.has('modelName')) { modelName.value = params.get('modelName') || modelName.value; }
 if (params.has('apiToken')) { apiToken.value = params.get('apiToken') || apiToken.value; }
-if (params.has('temperature')) { 
-    const tempValue = parseFloat(params.get('temperature')); 
-    temperature.value = !isNaN(tempValue) ? tempValue : temperature.value; 
+if (params.has('temperature')) {
+    const tempValue = parseFloat(params.get('temperature'));
+    temperature.value = !isNaN(tempValue) ? tempValue : temperature.value;
 };
 
 const textFile = ref(null);
@@ -196,7 +196,7 @@ async function translateSingleSegment(segment, index) {
         const originalSegmentForLogging = segment;
         for (const key of sortedPreKeys) {
             const escapedKey = key.replace(/[.*+?^${}()|[\\\]\\\\]/g, '\\\\$&');
-            const regex = new RegExp(escapedKey, 'gi');
+            const regex = new RegExp(escapedKey, 'gi'); // 全局不区分大小写
             const replacement = preWordsMap.value.get(key);
             processedSegment = processedSegment.replaceAll(regex, replacement);
         }
@@ -244,7 +244,7 @@ async function retryTranslateSegment(index) {
     }
 
     appendLog(`开始重试翻译段落 ${index + 1}...`);
-    
+
     // 设置该段落为翻译中状态
     translatedSegments.value[index] = '重新翻译中...';
 
@@ -345,18 +345,15 @@ function appendLog(message) {
             <div class="file-upload-section">
                 <input type="file" @change="handleTextFileUpload" accept=".txt,.md">
                 <label>选择要翻译的文本文件 (txt, md)</label>
-            </div>            <!-- 段落式显示区域 -->
+            </div> <!-- 段落式显示区域 -->
             <div class="segments-container">
                 <div v-if="sourceSegments.length === 0" class="no-content">
                     <p>请先上传文本文件</p>
                 </div>
                 <div v-else>
                     <div v-for="(segment, index) in sourceSegments" :key="index" class="row">
-                        <div 
-                            class="original-segment clickable-segment" 
-                            @click="retryTranslateSegment(index)"
-                            :title="'点击重试翻译段落 ' + (index + 1)"
-                        >
+                        <div class="original-segment clickable-segment" @click="retryTranslateSegment(index)"
+                            :title="'点击重试翻译段落 ' + (index + 1)">
                             <p class="segment-content">{{ segment }}</p>
                             <div class="retry-hint">点击重试</div>
                         </div>
@@ -377,10 +374,13 @@ function appendLog(message) {
                 <input type="text" v-model="modelName" placeholder="deepseek-V3的模型名为 deepseek-chat">
                 <input type="password" v-model="apiToken" placeholder="API Token">
                 <label>温度 (0-2)：</label>
-                <input type="number" v-model.number="temperature" min="0" max="2" step="0.1" placeholder="越低越稳定, 越高输出越多样化">
+                <input type="number" v-model.number="temperature" min="0" max="2" step="0.1"
+                    placeholder="越低越稳定, 越高输出越多样化">
             </div>
             <div class="sidebar-middle">
-                <h3>词表和 Prompt</h3>
+                <h3 class="section-header-with-tooltip" :title="'词表格式说明：\n\n' + jsonFormat + '\n\n或者\n\n' + textFormat">
+                    词表和 Prompt
+                </h3>
                 <div class="file-input-group">
                     <label>预处理词表：</label>
                     <input type="file" @change="handlePreDealUpload" accept=".json,.txt">
@@ -552,7 +552,8 @@ function appendLog(message) {
 
 input[type="text"],
 input[type="password"],
-input[type="file"] {
+input[type="file"],
+textarea {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -617,6 +618,19 @@ h3 {
     margin-top: 0;
     margin-bottom: 5px;
     font-size: 16px;
+}
+
+.section-header-with-tooltip {
+    cursor: help;
+    position: relative;
+    color: #333;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #007bff;
+}
+
+.section-header-with-tooltip:hover {
+    color: #007bff;
 }
 
 .temperature-setting {
