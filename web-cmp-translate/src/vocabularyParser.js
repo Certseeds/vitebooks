@@ -54,7 +54,7 @@ JSON格式的优势在于, "键" 内部可以有空格
 }
 
 注意, key可以是正则表达式, 如果没有使用经验不推荐使用
-```;
+`;
 
 const parseTxtVocabulary = function (txtString) {
     const vocabulary = new Map();
@@ -95,7 +95,7 @@ Terra 泰拉
 Vulkan 伏尔甘
 
 注意, key可以是正则表达式, 如果没有使用经验不推荐使用
-```;
+`;
 
 export {
     parseJsonVocabulary,
