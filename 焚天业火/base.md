@@ -67,7 +67,7 @@ On the Cover: The Salamanders fight to bear their primarch's body home to Noctur
 
 欧恩[^41], 火龙战士[^42]
 
-朗德[^43], 火龙战士[^44]
+朗德[^43], 火龙战士
 
 --------
 
@@ -260,8 +260,6 @@ On the Cover: The Salamanders fight to bear their primarch's body home to Noctur
 [^42]: Firedrake
 
 [^43]: Ran'd
-
-[^44]: Firedrake
 
 [^45]: Abidemi
 
