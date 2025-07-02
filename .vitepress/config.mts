@@ -68,7 +68,7 @@ export default defineConfig({
                     , { text: "无尽的战争", link: '/无尽的战争/meta' }
                     , { text: "法洛斯", link: '/法洛斯/meta' }
                     , { text: "泰拉之眼", link: '/泰拉之眼/meta' }
-                    // , { text: "天堂之路", link: '/天堂之路-TODO/meta' }
+                    , { text: "天堂之路", link: '/天堂之路/meta' }
                     , { text: "无声战争", link: '/无声战争/meta' }
                     , { text: "卡利班天使", link: '/卡利班天使/meta' }
                     // , { text: "多恩执政官", link: '/多恩执政官-TODO/meta' }

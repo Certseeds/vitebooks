@@ -72,7 +72,7 @@ const level0 = async () => {
 
     // 步骤3: 使用DBSCAN聚类
     const dbscan = new clustering.DBSCAN();
-    const epsilon = 1.5; // 聚类半径参数，需要根据数据调整
+    const epsilon = 1; // 聚类半径参数，需要根据数据调整
     const minPoints = 2; // 最小点数，构成聚类的最少样本数
     const clusters = dbscan.run(namesVectors, epsilon, minPoints);
 
