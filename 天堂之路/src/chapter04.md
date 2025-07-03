@@ -31,6 +31,16 @@ next:
 
 --------
 
+–old the line! Hold the line! Keep up that– By the Emperor! Nadir! More pow–
+
+–ty-five points about. Release secondary barrage. Watch for counter-strikes from–
+
+–nnot take this for much longer, lord. The shell will break, the prometh–
+
+–o! No! Not yet! What is it? What devils are the–
+
+--------
+
 那些深处的声音像线一样编织起来, 每个都被欲念和渴望赋予了生命, 让那些非物质存在大快朵颐. 很快那些讲话者就会被它的大潮淹没, 成为在那里饥饿游荡的智能们的饲料.
 
 "大人," 通信器传来冯·卡尔达的声音.
@@ -159,7 +169,7 @@ next:
 
 他考虑回去再看一眼那个轻易击败他的战士. 他或许有兴趣致敬, 抑或是说一些蔑视的言辞.
 
-现在不行. 我对自己的灵魂感到厌恶.
+*现在不行. 我对自己的灵魂感到厌恶.*
 
 "那么, 够了," 他咆哮道, 猛击控制台来关上登船斜坡, "给引擎充能. 带我们离开这里."
 

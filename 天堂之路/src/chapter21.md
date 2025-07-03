@@ -169,8 +169,6 @@ next:
 
 然后他明白了. 他知道自己必须做什么. 缓缓地, 沾满鲜血的双手颤抖着, 也速该伸出手将阿彻琉斯枯萎的遗体从王座上拉下来.
 
---------
-
 [^origin-1]: Sensorium drone, 这是个啥. . . 有大佬解释下不. . .
 
 [^origin-2]: That was better than expert. That was beautiful. 还是直译了, 贴个原文大家意会一下XD

@@ -211,8 +211,6 @@ next:
 
 "现在, 去吧, 让你们的舰船做好准备." 莫塔里安低吼道, 压下心底的愤怒. 这就是结束了 – 高谈阔论不是、也从未是他的风格, 因为新的杀戮已足够诱人. "武装每一名士兵, 准备每一件武器. 我们在一小时内启程."
 
---------
-
 [^origin-1]: Heisen Vortices, 经评论区大佬指教, 应该是Three-dimensional vortices in the Heisenberg model的变体, 翻译的话是海森堡模型中的三维涡旋, 感兴趣的朋友们可以搜一下, 嗯. . . 貌似是关于量子力学的, 是我看不懂的东西了呢. . .
 
 [^origin-2]: Moving around one another like Platonic spheres. Platonic-bodies一般指各面相等的多面体, 比如立方体、四面体、八面体, platonic sphere我就只想象成那种舞厅的灯球了XDDD

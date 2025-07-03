@@ -251,8 +251,6 @@ next:
 
 下方, 亚空间在黑暗之中翻滚, 如永恒一般冷漠.
 
---------
-
 [^origin-1]: 翻的别扭, 贴个原文供参考. The formation he had ordered was holding, but only just.
 
 [^origin-2]: 不太确定, 贴原文供参考. Under-plane, twenty degrees, rising to parity at forty-five-six-three.

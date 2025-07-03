@@ -251,8 +251,6 @@ next:
 
 "开启."
 
---------
-
 [^origin-1]: Technomancy, 一般指科技太过先进已经类似于魔法了, 大概是指统一战争时期的黑科技吧.
 
 [^origin-2]: 翻的不太确定, 贴个原文供参考: their long sinuous bodies snapping in sine waves.
