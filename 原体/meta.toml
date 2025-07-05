@@ -50,6 +50,7 @@ english_name = "The Serpent Beneath"
 type = "中篇小说"
 authors = ["Rob Sanders"]
 recommended_reading = [
+    "福格瑞姆",
     { enname = "Legion", series = { name = "Horus Heresy", order = 7 } },
 ]
 faction_keywords = ["阿尔法军团"]

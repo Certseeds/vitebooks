@@ -1,0 +1,13 @@
+[book]
+chinese_name = "多恩禁卫"
+english_name = "Praetorian of Dorn"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 39
+authors = ["John French"]
+recommended_reading = [
+    { name = "毒蛇之潜", belongto = { name = "原体", series = { name = "Horus Heresy", order = 20 } } },
+    { name = "帝皇之手", belongto = { name = "无尽的战争", series = { name = "Horus Heresy", order = 33 } } },
+    { name = "圣殿骑士", belongto = { name = "无声战争", series = { name = "Horus Heresy", order = 37 } } },
+]
+faction_keywords = ["帝国之拳", "阿尔法军团", "帝国海军"]

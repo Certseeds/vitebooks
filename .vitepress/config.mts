@@ -71,7 +71,7 @@ export default defineConfig({
                     , { text: "天堂之路", link: '/天堂之路/meta' }
                     , { text: "无声战争", link: '/无声战争/meta' }
                     , { text: "卡利班天使", link: '/卡利班天使/meta' }
-                    // , { text: "多恩执政官", link: '/多恩执政官-TODO/meta' }
+                    , { text: "多恩禁卫", link: '/多恩禁卫/meta' }
                     , { text: "科拉克斯", link: '/科拉克斯/meta' }
                     , { text: "人类之主", link: '/人类之主/meta' }
                     // , { text: "伽罗", link: '/伽罗-TODO/meta' }
