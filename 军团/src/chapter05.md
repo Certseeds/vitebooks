@@ -422,4 +422,3 @@ next:
 格拉玛提卡斯没有停下脚步. 他没有回头看.
 
 [^1]: Ipluvian Maximal, 火星机械神教技师, 在Mechanicum中出场
-

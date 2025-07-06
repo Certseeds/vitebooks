@@ -1,6 +1,6 @@
 ---
 prev:
-  text: 'Chapter 00'
+  text: '序言'
   link: '/旧泰拉/src/chapter01'
 next:
   text: 'Chapter 02'

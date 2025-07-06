@@ -747,7 +747,7 @@ next:
 
 [^4]: serpenta pistols
 
-[^5]: the Sigillite魔纹马卡多
+[^5]: the Sigillite, 魔纹马卡多
 
 [^6]: Alajos
 
@@ -757,6 +757,6 @@ next:
 
 [^9]: 下面光着?
 
-[^10]: 原文peace,有协商停火, 不要打搅, 别来找麻烦的含义.
+[^10]: 原文peace, 有协商停火, 不要打搅, 别来找麻烦的含义.
 
 [^11]: Keeler
