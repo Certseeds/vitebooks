@@ -4,6 +4,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
+import OpenAI from 'openai';
 
 const args = process.argv;
 
@@ -34,46 +35,72 @@ const extractChineseCharacters = (text) => {
 const checkChineseCharactersMatch = (original, fixed) => {
     const originalChars = extractChineseCharacters(original);
     const fixedChars = extractChineseCharacters(fixed);
-    
+
     if (originalChars.length !== fixedChars.length) {
         return false;
     }
-    
+
     for (let i = 0; i < originalChars.length; i++) {
         if (originalChars[i] !== fixedChars[i]) {
             return false;
         }
     }
-    
+
     return true;
 };
 
-
-// 使用qwen2.5:14b修复引号问题
+// openai风格的调用, 
 const fixQuotes = async (line) => {
-    const postObject = {
-        "model": "qwen2.5:14b",
-        "prompt": `下面是一个句子，其中引号（单引号或双引号）不成对，请修复这些引号问题，使其正确成对, 优先使用双引号, 如果是因为人名导致的则原样输出，不要改变任何汉字、标点符号的顺序和数量，也不要添加或删除任何汉字。只需修复引号问题：
-
-"${line}"
-
-修复后的句子（不要有任何解释，直接给出修复结果）：`,
-        "stream": false,
-    };
-
+    const envPath = path.resolve(process.cwd(), 'openrouter.ai.env');
+    let apiKey;
     try {
-        const response = await fetch('http://127.0.0.1:11434/api/generate', {
-            method: "POST",
-            body: JSON.stringify(postObject),
-            headers: {
-                'Content-Type': 'application/json'
+        apiKey = fs.readFileSync(envPath, 'utf8').trim();
+        if (!apiKey) {
+            throw new Error('API key is empty.');
+        }
+    } catch (error) {
+        console.error(`Error reading API key from ${envPath}:`, error.message);
+        process.exit(1);
+    }
+
+    const apiUrl = 'https://openrouter.ai/api/v1';
+
+    const openai = new OpenAI({
+        baseURL: apiUrl,
+        apiKey: apiKey, // required but unused
+        dangerouslyAllowBrowser: true,
+        temperature: 0.7,
+        defaultHeaders: {
+            "HTTP-Referer": "https://vitebooks.certseeds.com/web-cmp-trans/",
+            "X-Title": "vitebooks-web-cmp-translate",
+        }, // localhost Ollama do not accept any other headers
+    })
+    const prompt = "你是一个用于修复文本中引号问题的工具。你会收到一个句子，其中引号（单引号或双引号）可能不成对。你的任务是修复这些引号问题，使其正确成对。请优先使用双引号。如果问题是由人名中的特殊字符引起的，请保持原样。不要改变任何汉字、标点符号的顺序和数量，也不要添加或删除任何汉字。只需修复引号问题，并直接返回修复后的句子，不要包含任何解释或额外文本。";
+    const model = `anthropic/claude-sonnet-4`; // gemini-2.5-pro 思考太消耗token了
+    const completion = await openai.chat.completions.create({
+        model: model,
+        messages: [
+            {
+                role: "system", content: [
+                    {
+                        "type": "text",
+                        "text": prompt,
+                        "cache_control": {
+                            "type": "ephemeral"
+                        }
+                    },
+
+                ]
             }
-        });
-        
-        const data = await response.json();
-        console.log(data);
-        const fixedLine = data.response.trim();
-        
+            , { role: "user", content: `${line}` }
+        ]
+    })
+    if (!completion || !completion.choices || !completion.choices[0] || !completion.choices[0].message) {
+        throw new Error('Invalid response structure from API');
+    }
+    const data = completion.choices[0].message.content;
+    try {
+        const fixedLine = data.trim();
         // 检查修复后的句子是否保留了所有原始汉字且顺序一致
         if (checkChineseCharactersMatch(line, fixedLine)) {
             console.log(`修复成功: ${fixedLine}`);
@@ -88,7 +115,7 @@ const fixQuotes = async (line) => {
         console.error('修复引号时出错:', error);
         return line; // 出错时返回原始行
     }
-};
+}
 
 // 处理每个文件
 const processFile = async (filePath) => {
@@ -96,26 +123,26 @@ const processFile = async (filePath) => {
         const data = await fs.promises.readFile(filePath, 'utf8');
         const lines = data.split('\n');
         let modified = false;
-        
+
         for (let i = 0; i < lines.length; i++) {
             const line = lines[i];
             console.log()
             // 检查行是否包含ERROR
             if (line.includes('ERROR')) {
                 const removeErroorLine = line.replaceAll(/\[ERROR\] QUOTA NUMBER NOT MATCH/g, '');
-                console.log(`发现引号错误行: ${filePath}:${i+1}`);
+                console.log(`发现引号错误行: ${filePath}:${i + 1}`);
                 console.log(`原始行: ${line}`);
-                
+
                 // 修复引号问题
                 const fixedLine = await fixQuotes(removeErroorLine);
-                
+
                 if (fixedLine !== line) {
                     lines[i] = fixedLine;
                     modified = true;
                 }
             }
         }
-        
+
         // 只有在文件被修改时才写回
         if (modified) {
             await fs.promises.writeFile(filePath, lines.join('\n'), 'utf8');
@@ -131,10 +158,10 @@ const processFile = async (filePath) => {
 // 处理所有文件
 (async () => {
     console.log(`开始处理 ${todoFiles.length} 个文件的引号问题...`);
-    
+
     for (const filePath of todoFiles) {
         await processFile(filePath);
     }
-    
+
     console.log('所有文件处理完成');
 })();

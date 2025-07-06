@@ -4,10 +4,10 @@ prev:
   link: '/破碎军团/meta'
 next:
   text: 'base'
-  link: '/破碎军团/美杜森/base'
+  link: '/破碎军团/梅杜森/base'
 ---
 
-# 破碎军团-美杜森-元数据
+# 破碎军团-梅杜森-元数据
 
 On the Cover: The Iron Hands, Salamanders and Raven Guard regroup in the wake of the Dropsite Massacre to strike back at the traitors
 
@@ -19,7 +19,7 @@ On the Cover: The Iron Hands, Salamanders and Raven Guard regroup in the wake of
 
 --------
 
-本文为荷鲁斯叛乱系列的第43部, 小说集《破碎军团》中的《美杜森》
+本文为荷鲁斯叛乱系列的第43部, 小说集《破碎军团》中的《梅杜森》
 
 ## 对原文进行的修正
 

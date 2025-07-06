@@ -31,7 +31,7 @@ On the Cover: Ferrus Manus is confronted by the prospect of his own grim destiny
 
 伊拉斯谟 鲁曼, 摩洛克人第十三氏族连队铁锻工
 
-沙德拉克 梅杜松, 第十氏族连队队长
+沙拉克 梅杜森, 第十氏族连队队长
 
 比昂 亨里科斯, 第十氏族连队第七中士
 

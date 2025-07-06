@@ -7,7 +7,7 @@ series.order = 43
 authors = ["Laurie Goulding"]
 
 [[sub]]
-chinese_name = "美杜森"
+chinese_name = "梅杜森"
 english_name = "Meduson"
 type = "短篇小说"
 authors = ["Dan Abnett"]
@@ -50,7 +50,7 @@ english_name = "Grey Talon"
 type = "短篇小说"
 authors = [" Chris Wraight"]
 recommended_reading = [
-    { name = "美杜森", belongto = { name = "破碎军团", series = { name = "Horus Heresy", order = 43 } } },
+    { name = "梅杜森", belongto = { name = "破碎军团", series = { name = "Horus Heresy", order = 43 } } },
     "疤痕",
 ]
 faction_keywords = ["钢铁之手", "白色伤疤", "荷鲁斯之子", "破碎军团"]
@@ -108,7 +108,7 @@ english_name = "The Hand Elect"
 type = "短篇小说"
 authors = ["Chris Wraight"]
 recommended_reading = [
-    { name = "美杜森", belongto = { name = "破碎军团", series = { name = "Horus Heresy", order = 43 } } },
+    { name = "梅杜森", belongto = { name = "破碎军团", series = { name = "Horus Heresy", order = 43 } } },
 ]
 faction_keywords = ["钢铁之手", "破碎军团"]
 

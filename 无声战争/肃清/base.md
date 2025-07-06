@@ -81,7 +81,7 @@ On the Cover: The Word Bearers begin their preparations for the final and inevit
 
 罗格-多恩, 帝国之拳的原体, 帝皇的禁卫官.
 
-阿卡穆斯, 多恩骑士之主
+阿坎姆斯, 哈斯卡尔卫队之主
 
 泰伯-阿肯色斯, 看守所卫士
 

@@ -1,0 +1,24 @@
+[book]
+chinese_name = "旧泰拉"
+english_name = "Old Earth"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 47
+authors = ["Nick Kyme"]
+recommended_reading = [
+    { name = "熔炉之子", belongto = { name = "生于烈焰", series = { name = "Horus Heresy", order = 50 } } },
+    { name = "手选", belongto = { name = "破碎军团", series = { name = "Horus Heresy", order = 43 } } },
+    { name = "亦者", belongto = { name = "破碎军团", series = { name = "Horus Heresy", order = 43 } } },
+]
+faction_keywords = [
+    "火蜥蜴",
+    "钢铁之手",
+    "暗鸦守卫",
+    "破碎军团",
+    "帝国之拳",
+    "荷鲁斯之子",
+    "怀言者",
+    "灵族",
+    "永生者",
+    "混沌恶魔"
+]

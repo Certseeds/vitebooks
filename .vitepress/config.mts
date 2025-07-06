@@ -79,7 +79,7 @@ export default defineConfig({
                     // , { text: "猩红君王", link: '/welldone/猩红君王/meta.toml' }
                     , { text: "塔兰", link: '/塔兰/meta' }
                     , { text: "毁灭风暴", link: '/毁灭风暴/meta' }
-                    // , { text: "旧泰拉", link: '/旧泰拉-TODO/meta' }
+                    , { text: "旧泰拉", link: '/旧泰拉/meta' }
                     , { text: "忠诚的负担", link: '/忠诚的负担/meta' }
                     , { text: "狼毒", link: '/狼毒/meta' }
                     // , { text: "生于烈焰", link: '/生于烈焰-TODO/meta' }

@@ -39,9 +39,9 @@ On the Cover: The suivivors of Isstvan V unite to strike against the insidious A
 
 ### 钢铁雄心号
 
-沙拉克·美杜森 战争统帅兼任第十连队队长 索古罗氏族
+沙拉克·梅杜森 战争统帅兼任第十连队队长 索古罗氏族
 
-加斯克·马尔萨斯[^3] 美杜森的近侍
+加斯克·马尔萨斯[^3] 梅杜森的近侍
 
 阿舒尔·梅桑 第十连中士
 

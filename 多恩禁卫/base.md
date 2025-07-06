@@ -13,7 +13,7 @@ next:
 
 作者: John French
 
-On the Cover: WIth Terra itself threatened by traitor forces, the Imperial Fists finally mobilise for war
+On the Cover: With Terra itself threatened by traitor forces, the Imperial Fists finally mobilise for war
 
 ## 荷鲁斯之乱[^0]
 
@@ -47,7 +47,7 @@ On the Cover: WIth Terra itself threatened by traitor forces, the Imperial Fists
 
 西吉斯蒙德[^6], 第一球域堡主[^7], 第一连长[^8], 黑色圣堂的大元帅[^9]
 
-法夫纳·兰恩[^10], 总管领主[^11], 第一打击部队连长[^12]
+法夫尼尔·兰恩[^10], 总管领主[^11], 第一打击部队连长[^12]
 
 珀里厄斯[^13], 副官[^14], 隶属于第一连[^15]
 
