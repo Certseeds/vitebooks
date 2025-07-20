@@ -117,7 +117,7 @@ type = "短篇小说"
 authors = ["James Swallow"]
 faction_keywords = ["游侠骑士"]
 recommended_reading = [
-    { name = "伽罗连长", series = { name = "Horus Heresy", order = 42 } },
+    { name = "伽罗", series = { name = "Horus Heresy", order = 42 } },
 ]
 
 [[sub]]

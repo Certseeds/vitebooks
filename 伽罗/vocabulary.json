@@ -1,0 +1,95 @@
+{
+    "keywords": {
+        "knights_errant": {
+            "Nathaniel": "纳撒尼尔",
+            "Garro": "伽罗",
+            "Tylos": "泰洛斯",
+            "Rubio": "卢比奥",
+            "Macer": "麦瑟",
+            "Varren": "瓦伦",
+            "Vardas": "瓦尔达斯",
+            "Ison": "伊森"
+        },
+        "astartes_legions": {
+            "Erikon": "艾利肯",
+            "Gaius": "盖乌斯",
+            "Rakishio": "拉基西奥",
+            "Hakeem": "哈基姆",
+            "Harouk": "哈罗克",
+            "Rogal Dorn": "罗格·多恩",
+            "Sigismund": "西吉斯蒙德",
+            "Yored": "约德",
+            "Massak": "马萨克",
+            "Meric": "梅里克",
+            "Voyen": "沃延"
+        },
+        "imperial_personnel": {
+            "Malcador": "马卡多",
+            "Khorarinn": "呼罗林",
+            "Miqelln": "米切尔",
+            "Olen": "奥利安"
+        },
+        "lost_and_damned": {
+            "Taff": "塔菲",
+            "Arcudi": "阿库迪",
+            "Katanoh": "卡塔诺",
+            "Tallery": "卡勒利",
+            "Volo": "沃洛",
+            "Kelkinod": "凯尔基诺德",
+            "Haln": "哈恩",
+            "Eristede": "艾利斯泰德",
+            "Kell": "凯尔",
+            "Euphrati": "幼发拉底",
+            "Keeler": "奇勒",
+            "Kyril": "凯瑞尔",
+            "Sindermann": "辛德曼",
+            "Ndole": "恩多尔·埃斯托",
+            "Esto": "埃斯托",
+            "Zeun": "泽恩",
+            "Thuruq": "斯鲁奎",
+            "Cerberus": "刻耳柏洛斯"
+        },
+        "organizations": {
+            "Knights Errant": "游侠骑士",
+            "Death Guard": "死亡守卫",
+            "Ultramarines": "极限战士",
+            "World Eaters": "吞世者",
+            "Blood Angels": "圣血天使",
+            "Emperor's Children": "帝皇之子",
+            "White Scars": "白色疤痕",
+            "Imperial Fists": "帝国之拳",
+            "Legio Custodes": "禁军军团",
+            "Imperial Auxilia": "帝国辅助军",
+            "Collegia Titanica": "泰坦学院",
+            "Administratum": "行政部",
+            "Alpha Legion": "阿尔法军团"
+        },
+        "titles": {
+            "Agentia Primus": "首席特工",
+            "battle-captain": "战斗连长",
+            "Librarius Codicier": "智库",
+            "Librarian": "智库",
+            "Captain": "连长",
+            "The Templar": "圣殿骑士",
+            "First Captain": "首席连长",
+            "Apothecary": "药剂师",
+            "Techmarine": "技术军士",
+            "Sigillite": "摄政",
+            "Regent of Terra": "泰拉摄政",
+            "Shield-captain": "盾卫连长",
+            "Lieutenant": "中尉",
+            "Deck-captain": "舰长",
+            "Scribe-adepta": "抄写员",
+            "Covert operative": "秘密特工",
+            "Fallen Assassin": "堕落刺客",
+            "The Living Saint": "活圣人",
+            "Primary Iterator": "首席宣讲者"
+        },
+        "locations": {
+            "Terra": "泰拉",
+            "Mars": "火星",
+            "Isstvan": "伊斯塔万",
+            "Espandor": "扩展星区"
+        }
+    }
+}

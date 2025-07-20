@@ -1,0 +1,24 @@
+[book]
+chinese_name = "伽罗"
+english_name = "Garro"
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 47
+authors = ["James Swallow"]
+recommended_reading = [
+    { name = "最后的记述者", belongto = { name = "黑暗时代", series = { name = "Horus Heresy", order = 16 } } },
+    { name = "瞄准镜", belongto = { name = "无尽的战争", series = { name = "Horus Heresy", order = 33 } } },
+    { name = "守望者", belongto = { name = "无声战争", series = { name = "Horus Heresy", order = 37 } } },
+]
+faction_keywords = [
+    "死亡守卫",
+    "游侠骑士",
+    "帝国之拳",
+    "影月苍狼",
+    "吞世者",
+    "帝皇之子",
+    "白色伤疤",
+    "灰骑士",
+    "刺客庭",
+    "混沌教派",
+]

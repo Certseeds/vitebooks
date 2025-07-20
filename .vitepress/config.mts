@@ -74,7 +74,7 @@ export default defineConfig({
                     , { text: "多恩禁卫", link: '/多恩禁卫/meta' }
                     , { text: "科拉克斯", link: '/科拉克斯/meta' }
                     , { text: "人类之主", link: '/人类之主/meta' }
-                    // , { text: "伽罗", link: '/伽罗-TODO/meta' }
+                    , { text: "伽罗", link: '/伽罗/meta' }
                     , { text: "破碎军团", link: '/破碎军团/meta' }
                     // , { text: "猩红君王", link: '/welldone/猩红君王/meta.toml' }
                     , { text: "塔兰", link: '/塔兰/meta' }
