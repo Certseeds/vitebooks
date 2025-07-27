@@ -3,7 +3,8 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { pathToFileURL } from 'node:url';
+import OpenAI from 'openai';
+import { parseJsonVocabulary, parseTxtVocabulary } from '../web-cmp-translate/src/vocabularyParser.js';
 
 const args = process.argv;
 
@@ -13,77 +14,327 @@ const readArgs = function (args) {
     }
     return result;
 }
+
 const input = readArgs(args);
-const source = path.resolve(input["path"], 'src.en.md');
-const mapfile = path.resolve(input["path"], 'map.json');
+const source = path.resolve(input["path"], 'ensrc');
+const preFiles = [
+    path.resolve(input["path"], 'vocabulary.json')
+];
 
-// 读取source文件内容, 并将其trim后按行分割
-const sourceContent = fs.readFileSync(source, 'utf8');
-const trimmedLines = sourceContent
-    .split('\n')
-    .map(line => line.trim())
-    .filter(line => line.length > 0);
+const postFiles = [
+    './warhammer40k/legion.txt',
+    './warhammer40k/mechanicum.txt',
+    './warhammer40k/names.txt',
+];
 
-console.log(trimmedLines.length)
+const postMaps = new Map([
+    ["/no_think", ""]
+]);
 
-// 读取mapfile, 并构造en-cn表
-const mapContent = fs.readFileSync(mapfile, 'utf8');
-const enCnList = JSON.parse(mapContent);
-const enCnMap = new Map(enCnList.map(item => [item.en, item.cn]));
-// 读取mapfile, 并构造en-cn表
+const apiUrl = 'https://openrouter.ai/api/v1';
+const model = `anthropic/claude-sonnet-4`;
 
-const trans = [];
-
-const level1 = async () => {
-    for (let trimmedLine of trimmedLines) {
-        for (let [en, cn] of enCnMap) {
-            trimmedLine = trimmedLine.replace(en, cn);
-        }
-        await level2(trimmedLine);
-    }
-}
-
-const level2 = async (line) => {
-    const postObject = {
-        "model": "qwen2.5:14b",
-        "prompt": `hey, 请阅读下面用三个 at 符号括住的一段话, 这摘录自一篇战锤30k荷鲁斯叛乱系列小说中. 已经将部分英文人名替换为中文, 希望你将其整体翻译为中文, 不要加入任何推理过程, 并以json格式返回'。@@@${line}@@@`,
-        "format": {
-            "type": "object",
-            "properties": {
-                "translate": {
-                    "type": "string"
-                }
-            },
-            "required": ["names"]
-        },
-        "stream": false,
-    };
+const envPath = path.resolve(process.cwd(), 'openrouter.ai.env');
+const apiKey = (() => {
     try {
-        const response = await fetch('http://127.0.0.1:11434/api/generate', {
-            method: "POST",
-            body: JSON.stringify(postObject),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        });
-        const data = await response.json();
-        const respnames = JSON.parse(data['response'])["translate"];
-        console.log(line);
-        console.log(respnames);
-        const translateSentences = respnames ?? "ERROR";
-
-        trans.push(line);
-        trans.push(translateSentences);
+        const key = fs.readFileSync(envPath, 'utf8').trim();
+        if (!key) {
+            throw new Error('API key is empty.');
+        }
+        return key;
     } catch (error) {
-        console.error('Error during fetch:', error);
+        console.error(`Error reading API key from ${envPath}:`, error.message);
+        process.exit(1);
     }
-}
+})();
 
+// 加载预处理词表
+const loadPreVocabularies = () => {
+    const preVocabularies = new Map();
+
+    for (const file of preFiles) {
+        try {
+            if (!fs.existsSync(file)) {
+                console.warn(`预处理词表文件不存在: ${file}`);
+                continue;
+            }
+
+            const content = fs.readFileSync(file, 'utf8');
+            let vocabulary;
+
+            if (file.endsWith('.json')) {
+                vocabulary = parseJsonVocabulary(content);
+            } else {
+                vocabulary = parseTxtVocabulary(content);
+            }
+
+            // 合并词表
+            for (const [key, value] of vocabulary) {
+                preVocabularies.set(key, value);
+            }
+
+            console.log(`已加载预处理词表: ${file}, 共 ${vocabulary.size} 个条目`);
+        } catch (error) {
+            console.error(`加载预处理词表失败 ${file}:`, error.message);
+        }
+    }
+
+    return preVocabularies;
+};
+
+// 加载后处理词表
+const loadPostVocabularies = () => {
+    const postVocabularies = new Map();
+
+    for (const file of postFiles) {
+        try {
+            if (!fs.existsSync(file)) {
+                console.warn(`后处理词表文件不存在: ${file}`);
+                continue;
+            }
+
+            const content = fs.readFileSync(file, 'utf8');
+            let vocabulary;
+
+            if (file.endsWith('.json')) {
+                vocabulary = parseJsonVocabulary(content);
+            } else {
+                vocabulary = parseTxtVocabulary(content);
+            }
+
+            // 合并词表
+            for (const [key, value] of vocabulary) {
+                postVocabularies.set(key, value);
+            }
+
+            console.log(`已加载后处理词表: ${file}, 共 ${vocabulary.size} 个条目`);
+        } catch (error) {
+            console.error(`加载后处理词表失败 ${file}:`, error.message);
+        }
+    }
+
+    return postVocabularies;
+};
+
+// 应用词表替换
+const applyVocabulary = (text, vocabulary) => {
+    let result = text;
+    for (const [key, value] of vocabulary) {
+        console.log(`替换: ${key} -> ${value}`);
+        // 使用正则表达式进行全局替换，保持大小写敏感
+        const regex = new RegExp(key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+        result = result.replace(regex, value);
+    }
+    return result;
+};
+
+// AI翻译函数
+const level2 = async (line) => {
+
+    const openai = new OpenAI({
+        baseURL: apiUrl,
+        apiKey: apiKey,
+        dangerouslyAllowBrowser: true,
+        temperature: 0.7,
+        defaultHeaders: {
+            "HTTP-Referer": "https://vitebooks.certseeds.com/web-cmp-trans/",
+            "X-Title": "vitebooks-web-cmp-translate",
+        },
+    });
+
+    const prompt = `你是一具战锤40K小说翻译机仆。请将以下英文文本翻译为中文, 遵循以下要求
+
+0. 使用 /no_think 模式, 或者说使用非推理模式
+1. 只输出中文翻译结果, 不在输出最后添加任何解释以及思考过程
+2. 保持战锤40K宇宙的严肃、黑暗、哥特风格
+3. 保留原文的语言风格和氛围感
+4. 确保翻译流畅自然，符合现代中文阅读习惯, 不使用古风描述
+5. 对于战斗场面和技术描述要逐词翻译, 不要添加华丽的修饰与无意义的描述
+6. 保留原文中的#, *等markdown格式渲染符号
+
+下面是需要翻译的一段原文
+`;
+
+    const prompt2 = ``
+
+    try {
+        const completion = await openai.chat.completions.create({
+            model: model,
+            messages: [
+                {
+                    role: "system",
+                    content: [
+                        {
+                            "type": "text",
+                            "text": prompt,
+                            "cache_control": {
+                                "type": "ephemeral"
+                            }
+                        }
+                    ]
+                },
+                {
+                    role: "user", content: `${line}`
+                }
+            ]
+        });
+
+        if (!completion || !completion.choices || !completion.choices[0] || !completion.choices[0].message) {
+            throw new Error('Invalid response structure from API');
+        }
+
+        const data = completion.choices[0].message.content;
+        return data.trim();
+    } catch (error) {
+        console.error(`翻译失败: ${error.message}`);
+        return line; // 返回原文
+    }
+};
+
+// 并行翻译函数
+const translateLinesInParallel = async (lines, concurrency) => {
+    const translatedLines = new Array(lines.length);
+    const tasks = [];
+
+    // 创建信号量来控制并发数
+    let activeTranslations = 0;
+    const maxConcurrent = concurrency;
+
+    const translateLine = async (index) => {
+        const line = lines[index].trim();
+
+        // 跳过空行和分隔符
+        if (line === '' || line === '--------') {
+            translatedLines[index] = line;
+            return;
+        }
+
+
+        // 等待获取翻译槽位
+        while (activeTranslations >= maxConcurrent) {
+            await new Promise(resolve => setTimeout(resolve, 100));
+        }
+
+        activeTranslations++;
+        console.log(`开始翻译第 ${index + 1}/${lines.length} 行 (活跃: ${activeTranslations}/${maxConcurrent})`);
+
+        try {
+
+            console.log(`input: ${line}`);
+            const translatedLine = await level2(line);
+            console.log(`output: ${translatedLine}`);
+            translatedLines[index] = applyVocabulary(translatedLine, postMaps).trim();
+            console.log(`完成翻译第 ${index + 1}/${lines.length} 行`);
+        } catch (error) {
+            console.error(`翻译第 ${index + 1} 行失败:`, error.message);
+            translatedLines[index] = line; // 失败时保留原文
+        } finally {
+            activeTranslations--;
+        }
+    };
+
+    // 创建所有翻译任务
+    for (let i = 0; i < lines.length; i++) {
+        tasks.push(translateLine(i));
+    }
+
+    // 等待所有任务完成
+    await Promise.all(tasks);
+    return translatedLines;
+};
+
+// 处理单个文件
+const level1 = async (filePath, preVocabularies, postVocabularies) => {
+    try {
+        console.log(`开始处理文件: ${filePath}`);
+
+        // 读取文件内容
+        const content = fs.readFileSync(filePath, 'utf8');
+
+        // 预处理：应用预处理词表
+        const preprocessedContent = applyVocabulary(content, preVocabularies);
+
+        // 按行分割
+        const lines = preprocessedContent.split('\n');
+        // 并行翻译所有行
+        const translatedLines = await translateLinesInParallel(lines, 1);
+
+        // 合并翻译结果
+        let result = translatedLines.join('\n');
+
+        // 后处理：应用后处理词表
+        result = applyVocabulary(result, postVocabularies);
+
+        // 生成输出文件路径
+        const relativePath = path.relative(source, filePath);
+        const outputPath = path.resolve(input["path"], 'src', relativePath.replace(/\.md$/, '.cn.md'));
+
+        // 确保输出目录存在
+        const outputDir = path.dirname(outputPath);
+        if (!fs.existsSync(outputDir)) {
+            fs.mkdirSync(outputDir, { recursive: true });
+        }
+
+        // 写入翻译结果
+        const finalResult = `${result}\n\n> translate via Vocabularies pre and post replace and \`${model}\``;
+        fs.writeFileSync(outputPath, finalResult, 'utf8');
+        console.log(`✓ 翻译完成: ${filePath} -> ${outputPath}`);
+
+    } catch (error) {
+        console.error(`处理文件失败 ${filePath}:`, error.message);
+    }
+};
+
+// 遍历目录中的所有文件
 const level0 = async () => {
-    await level1();
-    const output = path.resolve(input["path"], 'src.cn.md');
-    fs.writeFileSync(output, trans.join('\n\n'));
-}
+    try {
+        console.log('开始加载词表...');
+        const preVocabularies = loadPreVocabularies();
+        const postVocabularies = loadPostVocabularies();
+
+        console.log(`预处理词表共 ${preVocabularies.size} 个条目`);
+        console.log(`后处理词表共 ${postVocabularies.size} 个条目`);
+
+        if (!fs.existsSync(source)) {
+            throw new Error(`源目录不存在: ${source}`);
+        }
+
+        // 递归获取所有.md文件
+        const getMarkdownFiles = (dir) => {
+            const files = [];
+            const items = fs.readdirSync(dir);
+
+            for (const item of items) {
+                const fullPath = path.join(dir, item);
+                const stat = fs.statSync(fullPath);
+
+                if (stat.isDirectory()) {
+                    files.push(...getMarkdownFiles(fullPath));
+                } else if (stat.isFile() && item.endsWith('.md')) {
+                    files.push(fullPath);
+                }
+            }
+
+            return files;
+        };
+
+        const markdownFiles = getMarkdownFiles(source);
+        console.log(`找到 ${markdownFiles.length} 个Markdown文件`);
+
+        // 处理每个文件
+        for (let i = 0; i < markdownFiles.length; i++) {
+            const file = markdownFiles[i];
+            console.log(`\n进度: ${i + 1}/${markdownFiles.length}`);
+            await level1(file, preVocabularies, postVocabularies);
+        }
+
+        console.log('\n✓ 所有文件处理完成！');
+
+    } catch (error) {
+        console.error(`批量处理失败:`, error.message);
+        process.exit(1);
+    }
+};
 
 (async () => {
     await level0();

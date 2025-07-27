@@ -1,0 +1,21 @@
+[book]
+chinese_name = "灭绝天使"
+english_name = "Angel Exterminatus "
+type = "长篇小说"
+series.name = "Horus Heresy"
+series.order = 23
+authors = ["Graham McNeill"]
+recommended_reading = [
+    { name = "破碎倒影", belongto = { name = "原体", series = { name = "Horus Heresy", order = 20 } } },
+    { name = "克里普托斯", belongto = { name = "背叛之遗", series = { name = "Horus Heresy", order = 33 } } },
+]
+faction_keywords = [
+    "钢铁勇士",
+    "帝皇之子",
+    "混沌恶魔",
+    "暗鸦守卫",
+    "火蜥蜴",
+    "钢铁之手",
+    "破碎军团",
+    "帝国之拳",
+]

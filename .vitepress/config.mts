@@ -55,7 +55,7 @@ export default defineConfig({
                     , { text: "原体", link: '/原体/meta' }
                     , { text: "惧于踏足", link: '/惧于踏足/meta' }
                     , { text: "背叛之影", link: '/背叛之影/meta' }
-                    // , { text: "灭绝天使", link: '/灭绝天使-TODO/meta' }
+                    , { text: "灭绝天使", link: '/灭绝天使/meta' }
                     , { text: "背叛者", link: '/背叛者/meta' }
                     , { text: "考斯印记", link: '/考斯印记/meta' }
                     , { text: "伏尔甘永存", link: '/伏尔甘永存/meta' }

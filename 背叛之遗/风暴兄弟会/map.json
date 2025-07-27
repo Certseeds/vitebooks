@@ -1,6 +1,7 @@
-[
-    {
-        "cn": "Chondax",
-        "en": "昌达克斯"
+{
+    "keywords": {
+        "characters": {
+            "Chondax": "昌达克斯"
+        }
     }
-]
+}
