@@ -117,6 +117,7 @@ jobs:
         run: |
           mkdir -p ./public/depage
           mkdir -p ./public/web-cmp-trans
+          mkdir -p ./public/turndown
           cp -r ./depage/dist/* ./public/depage/
           cp -r ./web-cmp-translate/dist/* ./public/web-cmp-trans/
           cp -r ./turndown/dist/* ./public/turndown/
