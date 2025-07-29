@@ -1,0 +1,160 @@
+{
+    "keywords": {
+        "Xenos": {
+            "Old Ones": "古圣",
+            "Talisman of Vaul": "瓦尔的护身符",
+            "Vaul": "瓦尔",
+            "Slanni": "史兰",
+            "Inquisition": "审判庭",
+            "Hive Mind": "蜂巢心智",
+            "Hive Fleets": "蜂巢舰队"
+        },
+        "TauEmpire": {
+            "T_au": "钛",
+            "T_au_va": "钛瓦",
+            "Greater Good": "上上善道",
+            "T_au Empire": "钛帝国",
+            "Caste": "种姓",
+            "Renegades": "叛徒",
+            "Sept": "家门世界",
+            "Auxillaries": "辅助军"
+        },
+        "Necrons": {
+            "Yngir": "灵族泛指星神-太空死灵",
+            "Star Gods": "星神",
+            "Necrontyr": "惧亡者",
+            "Necrons": "太空死灵",
+            "Dynasty": "王朝",
+            "Glyphs": "符文"
+        },
+        "eldar": {
+            "Eldar": "灵族",
+            "Eye of Asuryan": "阿苏焉之眼",
+            "Aeldari": "艾达灵族",
+            "Asuryani": "阿苏焉尼",
+            "Craftworlds": "方舟世界",
+            "Aspect Warriors": "支派武士",
+            "Rillietann": "丑角",
+            "Rangers": "道途",
+            "Eshairr": "不忠诚于任何方舟世界的流放者",
+            "crone World": "老妪世界"
+        },
+        "durhkari": {
+            "Aeldari": "艾达灵族",
+            "Drukhari": "黑暗灵族",
+            "Dark Eldar": "黑暗灵族",
+            "Wych Cult": "巫灵教派",
+            "Soul Drinkers": "饮魂者",
+            "Haemonculus Covens": "血伶人巫会",
+            "Hekatarii": "巫灵"
+        },
+        "genestealer_cult": {
+            "Hive Mind": "蜂巢心智",
+            "Tyranids": "泰伦虫族",
+            "Genestealer Cults": "基因窃取者邪教",
+            "Genestealers": "基因窃取者"
+        },
+        "ork": {
+            "Orkoids": "兽人种",
+            "Orks": "兽人",
+            "Gork": "搞哥",
+            "Mork": "毛哥",
+            "Grotz": "屁精"
+        },
+        "chaos": {
+            "Astartes": "阿斯塔特",
+            "Heretic Astartes": "叛徒阿斯塔特",
+            "Chaos Space Marines": "混沌星际战士",
+            "Khorne": "恐虐",
+            "Nurgle": "纳垢",
+            "Slaanesh": "色孽",
+            "Tzeentch": "奸奇",
+            "Malice": "马里斯",
+            "Renegades and Heretics": "叛徒与异端",
+            "Lost and Damned": "迷失之人与受诅咒者",
+            "Regades": "叛徒",
+            "Warband": "战帮",
+            "Titanicus Traitoris": "叛徒泰坦",
+            "Chaos Daemons": "混沌恶魔",
+            "Dark Mechanicum": "黑暗机械教",
+            "Chaos Knights": "混沌骑士",
+            "Renegade Knights": "叛逆骑士",
+            "Astral Claws": "星爪",
+            "Red Corsairs": "红海盗",
+            "Horus Heresy": "荷鲁斯叛乱"
+        },
+        "Imperium": {
+            "Great Crusade": "大远征",
+            "Adeptus Astartes": "阿斯塔特修会",
+            "Space Marines": "星际战士",
+            "Grey Knights": "灰骑士",
+            "Ordo Xenos": "攘外修会",
+            "Ordo Malleus": "圣锤修会",
+            "Ordo Hereticus": "讨逆修会",
+            "Adeptus Astra Telepathica": "星语庭",
+            "High Lords of Terra": "泰拉高领主",
+            "Imperial Navy": "帝国海军",
+            "Imperial Guard": "帝国陆军",
+            "Questor Imperialis": "帝国探索者",
+            "Adeptus Terra": "泰拉庭",
+            "Thunder Warriors": "雷霆战士",
+            "Renegades Astartes": "叛徒阿斯塔特",
+            "Blackshields": "黑盾"
+        },
+        "legions": {
+            "Dark Angels": "暗黑天使",
+            "Emperor's Children": "帝皇之子",
+            "Iron Warriors": "钢铁勇士",
+            "White Scars": "白色伤疤",
+            "Space Wolves": "太空野狼",
+            "Imperial Fists": "帝国之拳",
+            "Night Lords": "午夜领主",
+            "Blood Angels": "圣血天使",
+            "Iron Hands": "钢铁之手",
+            "World Eaters": "吞世者",
+            "Ultramarines": "极限战士",
+            "Death Guard": "死亡守卫",
+            "Thousand Sons": "千子",
+            "Sons of Horus": "荷鲁斯之子",
+            "luna wolves": "影月苍狼",
+            "Word Bearers": "怀言者",
+            "Salamanders": "火蜥蜴",
+            "Raven Guard": "暗鸦守卫",
+            "Astartes Company": "阿斯塔特连队",
+            "Alpha Legion": "阿尔法军团"
+        },
+        "mechanicum": {
+            "Adeptus Mechanicus": "机械修会",
+            "Adeptus Titanicus": "泰坦修会",
+            "Forge World": "铸造世界",
+            "Questoris Knights": "探索骑士",
+            "Imperial Knights": "帝国骑士",
+            "Collegia Titanica": "泰坦学会",
+            "Legio Cybernetica": "智控军团",
+            "Taghmata Omnissiah": "机神禁卫军",
+            "Corpus Secutarii": "泰坦禁卫"
+        },
+        "battle_sisters": {
+            "Adeptus Ministorum": "帝国国教",
+            "Adepta Sororitas": "修女会",
+            "Sisters of Battle": "战斗修女",
+            "Battle Sisters": "战斗修女"
+        },
+        "custodes-and-silence-sisters": {
+            "Talons of the Emperor": "帝皇之爪",
+            "Adeptus Custodes": "禁军修会",
+            "Shield Company": "盾卫连队",
+            "Sisters of Silence": "寂静修女会",
+            "Sisters of Silence Tattoo": "寂静修女的纹身"
+        },
+        "astra_miliarum": {
+            "Militarum Tempestus": "风暴忠嗣军",
+            "Ordo Tempestus": "风暴忠嗣军",
+            "Astra Militarum": "星界军",
+            "Tempestus Scions": "风暴忠嗣军"
+        },
+        "officio_assassinorum": {
+            "Officio Assassinorum": "刺客庭"
+        }
+    }
+}

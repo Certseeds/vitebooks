@@ -1,0 +1,33 @@
+{
+    "keywords": {
+        "军团母星": {
+            "Cthonia": "克苏尼亚",
+            "Fenris": "芬里斯",
+            "Medusa": "美杜莎",
+            "Chemos": "切莫斯",
+            "Nocturne": "夜曲星",
+            "Inwit": "因维特",
+            "Macragge":"马库拉格",
+            "Prospero": "普罗斯佩罗",
+            "Baal": "巴尔",
+            "Caliban": "卡利班",
+            "Olympia": "奥林匹亚",
+            "Barbarus": "巴巴鲁斯",
+            "Colchis": "科尔基斯",
+            "Chogoris": "巧高里斯",
+            "Nostramo": "诺斯特拉莫",
+            "Nuceria": "努凯里亚",
+            "Deliverance": "救赎星",
+            "Terra": "泰拉"
+        },
+        "叛乱军团新母星": {
+            "Harmony": "哈莫尼",
+            "Oliensis": "欧连西斯",
+            "Medrengard":"米德加德",
+            "Bodt":"伯特",
+            "Plague Planet": "瘟疫星球",
+            "Sortiarius": "索迪亚茹斯",
+            "Maeleum": "玛勒姆"
+        }
+    }
+}

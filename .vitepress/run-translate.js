@@ -19,6 +19,10 @@ const input = readArgs(args);
 const source = path.resolve(input["path"], 'ensrc');
 const preFiles = [
     path.resolve(input["path"], 'vocabulary.json')
+    , 'web-cmp-translate/resources/names.json'
+    , 'web-cmp-translate/resources/mechanicum.json'
+    , 'web-cmp-translate/resources/weapon.json'
+    , 'web-cmp-translate/resources/ships.json'
 ];
 
 const postFiles = [
@@ -119,7 +123,10 @@ const loadPostVocabularies = () => {
 // 应用词表替换
 const applyVocabulary = (text, vocabulary) => {
     let result = text;
-    for (const [key, value] of vocabulary) {
+    // 将词表转换为数组并按key长度降序排序
+    const sortedEntries = Array.from(vocabulary.entries()).sort((a, b) => b[0].length - a[0].length);
+
+    for (const [key, value] of sortedEntries) {
         console.log(`替换: ${key} -> ${value}`);
         // 使用正则表达式进行全局替换，保持大小写敏感
         const regex = new RegExp(key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
