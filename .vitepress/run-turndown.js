@@ -3,7 +3,6 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { pathToFileURL } from 'node:url';
 import TurndownService from 'turndown';
 import { JSDOM } from 'jsdom';
 
@@ -43,6 +42,8 @@ const turndownService = new TurndownService({
     }
 });
 
+// TODO, 将逻辑剥离到子目录中, import进来
+
 // 添加规则以保留引文格式
 turndownService.addRule('blockquote', {
     filter: 'blockquote',
@@ -73,10 +74,23 @@ turndownService.addRule('italic', {
     }
 });
 
+// 添加规则以处理 <i> 标签为斜体
+turndownService.addRule('italic', {
+    filter: (node) => {
+        return node.getAttribute('class') === 'Italic' ;
+    },
+    replacement: (content) => {
+        return '*' + content + '*';
+    }
+});
+
 // 添加规则以处理 class="break" 的段落
 turndownService.addRule('breakParagraph', {
     filter: (node) => {
-        return node.nodeName === 'P' && node.getAttribute('class') === 'break';
+        return node.nodeName === 'P' && (
+            node.getAttribute('class') === 'break' ||
+            node.getAttribute('class') === 'No_Indent'
+        );
     },
     replacement: (content) => {
         return '\n\n--------\n\n' + content + '\n\n';
@@ -106,6 +120,19 @@ turndownService.addRule('headingParagraphs', {
             return '\n\n## ' + content + '\n\n';
         }
         return content;
+    }
+});
+
+// 添加规则以忽略 caption 类的段落
+turndownService.addRule('ignoreCaption', {
+    filter: (node) => {
+        return node.nodeName === 'P' && (
+            node.getAttribute('class') === 'caption' ||
+            node.getAttribute('class') === 'HH_Captions'
+        );
+    },
+    replacement: () => {
+        return '';
     }
 });
 

@@ -80,7 +80,11 @@ jobs:
 
       - name: install dependencies web-cmp-trans
         working-directory: ./web-cmp-translate
-        run: pnpm install       
+        run: pnpm install
+
+      - name: install dependencies turndown
+        working-directory: ./turndown
+        run: pnpm install    
 
       - name: scan and build meta.tgz, epubs
         env:
@@ -105,12 +109,17 @@ jobs:
         working-directory: ./web-cmp-translate
         run: pnpm build
 
+      - name: build turndown
+        working-directory: ./turndown
+        run: pnpm build
+
       - name: cp subprojects
         run: |
           mkdir -p ./public/depage
           mkdir -p ./public/web-cmp-trans
           cp -r ./depage/dist/* ./public/depage/
           cp -r ./web-cmp-translate/dist/* ./public/web-cmp-trans/
+          cp -r ./turndown/dist/* ./public/turndown/
 
       - name: build
         run: pnpm run docs:build
