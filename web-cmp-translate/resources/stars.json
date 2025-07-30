@@ -7,7 +7,7 @@
             "Chemos": "切莫斯",
             "Nocturne": "夜曲星",
             "Inwit": "因维特",
-            "Macragge":"马库拉格",
+            "Macragge": "马库拉格",
             "Prospero": "普罗斯佩罗",
             "Baal": "巴尔",
             "Caliban": "卡利班",
@@ -23,11 +23,20 @@
         "叛乱军团新母星": {
             "Harmony": "哈莫尼",
             "Oliensis": "欧连西斯",
-            "Medrengard":"米德加德",
-            "Bodt":"伯特",
+            "Medrengard": "米德加德",
+            "Bodt": "伯特",
             "Plague Planet": "瘟疫星球",
             "Sortiarius": "索迪亚茹斯",
             "Maeleum": "玛勒姆"
+        },
+        "网道节点": {
+            "Commorragh": "科摩罗",
+            "The Black Library": "黑图书馆"
+        },
+        "关键星球": {
+            "Terra": "泰拉",
+            "Mars": "火星",
+            "Isstvan": "伊斯塔万"
         }
     }
 }

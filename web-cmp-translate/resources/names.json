@@ -1,10 +1,12 @@
 {
     "keywords": {
         "primarches-name": {
+            "Primarch": "基因原体",
             "Lion": "莱恩",
             "El'Jonson": "艾尔·庄森",
             "Jonson": "庄森",
             "Fulgrim": "福格瑞姆",
+            "Phoenician": "腓尼基人",
             "Perturabo": "佩图拉博",
             "Jaghatai Khan": "察合台可汗",
             "Jaghatai": "察合台",
@@ -32,6 +34,12 @@
             "Corax": "科拉克斯",
             "Alpharius": "阿尔法瑞斯",
             "Omegon": "欧米伽"
+        },
+        "特殊头衔": {
+            "Lexicanium": "编修员",
+            "Codicier": "典记长",
+            "Epistolary": "星语官",
+            "Chief Librarian": "首席智库"
         }
     }
 }

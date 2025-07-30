@@ -41,15 +41,15 @@ On the Cover: The Iron Warriors launch their attack on the Imperial Fists fleet 
 
 罗格-多恩, 泰拉禁卫(Praetorian of Terra), 第七军团的基因原体
 
-幼发拉底 琪乐, 国教的第一位圣人
+幼发拉底 奇勒, 国教的第一位圣人
 
 ### 第四军团"钢铁勇士"
 
 高格(Golg), 第11连连长, 指挥战舰: 精算者 (Contrador)
 
-弗里克斯(Forrix), 原体的心腹
+佛克斯(Forrix), 原体的心腹
 
-贝罗索斯(Berossus), 第二大连指挥官
+比洛苏斯(Berossus), 第二大连指挥官
 
 佩图拉博, 钢铁之主, 第四军团的基因原体, 指挥战舰: 铁血号
 

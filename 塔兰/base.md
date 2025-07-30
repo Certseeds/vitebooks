@@ -121,7 +121,7 @@ On the Cover: The Iron Warriors engage the Imperial Army in the largest armoured
 
 佩图拉博, 钢铁勇士的原体
 
-弗瑞克斯[^78], "击碎者"[^79], 第一连长[^80], 三叉戟[^81]
+佛克斯[^78], "击碎者"[^79], 第一连长[^80], 三叉戟[^81]
 
 --------
 

@@ -67,7 +67,7 @@ On the Cover: From the New York Times bestselling author of A Thousand Sons
 
 奥巴克斯·扎卡尤[^23], 士官[^24], 第一大连[^25]
 
-比洛苏斯[^26], 战争铁匠[^27], 第二大连
+比洛苏斯[^26], 战争铁匠[^27], 第二大连, 无畏
 
 加里安·卡戎[^28], 技术军士[^29], 第二大连
 

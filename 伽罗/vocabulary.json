@@ -16,7 +16,6 @@
             "Rakishio": "拉基西奥",
             "Hakeem": "哈基姆",
             "Harouk": "哈罗克",
-            "Rogal Dorn": "罗格·多恩",
             "Sigismund": "西吉斯蒙德",
             "Yored": "约德",
             "Massak": "马萨克",
@@ -24,7 +23,6 @@
             "Voyen": "沃延"
         },
         "imperial_personnel": {
-            "Malcador": "马卡多",
             "Khorarinn": "呼罗林",
             "Miqelln": "米切尔",
             "Olen": "奥利安"
@@ -51,45 +49,24 @@
         },
         "organizations": {
             "Knights Errant": "游侠骑士",
-            "Death Guard": "死亡守卫",
-            "Ultramarines": "极限战士",
-            "World Eaters": "吞世者",
-            "Blood Angels": "圣血天使",
-            "Emperor's Children": "帝皇之子",
-            "White Scars": "白色疤痕",
-            "Imperial Fists": "帝国之拳",
             "Legio Custodes": "禁军军团",
             "Imperial Auxilia": "帝国辅助军",
             "Collegia Titanica": "泰坦学院",
-            "Administratum": "行政部",
-            "Alpha Legion": "阿尔法军团"
+            "Administratum": "行政部"
         },
         "titles": {
             "Agentia Primus": "首席特工",
             "battle-captain": "战斗连长",
-            "Librarius Codicier": "智库",
-            "Librarian": "智库",
-            "Captain": "连长",
             "The Templar": "圣殿骑士",
             "First Captain": "首席连长",
-            "Apothecary": "药剂师",
-            "Techmarine": "技术军士",
-            "Sigillite": "摄政",
             "Regent of Terra": "泰拉摄政",
             "Shield-captain": "盾卫连长",
-            "Lieutenant": "中尉",
             "Deck-captain": "舰长",
             "Scribe-adepta": "抄写员",
             "Covert operative": "秘密特工",
             "Fallen Assassin": "堕落刺客",
             "The Living Saint": "活圣人",
             "Primary Iterator": "首席宣讲者"
-        },
-        "locations": {
-            "Terra": "泰拉",
-            "Mars": "火星",
-            "Isstvan": "伊斯塔万",
-            "Espandor": "扩展星区"
         }
     }
 }

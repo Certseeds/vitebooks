@@ -1,7 +1,6 @@
 {
     "keywords": {
         "characters": {
-            "Fulgrim": "福格瑞姆",
             "Fabius": "法比乌斯",
             "Eidolon": "艾多隆",
             "Julius": "尤里乌斯",
@@ -16,7 +15,6 @@
             "Abranxe": "亚布兰奇",
             "Krysander": "克利山德",
             "Blades": "锋刃",
-            "Perturabo": "佩图拉博",
             "Forrix": "佛克斯",
             "Obax": "奥巴克斯",
             "Zakayo": "扎卡尤",
@@ -65,25 +63,16 @@
             "Sullax": "萨拉克斯"
         },
         "organizations": {
-            "Emperor's Children": "帝皇之子",
-            "Iron Warriors": "钢铁勇士",
-            "The Sisypheum": "西绪弗斯号",
-            "The Ebonite Archymsts": "原初的暗黑秘域",
-            "Imperial Fists": "帝国之拳",
-            "Iron Hands": "钢铁之手",
-            "Raven Guard": "暗鸦守卫",
-            "Salamanders": "火蜥蜴"
+            "The Sisypheum": "西西弗斯号",
+            "The Ebonite Archymsts": "原初的暗黑秘域"
         },
         "titles": {
-            "Primarch": "基因原体",
-            "Apothecary": "药剂师",
             "Lord Commander": "领主指挥官",
             "First Captain": "第一连长",
             "Captain": "连长",
             "Lieutenant": "士官",
             "Warsmith": "战争铁匠",
             "Techmarine": "技术军士",
-            "Equerry": "侍从官",
             "Ironwrought": "锻铁者",
             "Iron Father": "钢铁之父",
             "Dreadnought": "无畏",
@@ -99,7 +88,8 @@
             "The Whipmaster": "鞭笞大师",
             "The Breaker": "破袭者",
             "The Stonewrought": "锻石者",
-            "Pneumachina": "机械拾荒者"
+            "Pneumachina": "机械拾荒者",
+            "Angel Exterminatus": "灭绝天使"
         },
         "military_units": {
             "Company": "连",
