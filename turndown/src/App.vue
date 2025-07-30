@@ -60,239 +60,119 @@
     </div>
 </template>
 
-<script>
-import TurndownService from 'turndown';
+<script setup>
+import { ref, onMounted } from 'vue'
+import { createTurndownService } from '@/tdown.js'
 
-export default {
-    name: 'App',
-    data() {
-        return {
-            uploadedFiles: [],
-            convertedFiles: [],
-            conversionStatus: [],
-            isConverting: false,
-            turndownService: null
-        };
-    },
-    created() {
-        this.initializeTurndownService();
-    },
-    methods: {
-        initializeTurndownService() {
-            this.turndownService = new TurndownService({
-                headingStyle: 'atx',
-                hr: '---',
-                bulletListMarker: '-',
-                codeBlockStyle: 'fenced',
-                fence: '```',
-                emDelimiter: '*',
-                strongDelimiter: '**',
-                linkStyle: 'inlined',
-                linkReferenceStyle: 'full',
-                br: '  ',
-                blankReplacement: (content, node) => {
-                    return node.isBlock ? '\n\n' : '';
-                },
-                keepReplacement: (content, node) => {
-                    return node.isBlock ? '\n\n' + node.outerHTML + '\n\n' : node.outerHTML;
-                },
-                defaultReplacement: (content, node) => {
-                    return node.isBlock ? '\n\n' + content + '\n\n' : content;
-                }
-            });
+// Reactive data
+const uploadedFiles = ref([])
+const convertedFiles = ref([])
+const conversionStatus = ref([])
+const isConverting = ref(false)
+const turndownService = ref(null)
 
-            // Add custom rules
-            this.addCustomRules();
-        },
+// Initialize TurndownService
+const initializeTurndownService = () => {
+    turndownService.value = createTurndownService()
+}
 
-        addCustomRules() {
-            // 添加规则以保留引文格式
-            this.turndownService.addRule('blockquote', {
-                filter: 'blockquote',
-                replacement: (content) => {
-                    content = content.replace(/^\n+|\n+$/g, '');
-                    content = content.replace(/^/gm, '> ');
-                    return '\n\n' + content + '\n\n';
-                }
-            });
+const handleFileUpload = (event) => {
+    const files = Array.from(event.target.files)
+    uploadedFiles.value = files
+    convertedFiles.value = []
+    conversionStatus.value = []
+}
 
-            // 添加规则以处理嵌套引文
-            this.turndownService.addRule('nestedBlockquote', {
-                filter: (node) => {
-                    return node.nodeName === 'BLOCKQUOTE' && node.parentNode.nodeName === 'BLOCKQUOTE';
-                },
-                replacement: (content) => {
-                    content = content.replace(/^\n+|\n+$/g, '');
-                    content = content.replace(/^/gm, '> ');
-                    return '\n\n' + content + '\n\n';
-                }
-            });
+const convertToMarkdown = async () => {
+    if (uploadedFiles.value.length === 0) return
 
-            // 添加规则以处理 <i> 标签为斜体
-            this.turndownService.addRule('italic', {
-                filter: 'i',
-                replacement: (content) => {
-                    return '*' + content + '*';
-                }
-            });
+    isConverting.value = true
+    conversionStatus.value = []
+    convertedFiles.value = []
 
-            // 添加规则以处理 <i> 标签为斜体
-            this.turndownService.addRule('italic', {
-                filter: (node) => {
-                    return node.getAttribute('class') === 'Italic';
-                },
-                replacement: (content) => {
-                    return '*' + content + '*';
-                }
-            });
+    for (const file of uploadedFiles.value) {
+        try {
+            const htmlContent = await readFileAsText(file)
+            const parser = new DOMParser()
+            const doc = parser.parseFromString(htmlContent, 'text/html')
 
-            // 添加规则以处理 class="break" 的段落
-            this.turndownService.addRule('breakParagraph', {
-                filter: (node) => {
-                    return node.nodeName === 'P' && (
-                        node.getAttribute('class') === 'break' ||
-                        node.getAttribute('class') === 'No_Indent'
-                    );
-                },
-                replacement: (content) => {
-                    return '\n\n--------\n\n' + content + '\n\n';
-                }
-            });
+            // Extract body content
+            const bodyElement = doc.querySelector('body')
+            const bodyContent = bodyElement ? bodyElement.innerHTML : htmlContent
 
-            // 添加规则以处理 <br> 标签
-            this.turndownService.addRule('lineBreak', {
-                filter: 'br',
-                replacement: () => {
-                    return '\n\n';
-                }
-            });
+            // Convert to markdown
+            const markdown = turndownService.value.turndown(bodyContent)
 
-            // 添加规则以处理标题类段落
-            this.turndownService.addRule('headingParagraphs', {
-                filter: (node) => {
-                    if (node.nodeName !== 'P') return false;
-                    const className = node.getAttribute('class');
-                    return className && ['h1', 'h2', 's0', 's1', 's2'].includes(className);
-                },
-                replacement: (content, node) => {
-                    const className = node.getAttribute('class');
-                    if (className === 'h1' || className === 'h2' || className === 's0') {
-                        return '\n\n# ' + content + '\n\n';
-                    } else if (className === 's1' || className === 's2') {
-                        return '\n\n## ' + content + '\n\n';
-                    }
-                    return content;
-                }
-            });
+            // Generate filename
+            const originalName = file.name.replace(/\.[^/.]+$/, '') // Remove extension
+            const markdownFilename = `${originalName}.md`
 
-            // 添加规则以忽略 caption 类的段落
-            this.turndownService.addRule('ignoreCaption', {
-                filter: (node) => {
-                    return node.nodeName === 'P' && (
-                        node.getAttribute('class') === 'caption' ||
-                        node.getAttribute('class') === 'HH_Captions'
-                    );
-                },
-                replacement: () => {
-                    return '';
-                }
-            });
-        },
+            convertedFiles.value.push({
+                filename: markdownFilename,
+                content: markdown,
+                originalFile: file.name
+            })
 
-        handleFileUpload(event) {
-            const files = Array.from(event.target.files);
-            this.uploadedFiles = files;
-            this.convertedFiles = [];
-            this.conversionStatus = [];
-        },
+            conversionStatus.value.push({
+                filename: file.name,
+                message: 'Successfully converted',
+                success: true
+            })
 
-        async convertToMarkdown() {
-            if (this.uploadedFiles.length === 0) return;
-
-            this.isConverting = true;
-            this.conversionStatus = [];
-            this.convertedFiles = [];
-
-            for (const file of this.uploadedFiles) {
-                try {
-                    const htmlContent = await this.readFileAsText(file);
-                    const parser = new DOMParser();
-                    const doc = parser.parseFromString(htmlContent, 'text/html');
-
-                    // Extract body content
-                    const bodyElement = doc.querySelector('body');
-                    const bodyContent = bodyElement ? bodyElement.innerHTML : htmlContent;
-
-                    // Convert to markdown
-                    const markdown = this.turndownService.turndown(bodyContent);
-
-                    // Generate filename
-                    const originalName = file.name.replace(/\.[^/.]+$/, ''); // Remove extension
-                    const markdownFilename = `${originalName}.md`;
-
-                    this.convertedFiles.push({
-                        filename: markdownFilename,
-                        content: markdown,
-                        originalFile: file.name
-                    });
-
-                    this.conversionStatus.push({
-                        filename: file.name,
-                        message: 'Successfully converted',
-                        success: true
-                    });
-
-                } catch (error) {
-                    console.error(`Error converting ${file.name}:`, error);
-                    this.conversionStatus.push({
-                        filename: file.name,
-                        message: `Error: ${error.message}`,
-                        success: false
-                    });
-                }
-            }
-
-            this.isConverting = false;
-        },
-
-        readFileAsText(file) {
-            return new Promise((resolve, reject) => {
-                const reader = new FileReader();
-                reader.onload = (e) => resolve(e.target.result);
-                reader.onerror = () => reject(new Error('Failed to read file'));
-                reader.readAsText(file);
-            });
-        },
-
-        downloadSingleFile(file) {
-            this.createDownload(file.content, file.filename);
-        },
-
-        downloadAllFiles() {
-            this.convertedFiles.forEach(file => {
-                this.createDownload(file.content, file.filename);
-            });
-        },
-
-        createDownload(content, filename) {
-            const blob = new Blob([content], { type: 'text/markdown' });
-            const url = URL.createObjectURL(blob);
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = filename;
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            URL.revokeObjectURL(url);
-        },
-
-        formatFileSize(bytes) {
-            if (bytes === 0) return '0 Bytes';
-            const k = 1024;
-            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
-            const i = Math.floor(Math.log(bytes) / Math.log(k));
-            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        } catch (error) {
+            console.error(`Error converting ${file.name}:`, error)
+            conversionStatus.value.push({
+                filename: file.name,
+                message: `Error: ${error.message}`,
+                success: false
+            })
         }
     }
-};
+
+    isConverting.value = false
+}
+
+const readFileAsText = (file) => {
+    return new Promise((resolve, reject) => {
+        const reader = new FileReader()
+        reader.onload = (e) => resolve(e.target.result)
+        reader.onerror = () => reject(new Error('Failed to read file'))
+        reader.readAsText(file)
+    })
+}
+
+const downloadSingleFile = (file) => {
+    createDownload(file.content, file.filename)
+}
+
+const downloadAllFiles = () => {
+    convertedFiles.value.forEach(file => {
+        createDownload(file.content, file.filename)
+    })
+}
+
+const createDownload = (content, filename) => {
+    const blob = new Blob([content], { type: 'text/markdown' })
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement('a')
+    link.href = url
+    link.download = filename
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+    URL.revokeObjectURL(url)
+}
+
+const formatFileSize = (bytes) => {
+    if (bytes === 0) return '0 Bytes'
+    const k = 1024
+    const sizes = ['Bytes', 'KB', 'MB', 'GB']
+    const i = Math.floor(Math.log(bytes) / Math.log(k))
+    return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i]
+}
+
+// Initialize on mount
+onMounted(() => {
+    initializeTurndownService()
+})
 </script>

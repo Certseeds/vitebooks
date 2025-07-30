@@ -1,7 +1,8 @@
 <script setup>
 import { ref } from 'vue';
 import { parseJsonVocabulary, parseTxtVocabulary, jsonFormat, textFormat } from './vocabularyParser.js';
-import { translate } from './api.js'
+import { translate } from './api.js';
+import { customPrompt } from './prompt.js';
 
 
 const apiUrl = ref('http://127.0.0.1:11434/v1');
@@ -26,19 +27,6 @@ const vocabularyFile = ref(null);
 
 const preWordsMap = ref(new Map());
 const postWordsMap = ref(new Map());
-
-const customPrompt = ref(`你是一具战锤40K小说翻译机仆。请将以下英文文本翻译为中文, 遵循以下要求
-
-0. 使用 /no_think 模式, 或者说使用非推理模式
-1. 只输出翻译结果, 不在输出最后添加任何解释以及思考过程
-2. 保持战锤40K宇宙的严肃、黑暗、哥特风格
-3. 保留原文的语言风格和氛围感
-4. 确保翻译流畅自然，符合现代中文阅读习惯, 不使用古风描述
-5. 对于战斗场面和技术描述要逐词翻译, 不要添加华丽的修饰与无意义的描述
-
-请翻译以下内容：
-`);
-
 
 const logs = ref([]);
 
@@ -211,7 +199,7 @@ async function translateSingleSegment(segment, index) {
         apiUrl.value,
         apiToken.value,
         modelName.value,
-        customPrompt.value || '请将以下文本翻译为中文：',
+        customPrompt || '请将以下文本翻译为中文：',
         processedSegment,
         temperature.value
     );

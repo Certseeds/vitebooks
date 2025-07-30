@@ -1,6 +1,9 @@
 import OpenAI from 'openai'
 
 const translate = async function (baseURL, apiKey, model, prompt, text, temperature) {
+    if (text === '--------'){
+        return '--------';
+    }
     const maxRetries = 3;
     let lastError = null;
     const openai = new OpenAI({
