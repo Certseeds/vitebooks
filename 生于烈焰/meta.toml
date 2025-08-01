@@ -1,0 +1,34 @@
+[book]
+chinese_name = "生于烈焰"
+english_name = "Born of Flame"
+type = "短篇小说集"
+series.name = "Horus Heresy"
+series.order = 50
+authors = ["Nick Kyme"]
+
+[[sub]]
+chinese_name = "普罗米修斯之阳"
+english_name = "Promethean Sun"
+type = "短篇小说"
+authors = ["Nick Kyme"]
+recommended_reading = []
+faction_keywords = ["火蜥蜴"]
+
+[[sub]]
+chinese_name = "焦土"
+english_name = "Scorched Earth"
+type = "短篇小说"
+authors = ["Nick Kyme"]
+recommended_reading = [
+    { name = "被遗忘的子嗣", belongto = { name = "黑暗时代", series = { name = "Horus Heresy", order = 116 } } },
+    { name = "普罗米修斯之阳", belongto = { name = "生于烈焰", series = { name = "Horus Heresy", order = 50 } } },
+]
+faction_keywords = ["火蜥蜴"]
+
+[[sub]]
+chinese_name = "熔炉之子"
+english_name = "Sons of the Forge"
+type = "中篇小说"
+authors = ["Nick Kyme"]
+recommended_reading = ["焚天业火"]
+faction_keywords = ["火蜥蜴"]

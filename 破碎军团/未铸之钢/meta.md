@@ -11,7 +11,7 @@ next:
 
 ## 原文来源
 
-+ 原译者:  Turamba
++ 原译者: Turamba
 + <https://www.bilibili.com/read/cv5104991/>
 + 来源: bilibili
 

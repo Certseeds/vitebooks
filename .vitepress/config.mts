@@ -83,7 +83,7 @@ export default defineConfig({
                     , { text: "旧泰拉", link: '/旧泰拉/meta' }
                     , { text: "忠诚的负担", link: '/忠诚的负担/meta' }
                     , { text: "狼毒", link: '/狼毒/meta' }
-                    // , { text: "生于烈焰", link: '/生于烈焰-TODO/meta' }
+                    , { text: "生于烈焰", link: '/生于烈焰/meta' }
                     , { text: "黑暗之奴", link: '/黑暗之奴/meta' }
                     , { text: "围城先驱", link: '/围城先驱/meta' }
                     , { text: "泰坦之死", link: '/泰坦之死/meta' }

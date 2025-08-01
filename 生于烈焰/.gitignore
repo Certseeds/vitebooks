@@ -1,0 +1,5 @@
+*.txt
+!names.txt
+!vocabulary.txt
+htmls/
+ensrc/

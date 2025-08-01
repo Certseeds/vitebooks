@@ -43,7 +43,7 @@ next:
 
 --------
 
-TO BE CONTINUED
++ 后续为词表替换+`claude sonnet 4`翻译, 人工校对
 
 --------
 

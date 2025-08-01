@@ -32,7 +32,7 @@ On the Cover: The Iron Warriors engage the Imperial Army in the largest armoured
 
 ## 出场人物
 
-### Imperial Personae
+### 帝国
 
 德拉萨琉斯[^1], 塔兰军事总督[^2]
 
