@@ -73,18 +73,6 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-      
-      - name: install dependencies depage
-        working-directory: ./depage
-        run: pnpm install
-
-      - name: install dependencies web-cmp-trans
-        working-directory: ./web-cmp-translate
-        run: pnpm install
-
-      - name: install dependencies turndown
-        working-directory: ./turndown
-        run: pnpm install    
 
       - name: scan and build meta.tgz, epubs
         env:
