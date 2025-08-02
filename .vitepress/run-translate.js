@@ -24,6 +24,7 @@ const preFiles = [
     , 'web-cmp-translate/resources/mechanicum.json'
     , 'web-cmp-translate/resources/weapon.json'
     , 'web-cmp-translate/resources/ships.json'
+    , 'web-cmp-translate/resources/stars.json'
 ];
 
 const postFiles = [

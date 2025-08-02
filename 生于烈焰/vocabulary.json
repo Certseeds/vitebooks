@@ -1,0 +1,80 @@
+{
+    "keywords": {
+        "characters": {
+            "T'KELL": "特凯尔",
+            "ZAU'ULL": "扎乌尔",
+            "RAHZ": "拉赫兹",
+            "OBEK": "奥贝克",
+            "ZANDU": "赞都",
+            "AK'NUN": "阿克尼翁",
+            "XEN": "西恩",
+            "GOR'OG": "戈尔戈格",
+            "KRASK": "克拉斯克",
+            "ZEB'DU": "塞卜杜",
+            "VARR": "瓦尔",
+            "ASHAX": "阿沙克斯",
+            "PHOKAN": "波坎",
+            "GAIRON": "加隆",
+            "RAIOS": "雷奥斯",
+            "BA'DURAK": "巴杜拉克",
+            "RATH": "拉特",
+            "VOTAN": "沃坦",
+            "FAI'SHO": "法索",
+            "REYNE": "雷尼",
+            "KASTIGAN": "卡斯蒂根",
+            "ULOK": "阿洛克",
+            "AHREM": "阿赫雷姆",
+            "GALLIKUS": "加利库斯",
+            "AZOTH": "阿佐斯",
+            "SAURIAN": "索留安",
+            "MORIKAN": "莫里坎",
+            "VOSTO": "沃斯托",
+            "KURNAN": "库尔南",
+            "RAYKO": "索罗",
+            "SOLOMUS": "摩斯雷科",
+            "MENATUS": "马纳图斯",
+            "NEVOK": "尼沃克",
+            "UZIEL": "乌齐埃尔",
+            "HAJUK": "哈朱克",
+            "MORVEK": "莫尔维克",
+            "EZRIAH": "以斯利亚",
+            "KREDE": "克雷德",
+            "EZREMAS": "埃兹雷马斯",
+            "GHODAK": "戈达克",
+            "HARKUS": "哈尔库斯",
+            "RENK": "伦克",
+            "REGULUS": "雷古勒斯",
+            "KRONUS": "克罗努斯"
+        },
+        "titles": {
+            "Forgemaster": "熔炉之主",
+            "Forgefather": "锻造之父",
+            "Firefather": "火父",
+            "Firebearer": "火龙",
+            "Firefist": "火拳",
+            "Flamesmote": "烈火之尘",
+            "Wyvern": "双足飞龙",
+            "The Silent": "沉默者",
+            "Captain": "连长",
+            "Iron Father": "钢铁之父",
+            "Igniax Chaplain": "伊格尼克斯牧师",
+            "Firedrakes captain": "火龙战士队长",
+            "Firedrakes sergeant": "火龙军士",
+            "Firedrake": "火龙战士",
+            "Shipmaster": "船长",
+            "Legionary torturer": "军团拷问官"
+        },
+        "organizations": {
+            "Medusan": "美杜莎",
+            "Immortal": "不朽者"
+        },
+        "ships": {
+            "Obstinate": "顽固号",
+            "Chalice of Fire": "烈火圣杯号"
+        },
+        "equipment": {
+            "Castellax": "堡星级",
+            "battle automata": "自动战斗机兵"
+        }
+    }
+}
