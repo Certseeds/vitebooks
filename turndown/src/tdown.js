@@ -72,7 +72,7 @@ const addCustomRules = (turndownService) => {
     // 添加规则以处理 class="break" 的段落
     turndownService.addRule('breakParagraph', {
         filter: (node) => {
-            return node.getAttribute('class')=== 'calibre_20' ||  node.nodeName === 'P' && (
+            return node.nodeName === 'P' && (
                 node.getAttribute('class') === 'break' ||
                 node.getAttribute('class') === 'No_Indent'
             );
