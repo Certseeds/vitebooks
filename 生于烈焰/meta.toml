@@ -12,7 +12,8 @@ english_name = "Promethean Sun"
 type = "短篇小说"
 authors = ["Nick Kyme"]
 recommended_reading = []
-faction_keywords = ["火蜥蜴"]
+faction_keywords = ["火蜥蜴", "荒野灵族", "死亡守卫", "钢铁之手", "帝国卫队"]
+
 
 [[sub]]
 chinese_name = "焦土"
@@ -20,10 +21,10 @@ english_name = "Scorched Earth"
 type = "短篇小说"
 authors = ["Nick Kyme"]
 recommended_reading = [
-    { name = "被遗忘的子嗣", belongto = { name = "黑暗时代", series = { name = "Horus Heresy", order = 116 } } },
+    { name = "被遗忘的子嗣", belongto = { name = "黑暗时代", series = { name = "Horus Heresy", order = 16 } } },
     { name = "普罗米修斯之阳", belongto = { name = "生于烈焰", series = { name = "Horus Heresy", order = 50 } } },
 ]
-faction_keywords = ["火蜥蜴"]
+faction_keywords = ["火蜥蜴", "钢铁之手", "暗鸦守卫", "帝皇之子", "钢铁勇士"]
 
 [[sub]]
 chinese_name = "熔炉之子"

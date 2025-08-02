@@ -62,7 +62,7 @@ const addCustomRules = (turndownService) => {
     turndownService.addRule('italic', {
         filter: (node) => {
             return node.nodeName === 'i' ||
-             node.getAttribute('class') === 'Italic';
+                node.getAttribute('class').toLowerCase() === 'italic';
         },
         replacement: (content) => {
             return '*' + content + '*';

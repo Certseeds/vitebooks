@@ -19,7 +19,7 @@ chinese_name = "狼临门下"
 english_name = "Wolf at the Door"
 type = "短篇小说"
 authors = ["Mike Lee"]
-faction_keywords = ["太空野狼", "暗黑灵族"]
+faction_keywords = ["太空野狼", "黑暗灵族"]
 
 [[sub]]
 chinese_name = "风暴之嗣"
