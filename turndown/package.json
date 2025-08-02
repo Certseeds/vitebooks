@@ -11,22 +11,11 @@
         "preview": "vite preview"
     },
     "dependencies": {
-        "turndown": "^7.2.0",
-        "vue": "^3.5.14"
+        "turndown": "catalog:",
+        "vue": "catalog:"
     },
     "devDependencies": {
-        "@vitejs/plugin-vue": "^5.2.4",
-        "vite": "6.3.4"
-    },
-    "pnpm": {
-        "supportedArchitectures": {
-            "os": [
-                "win32",
-                "linux"
-            ],
-            "cpu": [
-                "x64"
-            ]
-        }
+        "@vitejs/plugin-vue": "catalog:",
+        "vite": "catalog:"
     }
 }
