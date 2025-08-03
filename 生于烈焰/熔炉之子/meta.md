@@ -1,13 +1,13 @@
 ---
 prev:
-  text: 'organize'
-  link: '/生于烈焰/熔炉之子/organize'
+  text: '生于烈焰-meta'
+  link: '/生于烈焰/meta'
 next:
   text: 'base'
   link: '/生于烈焰/熔炉之子/base'
 ---
 
-# 生于烈焰-元数据
+# 熔炉之子-元数据
 
 + 出场人物, 第二章到第五章
 + 原译者: 魂之影_

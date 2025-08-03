@@ -37,9 +37,9 @@ On the Cover: Through the glory of the Great crusade to the massacre of Isstvan,
 按原文顺序排列.
 
 + [普罗米修斯之阳](/生于烈焰/普罗米修斯之阳/meta)
-+ [焦土-TODO]
++ [焦土](/生于烈焰/焦土/meta)
 + [文物-参见无尽的战争]
 + [职责不朽-参见破碎军团]
-+ [熔炉之子-TODO]
++ [熔炉之子](/生于烈焰/熔炉之子/meta)
 
 [^0]: 这一部分和《不被铭记的帝国》对比并无改动, 因此复制自[不被铭记的帝国-总序](/不被铭记的帝国/base)

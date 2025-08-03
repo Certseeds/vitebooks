@@ -24,7 +24,7 @@ recommended_reading = [
     { name = "被遗忘的子嗣", belongto = { name = "黑暗时代", series = { name = "Horus Heresy", order = 16 } } },
     { name = "普罗米修斯之阳", belongto = { name = "生于烈焰", series = { name = "Horus Heresy", order = 50 } } },
 ]
-faction_keywords = ["火蜥蜴", "钢铁之手", "暗鸦守卫", "帝皇之子", "钢铁勇士"]
+faction_keywords = ["火蜥蜴", "钢铁之手", "暗鸦守卫", "帝皇之子", "钢铁勇士", "荷鲁斯之子", "吞世者"]
 
 [[sub]]
 chinese_name = "熔炉之子"

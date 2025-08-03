@@ -12,7 +12,7 @@ const createTurndownService = () => {
         strongDelimiter: '**',
         linkStyle: 'inlined',
         linkReferenceStyle: 'full',
-        br: '  ',
+        br: '\n\n',  // br 标签转换为双换行
         blankReplacement: (content, node) => {
             return node.isBlock ? '\n\n' : ''
         },
@@ -27,14 +27,35 @@ const createTurndownService = () => {
     // 添加自定义规则
     addCustomRules(turndownService)
 
+    // 添加后处理函数来清理输出
+    const originalTurndown = turndownService.turndown
+    turndownService.turndown = function (html) {
+        let markdown = originalTurndown.call(this, html)
+
+        // 后处理：清理多余的换行和空白
+        markdown = markdown
+            .replace(/\n{3,}/g, '\n\n')  // 将3个或更多连续换行替换为2个
+            .replace(/^\s+|\s+$/g, '')   // 移除首尾空白
+            .replace(/[ \t]+$/gm, '')    // 移除行尾空白
+
+        return markdown
+    }
+
     return turndownService
 }
 
 // 添加自定义转换规则
 const addCustomRules = (turndownService) => {
-    // 添加规则以保留引文格式
 
-    // TODO, 将逻辑剥离到子目录中, import进来
+    // 首先添加段落规则，确保段落之间有换行
+    turndownService.addRule('paragraph', {
+        filter: 'p',
+        replacement: (content) => {
+            // 清理内容并确保段落间有适当换行
+            content = content.trim();
+            return content ? '\n\n' + content + '\n\n' : '';
+        }
+    })
 
     // 添加规则以保留引文格式
     turndownService.addRule('blockquote', {
@@ -62,10 +83,23 @@ const addCustomRules = (turndownService) => {
     turndownService.addRule('italic', {
         filter: (node) => {
             return node.nodeName === 'i' ||
-                node.getAttribute('class').toLowerCase() === 'italic';
+                node.nodeName === 'em' ||
+                ((node.getAttribute('class')?.toLowerCase() ?? '').includes('italic'));
         },
         replacement: (content) => {
             return '*' + content + '*';
+        }
+    });
+
+    // 添加规则以处理加粗
+    turndownService.addRule('strong', {
+        filter: (node) => {
+            return node.nodeName === 'b' ||
+                node.nodeName === 'strong' ||
+                ((node.getAttribute('class')?.toLowerCase() ?? '').includes('bold'));
+        },
+        replacement: (content) => {
+            return '**' + content + '**';
         }
     });
 

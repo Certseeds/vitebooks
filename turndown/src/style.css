@@ -442,6 +442,20 @@ p {
     border-radius: 8px;
 }
 
+.download-info {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 15px;
+}
+
+.download-info p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
 .download-all-btn {
     background: #28a745;
     color: white;

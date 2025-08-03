@@ -44,6 +44,12 @@
             <!-- Download Section -->
             <div v-if="convertedFiles.length > 0" class="download-section">
                 <h3>Converted Files:</h3>
+                <div v-if="supportsDirectoryPicker" class="download-info">
+                    <p>🎉 Using modern directory saving - choose folder once, save all files!</p>
+                </div>
+                <div v-else class="download-info">
+                    <p>⚠️ Your browser will use traditional downloads (may cause multiple popups)</p>
+                </div>
                 <button @click="downloadAllFiles" class="download-all-btn">
                     Download All Markdown Files
                 </button>
@@ -61,7 +67,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { createTurndownService } from '@/tdown.js'
 
 // Reactive data
@@ -70,6 +76,11 @@ const convertedFiles = ref([])
 const conversionStatus = ref([])
 const isConverting = ref(false)
 const turndownService = ref(null)
+
+// Check if Directory Picker API is supported (for batch downloads)
+const supportsDirectoryPicker = computed(() => {
+    return typeof window !== 'undefined' && 'showDirectoryPicker' in window
+})
 
 // Initialize TurndownService
 const initializeTurndownService = () => {
@@ -145,10 +156,80 @@ const downloadSingleFile = (file) => {
     createDownload(file.content, file.filename)
 }
 
-const downloadAllFiles = () => {
-    convertedFiles.value.forEach(file => {
-        createDownload(file.content, file.filename)
-    })
+const downloadAllFiles = async () => {
+    if (supportsDirectoryPicker.value) {
+        await saveAllFilesToDirectory()
+    } else {
+        convertedFiles.value.forEach(file => {
+            createDownload(file.content, file.filename)
+        })
+    }
+}
+
+const saveAllFilesToDirectory = async () => {
+    try {
+        // Let user choose directory once
+        const directoryHandle = await window.showDirectoryPicker()
+        
+        // Save all files to the chosen directory
+        for (const file of convertedFiles.value) {
+            try {
+                const fileHandle = await directoryHandle.getFileHandle(file.filename, { create: true })
+                const writable = await fileHandle.createWritable()
+                await writable.write(file.content)
+                await writable.close()
+                
+                console.log(`File ${file.filename} saved successfully to directory`)
+            } catch (error) {
+                console.error(`Error saving file ${file.filename} to directory:`, error)
+                // Fallback to traditional download for this file
+                createDownload(file.content, file.filename)
+            }
+        }
+        
+        console.log(`All ${convertedFiles.value.length} files saved to directory successfully`)
+    } catch (error) {
+        if (error.name === 'AbortError') {
+            console.log('Directory selection cancelled by user')
+        } else {
+            console.error('Error accessing directory:', error)
+            // Fallback to individual file picker method
+            await saveAllFilesWithFilePicker()
+        }
+    }
+}
+
+const saveAllFilesWithFilePicker = async () => {
+    for (const file of convertedFiles.value) {
+        try {
+            const fileHandle = await window.showSaveFilePicker({
+                suggestedName: file.filename,
+                types: [
+                    {
+                        description: 'Markdown files',
+                        accept: {
+                            'text/markdown': ['.md']
+                        }
+                    }
+                ]
+            })
+            
+            const writable = await fileHandle.createWritable()
+            await writable.write(file.content)
+            await writable.close()
+            
+            console.log(`File ${file.filename} saved successfully`)
+        } catch (error) {
+            if (error.name === 'AbortError') {
+                console.log(`Save operation cancelled for ${file.filename}`)
+                break // User cancelled, stop the process
+            } else {
+                console.error(`Error saving file ${file.filename}:`, error)
+                // Fallback to traditional download for this file
+                createDownload(file.content, file.filename)
+            }
+        }
+    }
 }
 
 const createDownload = (content, filename) => {
