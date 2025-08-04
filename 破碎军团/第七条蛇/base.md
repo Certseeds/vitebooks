@@ -23,15 +23,17 @@ On the Cover: The suivivors of Isstvan V unite to strike against the insidious A
 
 卡德穆斯·提洛 布兰坦的近侍
 
-弗雷特·萨玛提卡 钢铁圣父
+弗雷特·萨玛提卡 铁匠[^6] 莫洛克终结者
 
 威尔马纳·赛布斯 莫洛克终结者
 
 塞普图斯·索伊克 莫洛克终结者
 
-伊戈纳图斯·努门 莫洛克终结者
+伊戈纳图斯·努门 战斗兄弟
 
-萨比克·维兰德 钢铁圣父
+萨比克·维兰德 铁父
+
+--------
 
 尼康纳·沙罗金[^1]
 
@@ -74,3 +76,5 @@ On the Cover: The suivivors of Isstvan V unite to strike against the insidious A
 [^4]: Chaitin
 
 [^5]: Seyhan
+
+[^6]: Ironwrought

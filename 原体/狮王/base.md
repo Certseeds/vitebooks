@@ -35,7 +35,7 @@ On the Cover: In taking the war to the traitor, the Dark Angels primarch courts 
 
 ### 第十军团, '钢铁之手'
 
-拉斯科 米多亚, 连长, 钢铁圣父
+拉斯科 米多亚, 连长, 铁父
 
 卡萨利尔 洛拉米奇, 98连的连长
 

@@ -35,11 +35,17 @@
             "Alpharius": "阿尔法瑞斯",
             "Omegon": "欧米伽"
         },
-        "特殊头衔": {
+        "智库特殊头衔": {
             "Lexicanium": "编修员",
             "Codicier": "典记长",
             "Epistolary": "星语官",
             "Chief Librarian": "首席智库"
+        },
+        "牧师特殊头衔": {
+            "Father of Iron": "钢铁圣父"
+        },
+        "钢铁之手军团特殊头衔": {
+            "Iron Father": "铁父"
         }
     }
 }

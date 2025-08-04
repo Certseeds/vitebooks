@@ -93,7 +93,7 @@ On the Cover: From the New York Times bestselling author of A Thousand Sons
 
 弗雷特 萨玛提卡[^45], 锻铁者[^46], 莫洛克老兵[^47]
 
-萨比克·维兰德[^48], 钢铁之父[^49]
+萨比克·维兰德[^48], 铁父[^49]
 
 "卡拉什" 庞巴斯图斯[^50], 无畏[^51]
 

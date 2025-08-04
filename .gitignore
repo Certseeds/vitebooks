@@ -459,4 +459,5 @@ $RECYCLE.BIN/
 .vitepress/dist
 .vitepress/cache
 *.epub
+*.mobi
 *.env
