@@ -77,7 +77,7 @@ On the Cover: An arisen Vulkan makes a perilous journey to the Throneworld to me
 
 弗拉特[^33] 克纳格[^34], 格萨卡氏族[^35]的铁父
 
-奥泰克[^36] 摩尔[^37], 莫拉格氏族[^38]的铁父
+奥泰克[^36] 摩尔[^37], 莫拉古氏族[^38]的铁父
 
 ### 第十九军团, '暗鸦守卫'
 
