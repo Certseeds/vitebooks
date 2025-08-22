@@ -4,7 +4,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import OpenAI from 'openai';
-import { parseJsonVocabulary, parseTxtVocabulary } from '../web-cmp-translate/src/vocabularyParser.js';
+import { parseJsonVocabulary, parseTxtVocabulary, parseCsvVocabulary, parseTmxVocabulary, parseTsvVocabulary } from '../web-cmp-translate/src/vocabularyParser.js';
 import { customPrompt } from '../web-cmp-translate/src/prompt.js';
 
 const args = process.argv;
@@ -67,11 +67,21 @@ const loadPreVocabularies = () => {
 
             const content = fs.readFileSync(file, 'utf8');
             let vocabulary;
+            const fileName = file.toLowerCase();
 
-            if (file.endsWith('.json')) {
+            if (fileName.endsWith('.json')) {
                 vocabulary = parseJsonVocabulary(content);
-            } else {
+            } else if (fileName.endsWith('.txt')) {
                 vocabulary = parseTxtVocabulary(content);
+            } else if (fileName.endsWith('.csv')) {
+                vocabulary = parseCsvVocabulary(content);
+            } else if (fileName.endsWith('.tmx')) {
+                vocabulary = parseTmxVocabulary(content);
+            } else if (fileName.endsWith('.tsv')) {
+                vocabulary = parseTsvVocabulary(content);
+            } else {
+                console.warn(`不支持的文件格式: ${file}`);
+                continue;
             }
 
             // 合并词表
@@ -101,11 +111,21 @@ const loadPostVocabularies = () => {
 
             const content = fs.readFileSync(file, 'utf8');
             let vocabulary;
+            const fileName = file.toLowerCase();
 
-            if (file.endsWith('.json')) {
+            if (fileName.endsWith('.json')) {
                 vocabulary = parseJsonVocabulary(content);
-            } else {
+            } else if (fileName.endsWith('.txt')) {
                 vocabulary = parseTxtVocabulary(content);
+            } else if (fileName.endsWith('.csv')) {
+                vocabulary = parseCsvVocabulary(content);
+            } else if (fileName.endsWith('.tmx')) {
+                vocabulary = parseTmxVocabulary(content);
+            } else if (fileName.endsWith('.tsv')) {
+                vocabulary = parseTsvVocabulary(content);
+            } else {
+                console.warn(`不支持的文件格式: ${file}`);
+                continue;
             }
 
             // 合并词表

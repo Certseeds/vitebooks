@@ -7,8 +7,7 @@ import { customPrompt } from './prompt.js';
 const apiUrl = ref('http://127.0.0.1:11434/v1');
 const modelName = ref('qwen2.5:14b')
 const apiToken = ref('ollama');
-const temperature = ref(1.3); // 预设温度值，可以通过界面调整
-
+const temperature = ref(1.3); // 预设温度值, 可以通过界面调整
 
 // Initialize from URL query parameters
 const params = new URLSearchParams(window.location.search);
@@ -22,8 +21,6 @@ if (params.has('temperature')) {
 
 const textFile = ref(null);
 const originalFileName = ref(''); // 新增：存储原始文件名
-
-const vocabularyFile = ref(null);
 
 const preWordsMap = ref(new Map());
 const postWordsMap = ref(new Map());
@@ -47,18 +44,18 @@ async function handleTextFileUpload(event) {
     reader.onload = async (e) => {
         const fileContent = e.target.result;
         try {
-            // 将文件内容按行分割，并过滤掉空行
+            // 将文件内容按行分割, 并过滤掉空行
             const lines = fileContent.split(/\r?\n/);
             sourceSegments.value = lines.filter(line => line.trim() !== '');
 
-            appendLog(`文本文件已加载，共 ${sourceSegments.value.length} 段有效内容。`);
+            appendLog(`文本文件已加载, 共 ${sourceSegments.value.length} 段有效内容。`);
 
             // 清除旧的翻译
             translatedSegments.value = [];
 
             // 清空文件选择
             event.target.value = null;
-            // textFile.value = null; // 保持 textFile.value 直到翻译或新文件上传，但原始文件名已保存
+            // textFile.value = null; // 保持 textFile.value 直到翻译或新文件上传, 但原始文件名已保存
         } catch (error) {
             appendLog(`Error loading text file: ${error.message}`);
             event.target.value = null;
@@ -75,124 +72,120 @@ async function handleTextFileUpload(event) {
     reader.readAsText(textFile.value);
 }
 
+// 通用文件解析函数
+async function parseVocabularyFile(file) {
+    return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = async (e) => {
+            const fileContent = e.target.result;
+            try {
+                let parsedVocab;
+                const fileName = file.name.toLowerCase();
+
+                if (fileName.endsWith('.json')) {
+                    parsedVocab = parseJsonVocabulary(fileContent);
+                } else if (fileName.endsWith('.txt')) {
+                    parsedVocab = parseTxtVocabulary(fileContent);
+                } else if (fileName.endsWith('.csv')) {
+                    parsedVocab = parseCsvVocabulary(fileContent);
+                } else if (fileName.endsWith('.tmx')) {
+                    parsedVocab = parseTmxVocabulary(fileContent);
+                } else if (fileName.endsWith('.tsv')) {
+                    parsedVocab = parseTsvVocabulary(fileContent);
+                } else {
+                    throw new Error(`不支持的文件类型: ${file.name}`);
+                }
+                
+                resolve({ vocabulary: parsedVocab, fileName: file.name });
+            } catch (error) {
+                reject(new Error(`解析文件 ${file.name} 失败: ${error.message}`));
+            }
+        };
+        reader.onerror = () => {
+            reject(new Error(`读取文件 ${file.name} 失败`));
+        };
+        reader.readAsText(file);
+    });
+}
+
 async function handlePreDealUpload(event) {
-    vocabularyFile.value = event.target.files[0];
-    console.log('File selected:', vocabularyFile.value);
-    if (!vocabularyFile.value) {
+    const files = Array.from(event.target.files);
+    if (!files || files.length === 0) {
         return;
     }
-    appendLog(`Vocabulary file selected: ${vocabularyFile.value.name}`);
+    
+    appendLog(`预处理词表文件已选择: ${files.map(f => f.name).join(', ')} (共${files.length}个文件)`);
 
-    const reader = new FileReader();
-    reader.onload = async (e) => {
-        const fileContent = e.target.result;
+    let successCount = 0;
+    let errorCount = 0;
+
+    for (const file of files) {
         try {
-            let parsedVocab;
-            const fileName = vocabularyFile.value.name.toLowerCase();
-
-            if (fileName.endsWith('.json')) {
-                parsedVocab = parseJsonVocabulary(fileContent);
-                appendLog('Parsing JSON vocabulary...');
-            } else if (fileName.endsWith('.txt')) {
-                parsedVocab = parseTxtVocabulary(fileContent);
-                appendLog('Parsing TXT vocabulary...');
-            } else if (fileName.endsWith('.csv')) {
-                parsedVocab = parseCsvVocabulary(fileContent);
-                appendLog('Parsing CSV vocabulary...');
-            } else if (fileName.endsWith('.tmx')) {
-                parsedVocab = parseTmxVocabulary(fileContent);
-                appendLog('Parsing TMX vocabulary...');
-            } else if (fileName.endsWith('.tsv')) {
-                parsedVocab = parseTsvVocabulary(fileContent);
-                appendLog('Parsing TSV vocabulary...');
-            } else {
-                appendLog('Unsupported file type. Please upload a .json, .txt, .csv, .tmx, or .tsv file.');
-                // 清空文件选择，以便可以再次选择同一个文件
-                event.target.value = null;
-                vocabularyFile.value = null;
-                return;
-            }
-            // 更新词汇表, 合并而不是替换
-            parsedVocab.forEach((value, key) => {
+            appendLog(`开始解析预处理词表文件: ${file.name}`);
+            const { vocabulary, fileName } = await parseVocabularyFile(file);
+            
+            const fileType = fileName.toLowerCase().split('.').pop().toUpperCase();
+            appendLog(`解析${fileType}预处理词表: ${fileName}...`);
+            const beforeWordsMapSize = preWordsMap.value.size;
+            vocabulary.forEach((value, key) => {
                 appendLog(`新预处理词对: ${key} - ${value}`);
                 preWordsMap.value.set(key, value);
             });
-            appendLog(`Vocabulary loaded successfully. Total entries: ${preWordsMap.value.size}`);
-            // 清空文件选择，以便可以再次选择同一个文件
-            event.target.value = null;
-            vocabularyFile.value = null;
+            const newWordsAdded = preWordsMap.value.size - beforeWordsMapSize;
+            
+            appendLog(`${fileName} 加载成功, 添加了 ${newWordsAdded} 个词条`);
+            successCount++;
         } catch (error) {
-            appendLog(`Error loading vocabulary: ${error.message}`);
-            // 清空文件选择，以便可以再次选择同一个文件
-            event.target.value = null;
-            vocabularyFile.value = null;
+            appendLog(`加载预处理词表失败: ${error.message}`);
+            errorCount++;
         }
-    };
-    reader.onerror = () => {
-        appendLog('Error reading file.');
-        // 清空文件选择，以便可以再次选择同一个文件
-        event.target.value = null;
-        vocabularyFile.value = null;
-    };
-    reader.readAsText(vocabularyFile.value);
+    }
+
+    appendLog(`预处理词表批量加载完成: 成功${successCount}个文件, 失败${errorCount}个文件, 总词条数: ${preWordsMap.value.size}`);
+    
+    // 清空文件选择, 以便可以再次选择同一个文件
+    event.target.value = null;
 }
 
 async function handleAfterDealUpload(event) {
-    vocabularyFile.value = event.target.files[0];
-    console.log('After-deal file selected:', vocabularyFile.value);
-    if (!vocabularyFile.value) {
+    const files = Array.from(event.target.files);
+    if (!files || files.length === 0) {
         return;
     }
-    appendLog(`后处理词表文件已选择: ${vocabularyFile.value.name}`);
+    
+    appendLog(`后处理词表文件已选择: ${files.map(f => f.name).join(', ')} (共${files.length}个文件)`);
 
-    const reader = new FileReader();
-    reader.onload = async (e) => {
-        const fileContent = e.target.result;
+    let successCount = 0;
+    let errorCount = 0;
+
+    for (const file of files) {
         try {
-            let parsedVocab;
-            const fileName = vocabularyFile.value.name.toLowerCase();
-
-            if (fileName.endsWith('.json')) {
-                parsedVocab = parseJsonVocabulary(fileContent);
-                appendLog('解析JSON后处理词表...');
-            } else if (fileName.endsWith('.txt')) {
-                parsedVocab = parseTxtVocabulary(fileContent);
-                appendLog('解析TXT后处理词表...');
-            } else if (fileName.endsWith('.csv')) {
-                parsedVocab = parseCsvVocabulary(fileContent);
-                appendLog('解析CSV后处理词表...');
-            } else if (fileName.endsWith('.tmx')) {
-                parsedVocab = parseTmxVocabulary(fileContent);
-                appendLog('解析TMX后处理词表...');
-            } else if (fileName.endsWith('.tsv')) {
-                parsedVocab = parseTsvVocabulary(fileContent);
-                appendLog('解析TSV后处理词表...');
-            } else {
-                appendLog('不支持的文件类型。请上传 .json, .txt, .csv, .tmx 或 .tsv 文件。');
-                event.target.value = null;
-                vocabularyFile.value = null;
-                return;
-            }
-            // 更新后处理词汇表
-            parsedVocab.forEach((value, key) => {
+            appendLog(`开始解析后处理词表文件: ${file.name}`);
+            const { vocabulary, fileName } = await parseVocabularyFile(file);
+            
+            // 确定文件类型用于日志
+            const fileType = fileName.toLowerCase().split('.').pop().toUpperCase();
+            appendLog(`解析${fileType}后处理词表: ${fileName}...`);
+            const beforeWordsMapSize = postWordsMap.value.size;
+            // 合并词汇表
+            vocabulary.forEach((value, key) => {
                 appendLog(`新后处理词对: ${key} - ${value}`);
                 postWordsMap.value.set(key, value);
             });
-            appendLog(`后处理词表加载成功。总词条数: ${postWordsMap.value.size}`);
-            event.target.value = null;
-            vocabularyFile.value = null;
+            const newWordsAdded = postWordsMap.value.size - beforeWordsMapSize;
+            
+            appendLog(`${fileName} 加载成功, 添加了 ${newWordsAdded} 个词条`);
+            successCount++;
         } catch (error) {
-            appendLog(`加载后处理词表错误: ${error.message}`);
-            event.target.value = null;
-            vocabularyFile.value = null;
+            appendLog(`加载后处理词表失败: ${error.message}`);
+            errorCount++;
         }
-    };
-    reader.onerror = () => {
-        appendLog('读取后处理词表文件错误。');
-        event.target.value = null;
-        vocabularyFile.value = null;
-    };
-    reader.readAsText(vocabularyFile.value);
+    }
+
+    appendLog(`后处理词表批量加载完成: 成功${successCount}个文件, 失败${errorCount}个文件, 总词条数: ${postWordsMap.value.size}`);
+    
+    // 清空文件选择, 以便可以再次选择同一个文件
+    event.target.value = null;
 }
 
 // 新增：公共翻译函数
@@ -263,7 +256,7 @@ async function retryTranslateSegment(index) {
         translatedSegments.value[index] = result;
         appendLog(`重试翻译完成 ${index + 1}: ${sourceSegments.value[index].substring(0, 50)}... -> ${result.substring(0, 50)}...`);
     } catch (error) {
-        translatedSegments.value[index] = sourceSegments.value[index]; // 如果翻译失败，保留原文
+        translatedSegments.value[index] = sourceSegments.value[index]; // 如果翻译失败, 保留原文
         appendLog(`重试翻译失败 ${index + 1}: ${error.message}`);
     }
 }
@@ -287,7 +280,7 @@ async function translateText() {
         .sort((a, b) => b.length - a.length);
 
     if (sortedPreKeys.length > 0) {
-        appendLog(`已加载预处理词表，将对原文进行 ${sortedPreKeys.length} 个词条的预处理替换。`);
+        appendLog(`已加载预处理词表, 将对原文进行 ${sortedPreKeys.length} 个词条的预处理替换。`);
     }
 
     // 逐一翻译每个分段
@@ -297,17 +290,17 @@ async function translateText() {
             translatedSegments.value[index] = result;
             appendLog(`翻译完成 ${index + 1}/${sourceSegments.value.length}: ${sourceSegments.value[index].substring(0, 50)}... -> ${result.substring(0, 50)}...`);
         } catch (error) {
-            translatedSegments.value[index] = sourceSegments.value[index]; // 如果翻译失败，保留原文
+            translatedSegments.value[index] = sourceSegments.value[index]; // 如果翻译失败, 保留原文
             appendLog(`翻译失败 ${index + 1}/${sourceSegments.value.length}: ${error.message}`);
         }
     }
 
-    appendLog(`翻译完成，共处理 ${translatedSegments.value.length} 条分段。`);
+    appendLog(`翻译完成, 共处理 ${translatedSegments.value.length} 条分段。`);
 }
 
 function exportTranslatedFile() {
     if (!originalFileName.value) {
-        appendLog('错误：未找到原始文件名，无法导出。请先上传并处理一个文本文件。');
+        appendLog('错误：未找到原始文件名, 无法导出。请先上传并处理一个文本文件。');
         return;
     }
     if (translatedSegments.value.length === 0) {
@@ -340,7 +333,7 @@ function exportTranslatedFile() {
 function appendLog(message) {
     const timestamp = new Date().toLocaleTimeString();
     logs.value.push(`[${timestamp}] ${message}`);
-    // 保持日志数量不超过一定值，例如100条
+    // 保持日志数量不超过一定值, 例如100条
     if (logs.value.length > 100) {
         logs.value.shift();
     }
@@ -393,12 +386,12 @@ function appendLog(message) {
                     词表和 Prompt
                 </h3>
                 <div class="file-input-group">
-                    <label>预处理词表：</label>
-                    <input type="file" @change="handlePreDealUpload" accept=".json,.txt,.csv,.tmx,.tsv">
+                    <label>预处理词表 (支持多文件选择)：</label>
+                    <input type="file" @change="handlePreDealUpload" accept=".json,.txt,.csv,.tmx,.tsv" multiple>
                 </div>
                 <div class="file-input-group">
-                    <label>后处理词表：</label>
-                    <input type="file" @change="handleAfterDealUpload" accept=".json,.txt,.csv,.tmx,.tsv">
+                    <label>后处理词表 (支持多文件选择)：</label>
+                    <input type="file" @change="handleAfterDealUpload" accept=".json,.txt,.csv,.tmx,.tsv" multiple>
                 </div>
                 <textarea v-model="customPrompt" placeholder="自定义 Prompt"></textarea>
             </div>
@@ -572,10 +565,10 @@ textarea {
     /* 减去padding */
 }
 
-/* 更新文件上传按钮的标签文本，使其更清晰 */
+/* 更新文件上传按钮的标签文本, 使其更清晰 */
 .file-upload-section input[type="file"]+label {
     margin-left: 10px;
-    /* 如果需要，可以调整间距 */
+    /* 如果需要, 可以调整间距 */
 }
 
 
