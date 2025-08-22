@@ -8,7 +8,7 @@ export default defineConfig({
     base: '/web-cmp-trans/',
     resolve: {
         alias: {
-            '@': path.resolve(__dirname, './src'),
+            '@': path.resolve(__dirname, './'),
         },
     },
     build: {

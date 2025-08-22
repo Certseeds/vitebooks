@@ -1,14 +1,14 @@
 <script setup>
 import { ref } from 'vue';
-import { parseJsonVocabulary, parseTxtVocabulary, jsonFormat, textFormat } from './vocabularyParser.js';
+import { parseJsonVocabulary, parseTxtVocabulary, parseCsvVocabulary, parseTmxVocabulary, parseTsvVocabulary, jsonFormat, textFormat, csvFormat, tmxFormat, tsvFormat } from './vocabularyParser.js';
 import { translate } from './api.js';
 import { customPrompt } from './prompt.js';
-
 
 const apiUrl = ref('http://127.0.0.1:11434/v1');
 const modelName = ref('qwen2.5:14b')
 const apiToken = ref('ollama');
 const temperature = ref(1.3); // 预设温度值，可以通过界面调整
+
 
 // Initialize from URL query parameters
 const params = new URLSearchParams(window.location.search);
@@ -88,14 +88,25 @@ async function handlePreDealUpload(event) {
         const fileContent = e.target.result;
         try {
             let parsedVocab;
-            if (vocabularyFile.value.name.endsWith('.json')) {
+            const fileName = vocabularyFile.value.name.toLowerCase();
+
+            if (fileName.endsWith('.json')) {
                 parsedVocab = parseJsonVocabulary(fileContent);
                 appendLog('Parsing JSON vocabulary...');
-            } else if (vocabularyFile.value.name.endsWith('.txt')) {
+            } else if (fileName.endsWith('.txt')) {
                 parsedVocab = parseTxtVocabulary(fileContent);
                 appendLog('Parsing TXT vocabulary...');
+            } else if (fileName.endsWith('.csv')) {
+                parsedVocab = parseCsvVocabulary(fileContent);
+                appendLog('Parsing CSV vocabulary...');
+            } else if (fileName.endsWith('.tmx')) {
+                parsedVocab = parseTmxVocabulary(fileContent);
+                appendLog('Parsing TMX vocabulary...');
+            } else if (fileName.endsWith('.tsv')) {
+                parsedVocab = parseTsvVocabulary(fileContent);
+                appendLog('Parsing TSV vocabulary...');
             } else {
-                appendLog('Unsupported file type. Please upload a .json or .txt file.');
+                appendLog('Unsupported file type. Please upload a .json, .txt, .csv, .tmx, or .tsv file.');
                 // 清空文件选择，以便可以再次选择同一个文件
                 event.target.value = null;
                 vocabularyFile.value = null;
@@ -139,14 +150,25 @@ async function handleAfterDealUpload(event) {
         const fileContent = e.target.result;
         try {
             let parsedVocab;
-            if (vocabularyFile.value.name.endsWith('.json')) {
+            const fileName = vocabularyFile.value.name.toLowerCase();
+
+            if (fileName.endsWith('.json')) {
                 parsedVocab = parseJsonVocabulary(fileContent);
                 appendLog('解析JSON后处理词表...');
-            } else if (vocabularyFile.value.name.endsWith('.txt')) {
+            } else if (fileName.endsWith('.txt')) {
                 parsedVocab = parseTxtVocabulary(fileContent);
                 appendLog('解析TXT后处理词表...');
+            } else if (fileName.endsWith('.csv')) {
+                parsedVocab = parseCsvVocabulary(fileContent);
+                appendLog('解析CSV后处理词表...');
+            } else if (fileName.endsWith('.tmx')) {
+                parsedVocab = parseTmxVocabulary(fileContent);
+                appendLog('解析TMX后处理词表...');
+            } else if (fileName.endsWith('.tsv')) {
+                parsedVocab = parseTsvVocabulary(fileContent);
+                appendLog('解析TSV后处理词表...');
             } else {
-                appendLog('不支持的文件类型。请上传 .json 或 .txt 文件。');
+                appendLog('不支持的文件类型。请上传 .json, .txt, .csv, .tmx 或 .tsv 文件。');
                 event.target.value = null;
                 vocabularyFile.value = null;
                 return;
@@ -366,16 +388,17 @@ function appendLog(message) {
                     placeholder="越低越稳定, 越高输出越多样化">
             </div>
             <div class="sidebar-middle">
-                <h3 class="section-header-with-tooltip" :title="'词表格式说明：\n\n' + jsonFormat + '\n\n或者\n\n' + textFormat">
+                <h3 class="section-header-with-tooltip"
+                    :title="'词表格式说明：\n\n' + jsonFormat + '\n\n' + textFormat + '\n\n' + csvFormat + '\n\n' + tmxFormat + '\n\n' + tsvFormat">
                     词表和 Prompt
                 </h3>
                 <div class="file-input-group">
                     <label>预处理词表：</label>
-                    <input type="file" @change="handlePreDealUpload" accept=".json,.txt">
+                    <input type="file" @change="handlePreDealUpload" accept=".json,.txt,.csv,.tmx,.tsv">
                 </div>
                 <div class="file-input-group">
                     <label>后处理词表：</label>
-                    <input type="file" @change="handleAfterDealUpload" accept=".json,.txt">
+                    <input type="file" @change="handleAfterDealUpload" accept=".json,.txt,.csv,.tmx,.tsv">
                 </div>
                 <textarea v-model="customPrompt" placeholder="自定义 Prompt"></textarea>
             </div>
