@@ -8,7 +8,7 @@ const apiUrl = ref('http://127.0.0.1:11434/v1');
 const modelName = ref('qwen2.5:14b')
 const apiToken = ref('ollama');
 const temperature = ref(1.3); // 预设温度值, 可以通过界面调整
-
+const customCsvMap = ref('');
 // Initialize from URL query parameters
 const params = new URLSearchParams(window.location.search);
 if (params.has('apiUrl')) { apiUrl.value = params.get('apiUrl') || apiUrl.value; }
@@ -95,7 +95,7 @@ async function parseVocabularyFile(file) {
                 } else {
                     throw new Error(`不支持的文件类型: ${file.name}`);
                 }
-                
+
                 resolve({ vocabulary: parsedVocab, fileName: file.name });
             } catch (error) {
                 reject(new Error(`解析文件 ${file.name} 失败: ${error.message}`));
@@ -113,7 +113,7 @@ async function handlePreDealUpload(event) {
     if (!files || files.length === 0) {
         return;
     }
-    
+
     appendLog(`预处理词表文件已选择: ${files.map(f => f.name).join(', ')} (共${files.length}个文件)`);
 
     let successCount = 0;
@@ -123,7 +123,7 @@ async function handlePreDealUpload(event) {
         try {
             appendLog(`开始解析预处理词表文件: ${file.name}`);
             const { vocabulary, fileName } = await parseVocabularyFile(file);
-            
+
             const fileType = fileName.toLowerCase().split('.').pop().toUpperCase();
             appendLog(`解析${fileType}预处理词表: ${fileName}...`);
             const beforeWordsMapSize = preWordsMap.value.size;
@@ -132,7 +132,7 @@ async function handlePreDealUpload(event) {
                 preWordsMap.value.set(key, value);
             });
             const newWordsAdded = preWordsMap.value.size - beforeWordsMapSize;
-            
+
             appendLog(`${fileName} 加载成功, 添加了 ${newWordsAdded} 个词条`);
             successCount++;
         } catch (error) {
@@ -142,7 +142,7 @@ async function handlePreDealUpload(event) {
     }
 
     appendLog(`预处理词表批量加载完成: 成功${successCount}个文件, 失败${errorCount}个文件, 总词条数: ${preWordsMap.value.size}`);
-    
+
     // 清空文件选择, 以便可以再次选择同一个文件
     event.target.value = null;
 }
@@ -152,7 +152,7 @@ async function handleAfterDealUpload(event) {
     if (!files || files.length === 0) {
         return;
     }
-    
+
     appendLog(`后处理词表文件已选择: ${files.map(f => f.name).join(', ')} (共${files.length}个文件)`);
 
     let successCount = 0;
@@ -162,7 +162,7 @@ async function handleAfterDealUpload(event) {
         try {
             appendLog(`开始解析后处理词表文件: ${file.name}`);
             const { vocabulary, fileName } = await parseVocabularyFile(file);
-            
+
             // 确定文件类型用于日志
             const fileType = fileName.toLowerCase().split('.').pop().toUpperCase();
             appendLog(`解析${fileType}后处理词表: ${fileName}...`);
@@ -173,7 +173,7 @@ async function handleAfterDealUpload(event) {
                 postWordsMap.value.set(key, value);
             });
             const newWordsAdded = postWordsMap.value.size - beforeWordsMapSize;
-            
+
             appendLog(`${fileName} 加载成功, 添加了 ${newWordsAdded} 个词条`);
             successCount++;
         } catch (error) {
@@ -183,24 +183,38 @@ async function handleAfterDealUpload(event) {
     }
 
     appendLog(`后处理词表批量加载完成: 成功${successCount}个文件, 失败${errorCount}个文件, 总词条数: ${postWordsMap.value.size}`);
-    
+
     // 清空文件选择, 以便可以再次选择同一个文件
     event.target.value = null;
 }
 
 // 新增：公共翻译函数
 async function translateSingleSegment(segment, index) {
-    // 应用预处理词表替换
-    const sortedPreKeys = Array.from(preWordsMap.value.keys())
+
+    const customVocab = new Map(preWordsMap.value);
+    // 处理自定义CSV词表
+    if (customCsvMap.value && customCsvMap.value.trim() !== '') {
+        try {
+            const customCsv = parseCsvVocabulary(customCsvMap.value.trim());
+            customCsv.forEach((value, key) => {
+                customVocab.set(key, value);
+            });
+            appendLog(`自定义CSV词表已合并, 添加了 ${customCsv.size} 个词条`);
+        } catch (error) {
+            appendLog(`解析自定义CSV词表失败: ${error.message}`);
+        }
+    }
+
+    const sortedPreKeys = Array.from(customVocab.keys())
         .sort((a, b) => b.length - a.length);
 
     let processedSegment = segment;
-    if (preWordsMap.value.size > 0) {
+    if (sortedPreKeys.length > 0) {
         const originalSegmentForLogging = segment;
         for (const key of sortedPreKeys) {
             const escapedKey = key.replace(/[.*+?^${}()|[\\\]\\\\]/g, '\\\\$&');
             const regex = new RegExp(escapedKey, 'gi'); // 全局不区分大小写
-            const replacement = preWordsMap.value.get(key);
+            const replacement = customVocab.get(key);
             processedSegment = processedSegment.replaceAll(regex, replacement);
         }
 
@@ -386,11 +400,12 @@ function appendLog(message) {
                     词表和 Prompt
                 </h3>
                 <div class="file-input-group">
-                    <label>预处理词表 (支持多文件选择)：</label>
+                    <label>预处理词表：</label>
                     <input type="file" @change="handlePreDealUpload" accept=".json,.txt,.csv,.tmx,.tsv" multiple>
                 </div>
+                <textarea v-model="customCsvMap" placeholder="自定义的csv格式词表, 注意只支持预处理词表"></textarea>
                 <div class="file-input-group">
-                    <label>后处理词表 (支持多文件选择)：</label>
+                    <label>后处理词表：</label>
                     <input type="file" @change="handleAfterDealUpload" accept=".json,.txt,.csv,.tmx,.tsv" multiple>
                 </div>
                 <textarea v-model="customPrompt" placeholder="自定义 Prompt"></textarea>
