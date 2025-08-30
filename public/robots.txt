@@ -5,5 +5,4 @@ Allow: /
 
 User-agent: *
 Disallow: /
-crawl-delay: 1
 Sitemap: https://vitebooks.certseeds.com/sitemap.xml
