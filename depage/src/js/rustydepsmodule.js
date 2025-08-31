@@ -117,3 +117,16 @@ export const get_faction_keywords_map = async () => {
         return ['failed to load'];
     }
 }
+
+export const get_all_books = async () => {
+    try {
+        const tarResponse = await fetch(metaUrl);
+        const tarBytes = await tarResponse.arrayBuffer();
+        const tarBuffer = pako.inflate(tarBytes);
+        const results = rustydep.get_all_books(tarBuffer);
+        return JSON.parse(results);
+    } catch (error) {
+        console.error('Error Parse Package:', error);
+        return ['failed to load'];
+    }
+}

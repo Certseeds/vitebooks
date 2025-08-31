@@ -11,6 +11,9 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "cytoscape": "catalog:",
+        "cytoscape-dagre": "catalog:",
+        "dagre": "catalog:",
         "pako": "catalog:",
         "rustydep": "link:rustydeps/pkg",
         "vue": "catalog:"

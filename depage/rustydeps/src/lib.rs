@@ -69,6 +69,13 @@ pub fn get_faction_keywords_map(content: &[u8]) -> String {
     response.unwrap()
 }
 
+#[wasm_bindgen]
+pub fn get_all_books(content: &[u8]) -> String {
+    let books = parse_u8_to_books(Vec::from(content));
+    let response = serde_json::to_string(&books);
+    response.unwrap()
+}
+
 mod author {
     use crate::Book;
     use std::collections::HashMap;

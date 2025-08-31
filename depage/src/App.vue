@@ -2,17 +2,19 @@
 // import HelloWorld from '@/components/HelloWorld.vue'
 import { ref, computed, onMounted } from 'vue';
 import { initRustDep, greet } from '@/js/rustydepsmodule.js';
-import Rustydepsmodule from '@/components/bookdeps.vue';
+import Bookdeps from '@/components/bookdeps.vue';
 import Authors from '@/components/authors.vue';
-import faction_keywords from '@/components/faction_keywords.vue';
+import FactionKeywords from '@/components/faction_keywords.vue';
+import DependencyGraph from '@/components/depgraph.vue';
 
 const selectedComponent = ref('rustydepsmodule');
 const message = ref('Initializing...');
 
 const components = {
-    rustydepsmodule: Rustydepsmodule,
+    rustydepsmodule: Bookdeps,
     authors: Authors,
-    faction_keywords: faction_keywords,
+    faction_keywords: FactionKeywords,
+    dependency_graph: DependencyGraph,
 };
 
 const currentComponent = computed(() => components[selectedComponent.value]);
@@ -36,6 +38,7 @@ onMounted(() => {
         <button @click="selectedComponent = 'rustydepsmodule'">书籍依赖界面</button>
         <button @click="selectedComponent = 'authors'">作者信息界面</button>
         <button @click="selectedComponent = 'faction_keywords'">阵营关键字界面</button>
+        <button @click="selectedComponent = 'dependency_graph'">依赖关系图</button>
     </div>
 
     <!-- 动态加载组件 -->
