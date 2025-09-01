@@ -1,3 +1,5 @@
+﻿<!-- SPDX-FileCopyrightText: 2024-2025 Certseeds -->
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
 <script setup>
 import { ref, onMounted } from 'vue';
 import { get_authors, get_author_books } from '@/js/rustydepsmodule.js';

@@ -1,3 +1,5 @@
+﻿// SPDX-FileCopyrightText: 2024-2025 Certseeds
+// SPDX-License-Identifier: AGPL-3.0-or-later
 //  If you want it, then you'll have to decrypt it
 import crypto from 'crypto';
 

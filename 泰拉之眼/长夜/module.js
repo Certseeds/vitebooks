@@ -1,3 +1,5 @@
+﻿// SPDX-FileCopyrightText: 2024-2025 Certseeds
+// SPDX-License-Identifier: AGPL-3.0-or-later
 const path = "/泰拉之眼/长夜";
 // 生成链接的函数
 

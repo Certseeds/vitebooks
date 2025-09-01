@@ -1,3 +1,5 @@
+﻿// SPDX-FileCopyrightText: 2024-2025 Certseeds
+// SPDX-License-Identifier: AGPL-3.0-or-later
 // 输入是一个[book1, book2,...]数组
 // 在内部为每个book生成唯一id, 并利用
 // "recommended_reading"字段, 为book生成依赖关系, 直接生成唯一id

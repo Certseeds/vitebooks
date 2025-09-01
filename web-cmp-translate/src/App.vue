@@ -1,3 +1,5 @@
+﻿<!-- SPDX-FileCopyrightText: 2024-2025 Certseeds -->
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
 <script setup>
 import { ref } from 'vue';
 import { parseJsonVocabulary, parseTxtVocabulary, parseCsvVocabulary, parseTmxVocabulary, parseTsvVocabulary, jsonFormat, textFormat, csvFormat, tmxFormat, tsvFormat } from './vocabularyParser.js';

@@ -1,3 +1,5 @@
+﻿// SPDX-FileCopyrightText: 2024-2025 Certseeds
+// SPDX-License-Identifier: AGPL-3.0-or-later
 const path = "/异端传说/德什亚之后";
 // 生成链接的函数
 

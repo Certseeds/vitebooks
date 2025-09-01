@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2024-2025 Certseeds
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 const PKG_NAME: &str = env!("CARGO_PKG_NAME");
 const PKG_VERSION: &str = env!("CARGO_PKG_VERSION");
 const PKG_DESCRIPTION: &str = env!("CARGO_PKG_DESCRIPTION");

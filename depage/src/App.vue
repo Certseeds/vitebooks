@@ -1,3 +1,5 @@
+﻿<!-- SPDX-FileCopyrightText: 2024-2025 Certseeds -->
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
 <script setup>
 // import HelloWorld from '@/components/HelloWorld.vue'
 import { ref, computed, onMounted } from 'vue';

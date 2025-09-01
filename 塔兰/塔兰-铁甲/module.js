@@ -1,3 +1,5 @@
+﻿// SPDX-FileCopyrightText: 2024-2025 Certseeds
+// SPDX-License-Identifier: AGPL-3.0-or-later
 import { text } from "stream/consumers";
 
 const path = "/塔兰/塔兰-铁甲";

@@ -1,3 +1,5 @@
+﻿// SPDX-FileCopyrightText: 2024-2025 Certseeds
+// SPDX-License-Identifier: AGPL-3.0-or-later
 const path = "/背叛之遗/征服者之心";
 
 const replaceDirs = [];

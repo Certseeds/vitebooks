@@ -1,3 +1,5 @@
+﻿<!-- SPDX-FileCopyrightText: 2024-2025 Certseeds -->
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
 <script setup>
 import { ref, onMounted, watch, toRaw } from 'vue';
 import { get_faction_keywords, get_faction_keywords_map } from '@/js/rustydepsmodule.js';

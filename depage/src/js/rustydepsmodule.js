@@ -1,3 +1,5 @@
+﻿// SPDX-FileCopyrightText: 2024-2025 Certseeds
+// SPDX-License-Identifier: AGPL-3.0-or-later
 import * as rustydep from 'rustydep';
 import rustydepsWasm from 'rustydep/rustydep_bg.wasm?url';
 import pako from 'pako';

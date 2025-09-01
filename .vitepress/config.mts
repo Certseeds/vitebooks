@@ -1,3 +1,5 @@
+﻿// SPDX-FileCopyrightText: 2024-2025 Certseeds
+// SPDX-License-Identifier: AGPL-3.0-or-later
 import { defineConfig } from 'vitepress'
 import mdFootnote from "markdown-it-footnote"
 
@@ -131,8 +133,9 @@ export default defineConfig({
         ['meta', { property: 'keywords', content: 'vitepress, warhammer, nodejs, llm' }],
         ['meta', { property: 'robots', content: 'index, follow' }],
         ['meta', { property: 'author', content: 'Certseeds' }],
-        ['meta', { property: 'copyleft', content: 'CC BY-NC-SA 4.0' }],
-        ['link', { property: 'license', href: "http://creativecommons.org/licenses/by-nc-sa/4.0/" }],
+        ['meta', { property: 'copyleft', content: 'CC-BY-NC-SA-4.0' }],
+        ['meta', { name: 'license', content: 'CC-BY-NC-SA-4.0' }],
+        ['link', { rel: 'license', href: "https://creativecommons.org/licenses/by-nc-sa/4.0/" }],
 
     ],
     markdown: {

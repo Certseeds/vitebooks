@@ -1,3 +1,5 @@
+﻿// SPDX-FileCopyrightText: 2024-2025 Certseeds
+// SPDX-License-Identifier: AGPL-3.0-or-later
 const path = "/考斯印记/深入骨髓的黑暗";
 
 const replaceDirs = [];

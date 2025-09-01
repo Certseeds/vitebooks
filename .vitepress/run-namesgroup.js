@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+// SPDX-FileCopyrightText: 2024-2025 Certseeds
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 import fs from 'node:fs';

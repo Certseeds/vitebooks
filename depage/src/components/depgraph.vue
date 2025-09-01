@@ -1,3 +1,5 @@
+﻿<!-- SPDX-FileCopyrightText: 2024-2025 Certseeds -->
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
 <template>
     <div class="dependency-graph">
         <div ref="cyContainer" class="cy-container"></div>

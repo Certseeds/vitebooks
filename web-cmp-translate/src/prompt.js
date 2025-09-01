@@ -1,3 +1,5 @@
+﻿// SPDX-FileCopyrightText: 2024-2025 Certseeds
+// SPDX-License-Identifier: AGPL-3.0-or-later
 const customPrompt = `你是一具战锤40K小说翻译机仆。请将以下英文文本翻译为中文, 遵循以下要求
 
 0. 使用 /no_think 模式, 或者说使用非推理模式
