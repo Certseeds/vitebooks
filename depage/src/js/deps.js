@@ -5,14 +5,12 @@
 // "recommended_reading"字段, 为book生成依赖关系, 直接生成唯一id
 export const torender = (obj) => {
     const nameMap = new Map();
-    const idMap = new Map();
     const seriesMap = new Map();
     for (const element of obj) {
         nameMap.set(element.chinese_name, element);
 
         const seriesName = `${element.series.name} ${element.series.order}`;
         element.id = `${element.chinese_name} ${seriesName}`; // `荷鲁斯崛起 Horus Heresy 1`
-        idMap.set(element.id, element);
 
         // 随后为每一个`${element.series.name} ${element.series.order}`生成一个数组, 内部存储所有这本书的book, 方便优化查找时间
         let series = seriesMap.get(seriesName);
@@ -40,7 +38,7 @@ export const torender = (obj) => {
                     const series = seriesMap.get(seriesName);
                     if (series) {
                         for (const book of series) {
-                            if (book.name === rec_read.name || book.enname === rec_read.enname) {
+                            if (book.chinese_name === rec_read.name || book.english_name === rec_read.enname) {
                                 element.dependencies = element.dependencies || [];
                                 element.dependencies.push(book.id);
                             }
@@ -51,7 +49,7 @@ export const torender = (obj) => {
                     const series = seriesMap.get(seriesName);
                     if (series) {
                         for (const book of series) {
-                            if (book.name === rec_read.name || book.enname === rec_read.enname) {
+                            if (book.chinese_name === rec_read.name || book.english_name === rec_read.enname) {
                                 element.dependencies = element.dependencies || [];
                                 element.dependencies.push(book.id);
                             }
