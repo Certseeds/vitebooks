@@ -17,6 +17,14 @@ const {
     description = 'Warhammer 40k Books in Chinese',
     showSidebar = false,
 } = Astro.props;
+
+// Build headMeta as raw HTML to avoid Astro scoped-class injection on <meta>/<link> tags.
+// When using JSX spread ({...attrs}), Astro appends its scoped class to every element once per
+// concurrent page render, causing class="astro-xxx astro-xxx astro-xxx ..." repeated hundreds of times.
+const headMetaHtml = headMeta.map(([tag, attrs]) => {
+    const attrStr = Object.entries(attrs).map(([k, v]) => `${k}="${v.replace(/"/g, '&quot;')}"`).join(' ');
+    return `<${tag} ${attrStr} />`;
+}).join('\n    ');
 ---
 <!doctype html>
 <html lang="zh-CN">
@@ -26,12 +34,7 @@ const {
     <meta name="description" content={description} />
     <title>{title} | ViteBooks</title>
     <link rel="icon" href="/favicon.ico" />
-    {headMeta.map(([tag, attrs]) => {
-        if (tag === 'link') {
-            return <link {...attrs} />;
-        }
-        return <meta {...attrs} />;
-    })}
+    <Fragment set:html={headMetaHtml} />
     <meta property="og:url" content={`${hostURL}${Astro.url.pathname}`} />
 </head>
 <body>
