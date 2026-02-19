@@ -34,9 +34,15 @@ try {
         <p>目前共计 <strong>{epubLinks.length}</strong> 本书</p>
 
         {epubLinks.length > 0 && (
-            <button id="download-all-btn" class="download-btn">
-                一键下载所有epub (注意弹窗拦截)
-            </button>
+            <div class="download-tip">
+                <button id="download-all-btn" class="download-btn">
+                    一键下载所有epub
+                </button>
+                <p class="tip-text">
+                    如果只下载第一个文件, 请再次点击, 直到浏览器顶部弹出提示询问是否允许该网站下载多个文件.
+                    点击 <strong>允许</strong> 后, 再次点击按钮即可一次性下载全部epub.
+                </p>
+            </div>
         )}
 
         <ul class="epub-list">
@@ -60,15 +66,18 @@ try {
 {epubLinks.length > 0 && (
     <script define:vars={{ epubHrefs: epubLinks.map(e => e.href) }}>
         document.getElementById('download-all-btn')?.addEventListener('click', () => {
-            epubHrefs.forEach((href) => {
-                const a = document.createElement('a');
-                a.href = href;
-                a.style.display = 'none';
-                a.target = '_blank';
-                a.rel = 'noreferrer';
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
+            // Edge (Chromium) blocks multiple simultaneous programmatic downloads.
+            // Adding `download` attribute and staggering with setTimeout bypasses the blocker.
+            epubHrefs.forEach((href, i) => {
+                setTimeout(() => {
+                    const a = document.createElement('a');
+                    a.href = href;
+                    a.download = href.split('/').pop() ?? '';
+                    a.style.display = 'none';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                }, i * 300);
             });
         });
     </script>
@@ -80,9 +89,20 @@ try {
     padding-bottom: 3rem;
 }
 
+.download-tip {
+    margin: 1rem 0 1.5rem;
+}
+
+.tip-text {
+    margin: 0.5rem 0 0;
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
 .download-btn {
     display: inline-block;
-    margin: 1rem 0 1.5rem;
+    margin: 0;
     padding: 0.6rem 1.25rem;
     background: var(--color-accent);
     color: #fff;

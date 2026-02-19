@@ -20,7 +20,8 @@
         "@astrojs/sitemap": "catalog:",
         "@nanoseeds/wh40k-icon": "catalog:",
         "astro": "catalog:",
-        "remark-footnotes": "catalog:"
+        "remark-footnotes": "catalog:",
+        "vite": "catalog:"
     },
     "devDependencies": {
         "@types/node": "catalog:",
