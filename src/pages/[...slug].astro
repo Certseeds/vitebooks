@@ -45,10 +45,8 @@ const frontmatter = entry.data as {
 };
 
 // normalize VitePress-style .html links to clean paths
-function normalizeLink(link: string | undefined): string | undefined {
-    if (!link) return undefined;
-    return link.replace(/\.html$/, '');
-}
+const normalizeLink = (link: string | undefined): string | undefined =>
+    link ? link.replace(/\.html$/, '') : undefined;
 
 const prev = frontmatter.prev
     ? { text: frontmatter.prev.text, link: normalizeLink(frontmatter.prev.link)! }
@@ -64,7 +62,7 @@ const modifiedDate = getGitLastModified(filePath);
 const lastModified = modifiedDate ? formatLastModified(modifiedDate) : undefined;
 
 // derive a page title from the first heading or slug
-const pageTitle = frontmatter.title ?? entry.id.split('/').pop()?.replace(/\.md$/, '') ?? 'Page';
+const pageTitle = frontmatter.title ?? entry.id.split('/').at(-1)?.replace(/\.md$/, '') ?? 'Page';
 ---
 <Layout title={pageTitle}>
     <article class="book-page">

@@ -14,7 +14,7 @@ import { resolve, normalize } from 'node:path';
  *   another/file
  *   <blank line>
  */
-function buildGitTimestampCache(): Map<string, Date> {
+const buildGitTimestampCache = (): Map<string, Date> => {
     const cache = new Map<string, Date>();
     try {
         // -c core.quotepath=false: force git to output UTF-8 paths as-is instead of
@@ -54,10 +54,10 @@ const _cache: Map<string, Date> = buildGitTimestampCache();
  * O(1) lookup — no subprocess overhead per page.
  * Accepts any absolute path; normalizes separators before lookup.
  */
-export function getGitLastModified(filePath: string): Date | null {
+export const getGitLastModified = (filePath: string): Date | null => {
     const key = normalize(resolve(filePath));
     return _cache.get(key) ?? null;
-}
+};
 
 /** Number of entries loaded (useful for diagnosing empty-cache issues). */
 export const gitCacheSize = _cache.size;
@@ -78,6 +78,5 @@ const lastUpdatedFormatOptions: Intl.DateTimeFormatOptions = {
     formatMatcher: 'basic',
 } as Intl.DateTimeFormatOptions;
 
-export function formatLastModified(date: Date): string {
-    return new Intl.DateTimeFormat('zh-CN-u-ca-gregory', lastUpdatedFormatOptions).format(date);
-}
+export const formatLastModified = (date: Date): string =>
+    new Intl.DateTimeFormat('zh-CN-u-ca-gregory', lastUpdatedFormatOptions).format(date);

@@ -20,7 +20,7 @@ const findDirWithCNAME: (string) => (string | null) = (startDir: string) => {
 }
 
 const processSideBarElements = async (sidebarItems: any[], dir: string) => {
-    const HHs = sidebarItems.filter(x => x.text === '荷鲁斯之乱')[0];
+    const HHs = sidebarItems.find((x: any) => x.text === '荷鲁斯之乱');
     const entries = await fsp.readdir(dir, { withFileTypes: true });
     const entriesSet = new Set(entries.map(x => x.name))
     const bookNameMap__ = entries
@@ -47,13 +47,12 @@ const processContent = (names: string[]) => {
         .concat(["", "# epub列表"])
         .concat([""])
         .concat(names.map(x => {
-            const [name, run_number, build_day] = x.split('-'); // 解构字符串
-            // I had a feeling you'd say that...
+            const [name] = x.split('-');
             return `+ [${name}](${domainName()}/epub/${x})`;
         }))
         .concat([""]);
     return lines.join('\n');
-}
+};
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -67,10 +66,9 @@ console.log(epubContent);
 
 await fsp.appendFile(epubPage, epubContent, 'utf-8');
 const writeIndex = async (sidebarItems: any[]) => {
-    const HHs = sidebarItems.filter(x => x.text === '荷鲁斯之乱')[0];
+    const HHs = sidebarItems.find((x: any) => x.text === '荷鲁斯之乱');
     const line1 = "|书名|链接|";
     const line2 = "|---|---|";
-    const isChinese = (str) => /[\u4e00-\u9fa5]/.test(str);
     const lines = HHs.items
         .filter(x => x.link.endsWith('/meta'))
         .map(x => {

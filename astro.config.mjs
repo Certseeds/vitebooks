@@ -33,4 +33,9 @@ export default defineConfig({
         // generate up to 16 pages concurrently — dramatically reduces wall-clock time
         concurrency: 16,
     },
+    vite:{
+        build:{
+            target: 'esnext',
+        }
+    }
 });
