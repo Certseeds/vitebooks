@@ -1,0 +1,246 @@
+---
+// SPDX-FileCopyrightText: 2024-2026 Certseeds
+// SPDX-License-Identifier: AGPL-3.0-or-later
+import SiteNav from '../components/SiteNav.astro';
+import SiteSidebar from '../components/SiteSidebar.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { headMeta, hostURL } from '../data/head.ts';
+
+interface Props {
+    title?: string;
+    description?: string;
+    showSidebar?: boolean;
+}
+
+const {
+    title = 'ViteBooks',
+    description = 'Warhammer 40k Books in Chinese',
+    showSidebar = false,
+} = Astro.props;
+---
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title} | ViteBooks</title>
+    <link rel="icon" href="/favicon.ico" />
+    {headMeta.map(([tag, attrs]) => {
+        if (tag === 'link') {
+            return <link {...attrs} />;
+        }
+        return <meta {...attrs} />;
+    })}
+    <meta property="og:url" content={`${hostURL}${Astro.url.pathname}`} />
+</head>
+<body>
+    <SiteNav />
+    <div class:list={['page-wrapper', showSidebar ? 'has-sidebar' : '']}>
+        {showSidebar && <SiteSidebar />}
+        <main class="main-content">
+            <slot />
+        </main>
+    </div>
+    <SiteFooter />
+</body>
+</html>
+
+<style is:global>
+:root {
+    --color-bg: #ffffff;
+    --color-bg-nav: rgba(255, 255, 255, 0.9);
+    --color-text: #213547;
+    --color-text-secondary: #476582;
+    --color-border: #e2e8f0;
+    --color-accent: #3c6ef0;
+    --color-accent-light: #ebf2ff;
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #1a1a24;
+        --color-bg-nav: rgba(26, 26, 36, 0.92);
+        --color-text: #e1e8f0;
+        --color-text-secondary: #9aacbd;
+        --color-border: #2e3a4a;
+        --color-accent: #6b9fff;
+        --color-accent-light: #1a2740;
+    }
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-sans);
+    background: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.page-wrapper {
+    min-height: calc(100vh - 3.5rem - 80px);
+}
+
+.page-wrapper.has-sidebar {
+    display: flex;
+    max-width: 100%;
+}
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+    padding: 2rem 2.5rem;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.page-wrapper.has-sidebar .main-content {
+    margin: 0;
+    max-width: none;
+}
+
+/* markdown content styles */
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4 {
+    font-weight: 600;
+    line-height: 1.3;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-text);
+}
+
+.main-content h1 { font-size: 2rem; border-bottom: 1px solid var(--color-border); padding-bottom: 0.5rem; }
+.main-content h2 { font-size: 1.5rem; border-bottom: 1px solid var(--color-border); padding-bottom: 0.25rem; }
+.main-content h3 { font-size: 1.2rem; }
+
+.main-content p {
+    margin: 0.75rem 0;
+    line-height: 1.8;
+}
+
+.main-content a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+.main-content a:hover {
+    text-decoration: underline;
+}
+
+.main-content code {
+    font-family: var(--font-mono);
+    font-size: 0.875em;
+    background: var(--color-accent-light);
+    padding: 0.1em 0.4em;
+    border-radius: 4px;
+}
+
+.main-content pre {
+    background: var(--color-bg-nav);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+.main-content pre code {
+    background: none;
+    padding: 0;
+}
+
+.main-content blockquote {
+    border-left: 4px solid var(--color-accent);
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    color: var(--color-text-secondary);
+    background: var(--color-accent-light);
+    border-radius: 0 4px 4px 0;
+}
+
+.main-content ul,
+.main-content ol {
+    padding-left: 1.5rem;
+    margin: 0.75rem 0;
+}
+
+.main-content li {
+    margin: 0.25rem 0;
+}
+
+.main-content hr {
+    border: none;
+    border-top: 1px solid var(--color-border);
+    margin: 2rem 0;
+}
+
+.main-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.main-content th,
+.main-content td {
+    border: 1px solid var(--color-border);
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+}
+
+.main-content th {
+    background: var(--color-accent-light);
+    font-weight: 600;
+}
+
+/* footnotes */
+.main-content .footnotes {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-border);
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+}
+
+.main-content sup a {
+    font-size: 0.75em;
+    vertical-align: super;
+}
+
+@media (max-width: 768px) {
+    .page-wrapper.has-sidebar {
+        flex-direction: column;
+    }
+
+    .site-sidebar {
+        width: 100%;
+        max-height: none;
+        position: static;
+        border-right: none;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .main-content {
+        padding: 1.25rem 1rem;
+    }
+
+    .nav-links a {
+        display: none;
+    }
+
+    .nav-links a:first-child {
+        display: inline;
+    }
+}
+</style>

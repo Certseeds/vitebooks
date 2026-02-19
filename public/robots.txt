@@ -5,4 +5,4 @@ Allow: /
 
 User-agent: *
 Disallow: /
-Sitemap: https://vitebooks.certseeds.com/sitemap.xml
+Sitemap: https://vitebooks.certseeds.com/sitemap-index.xml

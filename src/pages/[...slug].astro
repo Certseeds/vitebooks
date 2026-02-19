@@ -1,0 +1,80 @@
+---
+// SPDX-FileCopyrightText: 2024-2026 Certseeds
+// SPDX-License-Identifier: AGPL-3.0-or-later
+import { getCollection } from 'astro:content';
+import { render } from 'astro:content';
+import { resolve, join } from 'node:path';
+import Layout from '../layouts/Layout.astro';
+import PrevNext from '../components/PrevNext.astro';
+import { getGitLastModified, formatLastModified, gitCacheSize } from '../utils/git.ts';
+
+// Emit a build-time warning if the git cache is empty (helps diagnose CI issues)
+if (gitCacheSize === 0) {
+    console.warn('[git] Timestamp cache is empty — last-modified dates will not appear. Is this a git repo with commits?');
+}
+
+// Routes handled by dedicated .astro pages — must not collide
+
+export async function getStaticPaths() {
+    // must be defined inside getStaticPaths — this context is isolated in Astro
+    const DEDICATED_ROUTES = new Set([
+        'warhammer40k/epub',
+    ]);
+    const books = await getCollection('books');
+    return books
+        .filter(entry => {
+            const slug = entry.id.replace(/\.md$/, '');
+            return !DEDICATED_ROUTES.has(slug);
+        })
+        .map(entry => {
+            const slug = entry.id.replace(/\.md$/, '');
+            return {
+                params: { slug },
+                props: { entry },
+            };
+        });
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const frontmatter = entry.data as {
+    prev?: { text: string; link: string };
+    next?: { text: string; link: string };
+    title?: string;
+};
+
+// normalize VitePress-style .html links to clean paths
+function normalizeLink(link: string | undefined): string | undefined {
+    if (!link) return undefined;
+    return link.replace(/\.html$/, '');
+}
+
+const prev = frontmatter.prev
+    ? { text: frontmatter.prev.text, link: normalizeLink(frontmatter.prev.link)! }
+    : undefined;
+const next = frontmatter.next
+    ? { text: frontmatter.next.text, link: normalizeLink(frontmatter.next.link)! }
+    : undefined;
+
+// get git last modified time for this file
+// Note: entry.id from Astro glob loader has no .md extension — append it for the cache lookup
+const filePath = join(resolve('./'), entry.id + '.md');
+const modifiedDate = getGitLastModified(filePath);
+const lastModified = modifiedDate ? formatLastModified(modifiedDate) : undefined;
+
+// derive a page title from the first heading or slug
+const pageTitle = frontmatter.title ?? entry.id.split('/').pop()?.replace(/\.md$/, '') ?? 'Page';
+---
+<Layout title={pageTitle}>
+    <article class="book-page">
+        <Content />
+        <PrevNext prev={prev} next={next} lastModified={lastModified} />
+    </article>
+</Layout>
+
+<style>
+.book-page {
+    padding-bottom: 3rem;
+}
+</style>

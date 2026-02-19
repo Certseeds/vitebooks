@@ -1,0 +1,74 @@
+---
+// SPDX-FileCopyrightText: 2024-2026 Certseeds
+// SPDX-License-Identifier: AGPL-3.0-or-later
+import { sidebar } from '../data/sidebar.ts';
+import type { SidebarItem } from '../data/sidebar.ts';
+---
+<aside class="site-sidebar">
+    {sidebar.map(section => (
+        <div class="sidebar-section">
+            <div class="sidebar-section-title">{section.text}</div>
+            {section.items && (
+                <ul class="sidebar-items">
+                    {section.items.map((item: SidebarItem) => (
+                        <li>
+                            {item.link
+                                ? <a href={item.link} class="sidebar-link">{item.text}</a>
+                                : <span class="sidebar-text">{item.text}</span>
+                            }
+                        </li>
+                    ))}
+                </ul>
+            )}
+        </div>
+    ))}
+</aside>
+
+<style>
+.site-sidebar {
+    width: 260px;
+    flex-shrink: 0;
+    padding: 1.5rem 0 1.5rem 0;
+    overflow-y: auto;
+    max-height: calc(100vh - 3.5rem);
+    position: sticky;
+    top: 3.5rem;
+    border-right: 1px solid var(--color-border);
+}
+.sidebar-section {
+    margin-bottom: 1.5rem;
+}
+.sidebar-section-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-secondary);
+    padding: 0 1.25rem 0.5rem;
+}
+.sidebar-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar-items li {
+    padding: 0;
+}
+.sidebar-link,
+.sidebar-text {
+    display: block;
+    padding: 0.3rem 1.25rem;
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    border-radius: 0;
+    transition: background 0.1s, color 0.1s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.sidebar-link:hover {
+    background: var(--color-accent-light);
+    color: var(--color-accent);
+}
+</style>

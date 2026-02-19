@@ -1,0 +1,151 @@
+---
+// SPDX-FileCopyrightText: 2024-2026 Certseeds
+// SPDX-License-Identifier: AGPL-3.0-or-later
+import Layout from '../layouts/Layout.astro';
+
+const heroActions = [
+    { text: '无所畏惧', link: '/无所畏惧/meta', theme: 'brand' },
+    { text: '不被铭记的帝国', link: '/不被铭记的帝国/meta', theme: 'brand' },
+    { text: 'warhammer40k-元数据', link: '/warhammer40k/primarchs', theme: 'alt' },
+];
+
+const features = [
+    {
+        title: '完全由markdown构建',
+        details: '每一个小节是单独的markdown文件',
+    },
+    {
+        title: '由git进行版本管理',
+        details: '每一个变更都能被记录下来',
+    },
+    {
+        title: '自动化',
+        details: '通过脚本实现拆分src, 替换词汇, 添加脚注, 添加链接等功能',
+    },
+    {
+        title: 'LLM驱动的人名检测',
+        details: '一键检索所有译名, 替换简单轻松, 提升观感.',
+    },
+];
+---
+<Layout title="ViteBooks" showSidebar={true}>
+    <div class="home-hero">
+        <h1 class="hero-name">vitebooks</h1>
+        <p class="hero-text">Books Collection</p>
+        <p class="hero-tagline">一些markdown格式的电子书</p>
+        <div class="hero-actions">
+            {heroActions.map(action => (
+                <a
+                    href={action.link}
+                    class:list={['hero-btn', action.theme === 'brand' ? 'btn-brand' : 'btn-alt']}
+                >
+                    {action.text}
+                </a>
+            ))}
+        </div>
+    </div>
+    <div class="home-features">
+        {features.map(f => (
+            <div class="feature-card">
+                <h3 class="feature-title">{f.title}</h3>
+                <p class="feature-details">{f.details}</p>
+            </div>
+        ))}
+    </div>
+</Layout>
+
+<style>
+.home-hero {
+    text-align: center;
+    padding: 4rem 1rem 3rem;
+}
+
+.hero-name {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--color-accent), #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 0.5rem;
+}
+
+.hero-text {
+    font-size: 1.5rem;
+    color: var(--color-text);
+    margin: 0 0 0.5rem;
+    font-weight: 500;
+}
+
+.hero-tagline {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    margin: 0 0 2rem;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 0.6rem 1.25rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity 0.15s, transform 0.15s;
+}
+
+.hero-btn:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+.btn-brand {
+    background: var(--color-accent);
+    color: #fff;
+}
+
+.btn-alt {
+    background: var(--color-accent-light);
+    color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+}
+
+.home-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    padding: 1rem 0 2rem;
+}
+
+.feature-card {
+    padding: 1.25rem;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    background: var(--color-bg);
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.feature-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 4px 20px rgba(60, 110, 240, 0.1);
+}
+
+.feature-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+}
+
+.feature-details {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+    line-height: 1.6;
+}
+</style>

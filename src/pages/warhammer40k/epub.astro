@@ -1,0 +1,133 @@
+---
+// SPDX-FileCopyrightText: 2024-2026 Certseeds
+// SPDX-License-Identifier: AGPL-3.0-or-later
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import Layout from '../../layouts/Layout.astro';
+import PrevNext from '../../components/PrevNext.astro';
+
+// Parse epub links injected by run-epublist.ts at CI/build time.
+// Injected format: `+ [书名](https://domain/epub/xxx.epub)`
+function parseEpubLinks(md: string): { name: string; href: string }[] {
+    const results: { name: string; href: string }[] = [];
+    // match markdown links whose href ends with .epub
+    const re = /\[([^\]]+)\]\((https?:\/\/[^)]+\.epub)\)/g;
+    let m: RegExpExecArray | null;
+    while ((m = re.exec(md)) !== null) {
+        results.push({ name: m[1], href: m[2] });
+    }
+    return results;
+}
+
+const epubMdPath = resolve('./warhammer40k/epub.md');
+let epubLinks: { name: string; href: string }[] = [];
+try {
+    const raw = readFileSync(epubMdPath, 'utf-8');
+    epubLinks = parseEpubLinks(raw);
+} catch {
+    // file missing or not yet injected — empty list at build time is fine
+}
+---
+<Layout title="epub总集">
+    <article class="epub-page">
+        <h1>epub总集</h1>
+        <p>目前共计 <strong>{epubLinks.length}</strong> 本书</p>
+
+        {epubLinks.length > 0 && (
+            <button id="download-all-btn" class="download-btn">
+                一键下载所有epub (注意弹窗拦截)
+            </button>
+        )}
+
+        <ul class="epub-list">
+            {epubLinks.map(({ name, href }) => (
+                <li>
+                    <a href={href} target="_blank" rel="noreferrer" class="epub-link">
+                        {name}
+                    </a>
+                </li>
+            ))}
+        </ul>
+
+        {epubLinks.length === 0 && (
+            <p class="no-epub">epub 文件尚未生成, 请先运行构建脚本.</p>
+        )}
+
+        <PrevNext prev={{ text: 'dependencies', link: '/warhammer40k/dependencies' }} />
+    </article>
+</Layout>
+
+{epubLinks.length > 0 && (
+    <script define:vars={{ epubHrefs: epubLinks.map(e => e.href) }}>
+        document.getElementById('download-all-btn')?.addEventListener('click', () => {
+            epubHrefs.forEach((href) => {
+                const a = document.createElement('a');
+                a.href = href;
+                a.style.display = 'none';
+                a.target = '_blank';
+                a.rel = 'noreferrer';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            });
+        });
+    </script>
+)}
+
+<style>
+.epub-page {
+    max-width: 800px;
+    padding-bottom: 3rem;
+}
+
+.download-btn {
+    display: inline-block;
+    margin: 1rem 0 1.5rem;
+    padding: 0.6rem 1.25rem;
+    background: var(--color-accent);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+.download-btn:hover {
+    opacity: 0.85;
+}
+
+.epub-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.5rem;
+}
+
+.epub-link {
+    display: block;
+    padding: 0.45rem 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: background 0.1s, border-color 0.1s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.epub-link:hover {
+    background: var(--color-accent-light);
+    border-color: var(--color-accent);
+}
+
+.no-epub {
+    color: var(--color-text-secondary);
+    font-style: italic;
+}
+</style>

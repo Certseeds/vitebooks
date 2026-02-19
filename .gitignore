@@ -1,5 +1,10 @@
-# Created by https://www.toptal.com/developers/gitignore/api/c++,docz,node,rust,audio,linux,macos,video,vuejs,goland,windows,visualstudiocode,compressed
-# Edit at https://www.toptal.com/developers/gitignore?templates=c++,docz,node,rust,audio,linux,macos,video,vuejs,goland,windows,visualstudiocode,compressed
+# Created by https://www.toptal.com/developers/gitignore/api/c++,docz,node,rust,audio,linux,macos,video,vuejs,goland,windows,compressed,visualstudiocode,astro
+# Edit at https://www.toptal.com/developers/gitignore?templates=c++,docz,node,rust,audio,linux,macos,video,vuejs,goland,windows,compressed,visualstudiocode,astro
+
+### Astro ###
+# Gitignore template for Astro projects
+# Ignore content collection generated files
+.astro
 
 ### Audio ###
 *.aif
@@ -453,7 +458,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/c++,docz,node,rust,audio,linux,macos,video,vuejs,goland,windows,visualstudiocode,compressed
+# End of https://www.toptal.com/developers/gitignore/api/c++,docz,node,rust,audio,linux,macos,video,vuejs,goland,windows,compressed,visualstudiocode,astro
 
 !go.mod
 .vitepress/dist

@@ -111,12 +111,12 @@ jobs:
           cp -r ./turndown/dist/* ./public/turndown/
 
       - name: build
-        run: pnpm run docs:build
+        run: pnpm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./.vitepress/dist
+          path: ./dist
 
       - name: cp epub to cf-public
         run: |
@@ -129,9 +129,6 @@ jobs:
           rename \
             's/(.*)-[0-9]{4}-[0-9]{8}\.epub$/$1.epub/' \
             ./cf-public/stable/epub/*.epub
-
-      - name: Install Wrangler
-        run: pnpm add -w wrangler@latest
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3

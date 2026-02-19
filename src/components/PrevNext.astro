@@ -1,0 +1,102 @@
+---
+// SPDX-FileCopyrightText: 2024-2026 Certseeds
+// SPDX-License-Identifier: AGPL-3.0-or-later
+interface NavLink {
+    text: string;
+    link: string;
+}
+interface Props {
+    prev?: NavLink;
+    next?: NavLink;
+    lastModified?: string;
+}
+const { prev, next, lastModified } = Astro.props;
+---
+<div class="prev-next">
+    <div class="prev-next-inner">
+        <div class="prev-slot">
+            {prev && (
+                <a href={prev.link} class="prev-next-link prev-link">
+                    <span class="direction">← Previous</span>
+                    <span class="page-title">{prev.text}</span>
+                </a>
+            )}
+        </div>
+        <div class="next-slot">
+            {next && (
+                <a href={next.link} class="prev-next-link next-link">
+                    <span class="direction">Next →</span>
+                    <span class="page-title">{next.text}</span>
+                </a>
+            )}
+        </div>
+    </div>
+    {lastModified && (
+        <div class="last-updated">
+            <span>Last updated: </span><time>{lastModified}</time>
+        </div>
+    )}
+</div>
+
+<style>
+.prev-next {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border);
+}
+.prev-next-inner {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: space-between;
+}
+.prev-slot,
+.next-slot {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+}
+.next-slot {
+    justify-content: flex-end;
+}
+.prev-next-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
+    padding: 0.6rem 0.9rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--color-text);
+    transition: border-color 0.15s, background 0.15s;
+    min-width: 0;
+}
+.prev-next-link:hover {
+    border-color: var(--color-accent);
+    background: var(--color-accent-light);
+}
+.next-link {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.direction {
+    flex-shrink: 0;
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+}
+.page-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+}
+.last-updated {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: var(--color-text-secondary);
+    text-align: right;
+}
+</style>
