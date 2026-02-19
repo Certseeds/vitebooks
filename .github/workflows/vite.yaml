@@ -53,7 +53,7 @@ jobs:
             exec node \
             --experimental-strip-types \
             --experimental-transform-types \
-             ./.vitepress/run-listname.ts
+             ./scripts/run-listname.ts
 
       - name: add wasm32-unknown-unknown target
         run: rustup target add wasm32-unknown-unknown
@@ -69,7 +69,7 @@ jobs:
         run: |
           cargo build --release
           wasm-pack build --target web --release
-          cp ./target/release/toepub ./../../.vitepress/toepub.exe
+          cp ./target/release/toepub ./../../scripts/toepub.exe
 
       - name: Install dependencies
         run: pnpm install
@@ -79,7 +79,7 @@ jobs:
           RUN_NUMBER: ${{ github.run_number }}
         run: |
           echo 'Run number: $RUN_NUMBER'
-          pnpm exec node ./.vitepress/maketgz.js $RUN_NUMBER
+          pnpm exec node ./scripts/maketgz.js $RUN_NUMBER
 
       - name: scan and get epub page
         run: |
@@ -87,7 +87,7 @@ jobs:
             exec node \
             --experimental-strip-types \
             --experimental-transform-types \
-            ./.vitepress/run-epublist.ts
+            ./scripts/run-epublist.ts
   
       - name: build depage
         working-directory: ./depage

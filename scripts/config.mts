@@ -1,29 +1,9 @@
 ﻿// SPDX-FileCopyrightText: 2024-2025 Certseeds
 // SPDX-License-Identifier: AGPL-3.0-or-later
-import { defineConfig } from 'vitepress'
-import mdFootnote from "markdown-it-footnote"
-
-const hostURL = 'https://vitebooks.certseeds.com'
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
-    title: "vitebooks",
-    description: "Vite Books Collection",
-    srcExclude: [
-        "README.md",
-        "LICENSE_AGPL_V3_0.md"
-    ],
+export default ({
     themeConfig: {
-        // https://vitepress.dev/reference/default-theme-config
-        nav: [
-            { text: 'Home', link: '/' }
-            , { text: "无所畏惧", link: '/无所畏惧/meta' }
-            , { text: "epub总集", link: '/warhammer40k/epub' }
-            , { text: "warhammer40k-元数据", link: '/warhammer40k/primarchs' }
-            , { text: "dep-page", link: "/depage/index.html", target: '_blank' }
-            , { text: "web-cmp-translate", link: "/web-cmp-trans/index.html", target: '_blank' }
-            , { text: "web-turndown", link: "/turndown/index.html", target: '_blank' }
-        ],
         sidebar: [
             {
                 text: '元数据',
@@ -95,57 +75,5 @@ export default defineConfig({
                 ]
             }
         ],
-        socialLinks: [
-            { icon: 'github', link: 'https://github.com/Certseeds/vitebooks' }
-        ],
-        footer: {
-            copyright: `2024-${new Date().getFullYear()} Certseeds; this page is licensed under CC BY-NC-SA 4.0; 本站非官方, 不盈利, 纯免费, 严禁商用`
-        },
-        lastUpdated: {
-            formatOptions: {
-                era: "short",
-                year: "numeric",
-                month: "long",
-                weekday: "long",
-                day: "numeric",
-                hour: "numeric",
-                minute: "numeric",
-                second: "numeric",
-                hour12: false,
-                timeZone: "UTC",
-                timeZoneName: "longGeneric",
-                fractionalSecondDigits: 3,
-                formatMatcher: "basic",
-            },
-        },
-    },
-    head: [
-        ['meta', { property: 'og:type', content: 'website' }],
-        ['meta', { property: 'og:locale', content: 'zh-CN' }],
-        ['meta', { property: 'og:title', content: 'ViteBooks | Static Book Site Powered by VitePress' }],
-        ['meta', { property: 'og:site_name', content: 'ViteBooks' }],
-        ['meta', { property: 'og:image', content: `${hostURL}/favicon.ico` }],
-        ['meta', { property: 'og:url', content: `${hostURL}` }],
-        ['meta', { property: 'twitter:card', content: 'summary_large_image' }],
-        ['meta', { property: 'twitter:title', content: 'ViteBooks | Static Book Site Powered by VitePress' }],
-        ['meta', { property: 'twitter:image', content: `${hostURL}/favicon.ico` }],
-        ['meta', { property: 'twitter:description', content: 'warhammer cn translation collect and reformat' }],
-        ['meta', { property: 'keywords', content: 'vitepress, warhammer, nodejs, llm' }],
-        ['meta', { property: 'robots', content: 'index, follow' }],
-        ['meta', { property: 'author', content: 'Certseeds' }],
-        ['meta', { property: 'copyleft', content: 'CC-BY-NC-SA-4.0' }],
-        ['meta', { name: 'license', content: 'CC-BY-NC-SA-4.0' }],
-        ['link', { rel: 'license', href: "https://creativecommons.org/licenses/by-nc-sa/4.0/" }],
-
-    ],
-    markdown: {
-        config: (md) => {
-            md.use(mdFootnote)
-        },
-    },
-    sitemap: {
-        hostname: hostURL
-    },
-    lastUpdated: true,
-    metaChunk: true
+    }
 })

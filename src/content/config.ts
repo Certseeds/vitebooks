@@ -7,7 +7,7 @@ import { resolve, join } from 'node:path';
 
 /** Directories at workspace root that are definitively NOT book content. */
 const NON_BOOK_DIRS = new Set([
-    '.git', '.github', '.vitepress', '.astro',
+    '.git', '.github', '.astro',
     'node_modules', 'src', 'dist', 'public',
     'depage', 'turndown', 'web-cmp-translate',
     'goserver',

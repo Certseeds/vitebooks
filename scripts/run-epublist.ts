@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import fsp from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import config from './config.mts';
+import { sidebar } from './../src/data/sidebar.ts';
 import { domainName } from './domain.js';
 
 const findDirWithCNAME: (string) => (string | null) = (startDir: string) => {
@@ -19,9 +19,8 @@ const findDirWithCNAME: (string) => (string | null) = (startDir: string) => {
     return null;
 }
 
-const processSideBarElements = async (config: any, dir: string) => {
-    const sidear = config.themeConfig.sidebar;
-    const HHs = sidear.filter(x => x.text === '荷鲁斯之乱')[0];
+const processSideBarElements = async (sidebarItems: any[], dir: string) => {
+    const HHs = sidebarItems.filter(x => x.text === '荷鲁斯之乱')[0];
     const entries = await fsp.readdir(dir, { withFileTypes: true });
     const entriesSet = new Set(entries.map(x => x.name))
     const bookNameMap__ = entries
@@ -60,16 +59,15 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const startDir = path.resolve(__dirname);
 const targetDir = findDirWithCNAME(startDir) ?? "./../";
-const bookNames = await processSideBarElements(config, targetDir);
+const bookNames = await processSideBarElements(sidebar, targetDir);
 console.log(bookNames);
 const epubPage = path.join(targetDir, 'warhammer40k', 'epub.md');
 const epubContent = processContent(bookNames);
 console.log(epubContent);
 
 await fsp.appendFile(epubPage, epubContent, 'utf-8');
-const writeIndex = async (config: any) => {
-    const sidear = config.themeConfig.sidebar;
-    const HHs = sidear.filter(x => x.text === '荷鲁斯之乱')[0];
+const writeIndex = async (sidebarItems: any[]) => {
+    const HHs = sidebarItems.filter(x => x.text === '荷鲁斯之乱')[0];
     const line1 = "|书名|链接|";
     const line2 = "|---|---|";
     const isChinese = (str) => /[\u4e00-\u9fa5]/.test(str);
@@ -85,4 +83,4 @@ const writeIndex = async (config: any) => {
     return strs;
 }
 const indexPage = path.join(targetDir, 'index.md');
-await fsp.appendFile(indexPage, await writeIndex(config), 'utf-8');
+await fsp.appendFile(indexPage, await writeIndex(sidebar), 'utf-8');

@@ -11,7 +11,7 @@ export default defineConfig({
     output: 'static',
     integrations: [
         sitemap({
-            filter: (page) => !page.includes('/node_modules/') && !page.includes('/.vitepress/'),
+            filter: (page) => !page.includes('/node_modules/'),
             // chunked sitemaps: split by first path segment
             serialize(item) {
                 return item;

@@ -1,4 +1,4 @@
 {
-    "directory": "./.vitepress/dist",
+    "directory": "./dist",
     "port": "5174"
 }

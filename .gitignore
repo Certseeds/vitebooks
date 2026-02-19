@@ -461,8 +461,6 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/c++,docz,node,rust,audio,linux,macos,video,vuejs,goland,windows,compressed,visualstudiocode,astro
 
 !go.mod
-.vitepress/dist
-.vitepress/cache
 *.epub
 *.mobi
 *.env
