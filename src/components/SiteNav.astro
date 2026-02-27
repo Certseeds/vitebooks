@@ -22,7 +22,7 @@ const currentPath = Astro.url.pathname;
                 </a>
             ))}
         </div>
-        <div class="nav-social">
+        <div class="social-icons">
             {socialLinks.map(link => (
                 <a
                     href={link.link}
@@ -77,7 +77,7 @@ const currentPath = Astro.url.pathname;
     background: var(--color-accent-light);
     color: var(--color-accent);
 }
-.nav-social {
+.social-icons {
     display: flex;
     align-items: center;
     gap: 0.5rem;
