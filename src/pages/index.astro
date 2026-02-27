@@ -2,6 +2,9 @@
 // SPDX-FileCopyrightText: 2024-2026 Certseeds
 // SPDX-License-Identifier: AGPL-3.0-or-later
 import Layout from '../layouts/Layout.astro';
+import "@nanoseeds/wh40k-icon/dist/warhammer40k.css";
+import adeptus_terra from "@nanoseeds/wh40k-icon/dist/svgs/adeptus-terra.svg?url";
+import adeptus_astartes from "@nanoseeds/wh40k-icon/dist/svgs/adeptus-astartes.svg?url";
 
 const heroActions = [
     { text: '无所畏惧', link: '/无所畏惧/meta', theme: 'brand' },
@@ -44,6 +47,20 @@ const features = [
             ))}
         </div>
     </div>
+
+    <div style="display: flex; align-items: center; justify-content: center; margin: 1.5rem 0; color: var(--color-text-secondary);">
+      <p style="margin-right: 1.5rem; font-style: italic; font-size: 1.1rem; border-right: 1px solid var(--color-border); padding-right: 1.5rem;">stories between</p>
+      <img src={adeptus_astartes} alt="adeptus_astartes" width="60" height="60"/>
+      <span style="font-size: 0.9rem; margin: 0 0.5rem; font-weight: 500;">of</span>
+      <img src={adeptus_terra} alt="adeptus_terra" width="60" height="60"/>
+    
+      <span style="margin: 0 1.5rem; font-weight: 600; color: var(--color-accent);">and</span>
+    
+      <div class="wh40k-heretic-astartes" style="font-size: 50px; width: 50px; height: 50px;"></div>
+      <span style="font-size: 0.9rem; margin: 0 0.5rem; font-weight: 500;">of</span>
+      <i class="wh40k-chaos-star-01" style="font-size: 50px; width: 50px; height: 50px;"></i>
+    </div>
+
     <div class="home-features">
         {features.map(f => (
             <div class="feature-card">
