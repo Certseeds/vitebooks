@@ -63,7 +63,7 @@ On The Cover: The latest instalment in the best-seling Horus Heresy Series
 
 ### 火星机械修会
 
-卡尔博 哈尔[^5] (KELBOR-HAL), 铸造将军
+卡尔博-哈尔[^5] (KELBOR-HAL), 铸造将军
 
 古雷奥[^5] (GUREOD), 贤者, 深渊狂怒号船员
 
