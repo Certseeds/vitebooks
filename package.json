@@ -25,12 +25,12 @@
     },
     "devDependencies": {
         "@types/node": "catalog:",
-        "archiver": "catalog:",
         "density-clustering": "catalog:",
         "jsdom": "catalog:",
         "ollama": "catalog:",
         "openai": "catalog:",
         "pinyin-pro": "catalog:",
+        "tar": "catalog:",
         "turndown": "catalog:",
         "zlib": "catalog:"
     },
