@@ -37,7 +37,7 @@ On the Cover: The Night Lords and the Dark Angels clash in the Thramas Crusade
 >
 > > 如此被扭曲的灵魂无法寻回他们所失去的. 如此野蛮的武器不可能不付代价即被挥舞.
 >
-> > ——《逐字集》，路德新篇
+> > ——《逐字集》, 路德新篇
 >
 > > 第一章, 这些野蛮的武器
 

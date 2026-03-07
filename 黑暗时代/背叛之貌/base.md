@@ -23,7 +23,7 @@ On The Cover: The Raven Guard push through the traitors encamped in the Isstvan 
 
 马库斯 瓦莱里乌斯, 执政官, 帝国军队
 
-布兰尼, 拯救星总指挥官, 第十九军团暗鸦守卫
+布兰尼, 救赎星总指挥官, 第十九军团暗鸦守卫
 
 ### 伊斯塔万V
 

@@ -45,7 +45,7 @@ On the Cover: As the Siege of Terra draws ever closer, Mortarion and his sons fi
 
 哈德拉布鲁斯 比奥斯 [^4], 死亡寿衣
 
-格雷姆斯 卡尔加罗 [^5], 连长, 忍耐号指挥官
+格雷姆斯 卡尔加罗 [^5], 连长, 坚忍号指挥官
 
 谢罗布 喀古尔 [^6], 连长, 灾厄号指挥官
 

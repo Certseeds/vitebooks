@@ -3,7 +3,7 @@ chinese_name = "伽罗"
 english_name = "Garro"
 type = "长篇小说"
 series.name = "Horus Heresy"
-series.order = 47
+series.order = 42
 authors = ["James Swallow"]
 recommended_reading = [
     { name = "最后的记述者", belongto = { name = "黑暗时代", series = { name = "Horus Heresy", order = 16 } } },
