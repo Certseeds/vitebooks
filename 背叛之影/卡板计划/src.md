@@ -998,7 +998,7 @@ next:
 
 [^75]: targeting augers, 好像是一种传感器。
 
-[^76]: Ceramite，人类拥有的最优质的陶瓷材料，多用于制造装甲板.
+[^76]: Ceramite, 人类拥有的最优质的陶瓷材料, 多用于制造装甲板.
 
 [^77]: technomat
 

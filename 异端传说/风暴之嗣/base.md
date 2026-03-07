@@ -17,6 +17,6 @@ On the Cover: The Word Bearers seek to cursh the false idols of a wayward human 
 
 ## 卷首语[^1]
 
-身负真理的使者，隐匿于风暴下的真相
+身负真理的使者, 隐匿于风暴下的真相
 
 [^1]: 但是原文开头没有

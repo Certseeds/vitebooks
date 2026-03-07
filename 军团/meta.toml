@@ -5,4 +5,4 @@ type = "长篇小说"
 series.name = "Horus Heresy"
 series.order = 7
 authors = ["Dan Abnett"]
-faction_keywords = ["阿尔法军团", "永生者", "帝国卫队"]
+faction_keywords = ["阿尔法军团", "永生者", "密教", "帝国卫队"]

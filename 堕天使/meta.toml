@@ -5,7 +5,7 @@ type = "长篇小说"
 series.name = "Horus Heresy"
 series.order = 11
 authors = ["Mike Lee"]
-faction_keywords = ["暗黑天使", "机械教", "帝国卫队", "荷鲁斯之子"]
+faction_keywords = ["暗黑天使", "机械教", "帝国卫队", "荷鲁斯之子", "钢铁勇士"]
 recommended_reading = [
     { name = "狮子的召唤", belongto = { name = "异端传说", series = { name = "Horus Heresy", order = 10 } } },
 ]
