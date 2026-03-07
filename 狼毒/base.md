@@ -47,9 +47,9 @@ On The Cover: From the New York Times bestselling novel series
 
 康斯坦丁 瓦尔多, 禁军统帅
 
-艾泽凯尔 阿巴顿, 荷鲁斯之子军团的一连长
+艾泽凯尔·阿巴顿, 荷鲁斯之子军团的一连长
 
-荷鲁斯 卢佩卡尔, 荷鲁斯之子军团的基因原体
+荷鲁斯·卢佩卡尔, 荷鲁斯之子军团的基因原体
 
 ### 游侠骑士
 
@@ -59,7 +59,7 @@ On The Cover: From the New York Times bestselling novel series
 
 ### 太空野狼
 
-黎曼 鲁斯, 基因原体
+黎曼·鲁斯, 基因原体
 
 比约恩 独手
 
@@ -87,7 +87,7 @@ On The Cover: From the New York Times bestselling novel series
 
 格里姆纳 黑血, 随侍近卫
 
-弗雷奇和基利, 黎曼 鲁斯的狼之兄弟
+弗雷奇和基利, 黎曼·鲁斯的狼之兄弟
 
 菲斯 神斩, 比约恩的战斗兄弟
 
