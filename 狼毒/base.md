@@ -45,7 +45,7 @@ On The Cover: From the New York Times bestselling novel series
 
 圣吉列斯, 圣血天使军团的基因原体
 
-康斯坦丁 瓦尔多, 禁军统帅
+康斯坦丁·瓦尔多, 禁军统帅
 
 艾泽凯尔·阿巴顿, 荷鲁斯之子军团的一连长
 
@@ -67,7 +67,7 @@ On The Cover: From the New York Times bestselling novel series
 
 拉夫文 小气鬼, 第四连的头领
 
-阿姆洛迪 斯卡森 斯卡森松, 第五连的头领
+阿姆洛迪·斯卡森 斯卡森松, 第五连的头领
 
 斯昆纳, 第六连的头领
 

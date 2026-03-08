@@ -41,7 +41,7 @@ On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium a
 
 ### 马库拉格
 
-罗伯特 基里曼, 第十三军团"极限战士"基因原体, 五百世界之主, 现亦称"复仇之子"
+罗伯特·基里曼, 第十三军团"极限战士"基因原体, 五百世界之主, 现亦称"复仇之子"
 
 德拉库斯 格洛德, 无敌铁卫指挥官
 
@@ -121,7 +121,7 @@ On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium a
 
 布 索任,"利斧", 太空野狼观察小队
 
-艾恩尼德 希尔, 军士, 极限战士第一百三十五连
+艾恩尼德·希尔, 军士, 极限战士第一百三十五连
 
 纳瑞克, 前任守夜者[^1], 第十七军团"怀言者"
 

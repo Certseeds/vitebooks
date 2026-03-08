@@ -17,7 +17,7 @@ On the Cover: Oll Persson and his band of survivors become trapped in a city on 
 
 ### 旅行小队[^2]
 
-欧尔 佩松, 永生者
+欧尔·佩松, 永生者
 
 多根特 克兰克, 前努米纳斯第六十一连, 考斯难民
 

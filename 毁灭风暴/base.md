@@ -37,7 +37,7 @@ On the Cover: Guilliman abandons the false dream of Imperium Secundus as he lead
 
 ### 极限战士
 
-罗伯特 基里曼, 基因原体
+罗伯特·基里曼, 基因原体
 
 维鲁斯·卡斯宾[^1], 第一战团长
 

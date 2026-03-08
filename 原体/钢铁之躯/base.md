@@ -23,7 +23,7 @@ On the Cover: Ferrus Manus is confronted by the prospect of his own grim destiny
 
 ### 第十军团 钢铁之手
 
-费鲁斯 马努斯, 原体
+费鲁斯·马努斯, 原体
 
 加布里埃尔 桑塔, 装备师兼大队长
 

@@ -47,7 +47,7 @@ On the Cover: The Night Lords under Krukesh the Pale strike at the heart of Impe
 
 ### 第十三军团-极限战士
 
-罗伯特 基里曼, 奥特拉玛之主, 复仇之子, 第十三军团的基因原体.
+罗伯特·基里曼, 奥特拉玛之主, 复仇之子, 第十三军团的基因原体.
 
 瓦伦图斯 多洛尔, 奥特拉玛四英杰(奥克鲁达), 原体的冠军(Champion).
 

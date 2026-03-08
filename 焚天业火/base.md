@@ -125,7 +125,7 @@ On the Cover: The Salamanders fight to bear their primarch's body home to Noctur
 
 --------
 
-艾恩尼德 希尔[^25], 军士, 红印的指挥官
+艾恩尼德·希尔[^25], 军士, 红印的指挥官
 
 英维格里奥[^26], 红印
 

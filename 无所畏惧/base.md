@@ -41,13 +41,13 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 
 ### 第十三军团 极限战士
 
-+ 罗伯特 基里曼, 第十三军团基因原体
++ 罗伯特·基里曼, 第十三军团基因原体
 + 陶若 尼科迪莫斯, 奥特拉玛四英杰(萨拉曼斯), 原体的冠军
 + 艾科斯 拉米亚德, 奥特拉玛四英杰(康诺), 原体的冠军
 + 扎斯塔瑞乌斯, 神圣无畏
 + 泰利梅克汝斯, 蔑视者无畏
-+ 马里乌斯 盖奇, 战团长, 第一战团
-+ 瑞玛斯 文坦努斯, 连长, 第四连
++ 马里乌斯·盖奇, 战团长, 第一战团
++ 瑞玛斯·文坦努斯, 连长, 第四连
   + 齐乌兹 瑟拉顿, 军士, 第四连
   + 莱若斯 塞丹斯, 连长, 第四连
   + 阿尔克, 军士, 第四连
@@ -75,7 +75,7 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
   + 安柴斯, 军士, 第一百一十二连
 + 沙拉德 安托利, 战团长, 第十三战团
 + 泰若尼, 连长, 第一百三十五连
-  + 艾恩尼德 希尔, 军士, 第一百三十五连
+  + 艾恩尼德·希尔, 军士, 第一百三十五连
 + 艾维多 班佐, 战团长, 第十六战团
 + 修通尼克斯, 连长, 第一百六十一连
   + 杰尔, 药剂师, 第一百六十一连
@@ -87,7 +87,7 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 
 ### 第十七军团 怀言者
 
-洛迦 奥瑞利安, 第十七军团基因原体
+洛迦·奥瑞利安, 第十七军团基因原体
 
 科尔 法伦, 黑主教
 
@@ -103,7 +103,7 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 
 马洛克 卡索, 霍尔 贝罗斯的侍僧
 
-索洛特 绰尔
+索洛特·绰尔
 
 乌尔默 诺尔
 
@@ -157,7 +157,7 @@ On the Cover: Dan Abnett is probably the best writer of dark military in the wor
 
 阿布特, 总管
 
-欧尔 佩松
+欧尔·佩松
 
 格拉福特, 劳役机仆
 
