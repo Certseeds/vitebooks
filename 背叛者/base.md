@@ -73,7 +73,7 @@ On the Cover: From the New York Times bestselling author of The First Heretic
 
 ### 第十七军团 "怀言者"
 
-安格尔.泰, 受祝之子, 受祝钢铁指挥官
+安格尔·泰, 受祝之子, 受祝钢铁指挥官
 
 艾瑞巴斯, 一连长, 真言黑暗使徒
 
@@ -91,7 +91,7 @@ On the Cover: From the New York Times bestselling author of The First Heretic
 
 费耶德.哈勒森, 十二军团旗舰征服者号官员
 
-勒哈拉, 十二军团旗舰征服者号占卜之主
+勒哈拉, 十二军团旗舰征服者号占卜女总管
 
 卡吉克, 十二军团旗舰征服者号通讯主管
 
