@@ -36,11 +36,10 @@ try {
         {epubLinks.length > 0 && (
             <div class="download-tip">
                 <button id="download-all-btn" class="download-btn">
-                    一键下载所有epub
+                    一键打包并下载所有 epub (ZIP)
                 </button>
                 <p class="tip-text">
-                    如果只下载第一个文件, 请再次点击, 直到浏览器顶部弹出提示询问是否允许该网站下载多个文件.
-                    点击 <strong>允许</strong> 后, 再次点击按钮即可一次性下载全部epub.
+                    注意：如果 网络波动 或者 下载完成前刷新页面, 此功能可能会失败。
                 </p>
             </div>
         )}
@@ -64,21 +63,58 @@ try {
 </Layout>
 
 {epubLinks.length > 0 && (
-    <script define:vars={{ epubHrefs: epubLinks.map(e => e.href) }}>
-        document.getElementById('download-all-btn')?.addEventListener('click', () => {
-            // Edge (Chromium) blocks multiple simultaneous programmatic downloads.
-            // Adding `download` attribute and staggering with setTimeout bypasses the blocker.
-            epubHrefs.forEach((href, i) => {
-                setTimeout(() => {
-                    const a = document.createElement('a');
-                    a.href = href;
-                    a.download = href.split('/').pop() ?? '';
-                    a.style.display = 'none';
-                    document.body.appendChild(a);
-                    a.click();
-                    document.body.removeChild(a);
-                }, i * 300);
-            });
+    <script>
+        import JSZip from 'jszip';
+
+        document.getElementById('download-all-btn')?.addEventListener('click', async function () {
+            const btn = this as HTMLButtonElement;
+            const epubHrefs = Array.from(document.querySelectorAll('.epub-link')).map(a => (a as HTMLAnchorElement).href);
+            
+            if (btn.disabled || !epubHrefs.length) return;
+            btn.disabled = true;
+            const originalText = btn.textContent;
+
+            const zip = new JSZip();
+            let successCount = 0;
+
+            for (let i = 0; i < epubHrefs.length; i++) {
+                const href = epubHrefs[i];
+                const filename = decodeURIComponent(href.split('/').pop() || `book_${i}.epub`);
+                btn.textContent = `打包中 (${i + 1}/${epubHrefs.length}) ${filename}`;
+
+                try {
+                    const response = await fetch(href);
+                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                    const blob = await response.blob();
+                    zip.file(filename, blob);
+                    successCount++;
+                } catch (err) {
+                    console.error(`Failed to download ${href}:`, err);
+                    // Fallback to manual download link if user wants
+                }
+            }
+
+            if (successCount > 0) {
+                btn.textContent = '正在生成压缩包...';
+                const content = await zip.generateAsync({ type: 'blob' });
+                const url = URL.createObjectURL(content);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `warhammer40k_epub_${new Date().toISOString().slice(0, 10)}.zip`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                btn.textContent = '下载完成';
+            } else {
+                btn.textContent = '下载失败(CORS限制)';
+                alert('获取文件失败。这通常是因为跨域(CORS)限制，浏览器拒绝了脚本直接读取资源。请手动点击下方链接下载。');
+            }
+
+            setTimeout(() => {
+                btn.disabled = false;
+                btn.textContent = originalText;
+            }, 3000);
         });
     </script>
 )}

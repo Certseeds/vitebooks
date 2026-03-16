@@ -4,7 +4,6 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import TurndownService from 'turndown';
 import { JSDOM } from 'jsdom';
 import { createTurndownService } from './../turndown/src/tdown.js';
 
