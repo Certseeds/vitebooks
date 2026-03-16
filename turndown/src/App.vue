@@ -1,4 +1,4 @@
-﻿<!-- SPDX-FileCopyrightText: 2024-2025 Certseeds -->
+<!-- SPDX-FileCopyrightText: 2024-2025 Certseeds -->
 <!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
 <template>
     <div id="app">
@@ -46,15 +46,11 @@
             <!-- Download Section -->
             <div v-if="convertedFiles.length > 0" class="download-section">
                 <h3>Converted Files:</h3>
-                <div v-if="supportsDirectoryPicker" class="download-info">
-                    <p>🎉 Using modern directory saving - choose folder once, save all files!</p>
+                <div class="download-actions">
+                    <button @click="downloadAllAsZip" class="zip-btn" :disabled="convertedFiles.length === 0">
+                        Download All as ZIP
+                    </button>
                 </div>
-                <div v-else class="download-info">
-                    <p>⚠️ Your browser will use traditional downloads (may cause multiple popups)</p>
-                </div>
-                <button @click="downloadAllFiles" class="download-all-btn">
-                    Download All Markdown Files
-                </button>
                 <div class="converted-list">
                     <div v-for="file in convertedFiles" :key="file.filename" class="converted-item">
                         <span class="filename">{{ file.filename }}</span>
@@ -71,6 +67,7 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { createTurndownService } from '@/tdown.js'
+import JSZip from 'jszip'
 
 // Reactive data
 const uploadedFiles = ref([])
@@ -78,11 +75,6 @@ const convertedFiles = ref([])
 const conversionStatus = ref([])
 const isConverting = ref(false)
 const turndownService = ref(null)
-
-// Check if Directory Picker API is supported (for batch downloads)
-const supportsDirectoryPicker = computed(() => {
-    return typeof window !== 'undefined' && 'showDirectoryPicker' in window
-})
 
 // Initialize TurndownService
 const initializeTurndownService = () => {
@@ -158,84 +150,33 @@ const downloadSingleFile = (file) => {
     createDownload(file.content, file.filename)
 }
 
-const downloadAllFiles = async () => {
-    if (supportsDirectoryPicker.value) {
-        await saveAllFilesToDirectory()
-    } else {
-        convertedFiles.value.forEach(file => {
-            createDownload(file.content, file.filename)
-        })
-    }
-}
+const downloadAllAsZip = async () => {
+    if (convertedFiles.value.length === 0) return
 
-const saveAllFilesToDirectory = async () => {
+    const zip = new JSZip()
+    convertedFiles.value.forEach(file => {
+        zip.file(file.filename, file.content)
+    })
+
     try {
-        // Let user choose directory once
-        const directoryHandle = await window.showDirectoryPicker()
-        
-        // Save all files to the chosen directory
-        for (const file of convertedFiles.value) {
-            try {
-                const fileHandle = await directoryHandle.getFileHandle(file.filename, { create: true })
-                const writable = await fileHandle.createWritable()
-                await writable.write(file.content)
-                await writable.close()
-                
-                console.log(`File ${file.filename} saved successfully to directory`)
-            } catch (error) {
-                console.error(`Error saving file ${file.filename} to directory:`, error)
-                // Fallback to traditional download for this file
-                createDownload(file.content, file.filename)
+        const content = await zip.generateAsync({
+            type: 'blob',
+            compression: 'DEFLATE',
+            compressionOptions: {
+                level: 9
             }
-        }
-        
-        console.log(`All ${convertedFiles.value.length} files saved to directory successfully`)
+        })
+        const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19)
+        const zipFilename = `markdown-files-${timestamp}.zip`
+        createDownload(content, zipFilename, 'application/zip')
     } catch (error) {
-        if (error.name === 'AbortError') {
-            console.log('Directory selection cancelled by user')
-        } else {
-            console.error('Error accessing directory:', error)
-            // Fallback to individual file picker method
-            await saveAllFilesWithFilePicker()
-        }
+        console.error('Error generating ZIP:', error)
+        alert('Failed to generate ZIP file')
     }
 }
 
-const saveAllFilesWithFilePicker = async () => {
-    for (const file of convertedFiles.value) {
-        try {
-            const fileHandle = await window.showSaveFilePicker({
-                suggestedName: file.filename,
-                types: [
-                    {
-                        description: 'Markdown files',
-                        accept: {
-                            'text/markdown': ['.md']
-                        }
-                    }
-                ]
-            })
-            
-            const writable = await fileHandle.createWritable()
-            await writable.write(file.content)
-            await writable.close()
-            
-            console.log(`File ${file.filename} saved successfully`)
-        } catch (error) {
-            if (error.name === 'AbortError') {
-                console.log(`Save operation cancelled for ${file.filename}`)
-                break // User cancelled, stop the process
-            } else {
-                console.error(`Error saving file ${file.filename}:`, error)
-                // Fallback to traditional download for this file
-                createDownload(file.content, file.filename)
-            }
-        }
-    }
-}
-
-const createDownload = (content, filename) => {
-    const blob = new Blob([content], { type: 'text/markdown' })
+const createDownload = (content, filename, type = 'text/markdown') => {
+    const blob = content instanceof Blob ? content : new Blob([content], { type })
     const url = URL.createObjectURL(blob)
     const link = document.createElement('a')
     link.href = url

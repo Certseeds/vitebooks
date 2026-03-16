@@ -20,6 +20,7 @@
         "@astrojs/sitemap": "catalog:",
         "@nanoseeds/wh40k-icon": "catalog:",
         "astro": "catalog:",
+        "jszip": "catalog:",
         "remark-footnotes": "catalog:",
         "vite": "catalog:"
     },
