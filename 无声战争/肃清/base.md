@@ -89,6 +89,6 @@ On the Cover: The Word Bearers begin their preparations for the final and inevit
 
 ## 引言
 
-> > 事实上, 暴力会反作用于施暴者, 而阴谋家则会掉进他为别人挖的坑里.
+> 事实上, 暴力会反作用于施暴者, 而阴谋家则会掉进他为别人挖的坑里.
 >
-> > 归于统一前的哲人多亚尔
+> 归于统一前的哲人多亚尔

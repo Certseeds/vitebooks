@@ -43,8 +43,8 @@ On the Cover: Ferrus Manus is confronted by the prospect of his own grim destiny
 
 ## 引言
 
-> > '这与他为什么倒下有什么关系?'
+> '这与他为什么倒下有什么关系?'
 >
-> > '当他的陨落成为既定的一切之时, 它就成为了永恒.'
+> '当他的陨落成为既定的一切之时, 它就成为了永恒.'
 >
-> > - 先知-拉萨尔回答一名学生的问题
+> - 先知-拉萨尔回答一名学生的问题

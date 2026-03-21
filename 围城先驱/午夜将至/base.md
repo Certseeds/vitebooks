@@ -15,6 +15,6 @@ On the Cover: On the eve of the siege, Dorn walks the walls of the Imperial Pala
 
 ## 序言
 
-> > "时间无情, 命运无情. 我们无法超越未来——唯有忍耐承受."
+> "时间无情, 命运无情. 我们无法超越未来——唯有忍耐承受."
 >
-> > ——帝皇, 第一次统一战争之初
+> ——帝皇, 第一次统一战争之初

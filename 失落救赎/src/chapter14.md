@@ -9,9 +9,9 @@ next:
 
 # chapter-14
 
-> > 译者: 劝君终日须沉醉
+> 译者: 劝君终日须沉醉
 >
-> > 校对: DatBilly
+> 校对: DatBilly
 
 ## 佯攻
 
