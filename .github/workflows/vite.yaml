@@ -38,9 +38,10 @@ jobs:
         with:
           toolchain: stable
 
+      # do not update to v3.9+, it will loss footnote reverse
       - uses: r-lib/actions/setup-pandoc@v2
         with:
-          pandoc-version: '3.7'
+          pandoc-version: '3.8.3'
 
       - name: Rust Cache
         uses: Swatinem/rust-cache@v2
