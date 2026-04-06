@@ -464,3 +464,4 @@ $RECYCLE.BIN/
 *.epub
 *.mobi
 *.env
+*.code.sh
