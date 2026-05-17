@@ -102,14 +102,21 @@ jobs:
         working-directory: ./turndown
         run: pnpm build
 
+      - name: build webdoc
+        working-directory: ./webdoc
+        run: pnpm build
+
       - name: cp subprojects
         run: |
           mkdir -p ./public/depage
           mkdir -p ./public/web-cmp-trans
           mkdir -p ./public/turndown
+          mkdir -p ./public/webdoc
           cp -r ./depage/dist/* ./public/depage/
           cp -r ./web-cmp-translate/dist/* ./public/web-cmp-trans/
           cp -r ./turndown/dist/* ./public/turndown/
+          cp -r ./webdoc/dist/* ./public/webdoc/
+
 
       - name: build
         run: pnpm run build

@@ -18,6 +18,7 @@ export const navItems: NavItem[] = [
     { text: 'dep-page', link: '/depage/index.html', target: '_blank' },
     { text: 'web-cmp-translate', link: '/web-cmp-trans/index.html', target: '_blank' },
     { text: 'web-turndown', link: '/turndown/index.html', target: '_blank' },
+    { text: 'web-doc', link: '/webdoc/index.html', target: '_blank' },
 ];
 
 export const socialLinks = [
