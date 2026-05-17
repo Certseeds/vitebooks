@@ -9,7 +9,7 @@ import { resolve, join } from 'node:path';
 const NON_BOOK_DIRS = new Set([
     '.git', '.github', '.astro',
     'node_modules', 'src', 'dist', 'public',
-    'depage', 'turndown', 'web-cmp-translate',
+    'depage', 'turndown', 'web-cmp-translate', 'webdoc',
     'goserver',
 ]);
 

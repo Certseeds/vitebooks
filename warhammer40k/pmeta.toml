@@ -1,2 +1,2 @@
-pre = ["./warhammer40k/shield.md"]
+pre = ["./webdoc/resource/shield.md"]
 post = []

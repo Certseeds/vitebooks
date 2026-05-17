@@ -21,6 +21,7 @@
         "@nanoseeds/wh40k-icon": "catalog:",
         "astro": "catalog:",
         "jszip": "catalog:",
+        "pandoc-wasm": "catalog:",
         "remark-footnotes": "catalog:",
         "vite": "catalog:"
     },
