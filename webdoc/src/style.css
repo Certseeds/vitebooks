@@ -130,6 +130,26 @@ pre {
 	overflow-wrap: anywhere;
 }
 
+.build-value.status-idle {
+	background: rgba(122, 162, 247, 0.14);
+	color: rgba(247, 241, 232, 0.92);
+}
+
+.build-value.status-loading {
+	background: rgba(255, 188, 93, 0.18);
+	color: #ffe3b8;
+}
+
+.build-value.status-ready {
+	background: rgba(97, 194, 129, 0.18);
+	color: #d8ffe2;
+}
+
+.build-value.status-error {
+	background: rgba(235, 92, 82, 0.18);
+	color: #ffd4cf;
+}
+
 .workspace-grid {
 	display: grid;
 	gap: 20px;

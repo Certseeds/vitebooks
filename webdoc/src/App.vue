@@ -17,6 +17,10 @@
 					<span>Commit Hash</span>
 					<code>{{ commitHash || 'local-build' }}</code>
 				</div>
+				<div class="build-item">
+					<span>Engine</span>
+					<strong :class="['build-value', `status-${pandocLoadState}`]">{{ pandocLoadLabel }}</strong>
+				</div>
 			</div>
 		</header>
 
@@ -252,13 +256,18 @@
 <script setup>
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import JSZip from 'jszip'
-import { convert } from 'pandoc-wasm'
 import shieldContent from '../resource/shield.md?raw'
 
 const RESERVED_ROOT_FILES = new Set(['organize.md', 'meta.md', 'base.md'])
 const COVER_PRIORITY = ['jpg', 'jpeg', 'png', 'webp']
 const EPUB_METADATA_FILE = '__webdoc_epub-metadata.xml'
 const FLAT_FILE_PREFIX = '__webdoc_file_'
+const PANDOC_LOAD_STATES = {
+	IDLE: 'idle',
+	LOADING: 'loading',
+	READY: 'ready',
+	ERROR: 'error',
+}
 const WORK_TYPES = {
 	LONG: '长篇',
 	COLLECTION: '小说集',
@@ -347,8 +356,13 @@ const statusTone = ref('neutral')
 const conversionWarnings = ref([])
 const stderrOutput = ref('')
 const runtimeLabel = ref(formatUtc8(new Date()))
+const pandocLoadState = ref(PANDOC_LOAD_STATES.IDLE)
+const pandocLoadError = ref('')
 
 let runtimeTimer = null
+let pandocConvertPromise = null
+let pandocPreloadHandle = null
+let pandocPreloadMode = ''
 
 const authors = computed(() => authorsInput.value
 	.split(',')
@@ -359,6 +373,19 @@ const subworkNames = computed(() => subworksInput.value
 	.split(/\r?\n/)
 	.map((entryName) => entryName.trim())
 	.filter(Boolean))
+
+const pandocLoadLabel = computed(() => {
+	switch (pandocLoadState.value) {
+		case PANDOC_LOAD_STATES.LOADING:
+			return '预热中'
+		case PANDOC_LOAD_STATES.READY:
+			return '已就绪'
+		case PANDOC_LOAD_STATES.ERROR:
+			return '预热失败'
+		default:
+			return '待预热'
+	}
+})
 
 const actionHint = computed(() => {
 	if (!archiveState.value) {
@@ -372,6 +399,14 @@ const actionHint = computed(() => {
 	}
 	if (!planState.value.inputFiles.length) {
 		return '当前规划没有可用于生成的 markdown 输入.'
+	}
+	if (pandocLoadState.value === PANDOC_LOAD_STATES.LOADING) {
+		return '正在后台预加载 pandoc-wasm, 首次生成可能需要稍等.'
+	}
+	if (pandocLoadState.value === PANDOC_LOAD_STATES.ERROR) {
+		return pandocLoadError.value
+			? `pandoc-wasm 预加载失败, 点击生成时会自动重试. ${pandocLoadError.value}`
+			: 'pandoc-wasm 预加载失败, 点击生成时会自动重试.'
 	}
 	return '准备就绪, 点击按钮后会直接生成并下载 EPUB.'
 })
@@ -398,13 +433,43 @@ onMounted(() => {
 	runtimeTimer = window.setInterval(() => {
 		runtimeLabel.value = formatUtc8(new Date())
 	}, 1000)
+	schedulePandocPreload()
 })
 
 onBeforeUnmount(() => {
 	if (runtimeTimer) {
 		window.clearInterval(runtimeTimer)
 	}
+	if (pandocPreloadHandle !== null) {
+		if (pandocPreloadMode === 'idle' && typeof window.cancelIdleCallback === 'function') {
+			window.cancelIdleCallback(pandocPreloadHandle)
+		} else {
+			window.clearTimeout(pandocPreloadHandle)
+		}
+		pandocPreloadHandle = null
+		pandocPreloadMode = ''
+	}
 })
+
+function schedulePandocPreload() {
+	const startPreload = () => {
+		pandocPreloadHandle = null
+		pandocPreloadMode = ''
+        void getPandocConvert().catch(() => {
+            pandocLoadState.value = PANDOC_LOAD_STATES.ERROR;
+        });
+	}
+	if (pandocConvertPromise || pandocLoadState.value === PANDOC_LOAD_STATES.READY) {
+		return
+	}
+	if (typeof window.requestIdleCallback === 'function') {
+		pandocPreloadMode = 'idle'
+		pandocPreloadHandle = window.requestIdleCallback(startPreload, { timeout: 1500 })
+		return
+	}
+	pandocPreloadMode = 'timeout'
+	pandocPreloadHandle = window.setTimeout(startPreload, 0)
+}
 
 function createEmptyPlan() {
 	return {
@@ -731,6 +796,27 @@ function triggerDownload(blob, fileName) {
 	window.setTimeout(() => URL.revokeObjectURL(objectUrl), 1000)
 }
 
+async function getPandocConvert() {
+	if (!pandocConvertPromise) {
+        console.log('正在加载 pandoc-wasm.');
+		pandocLoadState.value = PANDOC_LOAD_STATES.LOADING
+		pandocLoadError.value = ''
+		pandocConvertPromise = import('pandoc-wasm')
+			.then((pandocModule) => {
+				pandocLoadState.value = PANDOC_LOAD_STATES.READY;
+                console.log('pandoc-wasm 模块 加载结束, 已就绪.');
+				return pandocModule.convert
+			})
+			.catch((error) => {
+				pandocConvertPromise = null
+				pandocLoadState.value = PANDOC_LOAD_STATES.ERROR
+				pandocLoadError.value = error instanceof Error ? error.message : String(error)
+				throw error
+			})
+	}
+	return pandocConvertPromise
+}
+
 async function handleGenerate() {
 	if (!canGenerate.value || !archiveState.value) {
 		return
@@ -742,6 +828,12 @@ async function handleGenerate() {
 	stderrOutput.value = ''
 
 	try {
+		if (pandocLoadState.value !== PANDOC_LOAD_STATES.READY) {
+			statusMessage.value = '正在加载 pandoc-wasm.'
+		}
+		const convert = await getPandocConvert()
+		statusMessage.value = '正在调用 pandoc-wasm 生成 EPUB.'
+
 		const outputFileName = `${sanitizeFilename(bookTitle.value)}.epub`
 		const { flattenedPaths, loadedFiles: pandocFiles } = await buildPandocFiles(
 			archiveState.value,
