@@ -456,7 +456,7 @@ function getExtension(filePath) {
 }
 
 function comparePaths(leftPath, rightPath) {
-	return leftPath.localeCompare(rightPath, 'en')
+	return leftPath.localeCompare(rightPath, 'en', { numeric: true, sensitivity: 'base' })
 }
 
 function isAllowedSrcMarkdown(filePath, prefixPath) {
@@ -658,7 +658,7 @@ function sanitizeFilename(fileName) {
 }
 
 function escapeXml(value) {
-	return value
+	return String(value)
 		.replace(/&/g, '&amp;')
 		.replace(/</g, '&lt;')
 		.replace(/>/g, '&gt;')
@@ -728,7 +728,7 @@ function triggerDownload(blob, fileName) {
 	document.body.appendChild(anchorElement)
 	anchorElement.click()
 	anchorElement.remove()
-	URL.revokeObjectURL(objectUrl)
+	window.setTimeout(() => URL.revokeObjectURL(objectUrl), 1000)
 }
 
 async function handleGenerate() {

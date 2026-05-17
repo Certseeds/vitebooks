@@ -1,10 +1,10 @@
-﻿// SPDX-FileCopyrightText: 2026 Certseeds
+// SPDX-FileCopyrightText: 2026 Certseeds
 // SPDX-License-Identifier: AGPL-3.0-or-later
 import { execSync } from 'node:child_process';
+import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import path from 'path';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -40,4 +40,4 @@ export default defineConfig({
     build: {
         target: 'esnext',
     }
-})
+});
