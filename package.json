@@ -28,7 +28,7 @@
     "devDependencies": {
         "@types/node": "catalog:",
         "density-clustering": "catalog:",
-        "linkedom":  "catalog:",
+        "linkedom": "catalog:",
         "ollama": "catalog:",
         "openai": "catalog:",
         "pinyin-pro": "catalog:",
@@ -48,6 +48,10 @@
         },
         "onlyBuiltDependencies": [
             "esbuild"
-        ]
+        ],
+        "dedupePeerDependents": true,
+        "overrides": {
+            "vite": "catalog:"
+        }
     }
 }
