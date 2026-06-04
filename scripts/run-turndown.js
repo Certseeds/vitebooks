@@ -4,7 +4,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { JSDOM } from 'jsdom';
+import { parseHTML } from 'linkedom';
 import { createTurndownService } from './../turndown/src/tdown.js';
 
 const args = process.argv;
@@ -32,8 +32,7 @@ const processHtmlFile = async (filePath) => {
         const htmlContent = fs.readFileSync(filePath, 'utf8');
 
         // 使用JSDOM解析HTML
-        const dom = new JSDOM(htmlContent);
-        const document = dom.window.document;
+        const { document } = parseHTML(htmlContent);
 
         // 提取body内容
         const bodyElement = document.querySelector('body');

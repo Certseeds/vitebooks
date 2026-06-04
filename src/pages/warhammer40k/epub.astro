@@ -64,7 +64,7 @@ try {
 
 {epubLinks.length > 0 && (
     <script>
-        import JSZip from 'jszip';
+        import { Zip, ZipDeflate } from 'fflate';
 
         document.getElementById('download-all-btn')?.addEventListener('click', async function () {
             const btn = this as HTMLButtonElement;
@@ -73,8 +73,14 @@ try {
             if (btn.disabled || !epubHrefs.length) return;
             btn.disabled = true;
             const originalText = btn.textContent;
-
-            const zip = new JSZip();
+            const chunks: Uint8Array[] = [];
+            const zip = new Zip((err, data, final) => {
+              if (err) {
+                  throw err;
+              }
+              chunks.push(data); // data 是Uint8Array
+            }); 
+            
             let successCount = 0;
 
             for (let i = 0; i < epubHrefs.length; i++) {
@@ -86,17 +92,19 @@ try {
                     const response = await fetch(href);
                     if (!response.ok) throw new Error(`HTTP ${response.status}`);
                     const blob = await response.blob();
-                    zip.file(filename, blob);
+                    const file = new ZipDeflate(filename, {level: 0});
+                    zip.add(file);
+                    file.push(new Uint8Array(await blob.arrayBuffer()), true);
                     successCount++;
                 } catch (err) {
                     console.error(`Failed to download ${href}:`, err);
                     // Fallback to manual download link if user wants
                 }
             }
-
+            zip.end();
             if (successCount > 0) {
                 btn.textContent = '正在生成压缩包...';
-                const content = await zip.generateAsync({ type: 'blob' });
+                const content = new Blob(chunks, { type: 'application/zip' });
                 const url = URL.createObjectURL(content);
                 const a = document.createElement('a');
                 a.href = url;

@@ -11,7 +11,7 @@
         "preview": "vite preview"
     },
     "dependencies": {
-        "jszip": "catalog:",
+        "fflate": "catalog:",
         "pandoc-wasm": "catalog:",
         "vue": "catalog:"
     },

@@ -65,9 +65,9 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import { createTurndownService } from '@/tdown.js'
-import JSZip from 'jszip'
+import { Zip, ZipDeflate } from 'fflate';
 
 // Reactive data
 const uploadedFiles = ref([])
@@ -153,19 +153,23 @@ const downloadSingleFile = (file) => {
 const downloadAllAsZip = async () => {
     if (convertedFiles.value.length === 0) return
 
-    const zip = new JSZip()
+    const chunks = [];
+    const zip = new Zip((err, data, final) => {
+        if (err) {
+            throw err;
+        }
+        chunks.push(data); // data 是Uint8Array
+    });
+    const encoder = new TextEncoder();
     convertedFiles.value.forEach(file => {
-        zip.file(file.filename, file.content)
-    })
+        const added = new ZipDeflate(file.filename, { level: 6 });
+        zip.add(added);
+        added.push(encoder.encode(file.content), true);
+    });
+    zip.end();
 
     try {
-        const content = await zip.generateAsync({
-            type: 'blob',
-            compression: 'DEFLATE',
-            compressionOptions: {
-                level: 9
-            }
-        })
+        const content = new Blob(chunks, { type: 'application/zip' });
         const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19)
         const zipFilename = `markdown-files-${timestamp}.zip`
         createDownload(content, zipFilename, 'application/zip')

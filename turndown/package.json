@@ -11,6 +11,7 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "fflate": "catalog:",
         "turndown": "catalog:",
         "vue": "catalog:"
     },

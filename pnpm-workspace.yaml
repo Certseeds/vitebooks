@@ -18,8 +18,6 @@ catalog:
   cytoscape-dagre: ^2.5.0
   dagre: ^0.8.5
   density-clustering: ^1.3.0
-  jsdom: ^26.1.0
-  jszip: ^3.10.1
   ollama: ^0.5.18
   openai: 5.12.2
   pako: ^2.1.0
@@ -31,6 +29,8 @@ catalog:
   vue: ^3.5.32
   zlib: ^1.0.5
   pandoc-wasm: ^1.0.1
+  fflate: ^0.8.3
+  linkedom: ^0.18.12
 
 supportedArchitectures:
   cpu: [ x64 ]
