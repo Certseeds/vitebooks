@@ -233,7 +233,7 @@
 
 <script setup>
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
-import { unzipSync } from 'fflate';
+import { unzip } from 'fflate';
 import shieldContent from '../resource/shield.md?raw'
 
 const RESERVED_ROOT_FILES = new Set(['organize.md', 'meta.md', 'base.md'])
@@ -642,7 +642,12 @@ function buildPlan(snapshot, options) {
 async function createArchiveSnapshot(file) {
     const buffer = await file.arrayBuffer()
     const uint8 = new Uint8Array(buffer)
-    const unzipped = unzipSync(uint8)
+    const unzipped = await new Promise((resolve, reject) => {
+        unzip(uint8, (err, data) => {
+            if (err) reject(err);
+            else resolve(data);
+        });
+    });
     const files = []
     let orderIndex = 0
     for (const [rawPath, data] of Object.entries(unzipped)) {

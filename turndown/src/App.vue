@@ -67,7 +67,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { createTurndownService } from '@/tdown.js'
-import { Zip, ZipDeflate } from 'fflate';
+import { zip } from 'fflate';
 
 // Reactive data
 const uploadedFiles = ref([])
@@ -151,32 +151,23 @@ const downloadSingleFile = (file) => {
 }
 
 const downloadAllAsZip = async () => {
-    if (convertedFiles.value.length === 0) return
+    if (convertedFiles.value.length === 0) { return }
 
-    const chunks = [];
-    const zip = new Zip((err, data, final) => {
+    const fileMap = {};
+    for (const { filename, content } of convertedFiles.value) {
+        fileMap[filename] = content;
+    }
+    zip(fileMap, { level: 6 }, (err, data) => {
         if (err) {
-            throw err;
+            console.error('Error generating ZIP:', err)
+            alert('Failed to generate ZIP file')
+            return;
         }
-        chunks.push(data); // data 是Uint8Array
-    });
-    const encoder = new TextEncoder();
-    convertedFiles.value.forEach(file => {
-        const added = new ZipDeflate(file.filename, { level: 6 });
-        zip.add(added);
-        added.push(encoder.encode(file.content), true);
-    });
-    zip.end();
-
-    try {
-        const content = new Blob(chunks, { type: 'application/zip' });
+        const content = new Blob([data], { type: 'application/zip' });
         const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19)
         const zipFilename = `markdown-files-${timestamp}.zip`
         createDownload(content, zipFilename, 'application/zip')
-    } catch (error) {
-        console.error('Error generating ZIP:', error)
-        alert('Failed to generate ZIP file')
-    }
+    })
 }
 
 const createDownload = (content, filename, type = 'text/markdown') => {

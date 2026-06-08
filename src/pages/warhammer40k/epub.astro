@@ -64,7 +64,7 @@ try {
 
 {epubLinks.length > 0 && (
     <script>
-        import { Zip, ZipDeflate } from 'fflate';
+        import { Zip, ZipPassThrough } from 'fflate';
 
         document.getElementById('download-all-btn')?.addEventListener('click', async function () {
             const btn = this as HTMLButtonElement;
@@ -73,7 +73,7 @@ try {
             if (btn.disabled || !epubHrefs.length) return;
             btn.disabled = true;
             const originalText = btn.textContent;
-            const chunks: Uint8Array[] = [];
+            const chunks: BlobPart[] = [];
             const zip = new Zip((err, data, final) => {
               if (err) {
                   throw err;
@@ -92,7 +92,7 @@ try {
                     const response = await fetch(href);
                     if (!response.ok) throw new Error(`HTTP ${response.status}`);
                     const blob = await response.blob();
-                    const file = new ZipDeflate(filename, {level: 0});
+                    const file = new ZipPassThrough(filename);
                     zip.add(file);
                     file.push(new Uint8Array(await blob.arrayBuffer()), true);
                     successCount++;
