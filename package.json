@@ -49,7 +49,6 @@
         "onlyBuiltDependencies": [
             "esbuild"
         ],
-        "dedupePeerDependents": true,
         "overrides": {
             "vite": "catalog:"
         }
