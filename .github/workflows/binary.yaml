@@ -16,6 +16,8 @@ jobs:
 
       - name: Set up Go
         uses: certseeds/common-actions/actions/setup-go@v1
+        with:
+          cache-dependency-path: goserver/go.mod
 
       - name: copy files to main folder
         run: |
