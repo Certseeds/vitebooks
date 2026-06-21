@@ -12,17 +12,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: certseeds/common-actions/actions/checkout@v1
 
       - name: Set up Go
-        uses: actions/setup-go@v6
+        uses: certseeds/common-actions/actions/setup-go@v1
 
       - name: copy files to main folder
         run: |
           tree
 
       - name: Run GoReleaser
-        uses: goreleaser/goreleaser-action@v7
+        uses: certseeds/common-actions/actions/build-go-binary@v1
         with:
           # either 'goreleaser' (default) or 'goreleaser-pro'
           distribution: goreleaser
@@ -34,7 +34,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload assets
-        uses: actions/upload-artifact@v7
+        uses: certseeds/common-actions/actions/upload-artifact@v1
         with:
           name: goserver
           path: goserver/dist/*

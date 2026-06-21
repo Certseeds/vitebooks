@@ -16,35 +16,25 @@ jobs:
     runs-on: ubuntu-latest
     environment: github-pages
     steps:
-      - uses: actions/checkout@v6
+      - uses: certseeds/common-actions/actions/checkout@v1
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0
 
-      - uses: pnpm/action-setup@v5
-        name: Install pnpm
-        with:
-          version: 10
-          run_install: false
+      - uses: certseeds/common-actions/actions/setup-pnpm@v1
 
       - name: Install Node.js
-        uses: actions/setup-node@v6
-        with:
-          node-version: 24
-          cache: 'pnpm'
+        uses: certseeds/common-actions/actions/setup-node@v1
 
       - name: Install Rust
-        uses: dtolnay/rust-toolchain@master
+        uses: certseeds/common-actions/actions/setup-rust@v1
         with:
           toolchain: stable
 
       # do not update to v3.9+, it will loss footnote reverse
-      - uses: r-lib/actions/setup-pandoc@v2
-        with:
-          pandoc-version: '3.8.3'
+      - uses: certseeds/common-actions/actions/setup-pandoc@v1
 
       - name: Rust Cache
-        uses: Swatinem/rust-cache@v2
+        uses: certseeds/common-actions/actions/cache-rust@v1
         with:
           workspaces: "./depage/rustydeps"
 
@@ -122,7 +112,7 @@ jobs:
         run: pnpm run build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5.0.0
+        uses: certseeds/common-actions/actions/upload-pages-artifact@v1
         with:
           path: ./dist
 
@@ -142,7 +132,7 @@ jobs:
         run: pnpm add -w wrangler@latest
 
       - name: Publish to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v4
+        uses: certseeds/common-actions/actions/wrangler@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -170,4 +160,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: certseeds/common-actions/actions/deploy-pages@v1
