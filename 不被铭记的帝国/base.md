@@ -51,7 +51,7 @@ On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium a
 
 卡斯米尔, 上校, 英杰的侍从
 
-泰图斯 普瑞托, 百人议众之主, 第十三军团智库
+泰图斯·普瑞托, 百人议众之主, 第十三军团智库
 
 弗拉图斯 奥古斯顿, 战团长, 极限战士第一战团
 
@@ -99,7 +99,7 @@ On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium a
 
 宰托斯, 第十八军团"火蜥蜴"
 
-亚历克西斯 波拉克斯(Alexis Polux), 连长, 第四百零五连, 第七军团"帝国之拳"
+亚历克西斯·波拉克斯(Alexis Polux), 连长, 第四百零五连, 第七军团"帝国之拳"
 
 法芬纳尔 血盟, 观察小队之主, 第六军团"太空野狼"
 
@@ -133,15 +133,15 @@ On the Cover: on the far side of the galaxy, the Ioundations of a new Imperium a
 
 侯古因, 指挥官, 死亡之翼[^2]
 
-法瑞斯 瑞德罗斯, 指挥官, 恐惧之翼[^2]
+法瑞斯·瑞德罗斯, 指挥官, 恐惧之翼[^2]
 
 斯坦涅斯, 不屈真理号[^3]舰长
 
 赛拉琳 菲安娜女士, 导航者, 尼伊奥辛家族
 
-约翰 格拉玛提卡斯, 永生者
+约翰·格拉玛提卡斯, 永生者
 
-达蒙 普瑞坦尼斯, 永生者
+达蒙·普瑞坦尼斯, 永生者
 
 乌什皮特卡, 无生者[^4]
 

@@ -465,3 +465,7 @@ $RECYCLE.BIN/
 *.mobi
 *.env
 *.code.sh
+*.jpg
+*.jpeg
+*.png
+*.webp

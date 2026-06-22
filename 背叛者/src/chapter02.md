@@ -394,4 +394,3 @@ next:
 [^14]: the Furious Abyss
 
 [^15]: the Blessed Lady
-
