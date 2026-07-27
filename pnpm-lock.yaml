@@ -58,8 +58,8 @@ catalogs:
       specifier: ^4.0.1
       version: 4.0.1
     tar:
-      specifier: ^7.5.16
-      version: 7.5.16
+      specifier: ^7.5.21
+      version: 7.5.22
     turndown:
       specifier: ^7.2.4
       version: 7.2.4
@@ -119,7 +119,7 @@ importers:
         version: 3.28.1
       tar:
         specifier: 'catalog:'
-        version: 7.5.16
+        version: 7.5.22
       turndown:
         specifier: 'catalog:'
         version: 7.2.4
@@ -1877,8 +1877,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  tar@7.5.16:
-    resolution: {integrity: sha512-56adEpPMouktRlBLXiaYFFzZ/3+JXa8P9n7WbR+ibIjtviN55mEaOkiysCnPnWm+7kkui1Dn8J9l+g6zV8731w==}
+  tar@7.5.22:
+    resolution: {integrity: sha512-MFO/QzvtAOmJbkhOaCTvbGcFN9L9b+JunIsDwaKljSOdcLMea3NJ1k9Usz/rjdfSXTq4dfzfeS7W4p4YOAAHeA==}
     engines: {node: '>=18'}
 
   tiny-inflate@1.0.3:
@@ -4095,7 +4095,7 @@ snapshots:
       picocolors: 1.1.1
       sax: 1.6.0
 
-  tar@7.5.16:
+  tar@7.5.22:
     dependencies:
       '@isaacs/fs-minipass': 4.0.1
       chownr: 3.0.0
